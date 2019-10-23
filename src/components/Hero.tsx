@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 	}
 })
 
-const Hero = () => {
+const Hero = ({path}) => {
 	const classes = useStyles({})
 	return (
 		<Grid container className={classes.background} justify="center" alignContent="center">
