@@ -7,9 +7,9 @@ import { theme } from '../theme/theme';
 const useStyles = makeStyles({
 	image: {
 		objectFit: 'contain',
-		maxHeight: 50,
-		marginTop: theme.spacing(3),
-		marginBottom: theme.spacing(3),
+		maxHeight: '6vh',
+		marginTop: '2vh',
+		marginBottom: '2vh',
 	},
 	appBar: {
 		backgroundColor: theme.palette.common.white,
@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 const Header = () => {
 	const classes = useStyles({})
 	return (
-		<AppBar className={classes.appBar} >
+		<AppBar position="sticky" className={classes.appBar} >
 			<Toolbar>
 				<Grid container justify="flex-start" spacing={3}>
 					<Grid item xs={6}>

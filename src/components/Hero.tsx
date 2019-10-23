@@ -1,23 +1,34 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core'
-import beakerImage from '../assets/beakers.jpg'
+import { makeStyles, Button, Grid, Container } from '@material-ui/core'
+import beakerImage from '../assets/beakers.jpg';
+
+import { theme } from '../theme/theme';
 
 const useStyles = makeStyles({
 	background: {
-		height: '100vh',
+		height: `90vh`,
 		width: '100%',
 		backgroundImage: `linear-gradient(45deg, rgba(0, 0, 0, .7), rgba(19, 127, 222, .6)), url(${beakerImage})`,
 		backgroundSize: 'cover',
 		filter: 'sepia(25%)'
+	},
+	buttonCont: {
+		display: 'flex',
+		justifyContent: 'center'
 	}
 })
 
 const Hero = () => {
 	const classes = useStyles({})
 	return (
-		<div className={classes.background}>
-
-		</div>
+		<Grid container className={classes.background} justify="center" alignContent="center">
+			<Grid item xs className={classes.buttonCont}>
+				<Button variant="outlined" color="primary">Grant requests & news</Button>
+			</Grid>
+			<Grid item xs className={classes.buttonCont}>
+				<Button variant="contained" color="primary">Recent articles</Button>
+			</Grid>
+		</Grid>
 	)
 }
 
