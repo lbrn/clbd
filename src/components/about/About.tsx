@@ -24,7 +24,7 @@ const About = ({ path }) => {
 	const classes = useStyles({})
 	return (
 		<Container className={classes.title}>
-			<Grid container spacing={3} xs={12}>
+			<Grid container spacing={3}>
 				<Grid item xs={12}>
 					<Typography align="center" color="primary" variant="h4">Message from the director</Typography>
 				</Grid>

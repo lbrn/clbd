@@ -5,6 +5,7 @@ import { Router } from '@reach/router'
 
 import { theme } from './theme/theme';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Hero from './components/Hero'
 import About from './components/about/About';
 
@@ -18,6 +19,7 @@ const App: React.FC = () => {
           <Hero path="/" />
           <About path="/about" />
         </Router>
+        <Footer/>
       </ThemeProvider>
     </Fragment>
   );
