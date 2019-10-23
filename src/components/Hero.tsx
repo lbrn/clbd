@@ -15,6 +15,10 @@ const useStyles = makeStyles({
 	buttonCont: {
 		display: 'flex',
 		justifyContent: 'center'
+	},
+	buttonWhite: {
+		color: theme.palette.common.white,
+		borderColor: theme.palette.common.white
 	}
 })
 
@@ -23,7 +27,7 @@ const Hero = () => {
 	return (
 		<Grid container className={classes.background} justify="center" alignContent="center">
 			<Grid item xs className={classes.buttonCont}>
-				<Button variant="outlined" color="primary">Grant requests & news</Button>
+				<Button className={classes.buttonWhite} variant="outlined" color="primary">Grant requests & news</Button>
 			</Grid>
 			<Grid item xs className={classes.buttonCont}>
 				<Button variant="contained" color="primary">Recent articles</Button>
