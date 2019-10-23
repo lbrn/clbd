@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppBar, Typography, Grid, Toolbar, makeStyles, Container, Button } from '@material-ui/core';
-import logoFull from '../assets/logo_full.png'
+import logoFull from '../assets/logo_full.png';
+import { navigate } from '@reach/router'
 
 import { theme } from '../theme/theme';
 
@@ -29,15 +30,15 @@ const Header = () => {
 		<AppBar position="sticky" className={classes.appBar} >
 			<Toolbar>
 				<Grid container justify="flex-start" alignContent="center" spacing={3}>
-					<Grid item xs={6}>
+					<Grid item xs={12} sm={6}>
 						<img className={classes.image} src={logoFull} />
 					</Grid>
-					<Grid className={classes.buttonCont} container item spacing={1} xs={12} md={6}>
+					<Grid className={classes.buttonCont} container item spacing={1} xs={12} sm={8} md={6}>
 						<Grid item xs md>
-							<Button color="primary">about</Button>
+							<Button onClick={e => navigate('/about')} color="primary">about</Button>
 						</Grid>
 						<Grid item xs >
-							<Button color="primary">people</Button>
+							<Button onClick={e => navigate('/people')} color="primary">people</Button>
 						</Grid>
 						<Grid item xs>
 							<Button color="primary">research</Button>
