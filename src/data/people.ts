@@ -1,16 +1,24 @@
 import {
-	Fessler,
-	Irvin,
-	Stanton,
 	Baines,
+	Baumgarth,
+	Bubeckwardenburg,
 	Cardin,
 	Cormier,
+	Dugas,
+	Fessler,
+	GuerreroPlata,
+	Huang,
+	Irvin,
 	Jeyaseelan,
 	Kaushal,
 	Kolls,
-	Bubeckwardenburg,
-	Baumgarth,
-	Kousoulas
+	Kousoulas,
+	Noel,
+	Ogundele,
+	Patial,
+	Saini,
+	Stanton,
+	Yoshimmura,
 } from '../assets/people/index';
 
 export const people = {
@@ -102,6 +110,7 @@ export const people = {
 	mentees: [
 		{
 			name: 'Weishan Huang',
+			link: 'http://facultypages.vetmed.lsu.edu/faculty/huang1',
 			mentors: [
 				{
 					name: 'Stephanie Cormier',
@@ -194,7 +203,7 @@ export const people = {
 		},
 		{
 			name: 'Antonieta Guerrero-Plata',
-			image: Plata,
+			image: GuerreroPlata,
 			link: 'http://facultypages.vetmed.lsu.edu/faculty/aguerrp',
 		},
 		{

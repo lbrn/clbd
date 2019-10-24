@@ -24,26 +24,27 @@ const Person = ({ name, link, title, role, img }: personProps) => {
 			flexShrink: 1
 		},
 		personImgCont: {
-			// display: 'inlineBlock',
-			width: '100%',
+			display: 'flex',
+			flexBasis: 'calc(1/3)',
+			minWidth: 200,
 			height: 'auto',
-
+			justifyContent: 'center',
+			alignContent: 'center',
 		},
 		personImg: {
 			height: 0,
 			paddingBottom: '25%',
 			paddingTop: '25%',
 			width: '50%',
-			// height: '100%',
+			// centers img on top center
 			backgroundPositionX: 'center',
 			backgroundPositionY: 'top',
 			backgroundSize: 'contain',
 			borderRadius: '50%',
-			// objectFit: 'cover',
 			backgroundImage: `url(${img})`
 		},
 		personTextCont: {
-			flexBasis: '67%',
+			flexBasis: 'calc(2/3)',
 		}
 	})
 
@@ -55,8 +56,10 @@ const Person = ({ name, link, title, role, img }: personProps) => {
 				<div className={classes.personImg}></div>
 				{/* <img className="personImg" src={img} /> */}
 			</div>
-			<div className={classes.personImgCont}>
+			<div className={classes.personTextCont}>
 				{name && <Typography>{name}</Typography>}
+				{role && <Typography>{role}</Typography>}
+				{title && <Typography>{title}</Typography>}
 				{link && <Link color="primary">{link}</Link>}
 			</div>
 		</div>
