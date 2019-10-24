@@ -28,14 +28,14 @@ export const people = {
 			image: Jeyaseelan,
 			title: 'William L. Jenkins Professor in the Department of Pathobiological Sciences',
 			role: 'principal investigator',
-			link: 'http://facultypages.vetmed.lsu.edu/faculty/jey',
+			link: 'https://bit.ly/2peRwvs',
 		},
 		{
 			name: 'Rhonda Cardin',
 			image: Cardin,
 			title: 'associate dean for research and advanced studies',
 			role: 'co-investigator',
-			link: 'http://facultypages.vetmed.lsu.edu/faculty/rcardin'
+			link: 'https://bit.ly/31Giidr'
 		},
 		{
 			name: 'Whitney Fontenot',
@@ -49,58 +49,58 @@ export const people = {
 			name: 'Michael Fessler',
 			image: Fessler,
 			location: 'National Institute of Environmental Health Sciences.',
-			link: 'https://www.niehs.nih.gov//research/atniehs/labs/iidl/pi/host-def/index.cfm',
+			link: 'https://bit.ly/32M5pzM',
 		},
 		{
 			name: 'Charles Irvin',
 			image: Irvin,
 			location: 'University of Vermont.',
-			link: 'https://www.uvm.edu/directorylisting/cirvin',
+			link: 'https://bit.ly/2NgIOVQ',
 		},
 		{
 			name: 'Bruce Stanton',
 			image: Stanton,
 			location: 'Dartmouth College.',
-			link: 'https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=193',
+			link: 'https://bit.ly/2pRtnuU',
 		},
 		{
 			name: 'Nicole Baumgarth',
 			image: Baumgarth,
 			location: 'University of California, Davis.',
-			link: 'https://ccm.ucdavis.edu/people/nicole-baumgarth',
+			link: 'https://bit.ly/32McZdM',
 		},
 		{
 			name: 'Juliane Bubeckwardenburg',
 			image: Bubeckwardenburg,
 			location: 'Washington University in St.Louis.',
-			link: 'https://profiles.wustl.edu/en/persons/juliane-bubeck-wardenburg',
+			link: 'https://bit.ly/32KDq3x',
 		},
 	],
 	internalAdvisoryCommittee: [
 		{
 			name: 'Joel Baines',
 			image: Baines,
-			link: 'http://facultypages.vetmed.lsu.edu/faculty/jbaines',
+			link: 'https://bit.ly/2Wa5b3f',
 		},
 		{
 			name: 'Deepak Kaushal',
 			image: Kaushal,
-			link: 'https://www.txbiomed.org/scientists/deepak-kaushal/',
+			link: 'https://bit.ly/2W9mLnZ',
 		},
 		{
 			name: 'Konstantin Kousoulas',
 			image: Kousoulas,
-			link: 'http://facultypages.vetmed.lsu.edu/faculty/vtgusk'
+			link: 'https://bit.ly/2PhLrt6'
 		},
 		{
 			name: 'Stephania Cormier',
 			image: Cormier,
-			link: 'http://facultypages.vetmed.lsu.edu/faculty/stephaniacormier'
+			link: 'https://bit.ly/2PrEN3B'
 		},
 		{
 			name: 'Jay Kolls',
 			image: Kolls,
-			link: 'https://medicine.tulane.edu/departments/pulmonary-diseases-critical-care-environmental-medicine-research/faculty/jay-kolls-md',
+			link: 'https://bit.ly/2pLRUBQ',
 		},
 		{
 			name: 'Kevin Reed',
@@ -110,18 +110,18 @@ export const people = {
 	mentees: [
 		{
 			name: 'Weishan Huang',
-			link: 'http://facultypages.vetmed.lsu.edu/faculty/huang1',
+			link: 'https://bit.ly/2pTa2JL',
 			mentors: [
 				{
 					name: 'Stephanie Cormier',
 					image: Cormier,
-					link: 'http://facultypages.vetmed.lsu.edu/faculty/stephaniacormier'
+					link: 'https://bit.ly/2MKBym0'
 
 				},
 				{
 					name: 'Jay Kolls',
 					image: Kolls,
-					link: 'https://medicine.tulane.edu/departments/pulmonary-diseases-critical-care-environmental-medicine-research/faculty/jay-kolls-md'
+					link: 'https://bit.ly/2Pf6ufB'
 				}
 			],
 		},
@@ -131,13 +131,13 @@ export const people = {
 				{
 					name: 'Rhonda Cardin',
 					image: Cardin,
-					link: 'http://facultypages.vetmed.lsu.edu/faculty/rcardin',
+					link: 'https://bit.ly/2BHpDPm',
 
 				},
 				{
 					name: 'Deepak Kaushal',
 					image: Kaushal,
-					link: 'https://www.txbiomed.org/scientists/deepak-kaushal/',
+					link: 'https://bit.ly/345In7z',
 				}
 			]
 		},
@@ -161,13 +161,13 @@ export const people = {
 				{
 					name: 'Tammy Dugas',
 					image: Dugas,
-					link: 'http://facultypages.vetmed.lsu.edu/faculty/tammydugas'
+					link: 'https://bit.ly/33YO5Ic'
 
 				},
 				{
 					name: 'Stephania Cormier',
 					image: Cormier,
-					link: 'http://facultypages.vetmed.lsu.edu/faculty/stephaniacormier'
+					link: 'https://bit.ly/32IG35W'
 
 				},
 			]
@@ -177,39 +177,39 @@ export const people = {
 		{
 			name: 'Sonika Patial',
 			image: Patial,
-			link: 'http://facultypages.vetmed.lsu.edu/faculty/spatial',
+			link: 'https://bit.ly/32IFYza',
 		},
 		{
 			name: 'Yogesh Saini',
 			image: Saini,
-			link: 'http://facultypages.vetmed.lsu.edu/faculty/ysaini',
+			link: 'https://bit.ly/2pV5Nxl',
 		},
 		{
 			name: 'Weishan Huang',
 			image: Huang,
-			link: 'http://facultypages.vetmed.lsu.edu/faculty/huang1',
+			link: 'https://bit.ly/2W8bggy',
 		}
 		,
 		{
 			name: 'Alexandra Noel',
 			image: Noel,
-			link: 'http://facultypages.vetmed.lsu.edu/faculty/anoel',
+			link: 'https://bit.ly/2pP5Jzh',
 		}
 		,
 		{
 			name: 'Masami Yoshimmura',
 			image: Yoshimmura,
-			link: 'http://facultypages.vetmed.lsu.edu/faculty/fukugawa',
+			link: 'https://bit.ly/362gvmr',
 		},
 		{
 			name: 'Antonieta Guerrero-Plata',
 			image: GuerreroPlata,
-			link: 'http://facultypages.vetmed.lsu.edu/faculty/aguerrp',
+			link: 'https://bit.ly/31K0pL1',
 		},
 		{
 			name: 'Olalekan Ogundele',
 			image: Ogundele,
-			link: 'http://facultypages.vetmed.lsu.edu/faculty/ogundele',
+			link: 'https://bit.ly/2pdpKzv',
 		},
 		{
 			name: 'Tirumalai Rangasamy',

@@ -3,7 +3,8 @@ import { FormControl, InputLabel, Select, MenuItem, makeStyles } from '@material
 
 const useStyles = makeStyles({
 	selector: {
-		minWidth: 200
+		width: '100%',
+		marginTop: '2vh'
 	}
 });
 
