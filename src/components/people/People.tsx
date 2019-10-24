@@ -4,6 +4,7 @@ import img from '../../assets/people/Cardin.jpg';
 
 import { people } from '../../data/people';
 import Person from './Person';
+import GroupSelector from './GroupSelector';
 
 const People = ({ path }) => {
 	const [data, setData] = useState();
@@ -12,10 +13,16 @@ const People = ({ path }) => {
 		setData(people)
 	}, [])
 
+	data && console.log(Object.keys(data))
+
 	const activeData = data && data[active];
 
 	return (
 		<Container>
+			<GroupSelector 
+				value={active}
+				setValue={setActive}
+			/>
 			<Grid container spacing={3} justify="flex-end">
 				{data && data[active].map((person, i) => (
 					<Grid item xs={6} key={person.name + i}>
