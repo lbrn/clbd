@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppBar, Typography, Grid, Toolbar, makeStyles, Container, Link } from '@material-ui/core';
-import logoFull from '../assets/logo_full.png';
+import logoFull from '../assets/misc/logo_full.png';
 import { navigate } from '@reach/router'
 
 import { theme } from '../theme/theme';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles, Button, Grid, Container } from '@material-ui/core'
-import beakerImage from '../assets/beakers.jpg';
+import beakerImage from '../assets/misc/beakers.jpg';
 
 import { theme } from '../theme/theme';
 

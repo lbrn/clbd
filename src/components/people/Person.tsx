@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Typography, Link } from '@material-ui/core';
+import { makeStyles, Typography, Link, Grid } from '@material-ui/core';
 
 import { theme } from '../../theme/theme';
 
@@ -51,18 +51,18 @@ const Person = ({ name, link, title, role, img }: personProps) => {
 	const classes = useStyles();
 
 	return (
-		<div className={classes.person}>
-			<div className={classes.personImgCont}>
+		<Grid container item xs={12} sm={6} className={classes.person}>
+			<Grid item xs={4} className={classes.personImgCont}>
 				<div className={classes.personImg}></div>
 				{/* <img className="personImg" src={img} /> */}
-			</div>
-			<div className={classes.personTextCont}>
+			</Grid>
+			<Grid item xs={8} className={classes.personTextCont}>
 				{name && <Typography>{name}</Typography>}
 				{role && <Typography>{role}</Typography>}
 				{title && <Typography>{title}</Typography>}
 				{link && <Link color="primary">{link}</Link>}
-			</div>
-		</div>
+			</Grid>
+		</Grid>
 	)
 }
 

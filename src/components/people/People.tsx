@@ -15,13 +15,13 @@ const People = ({ path }) => {
 
 	return (
 		<Container>
-			<GroupSelector 
+			<GroupSelector
 				value={active}
 				setValue={setActive}
 			/>
 			<Grid container spacing={3} justify="flex-end">
 				{data && data[active].map((person, i) => (
-					<Grid item xs={6} key={person.name + i}>
+					<Grid container item xs={6} key={person.name + i}>
 						<Person
 							name={person.name}
 							title={person.title}

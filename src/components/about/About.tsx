@@ -2,8 +2,7 @@ import React from 'react';
 import { Typography, Grid, Container, makeStyles } from '@material-ui/core';
 
 import { theme } from '../../theme/theme'
-import about_image from '../../assets/about_image.jpg'
-import classes from '*.module.sass';
+import about_image from '../../assets/misc/about_image.jpg'
 
 const useStyles = makeStyles({
 	title: {
