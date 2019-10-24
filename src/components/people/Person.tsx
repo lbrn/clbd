@@ -16,20 +16,31 @@ const Person = ({ name, link, title, role, img }: personProps) => {
 
 	const useStyles = makeStyles({
 		person: {
+			marginTop: theme.spacing(3),
 			display: 'flex',
+			justifyContent: 'spaceBetween',
+			alignContent: 'center',
 			flexGrow: 1,
 			flexShrink: 1
 		},
 		personImgCont: {
-			flexBasis: '33%',
+			// display: 'inlineBlock',
+			width: '100%',
+			height: 'auto',
 
 		},
 		personImg: {
+			height: 0,
+			paddingBottom: '25%',
+			paddingTop: '25%',
+			width: '50%',
+			// height: '100%',
+			backgroundPositionX: 'center',
+			backgroundPositionY: 'top',
+			backgroundSize: 'contain',
 			borderRadius: '50%',
-			border: `solid 3px ${theme.palette.primary.main}`,
-			maxWidth: "100%",
-			maxHeight: 'auto',
-			backgroundUrl: `url(${img})`
+			// objectFit: 'cover',
+			backgroundImage: `url(${img})`
 		},
 		personTextCont: {
 			flexBasis: '67%',
@@ -38,13 +49,13 @@ const Person = ({ name, link, title, role, img }: personProps) => {
 
 	const classes = useStyles();
 
-
 	return (
 		<div className={classes.person}>
-			<div className="personImgCont">
-				<Typography>image goes here</Typography>
+			<div className={classes.personImgCont}>
+				<div className={classes.personImg}></div>
+				{/* <img className="personImg" src={img} /> */}
 			</div>
-			<div className="personTextCont">
+			<div className={classes.personImgCont}>
 				{name && <Typography>{name}</Typography>}
 				{link && <Link color="primary">{link}</Link>}
 			</div>

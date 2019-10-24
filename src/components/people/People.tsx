@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Grid, Container, Typography } from '@material-ui/core';
-
+import img from '../../assets/people/Cardin.jpg'
 
 import { people } from '../../data/people';
 import Person from './Person';
@@ -23,11 +23,11 @@ const People = ({ path }) => {
 		<Container>
 			<Grid container spacing={3} justify="center">
 				{data && data[active].map((person, i) => (
-					<Grid item xs={6}>
+					<Grid item xs={6} key={person.name + i}>
 						<Person
 							name={person.name}
 							link={person.link}
-							key={person.name + i}
+							img={img}
 						/>
 					</Grid>
 				))}
