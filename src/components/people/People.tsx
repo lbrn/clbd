@@ -13,10 +13,6 @@ const People = ({ path }) => {
 		setData(people)
 	}, [])
 
-	data && console.log(Object.keys(data))
-
-	const activeData = data && data[active];
-
 	return (
 		<Container>
 			<GroupSelector 
