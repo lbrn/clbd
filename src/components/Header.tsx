@@ -43,14 +43,14 @@ const Header = () => {
 						<Grid item xs >
 							<Link className={classes.link} onClick={e => navigate('/people')} color="primary">people</Link>
 						</Grid>
-						<Grid item xs>
+						{/* <Grid item xs>
 							<Link className={classes.link} color="primary">research</Link>
 						</Grid>
 						<Grid item xs>
 							<Link className={classes.link} color="primary">resources</Link>
 						</Grid>
 						<Grid item xs>
-							<Link className={classes.link} color="primary">events</Link>
+							<Link className={classes.link} color="primary">events</Link> */}
 						</Grid>
 					</Grid>
 				</Grid>
