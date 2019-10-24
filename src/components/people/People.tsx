@@ -19,17 +19,18 @@ const People = ({ path }) => {
 				value={active}
 				setValue={setActive}
 			/>
-			<Grid container spacing={3} justify="flex-end">
-				{data && data[active].map((person, i) => (
-					<Grid container item xs={6} key={person.name + i}>
+			<Grid container spacing={3} justify="center">
+				{data && data[active].map((person,) => (
+					// <Grid container item xs={6} key={person.name + i}>
 						<Person
+							key={person.name}
 							name={person.name}
 							title={person.title}
 							role={person.role}
 							link={person.link}
 							img={person.image}
 						/>
-					</Grid>
+					// </Grid>
 				))}
 			</Grid>
 		</Container>
