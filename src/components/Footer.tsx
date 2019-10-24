@@ -6,7 +6,7 @@ import { theme } from '../theme/theme';
 const useStyles = makeStyles({
 	container: {
 		paddingTop: theme.spacing(3),
-		backgroundColor: theme.palette.common.white,
+		// backgroundColor: theme.palette.common.white,
 		color: theme.palette.primary.main,
 	},
 })

@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './components/Hero'
 import About from './components/about/About';
+import People from './components/people/People';
 
 const App: React.FC = () => {
   return (
@@ -18,8 +19,9 @@ const App: React.FC = () => {
         <Router>
           <Hero path="/" />
           <About path="/about" />
+          <People path="/people" />
         </Router>
-        <Footer/>
+        <Footer />
       </ThemeProvider>
     </Fragment>
   );

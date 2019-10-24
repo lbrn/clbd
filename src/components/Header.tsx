@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Typography, Grid, Toolbar, makeStyles, Container, Button } from '@material-ui/core';
+import { AppBar, Typography, Grid, Toolbar, makeStyles, Container, Link } from '@material-ui/core';
 import logoFull from '../assets/logo_full.png';
 import { navigate } from '@reach/router'
 
@@ -15,12 +15,15 @@ const useStyles = makeStyles({
 		paddingTop: '2vh',
 		paddingBottom: '2vh',
 	},
-	buttonCont: {
+	linkCont: {
 		display: 'flex',
 		alignContent: 'center',
 		justifyContent: 'space-between',
 	},
-
+	link: {
+		cursor: 'pointer',
+		// textDecoration: 'none',
+	}
 
 })
 
@@ -33,21 +36,21 @@ const Header = () => {
 					<Grid item xs={12} sm={6}>
 						<img className={classes.image} src={logoFull} />
 					</Grid>
-					<Grid className={classes.buttonCont} container item spacing={1} xs={12} sm={8} md={6}>
+					<Grid className={classes.linkCont} container item spacing={1} xs={12} sm={8} md={6}>
 						<Grid item xs md>
-							<Button onClick={e => navigate('/about')} color="primary">about</Button>
+							<Link className={classes.link} onClick={e => navigate('/about')} color="primary">about</Link>
 						</Grid>
 						<Grid item xs >
-							<Button onClick={e => navigate('/people')} color="primary">people</Button>
+							<Link className={classes.link} onClick={e => navigate('/people')} color="primary">people</Link>
 						</Grid>
 						<Grid item xs>
-							<Button color="primary">research</Button>
+							<Link className={classes.link} color="primary">research</Link>
 						</Grid>
 						<Grid item xs>
-							<Button color="primary">resources</Button>
+							<Link className={classes.link} color="primary">resources</Link>
 						</Grid>
 						<Grid item xs>
-							<Button color="primary">events</Button>
+							<Link className={classes.link} color="primary">events</Link>
 						</Grid>
 					</Grid>
 				</Grid>

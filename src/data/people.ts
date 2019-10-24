@@ -79,6 +79,7 @@ export const people = {
 				{
 					name: 'Stephanie Cormier',
 					link: 'http://facultypages.vetmed.lsu.edu/faculty/stephaniacormier'
+	
 				},
 				{
 					name: 'Jay Kolls',
@@ -92,6 +93,7 @@ export const people = {
 				{
 					name: 'Rhonda Cardin',
 					link: 'http://facultypages.vetmed.lsu.edu/faculty/rcardin',
+	
 				},
 				{
 					name: 'Deepak Kaushal',
@@ -103,10 +105,13 @@ export const people = {
 			name: 'Sonika Patial',
 			mentors: [
 				{
-					name: 'Jacqueline Stephens'
+					name: 'Jacqueline Stephens',
+					link: null,
+	
 				},
 				{
-					name: 'James McLachlan'
+					name: 'James McLachlan',
+					link: null
 				}
 			]
 		},
@@ -116,10 +121,12 @@ export const people = {
 				{
 					name: 'Tammy Dugas',
 					link: 'http://facultypages.vetmed.lsu.edu/faculty/tammydugas'
+	
 				},
 				{
 					name: 'Stephania Cormier',
 					link: 'http://facultypages.vetmed.lsu.edu/faculty/stephaniacormier'
+	
 				},
 			]
 		},
