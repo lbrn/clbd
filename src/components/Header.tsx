@@ -51,7 +51,7 @@ const Header = () => {
 						</Grid>
 						<Grid item xs>
 							<Link className={classes.link} color="primary">events</Link> */}
-						</Grid>
+						{/* </Grid> */}
 					</Grid>
 				</Grid>
 			</Toolbar>

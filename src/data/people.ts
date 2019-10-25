@@ -110,7 +110,8 @@ export const people = {
 	mentees: [
 		{
 			name: 'Weishan Huang',
-			link: 'https://bit.ly/2pTa2JL',
+			image: Huang,
+			link: 'https://bit.ly/2W8bggy',
 			mentors: [
 				{
 					name: 'Stephanie Cormier',
@@ -127,6 +128,8 @@ export const people = {
 		},
 		{
 			name: 'Yogesh Saini',
+			image: Saini,
+			link: 'https://bit.ly/2pV5Nxl',
 			mentors: [
 				{
 					name: 'Rhonda Cardin',
@@ -143,6 +146,8 @@ export const people = {
 		},
 		{
 			name: 'Sonika Patial',
+			image: Patial,
+			link: 'https://bit.ly/32IFYza',
 			mentors: [
 				{
 					name: 'Jacqueline Stephens',
@@ -157,6 +162,8 @@ export const people = {
 		},
 		{
 			name: 'Alexandra Noel',
+			image: Noel,
+			link: 'https://bit.ly/2pP5Jzh',
 			mentors: [
 				{
 					name: 'Tammy Dugas',
