@@ -16,5 +16,9 @@
 - [x] structure data (for people page)
 - [x] create footer
 - [ ] add ability to view mentors by clicking on link of mentee (maybe produce additional dropdown?  Link to page?)
+
+## TOFIX
+
 - [ ] fix footer css
 - [ ] fix mobile view header css
+- [ ] fix safari / mobile button size glitch
