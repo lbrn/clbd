@@ -46,10 +46,11 @@ const Header = () => {
 						{/* <Grid item xs>
 							<Link className={classes.link} color="primary">research</Link>
 						</Grid>
-						<Grid item xs>
-							<Link className={classes.link} color="primary">resources</Link>
-						</Grid>
 						*/}
+
+						<Grid item xs>
+							<Link variant="body1" className={classes.link} onClick={e => navigate('/resources')} color="primary">resources</Link>
+						</Grid>
 						
 						<Grid item xs>
 							<Link variant="body1" className={classes.link} onClick={e => navigate('/events')} color="primary">events</Link>

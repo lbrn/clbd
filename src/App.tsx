@@ -11,6 +11,8 @@ import About from './components/about/About';
 import People from './components/people/People';
 import Seminars from './components/seminars/Seminars';
 import Seminar from './components/seminars/Seminar';
+import Resources from './components/about/resources/Resources';
+import NihAcknowledgement from './components/about/resources/resources/NihAcknowledgement';
 
 const App: React.FC = () => {
   return (
@@ -20,10 +22,13 @@ const App: React.FC = () => {
         <Header />
         <Router>
           <Hero path="/" />
-          <About path="/about" />
-          <People path="/people" />
-          <Seminars path="/events" /> 
-          <Seminar path="/event/:seminarIndex" />
+          <About path="about" />
+          <People path="people" />
+          <Seminars path="events" /> 
+          <Seminar path="event/:seminarIndex" />
+          <Resources path="resources">
+            <NihAcknowledgement path="nih"/>
+          </Resources>
         </Router>
         <Footer />
       </ThemeProvider>
