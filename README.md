@@ -19,7 +19,7 @@
 - [x] create resource page
 - [x] create events page
 - [x] create event page
-- [ ] add avatar for null image
+- [x] add avatar for null image
 - [ ] change links for people (to institution)
 - [ ] add ability to view mentors by clicking on link of mentee (maybe produce additional dropdown?  Link to page?)
 
