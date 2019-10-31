@@ -1,5 +1,6 @@
 import moment from 'moment';
 import sciencyImage from '../assets/seminars/cell.jpg'
+import altSciencyImage from '../assets/seminars/jellies.jpg'
 
 export const seminars = [
 	{
@@ -12,7 +13,7 @@ export const seminars = [
 		eventType: 'Seminar',
 		name: 'Fayyaz Sutterwala',
 		date: moment('2019-9-27'),
-		image: sciencyImage,
+		image: altSciencyImage,
 	},
 	{
 		eventType: 'Seminar',
@@ -24,7 +25,7 @@ export const seminars = [
 		eventType: 'EAC visit',
 		name: 'Bruce Stanton',
 		date: moment('2019-10-08'),
-		image: sciencyImage,
+		image: altSciencyImage,
 	},
 	{
 		eventType: 'Louisiana Lung Conference',
@@ -36,7 +37,7 @@ export const seminars = [
 		eventType: 'Seminar',
 		name: 'Juliane Bubeck Wardenburg',
 		date: moment('2019-10-18'),
-		image: sciencyImage,
+		image: altSciencyImage,
 	},
 	{
 		eventType: 'Seminar',

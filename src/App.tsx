@@ -10,6 +10,7 @@ import Hero from './components/Hero'
 import About from './components/about/About';
 import People from './components/people/People';
 import Seminars from './components/seminars/Seminars';
+import Seminar from './components/seminars/Seminar';
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
           <About path="/about" />
           <People path="/people" />
           <Seminars path="/events" /> 
+          <Seminar path="/event/:seminarIndex" />
         </Router>
         <Footer />
       </ThemeProvider>
