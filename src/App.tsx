@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero'
 import About from './components/about/About';
 import People from './components/people/People';
+import Seminars from './components/seminars/Seminars';
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
           <Hero path="/" />
           <About path="/about" />
           <People path="/people" />
+          <Seminars path="/events" /> 
         </Router>
         <Footer />
       </ThemeProvider>
