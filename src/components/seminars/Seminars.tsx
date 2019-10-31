@@ -19,6 +19,8 @@ const useStyles = makeStyles({
 		}
 	},
 	card: {
+		backgroundColor: '#fff',
+		transition: 'all .5s',
 		'&:hover': {
 			backgroundColor: `rgba(19, 127, 222, .2)`,
 			cursor: 'pointer',
