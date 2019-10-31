@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Typography, Grid, Toolbar, makeStyles, Container, Link } from '@material-ui/core';
+import { AppBar, Grid, Toolbar, makeStyles, Link } from '@material-ui/core';
 import logoFull from '../assets/misc/logo_full.png';
 import { navigate } from '@reach/router'
 
@@ -9,6 +9,7 @@ const useStyles = makeStyles({
 	image: {
 		objectFit: 'contain',
 		maxHeight: '6vh',
+		cursor: 'pointer'
 	},
 	appBar: {
 		backgroundColor: theme.palette.common.white,
@@ -24,7 +25,6 @@ const useStyles = makeStyles({
 		cursor: 'pointer',
 		// textDecoration: 'none',
 	}
-
 })
 
 const Header = () => {
@@ -34,14 +34,14 @@ const Header = () => {
 			<Toolbar>
 				<Grid container justify="flex-start" alignContent="center" spacing={3}>
 					<Grid item xs={12} sm={6}>
-						<img className={classes.image} src={logoFull} />
+						<img onClick={e => navigate('/')} className={classes.image} src={logoFull} />
 					</Grid>
 					<Grid className={classes.linkCont} container item spacing={1} xs={12} sm={8} md={6}>
 						<Grid item xs md>
-							<Link className={classes.link} onClick={e => navigate('/about')} color="primary">about</Link>
+							<Link variant="body1" className={classes.link} onClick={e => navigate('/about')} color="primary">about</Link>
 						</Grid>
 						<Grid item xs >
-							<Link className={classes.link} onClick={e => navigate('/people')} color="primary">people</Link>
+							<Link variant="body1" className={classes.link} onClick={e => navigate('/people')} color="primary">people</Link>
 						</Grid>
 						{/* <Grid item xs>
 							<Link className={classes.link} color="primary">research</Link>

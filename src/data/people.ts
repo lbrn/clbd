@@ -104,7 +104,7 @@ export const people = {
 		},
 		{
 			name: 'Kevin Reed',
-			link: null
+			link: 'https://marybird.org/doctor/reed/'
 		},
 	],
 	mentees: [
