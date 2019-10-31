@@ -8,7 +8,7 @@ const useStyles = makeStyles({
 	}
 });
 
-const GroupSelector = ({value, setValue}) => {
+const GroupSelector = ({value, setValue, title}) => {
 	const classes = useStyles();
 
 
@@ -17,7 +17,7 @@ const GroupSelector = ({value, setValue}) => {
 	}
 	return (
 		<FormControl className={classes.selector}>
-			<InputLabel htmlFor="demo-controlled-open-select">group</InputLabel>
+			<InputLabel htmlFor="demo-controlled-open-select">{title}</InputLabel>
 			<Select
 				// open={open}
 				// onClose={handleClose}

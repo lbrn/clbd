@@ -9,9 +9,16 @@ import GroupSelector from './GroupSelector';
 const People = ({ path }) => {
 	const [data, setData] = useState();
 	const [active, setActive] = useState('leadership')
+	const [activeMentee, setActiveMentee] = useState('none')
 	useEffect(() => {
 		setData(people)
 	}, [])
+	useEffect(() => {
+		setActiveMentee('none')
+	}, [active])
+
+	// pass selection list to groupSelector
+	// if activeMentee, pass mentors to Person creator
 
 	return (
 		<Container>
@@ -19,9 +26,15 @@ const People = ({ path }) => {
 				<Grid container justify="center" item xs={12}>
 					<Grid item xs={4}>
 						<GroupSelector
+							title="group"
 							value={active}
 							setValue={setActive}
 						/>
+						{active === 'mentees' && <GroupSelector
+							title="mentee"
+							value={activeMentee}
+							setValue={setActiveMentee}
+						/>}
 					</Grid>
 				</Grid>
 				{data && data[active].map((person, ) => (
