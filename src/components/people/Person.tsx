@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Typography, Link, Grid } from '@material-ui/core';
+import { makeStyles, Typography, Link, Grid, Avatar } from '@material-ui/core';
 
 import { theme } from '../../theme/theme';
 
@@ -34,6 +34,12 @@ const Person = ({ name, link, title, role, img }: personProps) => {
 			borderRadius: '50%',
 			backgroundImage: `url(${img})`
 		},
+		avatar: {
+			width: '90%',
+			paddingBottom: '45%',
+			paddingTop: '45%',
+			backgroundColor: theme.palette.primary.main,
+		},
 
 		link: {
 			justifySelf: 'center'
@@ -45,7 +51,8 @@ const Person = ({ name, link, title, role, img }: personProps) => {
 	return (
 		<Grid spacing={3} container justify="center" item xs={12} sm={6} className={classes.person}>
 			<Grid item xs={4} className={classes.personImgCont}>
-				<div className={classes.personImg}></div>
+				{img && <div className={classes.personImg}></div>}
+				{!img && <Avatar className={classes.avatar}>{name.charAt(0)}</Avatar>}
 			</Grid>
 			<Grid item xs={8}>
 				{name && <Typography>{name}</Typography>}
