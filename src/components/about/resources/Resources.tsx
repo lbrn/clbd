@@ -3,6 +3,7 @@ import { Typography, Grid, Container, makeStyles, List, ListItem, ListItemIcon, 
 import { theme } from '../../../theme/theme';
 import NihAcknowledgement from './resources/NihAcknowledgement';
 import { navigate, Router } from '@reach/router';
+import Disclaimer from './resources/Disclaimer';
 
 const useStyles = makeStyles({
 	cont: {
@@ -27,13 +28,17 @@ const Resources = ({ path, children }) => {
 				<Grid item xs={12} sm={4}>
 					<List className={classes.list}>
 						<ListItem button>
-							<ListItemText onClick={e => navigate("resources/nih")} primary="NIH Acknowledgement"></ListItemText>
+							<ListItemText onClick={e => navigate("nih")} primary="NIH Acknowledgement"></ListItemText>
+						</ListItem>
+						<ListItem button>
+							<ListItemText onClick={e => navigate("disclaimer")} primary="Disclaimer"></ListItemText>
 						</ListItem>
 					</List>
 				</Grid>
 				<Grid container item xs={12} sm={8}>
 					<Router>
 						<NihAcknowledgement path="nih" />
+						<Disclaimer path="disclaimer" />
 					</Router>
 				</Grid>
 
