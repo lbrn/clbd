@@ -6,13 +6,14 @@ import { theme } from '../../theme/theme';
 interface personProps {
 	name: string;
 	link: string | null;
+	institution?: string;
 	title?: string;
 	role?: string;
 	img?: string;
 }
 
 
-const Person = ({ name, link, title, role, img }: personProps) => {
+const Person = ({ name, link, title, role, img, institution }: personProps) => {
 
 	const useStyles = makeStyles({
 		person: {
@@ -42,7 +43,9 @@ const Person = ({ name, link, title, role, img }: personProps) => {
 		},
 
 		link: {
-			justifySelf: 'center'
+			justifySelf: 'center',
+			color: theme.palette.primary.main,
+			textDecoration: 'none',
 		}
 	})
 
@@ -58,7 +61,8 @@ const Person = ({ name, link, title, role, img }: personProps) => {
 				{name && <Typography>{name}</Typography>}
 				{role && <Typography>{role}</Typography>}
 				{title && <Typography >{title}</Typography>}
-				{link && <Link className="link" color="primary">{link}</Link>}
+				{/* target ensures a new tab.  nooopener is for security */}
+				{link && institution && <a target="_blank" rel="noopener" href={link} className={classes.link}>{institution}</a>}
 			</Grid>
 		</Grid>
 	)

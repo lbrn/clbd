@@ -46,6 +46,7 @@ const People = ({ path }) => {
 						role={person.role}
 						link={person.link}
 						img={person.image}
+						institution={person.institution}
 					/>
 					// </Grid>
 				))}
