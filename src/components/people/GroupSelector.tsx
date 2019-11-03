@@ -8,12 +8,17 @@ const useStyles = makeStyles({
 	}
 });
 
-const GroupSelector = ({value, setValue, title}) => {
+const GroupSelector = ({value, setValue, title, menuItems}) => {
 	const classes = useStyles();
-
 
 	const handleChange = e => {
 		setValue(e.target.value)
+	}
+
+	const createMenuItems = (menuItems: string[]) => {
+		return menuItems.map(item => (
+			<MenuItem key={item} value={item}>{item}</MenuItem>
+		))
 	}
 	return (
 		<FormControl className={classes.selector}>
@@ -29,11 +34,7 @@ const GroupSelector = ({value, setValue, title}) => {
 					id: 'demo-controlled-open-select',
 				}}
 			>
-				<MenuItem value="leadership">leadership</MenuItem>
-				<MenuItem value="externalAdvisoryCommittee">external advisory committee</MenuItem>
-				<MenuItem value="internalAdvisoryCommittee">internal advisory committee</MenuItem>
-				<MenuItem value="mentees">mentees</MenuItem>
-				<MenuItem value="investigators">investigators</MenuItem>
+				{createMenuItems(menuItems)}
 			</Select>
 		</FormControl>
 	)
