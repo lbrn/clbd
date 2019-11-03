@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Grid, Container, Typography, makeStyles } from '@material-ui/core';
+import { Grid, Container } from '@material-ui/core';
 
 import { people } from '../../data/people';
 import Person from './Person';
