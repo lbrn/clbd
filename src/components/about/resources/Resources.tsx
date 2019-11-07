@@ -28,10 +28,10 @@ const Resources = ({ path, children }) => {
 				<Grid item xs={12} sm={4}>
 					<List className={classes.list}>
 						<ListItem button>
-							<ListItemText onClick={e => navigate("nih")} primary="NIH Acknowledgement"></ListItemText>
+							<ListItemText onClick={e => navigate("/resources/nih")} primary="NIH Acknowledgement"></ListItemText>
 						</ListItem>
 						<ListItem button>
-							<ListItemText onClick={e => navigate("disclaimer")} primary="Disclaimer"></ListItemText>
+							<ListItemText onClick={e => navigate("/resources/disclaimer")} primary="Disclaimer"></ListItemText>
 						</ListItem>
 					</List>
 				</Grid>

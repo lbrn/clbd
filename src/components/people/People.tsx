@@ -70,7 +70,7 @@ const People = ({ path }) => {
 						{data && active === 'mentees' &&
 							<GroupSelector
 								key="mentees"
-								title="mentee"
+								title="view mentors for"
 								value={activeMentee}
 								setValue={setActiveMentee}
 								menuItems={menteesList}

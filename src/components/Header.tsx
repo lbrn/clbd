@@ -38,10 +38,10 @@ const Header = () => {
 					</Grid>
 					<Grid className={classes.linkCont} container item spacing={1} xs={12} sm={8} md={6}>
 						<Grid item xs md>
-							<Link variant="body1" className={classes.link} onClick={e => navigate('/about')} color="primary">about</Link>
+							<Link variant="body1" className={classes.link} onClick={e => navigate('/about')} color="primary">About</Link>
 						</Grid>
 						<Grid item xs >
-							<Link variant="body1" className={classes.link} onClick={e => navigate('/people')} color="primary">people</Link>
+							<Link variant="body1" className={classes.link} onClick={e => navigate('/people')} color="primary">People</Link>
 						</Grid>
 						{/* <Grid item xs>
 							<Link className={classes.link} color="primary">research</Link>
@@ -49,11 +49,11 @@ const Header = () => {
 						*/}
 
 						<Grid item xs>
-							<Link variant="body1" className={classes.link} onClick={e => navigate('/resources')} color="primary">resources</Link>
+							<Link variant="body1" className={classes.link} onClick={e => navigate('/resources')} color="primary">Resources</Link>
 						</Grid>
 						
 						<Grid item xs>
-							<Link variant="body1" className={classes.link} onClick={e => navigate('/events')} color="primary">events</Link>
+							<Link variant="body1" className={classes.link} onClick={e => navigate('/events')} color="primary">Events</Link>
 						</Grid> 
 					</Grid>
 				</Grid>
