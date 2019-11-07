@@ -5,10 +5,15 @@ const useStyles = makeStyles({
 	selector: {
 		width: '100%',
 		marginTop: '2vh'
-	}
+	},
 });
 
-const GroupSelector = ({value, setValue, title, menuItems}) => {
+const GroupSelector = ({ value, setValue, title, menuItems }) => {
+
+	const sentenceCase = (word) => {
+		return word.charAt(0).toUpperCase() + word.substring(1);
+	} 
+
 	const classes = useStyles();
 
 	const handleChange = e => {
@@ -17,12 +22,12 @@ const GroupSelector = ({value, setValue, title, menuItems}) => {
 
 	const createMenuItems = (menuItems: string[]) => {
 		return menuItems.map(item => (
-			<MenuItem key={item} value={item}>{item}</MenuItem>
+			<MenuItem key={item} value={item}>{sentenceCase(item)}</MenuItem>
 		))
 	}
 	return (
 		<FormControl className={classes.selector}>
-			<InputLabel htmlFor="demo-controlled-open-select">{title}</InputLabel>
+			<InputLabel htmlFor="demo-controlled-open-select">{sentenceCase(title)}</InputLabel>
 			<Select
 				// open={open}
 				// onClose={handleClose}
