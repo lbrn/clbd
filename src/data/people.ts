@@ -16,8 +16,10 @@ import {
 	Noel,
 	Ogundele,
 	Patial,
+	Penn,
 	Saini,
 	Stanton,
+	White,
 	Yoshimmura,
 } from '../assets/people/index';
 
@@ -42,18 +44,17 @@ export const people = {
 		{
 			name: 'Whitney Fontenot',
 			institution: 'Louisiana State University',
-			title: 'Coordinator of grants and development',
+			title: 'Coordinator',
 			role: 'Pathobiological Sciences',
+			link: null
+		},
+		{
+			name: 'Alexis White',
+			image: White,
 			link: null
 		}
 	],
 	externalAdvisoryCommittee: [
-		{
-			name: 'Michael Fessler',
-			image: Fessler,
-			institution: 'National Institute of Environmental Health Sciences.',
-			link: 'https://bit.ly/32M5pzM',
-		},
 		{
 			name: 'Charles Irvin',
 			image: Irvin,
@@ -67,16 +68,22 @@ export const people = {
 			link: 'https://bit.ly/2pRtnuU',
 		},
 		{
-			name: 'Nicole Baumgarth',
-			image: Baumgarth,
-			institution: 'University of California, Davis.',
-			link: 'https://bit.ly/32McZdM',
+			name: 'Michael Fessler',
+			image: Fessler,
+			institution: 'National Institute of Environmental Health Sciences.',
+			link: 'https://bit.ly/32M5pzM',
 		},
 		{
 			name: 'Juliane Bubeckwardenburg',
 			image: Bubeckwardenburg,
 			institution: 'Washington University in St.Louis.',
 			link: 'https://bit.ly/32KDq3x',
+		},
+		{
+			name: 'Nicole Baumgarth',
+			image: Baumgarth,
+			institution: 'University of California, Davis.',
+			link: 'https://bit.ly/32McZdM',
 		},
 	],
 	internalAdvisoryCommittee: [
@@ -190,11 +197,10 @@ export const people = {
 
 				},
 				{
-					name: 'Stephania Cormier',
+					name: 'Arthur Penn',
 					institution: 'Louisiana State University',
-					image: Cormier,
-					link: 'https://bit.ly/32IG35W'
-
+					image: Penn,
+					link: 'https://bit.ly/33cgv0F'
 				},
 			]
 		},
