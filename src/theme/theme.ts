@@ -6,4 +6,12 @@ export const theme = createMuiTheme({
 			main: `rgba(19, 127, 222)`,
 		},
 	},
+	typography: {
+		body1: {
+			fontFamily: "Nunito, Roboto, Helvetica, Arial, sans-serif"
+		},
+		body2: {
+			fontFamily: "Nunito, Roboto, Helvetica, Arial, sans-serif"
+		}
+	}
 });

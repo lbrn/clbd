@@ -16,15 +16,16 @@ const useStyles = makeStyles({
 		paddingTop: '2vh',
 		paddingBottom: '2vh',
 	},
-	linkCont: {
+	linksCont: {
 		display: 'flex',
 		alignContent: 'center',
 		justifyContent: 'space-between',
 	},
 	link: {
 		cursor: 'pointer',
-		// textDecoration: 'none',
-	}
+		fontSize: '130%'
+	},
+
 })
 
 const Header = () => {
@@ -34,27 +35,13 @@ const Header = () => {
 			<Toolbar>
 				<Grid container justify="flex-start" alignContent="center" spacing={3}>
 					<Grid item xs={12} sm={6}>
-						<img onClick={e => navigate('/')} className={classes.image} src={logoFull} />
+						<img onClick={e => navigate('/')} className={classes.image} src={logoFull} alt="CLBD logo" />
 					</Grid>
-					<Grid className={classes.linkCont} container item spacing={1} xs={12} sm={8} md={6}>
-						<Grid item xs md>
+					<Grid className={classes.linksCont} container item spacing={1} xs={12} sm={8} md={6}>
 							<Link variant="body1" className={classes.link} onClick={e => navigate('/about')} color="primary">About</Link>
-						</Grid>
-						<Grid item xs >
 							<Link variant="body1" className={classes.link} onClick={e => navigate('/people')} color="primary">People</Link>
-						</Grid>
-						{/* <Grid item xs>
-							<Link className={classes.link} color="primary">research</Link>
-						</Grid>
-						*/}
-
-						<Grid item xs>
 							<Link variant="body1" className={classes.link} onClick={e => navigate('/resources')} color="primary">Resources</Link>
-						</Grid>
-						
-						<Grid item xs>
 							<Link variant="body1" className={classes.link} onClick={e => navigate('/events')} color="primary">Events</Link>
-						</Grid> 
 					</Grid>
 				</Grid>
 			</Toolbar>

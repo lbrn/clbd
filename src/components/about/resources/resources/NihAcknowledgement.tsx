@@ -39,7 +39,7 @@ const NihAcknowledgement = ({path}) => {
 					<Typography variant="body1">
 						{/* Double curly braces are to escape first set: 
 						https://github.com/facebook/react/issues/1545 */}
-						Research reported in this {'{publication, release}'} was supported by an Institutional Development Award (IDeA) from the National Institute of General Medical Sciences of the National Institutes of Health under grant number P20GM130555
+						Research reported in this {'{publication, release}'} was supported by an Institutional Development Award (IDeA) from the National Institute of General Medical Sciences of the National Institutes of Health under grant number P20GM130555.
 					</Typography>
 				</Grid>
 		</Fragment>
