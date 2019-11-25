@@ -16,8 +16,8 @@ const ContentPreview = () => {
 	
 	const createFeaturedItems = (seminars) => {
 		return seminars.map((seminar, index) => (
-			<Grid container item xs={12} md={6} justify="center" className={classes.previewCont}>
-				<ContentPreviewItem seminar={seminar} key={index} id={index}/>
+			<Grid container item xs={12} md={6} justify="center" className={classes.previewCont} key={index}>
+				<ContentPreviewItem seminar={seminar} id={index}/>
 			</Grid>
 		))
 	}

@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles, Typography, Grid, Link } from '@material-ui/core';
 import { theme } from '../theme/theme';
 import { navigate } from '@reach/router';
+import { seminar } from '../models/seminar';
 
 const useStyles = makeStyles({
 	preview: {
@@ -18,16 +19,6 @@ const useStyles = makeStyles({
 	}
 })
 
-interface seminar {
-	date: any;
-	eventType: string;
-	image: string;
-	name: string;
-	cost?: string;
-	location?: string;
-	speakers?: string;
-	time?: string;
-}
 interface contentPreviewItemProps {
 	seminar: seminar;
 	id: number
@@ -38,10 +29,10 @@ const ContentPreviewItem = ({ seminar, id }: contentPreviewItemProps) => {
 
 	return (
 		<Grid container item xs={8} className={classes.preview}>
-			<Grid container xs={4}>
-				<img src={seminar.image} className={classes.img} />
+			<Grid container item xs={4}>
+				<img src={seminar.image} className={classes.img} alt={`image for ${seminar.name}`}/>
 			</Grid>
-			<Grid container xs={8}>
+			<Grid container item xs={8}>
 				<Grid item xs={12}>
 					<Typography align="center" variant="h5" className={classes.title}>
 						{seminar.name}

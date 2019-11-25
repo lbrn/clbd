@@ -2,17 +2,7 @@ import moment from 'moment';
 import sciencyImage from '../assets/seminars/cell.jpg'
 import altSciencyImage from '../assets/seminars/jellies.jpg';
 import vetSchool from '../assets/featuredSeminars/vet_school.jpg';
-
-interface seminar {
-	date: object;
-	eventType: string;
-	image: string;
-	name: string;
-	cost?: string;
-	location?: string;
-	speakers?: string;
-	time?: string;
-}
+import { seminar } from '../models/seminar';
 
 // the first two seminars in this array automagically become featured
 

@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 	},
 	link: {
 		cursor: 'pointer',
-		fontSize: '130%'
+		fontSize: '165%'
 	},
 
 })

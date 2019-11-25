@@ -29,7 +29,7 @@ const About = ({ path }) => {
 		<Container className={classes.title}>
 			<Grid container spacing={3}>
 				<Grid item xs={12}>
-					<Typography align="center" color="primary" variant="h4">Message from the director</Typography>
+					<Typography align="center" color="primary" variant="h4">Message from the Director</Typography>
 				</Grid>
 				<Grid item xs={12}>
 					<div className="imageCont">
