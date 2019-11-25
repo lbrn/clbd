@@ -24,7 +24,10 @@ const Seminar = (props) => {
 				{seminar && <Grid item xs={12}>
 					<Typography variant="h4">{seminar.name}</Typography>
 					<Typography variant="h5">{seminar.date.format('MM/DD/YY')}</Typography>
-					<Typography variant="body1">{seminar.eventType}</Typography>
+					<Typography variant="body1">{seminar.time && seminar.time}</Typography>
+					<Typography variant="body1">{seminar.location && seminar.location}</Typography>
+					<Typography variant="body1">Speakers for this event: {seminar.speakers && seminar.speakers}</Typography>
+					<Typography variant="body1">Cost: {seminar.cost && seminar.cost}</Typography>
 				</Grid>}
 			</Grid>
 

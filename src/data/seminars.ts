@@ -28,9 +28,9 @@ export const seminars: seminar[] = [
 		image: vetSchool
 	},
 	{
-		name: 'Louisiana Lung Confrence',
+		name: 'Louisiana Lungum Ipsum',
 		eventType: 'Annual Conference',
-		date: moment('2019-10-19'),
+		date: moment('2019-11-19'),
 		time: '8 am - 12:30 pm',
 		speakers: 'Jay Kolls, MD, Deepak Kaushal, Ph.D., Frances Lund, Ph.D., and Troy Randall, Ph.D.',
 		cost: 'free',
