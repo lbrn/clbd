@@ -3,6 +3,7 @@ import { makeStyles, Button, Grid, Container } from '@material-ui/core'
 import beakerImage from '../assets/misc/beakers.jpg';
 
 import { theme } from '../theme/theme';
+import ContentPreviewItem from './ContentPreviewItem';
 
 const useStyles = makeStyles({
 	background: {
@@ -12,26 +13,13 @@ const useStyles = makeStyles({
 		backgroundSize: 'cover',
 		filter: 'sepia(25%)'
 	},
-	buttonCont: {
-		display: 'flex',
-		justifyContent: 'center'
-	},
-	buttonWhite: {
-		color: theme.palette.common.white,
-		borderColor: theme.palette.common.white
-	}
 })
 
-const Hero = ({path}) => {
+const Hero = ({ path }) => {
 	const classes = useStyles({})
 	return (
-		<Grid container className={classes.background} justify="center" alignContent="center">
-			<Grid item xs className={classes.buttonCont}>
-				<Button className={classes.buttonWhite} variant="outlined" color="primary">Grant requests & news</Button>
-			</Grid>
-			<Grid item xs className={classes.buttonCont}>
-				<Button variant="contained" color="primary">Recent articles</Button>
-			</Grid>
+		<Grid container className={classes.background} justify="center" alignContent="center" spacing={3}>
+			
 		</Grid>
 	)
 }
