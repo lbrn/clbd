@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Grid, makeStyles } from '@material-ui/core';
 import ContentPreviewItem from './ContentPreviewItem';
-import { featuredSeminars } from '../data/featuredSeminars';
+import { seminars } from '../data/seminars';
 
 const useStyles = makeStyles({
 	previewCont: {
@@ -12,10 +12,12 @@ const useStyles = makeStyles({
 
 const ContentPreview = () => {
 	const classes = useStyles({});
+	const featuredSeminars = seminars.slice(0,2)
+	
 	const createFeaturedItems = (seminars) => {
-		return seminars.map((seminar) => (
-			<Grid container item xs={12} sm={6} justify="center" className={classes.previewCont} spacing={3}>
-				<ContentPreviewItem seminar={seminar} />
+		return seminars.map((seminar, index) => (
+			<Grid container item xs={12} md={6} justify="center" className={classes.previewCont}>
+				<ContentPreviewItem seminar={seminar} key={index} id={index}/>
 			</Grid>
 		))
 	}

@@ -4,6 +4,7 @@ import beakerImage from '../assets/misc/beakers.jpg';
 
 import { theme } from '../theme/theme';
 import ContentPreviewItem from './ContentPreviewItem';
+import ContentPreview from './ContentPreview';
 
 const useStyles = makeStyles({
 	background: {
@@ -19,7 +20,7 @@ const Hero = ({ path }) => {
 	const classes = useStyles({})
 	return (
 		<Grid container className={classes.background} justify="center" alignContent="center" spacing={3}>
-			
+			<ContentPreview />
 		</Grid>
 	)
 }

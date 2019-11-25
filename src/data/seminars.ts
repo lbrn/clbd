@@ -1,8 +1,42 @@
 import moment from 'moment';
 import sciencyImage from '../assets/seminars/cell.jpg'
-import altSciencyImage from '../assets/seminars/jellies.jpg'
+import altSciencyImage from '../assets/seminars/jellies.jpg';
+import vetSchool from '../assets/featuredSeminars/vet_school.jpg';
 
-export const seminars = [
+interface seminar {
+	date: object;
+	eventType: string;
+	image: string;
+	name: string;
+	cost?: string;
+	location?: string;
+	speakers?: string;
+	time?: string;
+}
+
+// the first two seminars in this array automagically become featured
+
+export const seminars: seminar[] = [
+	{
+		name: 'Louisiana Lung Conference',
+		eventType: 'Annual Conference',
+		date: moment('2019-10-19'),
+		time: '8 am - 12:30 pm',
+		speakers: 'Jay Kolls, MD, Deepak Kaushal, Ph.D., Frances Lund, Ph.D., and Troy Randall, Ph.D.',
+		cost: 'free',
+		location: 'LSU School of Veterinary Medicine',
+		image: vetSchool
+	},
+	{
+		name: 'Louisiana Lung Confrence',
+		eventType: 'Annual Conference',
+		date: moment('2019-10-19'),
+		time: '8 am - 12:30 pm',
+		speakers: 'Jay Kolls, MD, Deepak Kaushal, Ph.D., Frances Lund, Ph.D., and Troy Randall, Ph.D.',
+		cost: 'free',
+		location: 'LSU School of Veterinary Medicine',
+		image: vetSchool
+	},
 	{
 		eventType: 'Seminar',
 		name: 'Vijay Rathinam',
