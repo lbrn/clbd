@@ -13,6 +13,7 @@ const useStyles = makeStyles({
 	},
 	appBar: {
 		backgroundColor: theme.palette.common.white,
+		width: `100%`,
 		paddingTop: '2vh',
 		paddingBottom: '2vh',
 	},
@@ -32,7 +33,7 @@ const Header = () => {
 	return (
 		<AppBar position="sticky" className={classes.appBar} >
 			<Toolbar>
-				<Grid container justify="flex-start" alignContent="center" spacing={3}>
+				<Grid container justify="flex-start" alignItems="center" spacing={3}>
 					<Grid item xs={12} sm={6}>
 						<img onClick={e => navigate('/')} className={classes.image} src={logoFull} alt="CLBD logo" />
 					</Grid>

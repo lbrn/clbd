@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { makeStyles, Typography, Link, Grid, Avatar } from '@material-ui/core';
 
 import { theme } from '../../theme/theme';
@@ -6,6 +6,8 @@ import { theme } from '../../theme/theme';
 interface personProps {
 	name: string;
 	link: string | null;
+	setMentee: any;
+	group?: string;
 	abstract?: string;
 	institution?: string;
 	title?: string;
@@ -14,7 +16,7 @@ interface personProps {
 }
 
 
-const Person = ({ name, link, title, role, img, institution, abstract }: personProps) => {
+const Person = ({ name, setMentee, group, link, title, role, img, institution, abstract }: personProps) => {
 	const [isExpanded, setIsExpanded] = useState(false);
 
 	const useStyles = makeStyles({
@@ -64,12 +66,13 @@ const Person = ({ name, link, title, role, img, institution, abstract }: personP
 				{role && <Typography>{role}</Typography>}
 				{title && <Typography >{title}</Typography>}
 				{/* target ensures a new tab.  nooopener is for security */}
-				{link && institution && <a target="_blank" rel="noopener" href={link} className={classes.link}>{institution}</a>} <br/>
+				{link && institution && <a target="_blank" rel="noopener" href={link} className={classes.link}>{institution}</a>} <br />
 				{isExpanded && abstract && <Typography>{abstract}</Typography>}
-				{abstract && <Link className={classes.link} onClick={() => setIsExpanded(!isExpanded)}>{isExpanded? 'shrink' : 'expand'}</Link>}
+				{abstract && <Link className={classes.link} onClick={() => setIsExpanded(!isExpanded)}>{isExpanded ? 'shrink' : 'expand'}</Link>} <br />
+				{group === 'mentees' && <Link className={classes.link} onClick={() => { setMentee(name)}}>view mentors</Link>}
 			</Grid>
 			<Grid item xs={12}>
-				
+
 			</Grid>
 		</Grid>
 	)

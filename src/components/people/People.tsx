@@ -33,6 +33,7 @@ const People = ({ path }) => {
 					key={person.name}
 					name={person.name}
 					title={person.title}
+					setMentee={setActiveMentee}
 					role={person.role}
 					link={person.link}
 					img={person.image}
@@ -45,7 +46,9 @@ const People = ({ path }) => {
 				<Person
 					key={person.name}
 					name={person.name}
+					group={active}
 					title={person.title}
+					setMentee = {setActiveMentee}
 					role={person.role}
 					link={person.link}
 					img={person.image}
@@ -69,14 +72,14 @@ const People = ({ path }) => {
 								setValue={setActive}
 								menuItems={mainPeopleList}
 							/>}
-						{data && active === 'mentees' &&
+						{/* {data && active === 'mentees' &&
 							<GroupSelector
 								key="mentees"
 								title="view mentors for"
 								value={activeMentee}
 								setValue={setActiveMentee}
 								menuItems={menteesList}
-							/>}
+							/>} */}
 					</Grid>
 				</Grid>
 				{data && createPeople(data, activeMentee)}
