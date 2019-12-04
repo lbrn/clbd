@@ -9,7 +9,7 @@ import ContentPreview from './ContentPreview';
 const useStyles = makeStyles({
 	background: {
 		height: `90vh`,
-		// width: '100%',
+		// width: '100%', 
 		backgroundImage: `linear-gradient(45deg, rgba(0, 0, 0, .7), rgba(19, 127, 222, .6)), url(${beakerImage})`,
 		backgroundSize: 'cover',
 		filter: 'sepia(25%)'
