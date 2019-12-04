@@ -8,6 +8,7 @@ import GroupSelector from './GroupSelector';
 
 const People = ({ path }) => {
 	const [data, setData] = useState();
+	const [detailsSelected, setSelectedDetails] = useState();
 	const [active, setActive] = useState('leadership')
 	const [activeMentee, setActiveMentee] = useState('')
 	useEffect(() => {
