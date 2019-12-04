@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 	},
 	bodyText: {
 		textIndent: '2em',
-		lineHeight: '2em'
+		// lineHeight: '2em'
 	}
 })
 

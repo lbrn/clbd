@@ -25,7 +25,6 @@ const useStyles = makeStyles({
 		cursor: 'pointer',
 		fontSize: '165%'
 	},
-
 })
 
 const Header = () => {
