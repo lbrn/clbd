@@ -2,7 +2,12 @@ import React from 'react';
 import { Typography, Avatar, Grid, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
+	person: {
 
+	},
+	link: {
+
+	}
 })
 
 const PersonDetails = ({ img, role, name, title, link, institution, abstract }) => {

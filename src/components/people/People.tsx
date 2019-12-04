@@ -8,7 +8,6 @@ import GroupSelector from './GroupSelector';
 
 const People = ({ path }) => {
 	const [data, setData] = useState();
-	const [detailsSelected, setSelectedDetails] = useState();
 	const [active, setActive] = useState('leadership')
 	const [activeMentee, setActiveMentee] = useState('')
 	useEffect(() => {
@@ -37,6 +36,7 @@ const People = ({ path }) => {
 					role={person.role}
 					link={person.link}
 					img={person.image}
+					abstract={person.abstract}
 					institution={person.institution}
 				/>
 			))
@@ -49,6 +49,7 @@ const People = ({ path }) => {
 					role={person.role}
 					link={person.link}
 					img={person.image}
+					abstract={person.abstract}
 					institution={person.institution}
 				/>
 			))

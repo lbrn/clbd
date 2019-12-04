@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles, Typography, Link, Grid, Avatar } from '@material-ui/core';
 
 import { theme } from '../../theme/theme';
@@ -6,6 +6,7 @@ import { theme } from '../../theme/theme';
 interface personProps {
 	name: string;
 	link: string | null;
+	abstract?: string;
 	institution?: string;
 	title?: string;
 	role?: string;
@@ -13,7 +14,8 @@ interface personProps {
 }
 
 
-const Person = ({ name, link, title, role, img, institution }: personProps) => {
+const Person = ({ name, link, title, role, img, institution, abstract }: personProps) => {
+	const [isExpanded, setIsExpanded] = useState(false);
 
 	const useStyles = makeStyles({
 		person: {
@@ -54,15 +56,20 @@ const Person = ({ name, link, title, role, img, institution }: personProps) => {
 	return (
 		<Grid spacing={3} container justify="center" item xs={12} sm={6} className={classes.person}>
 			<Grid item xs={4} className={classes.personImgCont}>
-				{img && <div className={classes.personImg}></div>}
-				{!img && <Avatar className={classes.avatar}>{name.charAt(0)}</Avatar>}
+				{img && <div onClick={() => setIsExpanded(!isExpanded)} className={classes.personImg}></div>}
+				{!img && <Avatar onClick={() => setIsExpanded(!isExpanded)} className={classes.avatar}>{name.charAt(0)}</Avatar>}
 			</Grid>
 			<Grid item xs={8}>
 				{name && <Typography>{name}</Typography>}
 				{role && <Typography>{role}</Typography>}
 				{title && <Typography >{title}</Typography>}
 				{/* target ensures a new tab.  nooopener is for security */}
-				{link && institution && <a target="_blank" rel="noopener" href={link} className={classes.link}>{institution}</a>}
+				{link && institution && <a target="_blank" rel="noopener" href={link} className={classes.link}>{institution}</a>} <br/>
+				{isExpanded && abstract && <Typography>{abstract}</Typography>}
+				{abstract && <Link className={classes.link} onClick={() => setIsExpanded(!isExpanded)}>{isExpanded? 'shrink' : 'expand'}</Link>}
+			</Grid>
+			<Grid item xs={12}>
+				
 			</Grid>
 		</Grid>
 	)
