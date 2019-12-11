@@ -4,6 +4,8 @@ import { theme } from '../../../theme/theme';
 import NihAcknowledgement from './resources/NihAcknowledgement';
 import { navigate, Router } from '@reach/router';
 import Disclaimer from './resources/Disclaimer';
+import UsefulLinks from './resources/UsefulLinks';
+import Core from './resources/Core';
 
 const useStyles = makeStyles({
 	cont: {
@@ -28,10 +30,18 @@ const Resources = ({ path, children }) => {
 				<Grid item xs={12} sm={4}>
 					<List className={classes.list}>
 						<ListItem button>
-							<ListItemText onClick={e => navigate("/resources/nih")} primary="NIH Acknowledgement"></ListItemText>
+							<ListItemText onClick={e => navigate("/resources/nih")} primary="NIH Acknowledgement" />
 						</ListItem>
 						<ListItem button>
-							<ListItemText onClick={e => navigate("/resources/disclaimer")} primary="Disclaimer"></ListItemText>
+							<ListItemText onClick={e => navigate("/resources/disclaimer")} primary="Disclaimer" />
+						</ListItem>
+						<ListItem button>
+							<ListItemText onClick={e => navigate("/resources/useful-links")} primary="Useful Links" />
+						</ListItem><ListItem button>
+							<ListItemText onClick={e => navigate("/resources/core/pulmonary immunopathology core ")} primary="Pulmonary Immunopathology Core" />
+						</ListItem>
+						<ListItem button>
+							<ListItemText onClick={e => navigate("/resources/core/molecular biology core ")} primary="Molecular Biology Core " />
 						</ListItem>
 					</List>
 				</Grid>
@@ -39,6 +49,10 @@ const Resources = ({ path, children }) => {
 					<Router>
 						<NihAcknowledgement path="nih" />
 						<Disclaimer path="disclaimer" />
+						<UsefulLinks path="useful-links" />
+						<Core path="core/:name" links={
+							[{ title: 'testName', link: "testLink.com" }]
+						}/>
 					</Router>
 				</Grid>
 
