@@ -20,12 +20,10 @@ const Core = (props) => {
 	}
 
 	const createLinks = (links: link[]) => {
-		return props.links.map(link => (
-			<Typography onClick={e => navigate(`${props.link}`)} variant="body1">
-				<Link>
-					{props.name}
-				</Link>
-			</Typography>
+		return props.links.map((item) => (
+			<Link href="https://www.amazon.com" target="_blank" variant="body1" key={item.link}>
+				{item.title}
+			</Link>
 		))
 	}
 	return (

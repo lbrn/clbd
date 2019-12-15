@@ -51,7 +51,7 @@ const Resources = ({ path, children }) => {
 						<Disclaimer path="disclaimer" />
 						<UsefulLinks path="useful-links" />
 						<Core path="core/:name" links={
-							[{ title: 'testName', link: "testLink.com" }]
+							[{ title: 'Amazon', link: "https://www.amazon.com" }]
 						}/>
 					</Router>
 				</Grid>
