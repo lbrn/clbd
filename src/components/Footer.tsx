@@ -11,7 +11,7 @@ const useStyles = makeStyles({
 	outerCont: {
 		marginTop: theme.spacing(3),
 		width: '100%',
-		padding: 0,
+		padding: 10,
 	}
 })
 

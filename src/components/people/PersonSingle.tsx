@@ -18,8 +18,6 @@ interface personProps {
 
 
 const Person = ({ name, setMentee, mentors, group, link, title, role, img, institution, abstract }: personProps) => {
-	const [isExpanded, setIsExpanded] = useState(false);
-	const [mentorsExpanded, setMentorsExpanded] = useState(false);
 
 	const useStyles = makeStyles({
 		person: {
@@ -60,8 +58,8 @@ const Person = ({ name, setMentee, mentors, group, link, title, role, img, insti
 	return (
 		<Grid spacing={3} container justify="center" item xs={12} sm={6} className={classes.person}>
 			<Grid item xs={4} className={classes.personImgCont}>
-				{img && <div onClick={() => setIsExpanded(!isExpanded)} className={classes.personImg}></div>}
-				{!img && <Avatar onClick={() => setIsExpanded(!isExpanded)} className={classes.avatar}>{name.charAt(0)}</Avatar>}
+				{img && <div className={classes.personImg}></div>}
+				{!img && <Avatar className={classes.avatar}>{name.charAt(0)}</Avatar>}
 			</Grid>
 			<Grid item xs={8}>
 				{name && <Typography>{name}</Typography>}
@@ -69,20 +67,12 @@ const Person = ({ name, setMentee, mentors, group, link, title, role, img, insti
 				{title && <Typography >{title}</Typography>}
 				{/* target ensures a new tab.  nooopener is for security */}
 				{link && institution && <a target="_blank" rel="noopener" href={link} className={classes.link}>{institution}</a>} <br />
-				{isExpanded && abstract && <Typography>{abstract}</Typography>}
 				{mentors &&
-					<Fragment>
-						<Link onClick={(e) => setMentorsExpanded(!mentorsExpanded)}>
-							{mentorsExpanded ? 'hide mentors' : 'view mentors'}
-						</Link> <br />
-					</Fragment>
-				}
-				{mentorsExpanded && mentors &&
 					<Typography>
 						{mentors.join(', ')}
 					</Typography>
 				}
-				{abstract && <Link onClick={() => setIsExpanded(!isExpanded)}>{isExpanded ? 'shrink' : 'expand'}</Link>} <br />
+				{abstract && <Typography>{abstract}</Typography>}
 			</Grid>
 		</Grid>
 	)

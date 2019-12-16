@@ -6,6 +6,7 @@ import { Router } from '@reach/router'
 import { theme } from './theme/theme';
 import Header from './components/Header';
 import Footer from './components/Footer';
+// import HeroStory from './components/HeroStory'
 import Hero from './components/Hero'
 import About from './components/about/About';
 import People from './components/people/People';
@@ -21,13 +22,14 @@ const App: React.FC = () => {
       <ThemeProvider theme={theme}>
         <Header />
         <Router>
+          {/* <HeroStory path="/"/> */}
           <Hero path="/" />
           <About path="about" />
           <People path="people" />
-          <Seminars path="events" /> 
+          <Seminars path="events" />
           <Seminar path="event/:seminarIndex" />
           <Resources path="resources">
-            <NihAcknowledgement path="nih"/>
+            <NihAcknowledgement path="nih" />
           </Resources>
         </Router>
         <Footer />

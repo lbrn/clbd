@@ -15,40 +15,42 @@ const People = ({ path }) => {
 	}, [])
 	useEffect(() => {
 		setActiveMentee('')
-	}, [active,])
+	}, [active])
 
 	// gets keys for all groups in the people data structure
 	const mainPeopleList = data && Object.keys(data);
 
 	// makes a list of each mentee's name
-	const menteesList = data && data.mentees.map(mentee => mentee.name)
+	// const menteesList = data && data.mentees.map(mentee => mentee.name)
 
-	const createPeople = (peopleData, activeMentee: string) => {
-		if (data && activeMentee) {
-			// selects activeMentee object
-			const selectedMentee = peopleData.mentees.find(mentee => mentee.name === activeMentee);
-			console.log(selectedMentee.mentors)
-			return selectedMentee.mentors.map(person => (
-				<Person
-					key={person.name}
-					name={person.name}
-					title={person.title}
-					setMentee={setActiveMentee}
-					role={person.role}
-					link={person.link}
-					img={person.image}
-					abstract={person.abstract}
-					institution={person.institution}
-				/>
-			))
-		} else if (data) {
+	const createPeople = (peopleData, activeMentee?: string) => {
+		// if (data && activeMentee) {
+		// selects activeMentee object
+		// const selectedMentee = peopleData.mentees.find(mentee => mentee.name === activeMentee);
+		// console.log(selectedMentee.mentors)
+		// 	return selectedMentee.mentors.map(person => (
+		// 		<Person
+		// 			key={person.name}
+		// 			name={person.name}
+		// 			title={person.title}
+		// 			setMentee={setActiveMentee}
+		// 			role={person.role}
+		// 			link={person.link}
+		// 			img={person.image}
+		// 			abstract={person.abstract}
+		// 			institution={person.institution}
+		// 		/>
+		// 	))
+		// } else if (data) {
+		if (data){
 			return peopleData[active].map((person) => (
 				<Person
 					key={person.name}
 					name={person.name}
 					group={active}
 					title={person.title}
-					setMentee = {setActiveMentee}
+					setMentee={setActiveMentee}
+					mentors={person.mentors}
 					role={person.role}
 					link={person.link}
 					img={person.image}
@@ -72,14 +74,6 @@ const People = ({ path }) => {
 								setValue={setActive}
 								menuItems={mainPeopleList}
 							/>}
-						{/* {data && active === 'mentees' &&
-							<GroupSelector
-								key="mentees"
-								title="view mentors for"
-								value={activeMentee}
-								setValue={setActiveMentee}
-								menuItems={menteesList}
-							/>} */}
 					</Grid>
 				</Grid>
 				{data && createPeople(data, activeMentee)}
