@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { Grid, Container } from '@material-ui/core';
+import { Router } from '@reach/router';
 
 import { people } from '../../data/people';
 import Person from './Person';
 import GroupSelector from './GroupSelector';
+import PersonDetails from './PersonDetails';
 
 
 const People = ({ path }) => {
@@ -42,7 +44,7 @@ const People = ({ path }) => {
 		// 		/>
 		// 	))
 		// } else if (data) {
-		if (data){
+		if (data) {
 			return peopleData[active].map((person) => (
 				<Person
 					key={person.name}
@@ -62,23 +64,22 @@ const People = ({ path }) => {
 	}
 
 	return (
-		<Container>
-			<Grid container spacing={3} justify="center">
-				<Grid container justify="center" item xs={12}>
-					<Grid item xs={4}>
-						{data &&
-							<GroupSelector
-								key={'mainPeople'}
-								title="group"
-								value={active}
-								setValue={setActive}
-								menuItems={mainPeopleList}
-							/>}
-					</Grid>
+		<Fragment>
+			<Grid container justify="center" item xs={12}>
+				<Grid item xs={4}>
+					{data &&
+						<GroupSelector
+							key={'mainPeople'}
+							title="group"
+							value={active}
+							setValue={setActive}
+							menuItems={mainPeopleList}
+						/>}
 				</Grid>
-				{data && createPeople(data, activeMentee)}
 			</Grid>
-		</Container>
+			{data && createPeople(data, activeMentee)}
+		</Fragment>
+
 	)
 }
 

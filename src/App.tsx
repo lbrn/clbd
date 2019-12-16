@@ -6,14 +6,15 @@ import { Router } from '@reach/router'
 import { theme } from './theme/theme';
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import HeroStory from './components/HeroStory'
 import Hero from './components/Hero'
 import About from './components/about/About';
-import People from './components/people/People';
 import Seminars from './components/seminars/Seminars';
 import Seminar from './components/seminars/Seminar';
 import Resources from './components/about/resources/Resources';
 import NihAcknowledgement from './components/about/resources/resources/NihAcknowledgement';
+import PeopleCont from './components/people/PeopleCont';
+import PersonDetails from './components/people/PersonDetails';
+import People from './components/people/People';
 
 const App: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ const App: React.FC = () => {
           {/* <HeroStory path="/"/> */}
           <Hero path="/" />
           <About path="about" />
-          <People path="people" />
+          <PeopleCont path="people"/>
           <Seminars path="events" />
           <Seminar path="event/:seminarIndex" />
           <Resources path="resources">

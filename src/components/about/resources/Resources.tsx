@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Grid, Container, makeStyles, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
+import { Typography, Grid, Container, makeStyles, List, ListItem, ListItemText } from '@material-ui/core';
 import { theme } from '../../../theme/theme';
 import NihAcknowledgement from './resources/NihAcknowledgement';
 import { navigate, Router } from '@reach/router';

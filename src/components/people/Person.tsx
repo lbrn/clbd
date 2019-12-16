@@ -2,6 +2,8 @@ import React, { useState, Fragment } from 'react';
 import { makeStyles, Typography, Link, Grid, Avatar } from '@material-ui/core';
 
 import { theme } from '../../theme/theme';
+import { navigate } from '@reach/router';
+import { Link as ReachLink } from '@reach/router';
 
 interface personProps {
 	name: string;
@@ -18,7 +20,7 @@ interface personProps {
 
 
 const Person = ({ name, setMentee, mentors, group, link, title, role, img, institution, abstract }: personProps) => {
-	const [isExpanded, setIsExpanded] = useState(false);
+	// const [isExpanded, setIsExpanded] = useState(false);
 	const [mentorsExpanded, setMentorsExpanded] = useState(false);
 
 	const useStyles = makeStyles({
@@ -60,16 +62,26 @@ const Person = ({ name, setMentee, mentors, group, link, title, role, img, insti
 	return (
 		<Grid spacing={3} container justify="center" item xs={12} sm={6} className={classes.person}>
 			<Grid item xs={4} className={classes.personImgCont}>
-				{img && <div onClick={() => setIsExpanded(!isExpanded)} className={classes.personImg}></div>}
-				{!img && <Avatar onClick={() => setIsExpanded(!isExpanded)} className={classes.avatar}>{name.charAt(0)}</Avatar>}
+				{img && <div
+					onClick={e => navigate(`/people/${name}`,
+						{ state: { name, mentors, link, title, role, img, institution, abstract } }
+					)}
+					className={classes.personImg}>
+				</div>}
+				{!img && <Avatar onClick={e => navigate(`/people/${name}`,
+					{ state: { name, mentors, link, title, role, img, institution, abstract } }
+				)}
+					className={classes.avatar}>{name.charAt(0)}
+				</Avatar>}
 			</Grid>
 			<Grid item xs={8}>
 				{name && <Typography>{name}</Typography>}
 				{role && <Typography>{role}</Typography>}
+				<ReachLink to={`/people/${name}`}>ReachLink</ReachLink>
 				{title && <Typography >{title}</Typography>}
 				{/* target ensures a new tab.  nooopener is for security */}
 				{link && institution && <a target="_blank" rel="noopener" href={link} className={classes.link}>{institution}</a>} <br />
-				{isExpanded && abstract && <Typography>{abstract}</Typography>}
+				{/* {isExpanded && abstract && <Typography>{abstract}</Typography>} */}
 				{mentors &&
 					<Fragment>
 						<Link onClick={(e) => setMentorsExpanded(!mentorsExpanded)}>
@@ -82,9 +94,16 @@ const Person = ({ name, setMentee, mentors, group, link, title, role, img, insti
 						{mentors.join(', ')}
 					</Typography>
 				}
-				{abstract && <Link onClick={() => setIsExpanded(!isExpanded)}>{isExpanded ? 'shrink' : 'expand'}</Link>} <br />
+				{abstract && <Link onClick={e => navigate(
+					`/people/${name}`, {
+					state: {
+						name, mentors, link, title, role, img, institution, abstract
+					}
+				}
+				)}>
+				</Link>} <br />
 			</Grid>
-		</Grid>
+		</Grid >
 	)
 }
 
