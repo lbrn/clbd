@@ -9,7 +9,7 @@ import HeroStory from './HeroStory';
 
 const useStyles = makeStyles({
 	background: {
-		height: `50vh`,
+		height: `500px`,
 		// width: '100%', 
 		backgroundImage: `linear-gradient(45deg, rgba(0, 0, 0, .7), rgba(19, 127, 222, .6)), url(${beakerImage})`,
 		backgroundSize: 'cover',
