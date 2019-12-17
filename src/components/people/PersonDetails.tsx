@@ -8,7 +8,8 @@ interface personProps {
 }
 const PersonDetails = (props) => {
 	// these props are passed via react router
-	// const { img, mentors, role, name, title, link, institution, abstract } = props.state && props.state.location;
+	console.log(props)
+	const { img, mentors, role, name, title, link, institution, abstract } = props.location && props.location.state;
 
 	console.log(props)
 
@@ -47,10 +48,11 @@ const PersonDetails = (props) => {
 	})
 
 	const classes = useStyles()
-
+	console.log(props.location)
+	
 	return (
 		<Grid spacing={3} container justify="center" item xs={12} sm={6} className={classes.person}>
-			{/* <Grid item xs={4} className={classes.personImgCont}>
+			<Grid item xs={4} className={classes.personImgCont}>
 				{img && <div className={classes.personImg}></div>}
 				{!img && <Avatar className={classes.avatar}>{name.charAt(0)}</Avatar>}
 			</Grid>
@@ -59,13 +61,14 @@ const PersonDetails = (props) => {
 				{role && <Typography>{role}</Typography>}
 				{title && <Typography >{title}</Typography>}
 				{/* target ensures a new tab.  nooopener is for security */}
-				{/* {/* {link && institution && <Link target="_blank" rel="noopener" href={link} className={classes.link}>{institution}</Link>} */}
-			{/* </Grid>
+				{link && institution && <Link target="_blank" rel="noopener" href={link} className={classes.link}>{institution}</Link>}
+			</Grid>
 			<Grid item xs={8}>
 				{mentors && <Typography>{mentors}</Typography>}
 				{abstract && <Typography> {abstract}</Typography>}
-			</Grid>  */}
+			</Grid>
 			MOOOOOOOOOOI
+			
 		</Grid>
 	)
 }

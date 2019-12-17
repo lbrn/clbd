@@ -15,6 +15,9 @@ import NihAcknowledgement from './components/about/resources/resources/NihAcknow
 import PeopleCont from './components/people/PeopleCont';
 import PersonDetails from './components/people/PersonDetails';
 import People from './components/people/People';
+import Disclaimer from './components/about/resources/resources/Disclaimer'
+import Core from './components/about/resources/resources/Core'
+import UsefulLinks from './components/about/resources/resources/UsefulLinks'
 
 const App: React.FC = () => {
   return (
@@ -26,11 +29,19 @@ const App: React.FC = () => {
           {/* <HeroStory path="/"/> */}
           <Hero path="/" />
           <About path="about" />
-          <PeopleCont path="people"/>
+          <PeopleCont path="people">
+            <People path="/" />
+						<PersonDetails path="individual/:name" />
+          </PeopleCont>
           <Seminars path="events" />
           <Seminar path="event/:seminarIndex" />
           <Resources path="resources">
-            <NihAcknowledgement path="nih" />
+          <NihAcknowledgement path="nih" />
+						<Disclaimer path="disclaimer" />
+						<UsefulLinks path="useful-links" />
+						<Core path="core/:name" links={
+							[{ title: 'Amazon', link: "https://www.amazon.com" }]
+						}/>
           </Resources>
         </Router>
         <Footer />

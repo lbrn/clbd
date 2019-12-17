@@ -63,12 +63,12 @@ const Person = ({ name, setMentee, mentors, group, link, title, role, img, insti
 		<Grid spacing={3} container justify="center" item xs={12} sm={6} className={classes.person}>
 			<Grid item xs={4} className={classes.personImgCont}>
 				{img && <div
-					onClick={e => navigate(`/people/${name}`,
+					onClick={e => navigate(`/people/individual/${name}`,
 						{ state: { name, mentors, link, title, role, img, institution, abstract } }
 					)}
 					className={classes.personImg}>
 				</div>}
-				{!img && <Avatar onClick={e => navigate(`/people/${name}`,
+				{!img && <Avatar onClick={e => navigate(`/people/individual/${name}`,
 					{ state: { name, mentors, link, title, role, img, institution, abstract } }
 				)}
 					className={classes.avatar}>{name.charAt(0)}
@@ -95,7 +95,7 @@ const Person = ({ name, setMentee, mentors, group, link, title, role, img, insti
 					</Typography>
 				}
 				{abstract && <Link onClick={e => navigate(
-					`/people/${name}`, {
+					`/people/individual/${name}`, {
 					state: {
 						name, mentors, link, title, role, img, institution, abstract
 					}
