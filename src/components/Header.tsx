@@ -16,6 +16,8 @@ const useStyles = makeStyles({
 		width: `100%`,
 		paddingTop: '2vh',
 		paddingBottom: '2vh',
+		paddingLeft: '2vh',
+		paddingRight: '2vh',
 	},
 	linksCont: {
 		display: 'flex',
@@ -33,11 +35,11 @@ const Header = () => {
 	return (
 		<AppBar position="sticky" className={classes.appBar} >
 			<Toolbar>
-				<Grid container justify="flex-start" alignItems="center" spacing={3}>
+				<Grid container justify="flex-start" alignItems="center" spacing={1}>
 					<Grid item xs={12} sm={6}>
 						<img onClick={e => navigate('/')} className={classes.image} src={logoFull} alt="CLBD logo" />
 					</Grid>
-					<Grid className={classes.linksCont} container item spacing={1} xs={12} sm={8} md={6}>
+					<Grid className={classes.linksCont} container item xs={12} sm={6} md={6}>
 							<Link variant="body1" className={classes.link} onClick={e => navigate('/about')} color="primary">About</Link>
 							<Link variant="body1" className={classes.link} onClick={e => navigate('/people')} color="primary">People</Link>
 							<Link variant="body1" className={classes.link} onClick={e => navigate('/resources')} color="primary">Resources</Link>

@@ -5,6 +5,7 @@ import NihAcknowledgement from './resources/NihAcknowledgement';
 import { navigate, Router } from '@reach/router';
 import Disclaimer from './resources/Disclaimer';
 import UsefulLinks from './resources/UsefulLinks';
+import Articles from './resources/Articles';
 import Core from './resources/Core';
 
 const useStyles = makeStyles({
@@ -37,7 +38,11 @@ const Resources = ({ path, children }) => {
 						</ListItem>
 						<ListItem button>
 							<ListItemText onClick={e => navigate("/resources/useful-links")} primary="Useful Links" />
-						</ListItem><ListItem button>
+						</ListItem>
+						<ListItem button>
+							<ListItemText onClick={e => navigate("/resources/articles")} primary="Articles" />
+						</ListItem>
+						<ListItem button>
 							<ListItemText onClick={e => navigate("/resources/core/pulmonary immunopathology core ")} primary="Pulmonary Immunopathology Core" />
 						</ListItem>
 						<ListItem button>
@@ -50,6 +55,7 @@ const Resources = ({ path, children }) => {
 						<NihAcknowledgement path="nih" />
 						<Disclaimer path="disclaimer" />
 						<UsefulLinks path="useful-links" />
+						<Articles path="articles" />
 						<Core path="core/:name" links={
 							[{ title: 'Amazon', link: "https://www.amazon.com" }]
 						}/>

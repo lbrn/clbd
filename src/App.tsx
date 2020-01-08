@@ -1,53 +1,39 @@
-import React, { Fragment } from 'react';
-import { Typography, CssBaseline } from '@material-ui/core';
-import { ThemeProvider } from '@material-ui/styles'
-import { Router } from '@reach/router'
+import React, { Fragment } from "react";
+import { CssBaseline, makeStyles } from "@material-ui/core";
+import { ThemeProvider } from "@material-ui/styles";
 
-import { theme } from './theme/theme';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Hero from './components/Hero'
-import About from './components/about/About';
-import Seminars from './components/seminars/Seminars';
-import Seminar from './components/seminars/Seminar';
-import Resources from './components/about/resources/Resources';
-import NihAcknowledgement from './components/about/resources/resources/NihAcknowledgement';
-import PeopleCont from './components/people/PeopleCont';
-import PersonDetails from './components/people/PersonDetails';
-import People from './components/people/People';
-import Disclaimer from './components/about/resources/resources/Disclaimer'
-import Core from './components/about/resources/resources/Core'
-import UsefulLinks from './components/about/resources/resources/UsefulLinks'
+import { theme } from "./theme/theme";
+import Header from "./components/Header";
+import RouterWrapper from "./components/RouterWrapper";
+import Footer from "./components/Footer";
+
+const useStyles = makeStyles({
+	appWrapper: {
+		position: "relative",
+		minHeight: "100vh"
+	},
+	contentWrap: {
+		paddingBottom: "2.5rem"
+	}
+});
 
 const App: React.FC = () => {
-  return (
-    <Fragment>
-      <CssBaseline />
-      <ThemeProvider theme={theme}>
-        <Header />
-        <Router>
-          {/* <HeroStory path="/"/> */}
-          <Hero path="/" />
-          <About path="about" />
-          <PeopleCont path="people">
-            <People path="/" />
-						<PersonDetails path="individual/:name" />
-          </PeopleCont>
-          <Seminars path="events" />
-          <Seminar path="event/:seminarIndex" />
-          <Resources path="resources">
-          <NihAcknowledgement path="nih" />
-						<Disclaimer path="disclaimer" />
-						<UsefulLinks path="useful-links" />
-						<Core path="core/:name" links={
-							[{ title: 'Amazon', link: "https://www.amazon.com" }]
-						}/>
-          </Resources>
-        </Router>
-        <Footer />
-      </ThemeProvider>
-    </Fragment>
-  );
-}
+	const classes = useStyles();
+
+	return (
+		<Fragment>
+			<div className={classes.appWrapper}>
+				<div className={classes.contentWrap}>
+					<CssBaseline />
+					<ThemeProvider theme={theme}>
+						<Header />
+						<RouterWrapper />
+						<Footer />
+					</ThemeProvider>
+				</div>
+			</div>
+		</Fragment>
+	);
+};
 
 export default App;

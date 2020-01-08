@@ -10,6 +10,8 @@ const useStyles = makeStyles({
 	},
 	outerCont: {
 		marginTop: theme.spacing(3),
+		position: 'absolute',
+		bottom: 0,
 		width: '100%',
 		padding: 10,
 	}
