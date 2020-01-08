@@ -4,7 +4,6 @@ import { Grid } from "@material-ui/core";
 import { people } from "../../data/people";
 import Person from "./Person";
 import GroupSelector from "./GroupSelector";
-import SideMenu from "../ui/SideMenu";
 
 const People = ({ path }) => {
 	const [data, setData] = useState();

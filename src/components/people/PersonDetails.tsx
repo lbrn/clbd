@@ -66,9 +66,7 @@ const PersonDetails = (props) => {
 			<Grid item xs={8}>
 				{mentors && <Typography>{mentors}</Typography>}
 				{abstract && <Typography> {abstract}</Typography>}
-			</Grid>
-			MOOOOOOOOOOI
-			
+			</Grid>			
 		</Grid>
 	)
 }

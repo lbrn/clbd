@@ -67,9 +67,9 @@ const ContentPreviewItem = ({ featured, id }: contentPreviewItemProps) => {
 						{/* on click = navigate => featured */}
 						<Typography
 							align='center'
-							onClick={e => navigate(`/event/${id}`)}
+							// {/* // onClick={e => navigate(`/event/${id}`)} */}
 						>
-							<Link>view details</Link>
+							<Link href={featured.link}>view details</Link>
 						</Typography>
 					</Grid>
 				)}
