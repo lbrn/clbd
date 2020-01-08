@@ -1,23 +1,20 @@
-import React, { useState, useEffect, Fragment } from 'react';
-import { Grid, Container } from '@material-ui/core';
-import { Router } from '@reach/router';
+import React, { useState, useEffect, Fragment } from "react";
+import { Grid } from "@material-ui/core";
 
-import { people } from '../../data/people';
-import Person from './Person';
-import GroupSelector from './GroupSelector';
-import PersonDetails from './PersonDetails';
-
+import { people } from "../../data/people";
+import Person from "./Person";
+import GroupSelector from "./GroupSelector";
 
 const People = ({ path }) => {
 	const [data, setData] = useState();
-	const [active, setActive] = useState('leadership')
-	const [activeMentee, setActiveMentee] = useState('')
+	const [active, setActive] = useState("leadership");
+	// const [activeMentee, setActiveMentee] = useState('')
 	useEffect(() => {
-		setData(people)
-	}, [])
-	useEffect(() => {
-		setActiveMentee('')
-	}, [active])
+		setData(people);
+	}, []);
+	// useEffect(() => {
+	// 	setActiveMentee('')
+	// }, [active])
 
 	// gets keys for all groups in the people data structure
 	const mainPeopleList = data && Object.keys(data);
@@ -25,33 +22,15 @@ const People = ({ path }) => {
 	// makes a list of each mentee's name
 	// const menteesList = data && data.mentees.map(mentee => mentee.name)
 
-	const createPeople = (peopleData, activeMentee?: string) => {
-		// if (data && activeMentee) {
-		// selects activeMentee object
-		// const selectedMentee = peopleData.mentees.find(mentee => mentee.name === activeMentee);
-		// console.log(selectedMentee.mentors)
-		// 	return selectedMentee.mentors.map(person => (
-		// 		<Person
-		// 			key={person.name}
-		// 			name={person.name}
-		// 			title={person.title}
-		// 			setMentee={setActiveMentee}
-		// 			role={person.role}
-		// 			link={person.link}
-		// 			img={person.image}
-		// 			abstract={person.abstract}
-		// 			institution={person.institution}
-		// 		/>
-		// 	))
-		// } else if (data) {
+	const createPeople = peopleData => {
 		if (data) {
-			return peopleData[active].map((person) => (
+			return peopleData[active].map(person => (
 				<Person
 					key={person.name}
 					name={person.name}
-					group={active}
+					// group={active}
 					title={person.title}
-					setMentee={setActiveMentee}
+					// setMentee={setActiveMentee}
 					mentors={person.mentors}
 					role={person.role}
 					link={person.link}
@@ -59,28 +38,28 @@ const People = ({ path }) => {
 					abstract={person.abstract}
 					institution={person.institution}
 				/>
-			))
+			));
 		}
-	}
+	};
 
 	return (
 		<Fragment>
-			<Grid container justify="center" item xs={12}>
-				<Grid item xs={4}>
-					{data &&
+			<Grid container justify='center' item xs={12}>
+				<Grid item xs={12}>
+					{data && (
 						<GroupSelector
-							key={'mainPeople'}
-							title="group"
+							key={"mainPeople"}
+							title='group'
 							value={active}
 							setValue={setActive}
 							menuItems={mainPeopleList}
-						/>}
+						/>
+					)}
 				</Grid>
+				{data && createPeople(data)}
 			</Grid>
-			{data && createPeople(data, activeMentee)}
 		</Fragment>
+	);
+};
 
-	)
-}
-
-export default People
+export default People;

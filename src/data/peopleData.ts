@@ -35,7 +35,7 @@ export const people = [
 		image: Jeyaseelan,
 		title: 'William L. Jenkins Professor in the Department of Pathobiological Sciences',
 		role: 'Principal investigator',
-		link: 'https://bit.ly/2peRwvs',
+		link: 'https://bit.ly/31Giidr',
 	},
 
 	{
@@ -45,7 +45,7 @@ export const people = [
 		image: Cardin,
 		title: 'Associate dean for research and advanced studies',
 		role: 'Co-investigator',
-		link: 'https://bit.ly/31Giidr'
+		link: 'https://bit.ly/2peRwvs'
 	},
 
 	{

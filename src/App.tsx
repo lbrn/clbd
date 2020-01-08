@@ -4,7 +4,7 @@ import { ThemeProvider } from "@material-ui/styles";
 
 import { theme } from "./theme/theme";
 import Header from "./components/Header";
-import RouterWrapper from "./components/RouterWrapper";
+import RouterWrapper from "./components/router/RouterWrapper";
 import Footer from "./components/Footer";
 
 const useStyles = makeStyles({
@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 	},
 	contentWrap: {
 		paddingBottom: "2.5rem"
-	}
+	},
 });
 
 const App: React.FC = () => {
@@ -27,7 +27,7 @@ const App: React.FC = () => {
 					<CssBaseline />
 					<ThemeProvider theme={theme}>
 						<Header />
-						<RouterWrapper />
+							<RouterWrapper />
 						<Footer />
 					</ThemeProvider>
 				</div>

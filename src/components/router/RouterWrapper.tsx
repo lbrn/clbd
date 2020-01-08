@@ -1,19 +1,19 @@
 import React, { Fragment } from "react";
 import { Router } from "@reach/router";
 
-import Hero from "../components/Hero";
-import About from "../components/about/About";
-import Seminars from "../components/seminars/Seminars";
-import Seminar from "../components/seminars/Seminar";
-import Resources from "../components/about/resources/Resources";
-import NihAcknowledgement from "../components/about/resources/resources/NihAcknowledgement";
-import PeopleCont from "../components/people/PeopleCont";
-import PersonDetails from "../components/people/PersonDetails";
-import People from "../components/people/People";
-import Disclaimer from "../components/about/resources/resources/Disclaimer";
-import Core from "../components/about/resources/resources/Core";
-import UsefulLinks from "../components/about/resources/resources/UsefulLinks";
-import Articles from "../components/about/resources/resources/Articles";
+import Hero from "../Hero";
+import About from "../about/About";
+import Seminars from "../seminars/Seminars";
+import Seminar from "../seminars/Seminar";
+import Resources from "../about/resources/Resources";
+import NihAcknowledgement from "../about/resources/resources/NihAcknowledgement";
+import PeopleCont from "../people/PeopleCont";
+import PersonDetails from "../people/PersonDetails";
+import People from "../people/People";
+import Disclaimer from "../about/resources/resources/Disclaimer";
+import Core from "../about/resources/resources/Core";
+import UsefulLinks from "../about/resources/resources/UsefulLinks";
+import Articles from "../about/resources/resources/Articles";
 
 const RouterWrapper = () => {
 	return (
