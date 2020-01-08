@@ -5,15 +5,15 @@ import Hero from "../Hero";
 import About from "../about/About";
 import Seminars from "../seminars/Seminars";
 import Seminar from "../seminars/Seminar";
-import Resources from "../about/resources/Resources";
-import NihAcknowledgement from "../about/resources/resources/NihAcknowledgement";
+import Resources from "../resources/Resources";
+import NihAcknowledgement from "../resources/resources/NihAcknowledgement";
 import PeopleCont from "../people/PeopleCont";
 import PersonDetails from "../people/PersonDetails";
 import People from "../people/People";
-import Disclaimer from "../about/resources/resources/Disclaimer";
-import Core from "../about/resources/resources/Core";
-import UsefulLinks from "../about/resources/resources/UsefulLinks";
-import Articles from "../about/resources/resources/Articles";
+import Disclaimer from "../resources/resources/Disclaimer";
+import Core from "../resources/resources/Core";
+import UsefulLinks from "../resources/resources/UsefulLinks";
+import Articles from "../resources/resources/Articles";
 
 const RouterWrapper = () => {
 	return (
