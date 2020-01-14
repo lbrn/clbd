@@ -4,7 +4,7 @@ import { navigate } from "@reach/router";
 
 interface link {
 	name: string;
-	clickHandler: () => Promise<void>;
+	clickHandler: () => Promise<void> | void;
 }
 
 interface sideMenuProps {
