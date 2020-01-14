@@ -12,6 +12,20 @@ import { seminar } from '../models/seminar';
 
 export const seminars: seminar[] = [
   {
+    title: 'Proteomics Workshop',
+    eventType: 'Workshop',
+    date: moment('2020-01-24'),
+    time: '10 am - 12 pm',
+    registrationLink: 'https://redcap.lbrn.lsu.edu/surveys/?s=3EKCN8L4NH',
+    registrationDueDate: moment('2020-01-19'),
+    pdfLink:
+      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+    speakers:
+      'Stephanie Byrum, Ricky Edmonson, Samuel Mackintosh, Alan Tackett',
+    location: 'Louisiana State University (PBS Conference room 3511)',
+    image: proteomicsWorkshop,
+  },
+  {
     title: 'Pneumonia Biology - Lungs Learn from Experience',
     eventType: 'Presentation',
     date: moment('2020-03-20'),
@@ -19,7 +33,8 @@ export const seminars: seminar[] = [
     speakers: 'Joseph Mizgerd, Sc.D.',
     location: 'LSU Vet Med Room 1212C',
     image: mizgerd,
-  },{
+  },
+  {
     title: 'Leukocyte-Endothelial Cell Interactions...',
     eventType: 'Presentation',
     date: moment('2020-02-28'),
@@ -36,16 +51,5 @@ export const seminars: seminar[] = [
     speakers: 'Professor Liwu Li, Ph.D',
     location: 'LSU Vet Med Room 1212B',
     image: li,
-  },
-  {
-    title: 'Proteomics Workshop',
-    eventType: 'Workshop',
-    date: moment('2020-01-24'),
-    time: '10 am - 12 pm',
-    link: 'https://redcap.lbrn.lsu.edu/surveys/?s=3EKCN8L4NH',
-    speakers:
-      'Stephanie Byrum, Ricky Edmonson, Samuel Mackintosh, Alan Tackett',
-    location: 'Louisiana State University (PBS Conference room 3511)',
-    image: proteomicsWorkshop,
   },
 ];
