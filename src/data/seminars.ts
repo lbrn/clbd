@@ -42,6 +42,7 @@ export const seminars: seminar[] = [
     eventType: 'Workshop',
     date: moment('2020-01-24'),
     time: '10 am - 12 pm',
+    link: 'https://redcap.lbrn.lsu.edu/surveys/?s=3EKCN8L4NH',
     speakers:
       'Stephanie Byrum, Ricky Edmonson, Samuel Mackintosh, Alan Tackett',
     location: 'Louisiana State University (PBS Conference room 3511)',

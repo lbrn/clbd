@@ -128,14 +128,14 @@ const Person = ({
         {/* target ensures a new tab.  nooopener is for security */}
         {link && institution && <Typography>{institution}</Typography>} <br />
         {/* {isExpanded && abstract && <Typography>{abstract}</Typography>} */}
-        {mentors && (
+        {/* {mentors && (
           <Fragment>
             <Link onClick={e => setMentorsExpanded(!mentorsExpanded)}>
               {mentorsExpanded ? 'hide mentors' : 'view mentors'}
             </Link>{' '}
             <br />
           </Fragment>
-        )}
+        )} */}
         {mentorsExpanded && mentors && (
           <Typography>{mentors.join(', ')}</Typography>
         )}

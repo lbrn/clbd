@@ -32,7 +32,7 @@ const PersonDetails = props => {
       backgroundPositionY: 'top',
       backgroundSize: 'contain',
       borderRadius: '50%',
-      // backgroundImage: `url(${img})`
+      backgroundImage: `url(${img})`,
     },
     avatar: {
       width: '90%',
@@ -53,37 +53,53 @@ const PersonDetails = props => {
 
   return (
     <Grid
+      id="person-details"
       spacing={3}
       container
       justify="center"
       item
       xs={12}
-      sm={6}
       className={classes.person}
     >
-      <Grid item xs={4} className={classes.personImgCont}>
-        {img && <div className={classes.personImg}></div>}
-        {!img && <Avatar className={classes.avatar}>{name.charAt(0)}</Avatar>}
+      <Grid container item spacing={3} alignItems="center">
+        <Grid item xs={4} className={classes.personImgCont}>
+          {img && <div className={classes.personImg}></div>}
+          {!img && <Avatar className={classes.avatar}>{name.charAt(0)}</Avatar>}
+        </Grid>
+        <Grid item xs={8}>
+          {name && <Typography>{name}</Typography>}
+          {role && <Typography>{role}</Typography>}
+          {title && <Typography>{title}</Typography>}
+          {/* target ensures a new tab.  nooopener is for security */}
+          {link && institution && (
+            <Link
+              target="_blank"
+              rel="noopener"
+              href={link}
+              className={classes.link}
+            >
+              {institution}
+            </Link>
+          )}
+        </Grid>
+        <Grid item xs={8}>
+          {mentors && (
+            <Typography>
+              <strong>Mentors: </strong>
+              {mentors.join(', ')}
+            </Typography>
+          )}
+        </Grid>
       </Grid>
-      <Grid item xs={8}>
-        {name && <Typography>{name}</Typography>}
-        {role && <Typography>{role}</Typography>}
-        {title && <Typography>{title}</Typography>}
-        {/* target ensures a new tab.  nooopener is for security */}
-        {link && institution && (
-          <Link
-            target="_blank"
-            rel="noopener"
-            href={link}
-            className={classes.link}
-          >
-            {institution}
-          </Link>
-        )}
-      </Grid>
-      <Grid item xs={8}>
-        {mentors && <Typography>{mentors}</Typography>}
-        {abstract && <Typography> {abstract}</Typography>}
+      <Grid container item spacing={3}>
+        <Grid item xs={12}>
+          {abstract && (
+            <Typography>
+              <strong>Abstract: </strong>
+              {abstract}
+            </Typography>
+          )}
+        </Grid>
       </Grid>
     </Grid>
   );

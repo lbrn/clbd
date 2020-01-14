@@ -7,4 +7,5 @@ export interface seminar {
 	location?: string;
 	speakers?: string;
 	time?: string;
+	link?: string;
 }

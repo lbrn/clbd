@@ -1,16 +1,11 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, Fragment } from "react";
 import { Grid } from "@material-ui/core";
 
-import { people } from "../../data/people";
 import Person from "./Person";
 import GroupSelector from "./GroupSelector";
 
-const People = ({ path }) => {
-	const [data, setData] = useState();
-	const [active, setActive] = useState("leadership");
-	useEffect(() => {
-		setData(people);
-	}, []);
+const People = ({ path, data }) => {
+	const [active, setActive] = useState("investigators");
 
 	// gets keys for all groups in the people data structure
 	const mainPeopleList = data && Object.keys(data);
