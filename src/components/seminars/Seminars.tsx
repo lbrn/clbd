@@ -3,7 +3,7 @@ import { Card, Grid, CardContent, Typography, Container, makeStyles, CardMedia }
 import { navigate, Router } from '@reach/router';
 
 import { seminars } from '../../data/seminars';
-import { theme } from '../../theme/theme';
+import { theme, themeExtended } from '../../theme/theme';
 import Seminar from './Seminar';
 
 const useStyles = makeStyles({
@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 		backgroundColor: '#fff',
 		transition: 'all .5s',
 		'&:hover': {
-			backgroundColor: `rgba(19, 127, 222, .2)`,
+			backgroundColor: themeExtended.palette.primary.hover,
 			cursor: 'pointer',
 		},
 		// select child class

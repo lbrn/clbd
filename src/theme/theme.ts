@@ -1,4 +1,6 @@
 import { createMuiTheme } from '@material-ui/core';
+import { fade } from '@material-ui/core/styles/colorManipulator';
+
 
 export const theme = createMuiTheme({
 	palette: {
@@ -15,3 +17,11 @@ export const theme = createMuiTheme({
 		}
 	}
 });
+
+export const themeExtended = {
+	palette: {
+		primary: {
+			hover: fade('rgba(19, 127, 222)', .2)
+		}
+	}
+}
