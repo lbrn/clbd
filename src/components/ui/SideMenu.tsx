@@ -4,7 +4,7 @@ import { navigate } from "@reach/router";
 
 interface link {
 	name: string;
-	filePath: string;
+	clickHandler: () => Promise<void>;
 }
 
 interface sideMenuProps {
@@ -23,9 +23,10 @@ const SideMenu = ({ links }: sideMenuProps) => {
 
 	const createLinks = links => {
 		return links.map(link => (
-			<ListItem button>
+			<ListItem button key={link.name}>
 				<ListItemText
-					onClick={e => navigate(link.filePath)}
+					key={link.name}
+					onClick={e => link.clickHandler()}
 					primary={link.name}
 				/>
 			</ListItem>
