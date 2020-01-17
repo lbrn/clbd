@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { ListItem, ListItemText, makeStyles, List } from "@material-ui/core";
-import { navigate } from "@reach/router";
 
 interface link {
 	name: string;

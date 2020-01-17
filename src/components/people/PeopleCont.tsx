@@ -6,10 +6,12 @@ import { people } from '../../data/people';
 import People from './People';
 import PersonDetails from './PersonDetails';
 import classes from '*.module.css';
+import { theme } from '../../theme/theme';
 
 const useStyles = makeStyles({
   router: {
     width: '100%',
+    marginTop: theme.spacing(3)
   },
 });
 
