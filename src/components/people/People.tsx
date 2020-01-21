@@ -1,12 +1,14 @@
 import React, { useState, Fragment } from 'react';
 import { Grid } from '@material-ui/core';
-
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { theme } from '../../theme/theme';
 import Person from './Person';
 import GroupSelector from './GroupSelector';
 import SideMenu from '../ui/SideMenu';
 
 const People = ({ path, data }) => {
   const [active, setActive] = useState('investigators');
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   // gets keys for all groups in the people data structure
   const mainPeopleList = data && Object.keys(data);
@@ -37,12 +39,12 @@ const People = ({ path, data }) => {
     clickHandler: () => setActive(name),
   }));
   console.log(mainPeopleList);
-
+  console.log(isMobile);
   return (
     <Fragment>
       <Grid container justify="center" item xs={12}>
         <Grid item xs={6}>
-          {/* {data && (
+          {data && isMobile && (
             <GroupSelector
               key={'mainPeople'}
               title="group"
@@ -50,8 +52,8 @@ const People = ({ path, data }) => {
               setValue={setActive}
               menuItems={mainPeopleList}
             />
-          )} */}
-          <SideMenu links={peopleMenuLinks} />
+          )}
+          {!isMobile && <SideMenu links={peopleMenuLinks} />}
         </Grid>
         {data && createPeople(data)}
       </Grid>
