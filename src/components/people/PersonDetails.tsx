@@ -49,6 +49,17 @@ const PersonDetails = props => {
 
   const classes = useStyles();
   console.log(props.location);
+  const createMentors = mentors => {
+    const length = mentors.length;
+
+    const mentorElements =  mentors.map((mentor, index) => (
+      <Link href={mentor.link}>{`${mentor.name}${
+        index < length - 1 ? ', ' : '.'
+      }`}</Link>
+    ));
+    console.log(mentorElements)
+    return mentorElements;
+  };
 
   return (
     <Grid
@@ -85,7 +96,7 @@ const PersonDetails = props => {
           {mentors && (
             <Typography>
               <strong>Mentors: </strong>
-              {mentors.join(', ')}
+              {createMentors(mentors)}
             </Typography>
           )}
         </Grid>
