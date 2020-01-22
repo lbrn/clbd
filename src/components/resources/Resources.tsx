@@ -46,9 +46,9 @@ const Resources = props => {
   return (
     <Container className={classes.cont}>
       <Grid spacing={3} container>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Typography variant="h4">CLBD resources</Typography>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} sm={4}>
           <SideMenu links={links} />
         </Grid>

@@ -38,7 +38,7 @@ const PulmoaryCore = props => {
         <Typography variant="h5">Pulmonary Core</Typography>
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="subtitle2">Staff</Typography>
+        <Typography variant="subtitle2">Core</Typography>
         <Typography>1. Tammy Dugas, PhD, Project Lead</Typography>
         <Typography>
           2. Ingeborg Langohr, DVM, PhD, DACVP, Co-Investigator
@@ -46,7 +46,7 @@ const PulmoaryCore = props => {
         <Typography>3. Rebecca Christofferson, PhD, Co-Investigator</Typography>
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="subtitle2">Staff</Typography>
+        <Typography variant="subtitle2">Core Services</Typography>
         <Typography>
           1. Mouse colony management and breeding strategies for maintaining
           colonies.

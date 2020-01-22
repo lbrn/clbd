@@ -38,7 +38,7 @@ const MolecularCore = props => {
       </Grid>
       <Grid item xs={12}>
         {/* {createLinks(props.links)} */}
-        <Typography variant="subtitle2">Staff</Typography>
+        <Typography variant="subtitle2">Core</Typography>
         <Typography>1. Konstantin Kousoulas, PhD, Project Lead</Typography>
         <Typography>2. Vladamir Chouljenko, PhD, Co- Investigator</Typography>
         <Typography> 3. Tirumalai Rangasamy, PhD, Co-Investigator</Typography>
