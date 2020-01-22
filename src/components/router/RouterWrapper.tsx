@@ -35,15 +35,6 @@ const RouterWrapper = () => {
           <Disclaimer path="disclaimer" />
           <UsefulLinks path="useful-links" />
           <Articles path="articles" />
-          {/* <Core
-						path='core/:name'
-						links={[
-							{
-								title: "Amazon",
-								link: "https://www.amazon.com"
-							}
-						]}
-					/> */}
           <MolecularCore path="molecular-core" />
           <PulmonaryCore path="pulmonary-core" />
         </Resources>
