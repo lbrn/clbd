@@ -6,7 +6,7 @@ interface link {
   link: string;
 }
 
-const molecularCore = props => {
+const MolecularCore = props => {
   // function titleCase(str: string) {
   //   var splitStr = str.toLowerCase().split(' ');
   //   for (var i = 0; i < splitStr.length; i++) {
@@ -39,23 +39,32 @@ const molecularCore = props => {
       <Grid item xs={12}>
         {/* {createLinks(props.links)} */}
         <Typography variant="subtitle2">Staff</Typography>
-        <Typography>
-          1. Konstantin Kousoulas, PhD, Project Lead 2. Vladamir Chouljenko,
-          PhD, Co- Investigator 3. Tirumalai Rangasamy, PhD, Co-Investigator
-        </Typography>
+        <Typography>1. Konstantin Kousoulas, PhD, Project Lead</Typography>
+        <Typography>2. Vladamir Chouljenko, PhD, Co- Investigator</Typography>
+        <Typography> 3. Tirumalai Rangasamy, PhD, Co-Investigator</Typography>
+      </Grid>
+      <Grid>
         <Typography variant="subtitle2">Core Services</Typography>
         <Typography>
-          1. RNAi vectors and CRISPR/Cas9 for gene silencing and knockout. 2.
-          Overexpression vectors for transgene expression. 3. Site-directed
-          mutagenesis. 4. Gene and pathway reporter assays. 5. Support for
-          transfection using adenovirus and lentivirus vectors. 6. Real-time PCR
-          gene quantification. 7. DNA microarray and RNAseq analyses 8.
-          Consultation on molecular biology aspects to the COBRE investigators
-          and develop or adopt new techniques as needed.
+          1. RNAi vectors and CRISPR/Cas9 for gene silencing and knockout.
+        </Typography>
+        <Typography>
+          2.Overexpression vectors for transgene expression.
+        </Typography>
+        <Typography>3. Site-directed mutagenesis.</Typography>
+        <Typography>4. Gene and pathway reporter assays.</Typography>
+        <Typography>
+          5. Support for transfection using adenovirus and lentivirus vectors.
+        </Typography>
+        <Typography>6. Real-time PCR gene quantification.</Typography>
+        <Typography>7. DNA microarray and RNAseq analyses</Typography>
+        <Typography>
+          8. Consultation on molecular biology aspects to the COBRE
+          investigators and develop or adopt new techniques as needed.
         </Typography>
       </Grid>
     </Fragment>
   );
 };
 
-export default molecularCore;
+export default MolecularCore;

@@ -6,8 +6,10 @@ import { navigate, Router } from '@reach/router';
 import Disclaimer from './resources/Disclaimer';
 import UsefulLinks from './resources/UsefulLinks';
 import Articles from './resources/Articles';
-import Core from './resources/Core';
+// import Core from './resources/Core';
 import SideMenu from '../ui/SideMenu';
+import MolecularCore from './resources/MolecularCore';
+import PulmonaryCore from './resources/PulmonaryCore';
 
 const useStyles = makeStyles({
   cont: {
@@ -32,11 +34,11 @@ const Resources = props => {
     },
     { clickHandler: () => navigate('/resources/articles'), name: 'Articles' },
     {
-      clickHandler: () => navigate('/resources/core/pulmonaryCore'),
+      clickHandler: () => navigate('/resources/pulmonary-core'),
       name: 'Pulmonary Immunopathology Core',
     },
     {
-      clickHandler: () => navigate('/resources/core/molecularCore'),
+      clickHandler: () => navigate('/resources/molecular-core'),
       name: 'Molecular Biology Core ',
     },
   ];
@@ -56,15 +58,8 @@ const Resources = props => {
             <Disclaimer path="disclaimer" />
             <UsefulLinks path="useful-links" />
             <Articles path="articles" />
-            <Core
-              path="core/:name"
-              links={[
-                {
-                  title: 'Amazon',
-                  link: 'https://www.amazon.com',
-                },
-              ]}
-            />
+            <PulmonaryCore path="pulmonary-core" />
+            <MolecularCore path="molecular-core" />
           </Router>
         </Grid>
       </Grid>
