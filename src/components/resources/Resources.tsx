@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  Typography,
-  Grid,
-  Container,
-  makeStyles,
-} from '@material-ui/core';
+import { Typography, Grid, Container, makeStyles } from '@material-ui/core';
 import { theme } from '../../theme/theme';
 import NihAcknowledgement from './resources/NihAcknowledgement';
 import { navigate, Router } from '@reach/router';
@@ -20,19 +15,28 @@ const useStyles = makeStyles({
   },
 });
 
-const Resources = (props) => {
+const Resources = props => {
   const classes = useStyles({});
   const links = [
-    { clickHandler: () => navigate('/resources/nih'), name: 'NIH Acknowledgement' },
-    { clickHandler: () => navigate('/resources/disclaimer'), name: 'Disclaimer' },
-    { clickHandler: () => navigate('/resources/useful-links'), name: 'Useful Links' },
+    {
+      clickHandler: () => navigate('/resources/nih'),
+      name: 'NIH Acknowledgement',
+    },
+    {
+      clickHandler: () => navigate('/resources/disclaimer'),
+      name: 'Disclaimer',
+    },
+    {
+      clickHandler: () => navigate('/resources/useful-links'),
+      name: 'Useful Links',
+    },
     { clickHandler: () => navigate('/resources/articles'), name: 'Articles' },
     {
-      clickHandler: () => navigate('/resources/core/pulmonary immunopathology core'),
+      clickHandler: () => navigate('/resources/core/pulmonaryCore'),
       name: 'Pulmonary Immunopathology Core',
     },
     {
-      clickHandler: () => navigate('/resources/core/molecular biology core'),
+      clickHandler: () => navigate('/resources/core/molecularCore'),
       name: 'Molecular Biology Core ',
     },
   ];

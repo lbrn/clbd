@@ -57,7 +57,6 @@ const PersonDetails = props => {
         index < length - 1 ? ', ' : '.'
       }`}</Link>
     ));
-    console.log(mentorElements)
     return mentorElements;
   };
 
