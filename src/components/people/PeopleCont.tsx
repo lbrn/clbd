@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Grid, Container, makeStyles } from '@material-ui/core';
-import { Router, navigate } from '@reach/router';
+import { Router } from '@reach/router';
 
 import { people } from '../../data/people';
 import People from './People';
 import PersonDetails from './PersonDetails';
-import classes from '*.module.css';
 import { theme } from '../../theme/theme';
 
 const useStyles = makeStyles({

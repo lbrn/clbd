@@ -8,7 +8,6 @@ interface personProps {
 }
 const PersonDetails = props => {
   // these props are passed via react router
-  console.log(props);
   const { img, mentors, role, name, title, link, institution, abstract } =
     props.location && props.location.state;
 

@@ -12,4 +12,5 @@ export interface seminar {
   registrationLink?: string;
   registrationDueDate?: any;
   pdfLink?: string;
+  link?: string;
 }

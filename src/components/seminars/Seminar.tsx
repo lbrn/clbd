@@ -16,19 +16,26 @@ const useStyles = makeStyles({
   },
   pdf: {
     width: '100%',
-    height: '50vh',
+    // height: 200,
+  },
+  map: {
+    marginTop: '5vh',
+    width: '100%',
+    height: 450,
+    frameborder: 0,
+    border: 0,
+    allowfullscreen: '',
   },
 });
+
 const Seminar = props => {
   const classes = useStyles();
   const [seminar, setSeminar] = useState();
-  console.log(process.env);
   useEffect(() => {
     // index comes from url
     setSeminar(seminars[props.seminarIndex]);
   }, []);
-
-  console.log(process.env.GOOGLE_API_KEY)
+  console.log(seminar && seminar.image)
 
   return (
     <Container className={classes.cont}>
@@ -75,20 +82,23 @@ const Seminar = props => {
             </Typography>
           </Grid>
         )}
-        {seminar && seminar.pdfLink && (
+        {seminar && seminar.image && (
           <Grid container item xs={12} sm={4}>
-            <iframe src={seminar.pdfLink} className={classes.pdf}></iframe>
+            <a href={seminar.pdfLink}>
+              <img src={seminar.image} className={classes.pdf}></img>
+            </a>
           </Grid>
         )}
       </Grid>
       <Grid item xs={12}>
         <iframe
+          className={classes.map}
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13763.17090881741!2d-91.2020158014031!3d30.413622109420405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8626a73e9f2335b1%3A0x3180fa3441356916!2sLSU%20School%20of%20Veterinary%20Medicine!5e0!3m2!1sen!2sus!4v1579642103972!5m2!1sen!2sus"
           // width="600"
           // height="450"
           // frameborder="0"
-          // style="border:0"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJNd7pUiGnJoYRq1cQ0ezXyhs&key=AIzaSyBl4O6sNcvfM1sa7WJG7iIfBdOckMTteiI"
-          // allowfullscreen
+          // style="border:0;"
+          // allowfullscreen=""
         ></iframe>
       </Grid>
     </Container>

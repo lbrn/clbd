@@ -4,9 +4,6 @@ import {
   Grid,
   Container,
   makeStyles,
-  List,
-  ListItem,
-  ListItemText,
 } from '@material-ui/core';
 import { theme } from '../../theme/theme';
 import NihAcknowledgement from './resources/NihAcknowledgement';
@@ -23,7 +20,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Resources = ({ path, children }) => {
+const Resources = (props) => {
   const classes = useStyles({});
   const links = [
     { clickHandler: () => navigate('/resources/nih'), name: 'NIH Acknowledgement' },

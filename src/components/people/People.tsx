@@ -38,8 +38,7 @@ const People = ({ path, data }) => {
     name,
     clickHandler: () => setActive(name),
   }));
-  console.log(mainPeopleList);
-  console.log(isMobile);
+
   return (
     <Fragment>
       <Grid container justify="center" item xs={12}>

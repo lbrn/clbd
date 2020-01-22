@@ -1,12 +1,18 @@
 import moment from 'moment';
 import sciencyImage from '../assets/seminars/cell.jpg';
 import altSciencyImage from '../assets/seminars/jellies.jpg';
-import vetSchool from '../assets/featuredSeminars/vet_school.jpg';
-import proteomicsWorkshop from '../assets/seminars/proteomics-workshop.png';
-import kilPatrick from '../assets/seminars/kilpatrick.png';
-import mizgerd from '../assets/seminars/mizgerd.png';
 import li from '../assets/seminars/li.png';
 import { seminar } from '../models/seminar';
+import {
+  laurieFlyer,
+  liwuFlyer,
+  mizgerdFlyer,
+  workshopFlyer,
+  workshopPdf,
+  mizgerdPdf,
+  liwuPdf,
+  lauriePdf,
+} from '../assets/pdfs/index';
 
 // the first seminar is automatically featured
 
@@ -18,12 +24,12 @@ export const seminars: seminar[] = [
     time: '10 am - 12 pm',
     registrationLink: 'https://redcap.lbrn.lsu.edu/surveys/?s=3EKCN8L4NH',
     registrationDueDate: moment('2020-01-19'),
-    pdfLink:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+    pdfLink: workshopPdf,
     speakers:
       'Stephanie Byrum, Ricky Edmonson, Samuel Mackintosh, Alan Tackett',
     location: 'Louisiana State University (PBS Conference room 3511)',
-    image: proteomicsWorkshop,
+    image: workshopFlyer,
+    link: `/event/${0}`,
   },
   {
     title: 'Pneumonia Biology - Lungs Learn from Experience',
@@ -31,8 +37,9 @@ export const seminars: seminar[] = [
     date: moment('2020-03-20'),
     time: '12 pm',
     speakers: 'Joseph Mizgerd, Sc.D.',
+    pdfLink: mizgerdPdf,
     location: 'LSU Vet Med Room 1212C',
-    image: mizgerd,
+    image: mizgerdFlyer,
   },
   {
     title: 'Leukocyte-Endothelial Cell Interactions...',
@@ -40,16 +47,18 @@ export const seminars: seminar[] = [
     date: moment('2020-02-28'),
     time: '12 pm',
     speakers: 'Professor Laurie Kilpatrick, Ph.D.',
+    pdfLink: lauriePdf,
     location: 'LSU Vet Med Room 1212C',
-    image: kilPatrick,
+    image: laurieFlyer,
   },
   {
     title: 'Innate Immune Memory Dynamics...',
     eventType: 'Presentation',
     date: moment('2020-02-14'),
     time: '12 pm',
+    pdfLink: liwuPdf,
     speakers: 'Professor Liwu Li, Ph.D',
     location: 'LSU Vet Med Room 1212B',
-    image: li,
+    image: liwuFlyer,
   },
 ];

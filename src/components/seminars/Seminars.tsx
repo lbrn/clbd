@@ -19,7 +19,8 @@ const useStyles = makeStyles({
     marginTop: theme.spacing(3),
   },
   cardImage: {
-    height: 200,
+    minHeight: 200,
+    objectFit: 'contain',
     filter: 'grayscale(70%)',
     transition: 'all .5s',
     '&:hover': {
@@ -49,20 +50,21 @@ const Seminars = ({ path }) => {
   }, []);
 
   const createCards = seminars => {
+    console.log(seminars);
     return seminars.map((seminar, index) => (
-      <Grid key={`${seminar.name}${index}`} item xs={12} sm={4}>
+      <Grid key={`${seminar.name}${index}`} item xs={12} sm={6}>
         <Card
           onClick={e => navigate(`/event/${index}`)}
           className={classes.card}
         >
-          <CardMedia image={seminar.image} className={classes.cardImage} />
+          <CardMedia component="img" image={seminar.image} className={classes.cardImage} />
           <CardContent>
             <Typography variant="h5">{seminar.name && seminar.name}</Typography>
             <Typography variant="body1">
-              {seminar.date && seminar.date.format('MM/DD/YY')}
+              {seminar.title && seminar.title}
             </Typography>
             <Typography variant="body2">
-              {seminar.eventType && seminar.eventType}
+              {seminar.date && seminar.date.format('MM/DD/YY')}
             </Typography>
           </CardContent>
         </Card>

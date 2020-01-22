@@ -1,37 +1,37 @@
-import React, { Fragment } from "react";
-import { Grid, makeStyles } from "@material-ui/core";
-import ContentPreviewItem from "./ContentPreviewItem";
-import { seminars } from "../data/seminars";
-import { articles } from "../data/articles";
+import React, { Fragment } from 'react';
+import { Grid, makeStyles } from '@material-ui/core';
+import ContentPreviewItem from './ContentPreviewItem';
+import { seminars } from '../data/seminars';
+import { articles } from '../data/articles';
 
 const useStyles = makeStyles({
-	previewCont: {
-		display: "flex",
-		justifyContent: "center"
-	}
+  previewCont: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
 });
 
 const ContentPreview = () => {
-	const classes = useStyles({});
-	const featuredNews = [seminars[0], articles[0]];
+  const classes = useStyles({});
+  const featuredNews = [seminars[0], articles[0]];
 
-	const createFeaturedItems = items => {
-		return items.map((item, index) => (
-			<Grid
-				container
-				item
-				xs={12}
-				md={6}
-				justify='center'
-				alignItems='center'
-				className={classes.previewCont}
-				key={index}
-			>
-				<ContentPreviewItem featured={item} id={index} />
-			</Grid>
-		));
-	};
-	return <Fragment>{createFeaturedItems(featuredNews)}</Fragment>;
+  const createFeaturedItems = items => {
+    return items.map((item, index) => (
+      <Grid
+        container
+        item
+        xs={12}
+        md={6}
+        justify="center"
+        alignItems="center"
+        className={classes.previewCont}
+        key={index}
+      >
+        <ContentPreviewItem featured={item} id={index} />
+      </Grid>
+    ));
+  };
+  return <Fragment>{createFeaturedItems(featuredNews)}</Fragment>;
 };
 
 export default ContentPreview;
