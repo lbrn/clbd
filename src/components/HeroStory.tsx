@@ -35,12 +35,12 @@ const HeroStory = (props) => {
 						Economic Development Win: LSU Garners $11.5M Grant from NIH to Establish Louisiana Pulmonary Research Center
 				</Typography>
 				</Grid>
-				<Grid xs={12}>
+				<Grid item xs={12}>
 					<Typography variant="body1">
 						Baton Rouge- The LSU School of Veterinary Medicine, or LSU SVM, has been awarded more than $11.5 million in funding over five years from the National Institutes of Health, or NIH, to launch the Center for Lung Biology and Disease, or CLBD. Samithamby Jeyaseelan, the William L. Jenkins Professor in the Department of Pathobiological Sciences, will serve as principal investigator, and Rhonda Cardin, associate dean for research and advanced studies, will serve as co-investigator.
 				</Typography>
 				</Grid>
-				<Grid xs={12}>
+				<Grid item xs={12}>
 					<Link
 						variant="body1"
 						href="https://www.lsu.edu/mediacenter/news/2019/02/04svm_jeyaseelan_nihcenter.php"

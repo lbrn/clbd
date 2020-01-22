@@ -1,59 +1,63 @@
-import React, { useState, useEffect, Fragment } from "react";
-import { Grid } from "@material-ui/core";
+import React, { useState, Fragment } from 'react';
+import { Grid } from '@material-ui/core';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { theme } from '../../theme/theme';
+import Person from './Person';
+import GroupSelector from './GroupSelector';
+import SideMenu from '../ui/SideMenu';
 
-import { people } from "../../data/people";
-import Person from "./Person";
-import GroupSelector from "./GroupSelector";
+const People = ({ path, data }) => {
+  const [active, setActive] = useState('projectInvestigators');
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-const People = ({ path }) => {
-	const [data, setData] = useState();
-	const [active, setActive] = useState("leadership");
-	useEffect(() => {
-		setData(people);
-	}, []);
+  // gets keys for all groups in the people data structure
+  const mainPeopleList = data && Object.keys(data);
 
-	// gets keys for all groups in the people data structure
-	const mainPeopleList = data && Object.keys(data);
+  // makes a list of each mentee's name
+  // const menteesList = data && data.mentees.map(mentee => mentee.name)
 
-	// makes a list of each mentee's name
-	// const menteesList = data && data.mentees.map(mentee => mentee.name)
+  const createPeople = peopleData => {
+    if (data) {
+      return peopleData[active].map(person => (
+        <Person
+          key={person.name}
+          name={person.name}
+          title={person.title}
+          mentors={person.mentors}
+          role={person.role}
+          link={person.link}
+          img={person.image}
+          abstract={person.abstract}
+          institution={person.institution}
+        />
+      ));
+    }
+  };
 
-	const createPeople = peopleData => {
-		if (data) {
-			return peopleData[active].map(person => (
-				<Person
-					key={person.name}
-					name={person.name}
-					title={person.title}
-					mentors={person.mentors}
-					role={person.role}
-					link={person.link}
-					img={person.image}
-					abstract={person.abstract}
-					institution={person.institution}
-				/>
-			));
-		}
-	};
+  const peopleMenuLinks = mainPeopleList.map(name => ({
+    name,
+    clickHandler: () => setActive(name),
+  }));
 
-	return (
-		<Fragment>
-			<Grid container justify='center' item xs={12}>
-				<Grid item xs={12}>
-					{data && (
-						<GroupSelector
-							key={"mainPeople"}
-							title='group'
-							value={active}
-							setValue={setActive}
-							menuItems={mainPeopleList}
-						/>
-					)}
-				</Grid>
-				{data && createPeople(data)}
-			</Grid>
-		</Fragment>
-	);
+  return (
+    <Fragment>
+      <Grid container justify="center" item xs={12}>
+        <Grid item xs={6}>
+          {data && isMobile && (
+            <GroupSelector
+              key={'mainPeople'}
+              title="group"
+              value={active}
+              setValue={setActive}
+              menuItems={mainPeopleList}
+            />
+          )}
+          {!isMobile && <SideMenu links={peopleMenuLinks} />}
+        </Grid>
+        {data && createPeople(data)}
+      </Grid>
+    </Fragment>
+  );
 };
 
 export default People;
