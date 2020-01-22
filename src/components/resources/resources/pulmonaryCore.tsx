@@ -72,8 +72,7 @@ const PulmoaryCore = props => {
           10. Support for experimental design related to pathology sampling
         </Typography>
         <Typography>
-          11. Tissue processing for paraffin-embedded tissue sections and
-          stains.
+          11. Tissue processing for paraffin-embedded tissue sections and stains.
         </Typography>
         <Typography>
           12. Immunofluorescence and immunohistochemistry tissue staining.
