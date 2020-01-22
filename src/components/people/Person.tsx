@@ -1,9 +1,9 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import { makeStyles, Typography, Link, Grid, Avatar } from '@material-ui/core';
+import { navigate } from '@reach/router';
 
 import { theme, themeExtended } from '../../theme/theme';
-import { navigate } from '@reach/router';
-import { Link as ReachLink } from '@reach/router';
+import { mentor } from '../../models/mentor';
 
 interface personProps {
   name: string;
@@ -15,7 +15,7 @@ interface personProps {
   title?: string;
   role?: string;
   img?: string;
-  mentors?: string[];
+  mentors?: mentor[];
 }
 
 const Person = ({

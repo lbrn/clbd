@@ -7,7 +7,7 @@ import GroupSelector from './GroupSelector';
 import SideMenu from '../ui/SideMenu';
 
 const People = ({ path, data }) => {
-  const [active, setActive] = useState('investigators');
+  const [active, setActive] = useState('projectInvestigators');
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   // gets keys for all groups in the people data structure
