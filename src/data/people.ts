@@ -255,7 +255,7 @@ export const people = {
       role: 'Project Investigator',
       link: 'https://bit.ly/2pV5Nxl',
       mentors: [
-        { name: 'Rhonda Cardin', link: 'https://bit.ly/31Giidr' },
+        { name: 'Rhonda Cardin', link: 'http://facultypages.vetmed.lsu.edu/faculty/rcardin' },
         { name: 'Deepak Kaushal', link: 'https://bit.ly/345In7z' },
       ],
     },
