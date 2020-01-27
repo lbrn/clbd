@@ -12,7 +12,6 @@ import { navigate, Router } from '@reach/router';
 
 import { seminars } from '../../data/seminars';
 import { theme, themeExtended } from '../../theme/theme';
-import Seminar from './Seminar';
 
 const useStyles = makeStyles({
   cont: {
@@ -39,6 +38,7 @@ const useStyles = makeStyles({
     '&:hover $cardImage': {
       filter: 'grayscale(40%)',
     },
+    height: 400,
   },
 });
 
