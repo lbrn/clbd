@@ -20,6 +20,7 @@ const useStyles = makeStyles({
   },
   cardImage: {
     minHeight: 200,
+    maxHeight: 300,
     objectFit: 'contain',
     filter: 'grayscale(70%)',
     transition: 'all .5s',

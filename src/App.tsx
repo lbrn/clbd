@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     minHeight: '100vh',
   },
   contentWrap: {
-    paddingBottom: '2.5rem',
+    paddingBottom: '4.5rem',
   },
 });
 
@@ -24,16 +24,16 @@ const App: React.FC = () => {
 
   return (
     <Fragment>
-      <div className={classes.appWrapper}>
-        <div className={classes.contentWrap}>
-          <CssBaseline />
-          <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
+        <div className={classes.appWrapper}>
+          <div className={classes.contentWrap}>
+            <CssBaseline />
             <Header />
             <RouterWrapper />
-            <Footer />
-          </ThemeProvider>
+          </div>
+          <Footer />
         </div>
-      </div>
+      </ThemeProvider>
     </Fragment>
   );
 };
