@@ -8,7 +8,7 @@ import {
   makeStyles,
   CardMedia,
 } from '@material-ui/core';
-import { navigate, Router } from '@reach/router';
+import { navigate } from '@reach/router';
 
 import { seminars } from '../../data/seminars';
 import { theme, themeExtended } from '../../theme/theme';
