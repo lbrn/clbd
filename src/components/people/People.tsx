@@ -52,7 +52,7 @@ const People = ({ path, data }) => {
               menuItems={mainPeopleList}
             />
           )}
-          {!isMobile && <SideMenu links={peopleMenuLinks} />}
+          {!isMobile && <SideMenu active={active} links={peopleMenuLinks} />}
         </Grid>
         {data && createPeople(data)}
       </Grid>

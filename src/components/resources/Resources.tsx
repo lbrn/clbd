@@ -1,5 +1,5 @@
-import React from 'react';
-import { Typography, Grid, Container, makeStyles } from '@material-ui/core';
+import React, { useState } from 'react';
+import { Grid, Container, makeStyles } from '@material-ui/core';
 import { theme } from '../../theme/theme';
 import NihAcknowledgement from './resources/NihAcknowledgement';
 import { navigate, Router } from '@reach/router';
@@ -18,27 +18,49 @@ const useStyles = makeStyles({
 });
 
 const Resources = props => {
+  const [active, setActive] = useState('nih');
   const classes = useStyles({});
   const links = [
     {
-      clickHandler: () => navigate('/resources/nih'),
+      clickHandler: () => {
+        setActive('nih');
+        navigate('/resources/nih');
+      },
       name: 'NIH Acknowledgement',
     },
     {
-      clickHandler: () => navigate('/resources/disclaimer'),
+      clickHandler: () => {
+        setActive('disclaimer');
+        navigate('/resources/disclaimer');
+      },
       name: 'Disclaimer',
     },
     {
-      clickHandler: () => navigate('/resources/useful-links'),
+      clickHandler: () => {
+        setActive('useful-links');
+        navigate('/resources/useful-links');
+      },
       name: 'Useful Links',
     },
-    { clickHandler: () => navigate('/resources/articles'), name: 'Articles' },
     {
-      clickHandler: () => navigate('/resources/pulmonary-core'),
+      clickHandler: () => {
+        setActive('articles');
+        navigate('/resources/articles');
+      },
+      name: 'Articles',
+    },
+    {
+      clickHandler: () => {
+        setActive('pulmonary-core');
+        navigate('/resources/pulmonary-core');
+      },
       name: 'Pulmonary Immunopathology Core',
     },
     {
-      clickHandler: () => navigate('/resources/molecular-core'),
+      clickHandler: () => {
+        setActive('molecular-core');
+        navigate('/resources/molecular-core');
+      },
       name: 'Molecular Biology Core ',
     },
   ];
@@ -50,7 +72,7 @@ const Resources = props => {
           <Typography variant="h4">CLBD resources</Typography>
         </Grid> */}
         <Grid item xs={12} sm={4}>
-          <SideMenu links={links} />
+          <SideMenu active={active} links={links} />
         </Grid>
         <Grid container item xs={12} sm={8}>
           <Router>

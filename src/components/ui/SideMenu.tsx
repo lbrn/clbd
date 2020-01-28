@@ -1,5 +1,12 @@
 import React, { Fragment } from 'react';
-import { ListItem, ListItemText, makeStyles, List, Grid } from '@material-ui/core';
+import {
+  ListItem,
+  ListItemText,
+  makeStyles,
+  List,
+  Grid,
+} from '@material-ui/core';
+import { darken } from '@material-ui/core/styles';
 
 interface link {
   name: string;
@@ -8,6 +15,7 @@ interface link {
 
 interface sideMenuProps {
   links: link[];
+  active: string;
 }
 
 const useStyles = makeStyles({
@@ -15,9 +23,10 @@ const useStyles = makeStyles({
     width: '100%',
     backgroundColor: `rgba(19, 127, 222, .2)`,
   },
+  active: { backgroundColor: darken(`rgba(19, 127, 222, .25)`, 0.1) },
 });
 
-const SideMenu = ({ links }: sideMenuProps) => {
+const SideMenu = ({ links, active }: sideMenuProps) => {
   const classes = useStyles({});
 
   const humanize = name => {
@@ -30,7 +39,12 @@ const SideMenu = ({ links }: sideMenuProps) => {
 
   const createLinks = links => {
     return links.map(link => (
-      <ListItem button key={link.name}>
+      <ListItem
+        button
+        key={link.name}
+        id={link.name}
+        className={active === link.name ? classes.active : ''}
+      >
         <ListItemText
           key={link.name}
           onClick={e => link.clickHandler()}
