@@ -1,14 +1,11 @@
 import React, { useState, Fragment } from 'react';
 import { Grid } from '@material-ui/core';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { theme } from '../../theme/theme';
 import Person from './Person';
-import GroupSelector from './GroupSelector';
-import SideMenu from '../ui/SideMenu';
+import SmartMenu from '../ui/SmartMenu';
 
 const People = ({ path, data }) => {
   const [active, setActive] = useState('projectInvestigators');
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   // gets keys for all groups in the people data structure
   const mainPeopleList = data && Object.keys(data);
@@ -43,16 +40,15 @@ const People = ({ path, data }) => {
     <Fragment>
       <Grid container justify="center" item xs={12}>
         <Grid item xs={6}>
-          {data && isMobile && (
-            <GroupSelector
-              key={'mainPeople'}
+          {data && (
+            <SmartMenu
               title="group"
-              value={active}
-              setValue={setActive}
-              menuItems={mainPeopleList}
+              links={peopleMenuLinks}
+              setActive={setActive}
+              active={active}
+              // nameList={mainPeopleList}
             />
           )}
-          {!isMobile && <SideMenu active={active} links={peopleMenuLinks} />}
         </Grid>
         {data && createPeople(data)}
       </Grid>
