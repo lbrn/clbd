@@ -69,6 +69,8 @@ const Seminar = props => {
               </Typography>
               <Typography variant="body1">
                 Speakers for this event: {seminar.speakers && seminar.speakers}
+              </Typography><Typography variant="body1">
+                {seminar.speakerUniversities && seminar.speakerUniversities}
               </Typography>
               <Typography variant="body1">
                 Cost: {seminar.cost ? seminar.cost : 'free'}

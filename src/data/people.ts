@@ -18,10 +18,13 @@ import {
   Patial,
   Penn,
   Rangasamy,
+  Langohr,
+  Christofferson,
   Saini,
   Stanton,
   White,
   Yoshimmura,
+  Vladimir,
 } from '../assets/people/index';
 
 // mentees: [
@@ -224,6 +227,52 @@ export const people = {
       link: 'https://marybird.org/doctor/reed/',
     },
   ],
+  pulmonaryImmunopathologyCore: [
+    {
+      name: 'Tammy Dugas',
+      institution: 'Louisiana State University',
+      image: Dugas,
+      link: 'https://bit.ly/33YO5Ic',
+    },
+    {
+      name: 'Ingeborg Langohr',
+      institution: 'Louisiana State University',
+      image: Langohr,
+      link: 'http://facultypages.vetmed.lsu.edu/faculty/ilangohr',
+    },
+    {
+      name: 'Rebecca Christofferson',
+      institution: 'Louisiana State University',
+      image: Christofferson,
+      link: 'http://facultypages.vetmed.lsu.edu/faculty/rcarri1',
+    },
+  ],
+  molecularBiologyCore: [
+    {
+      name: 'Konstantin Kousoulas',
+      institution: 'Louisiana State University',
+      role: 'Project Lead',
+      image: Kousoulas,
+      link: 'https://bit.ly/2PhLrt6',
+    },
+    {
+      name: 'Tirumalai Rangasamy',
+      abstract:
+        'Dr. Rangasamy is an Assistant Professor (Research) in the Department of Pathobiological and Center for Lung Biology and Disease at Louisiana State University, Baton Rouge. Dr. Rangasamy received his BSc, MSc, and PhD degrees from the University of Madras (India). He did his postdoctoral trainings at the Indian Institute of Science (Bangalore, India), Pierre et Marie Curie University (Paris, France), and Johns Hopkins University (Baltimore), and then worked as an Assistant Research Professor at the University of Rochester Medical Center, prior to his appointment at LSU in 2015. The overall goal of Dr. Rangasamy’s  research program is to identify the genetic mechanisms of susceptibility to oxidative stress related lung diseases such as cigarette smoke (CS)–mediated chronic obstructive pulmonary disease (COPD), allergic asthma, bacterial pneumonia and septic shock. Our long term objectives are 1) to identify the host factors that determine the susceptibility to CS-induced COPD, allergic airway inflammation,  bacterial pneumonia, and acute lung injury and septic shock, using genetic, genomic, and proteomic methods which are especially valuable in the study of complex disease conditions, 2) to identify and characterize specific molecular pathways that are associated with COPD and asthma, 3) to investigate the role of the major anti-oxidative transcription factor Nrf2 in dendritic cell activation, T cell differentiation, and in stem cell differentiation, and 4) to develop small molecule/stem cell based therapeutic interventions in oxidative stress related lung diseases. Dr. Rangasamy has extensive expertise in mouse models of inflammatory lung diseases including CS-induced pulmonary emphysema, allergic asthma, bacterial pneumonia and endotoxin/cecal ligation and puncture mediated acute lung injury and septic shock; computer assisted lung morphometric measurements, measurement of lung elastance and resistance in asthmatic mice, isolation and characterization of mesenchymal stem cells from the lung and bone marrows, generation of myeloid dendritic cells/macrophages/neutrophils from bone marrows, differentiation of Th1/Th2/FOX P3 regulatory T cells, bacterial culture, extracellular and intracellular (opsonophagocytosis) bacterial killing assays, gene expression arrays (Affymetrix), expression (in E. coli) and purification (using FPLC) of recombinant proteins, development of contraceptive vaccine (mice rats and rabbits), epitope mapping, flow cyotometry, as well as in various immunological and molecular techniques. Dr. Rangasamy is currently working with Prof. Samithamby Jeyaseelan (Director, Center For Lung Biology and Disease). Dr. Rangasamy is investigating the therapeutic potential of prospectively purified lung mesenchymal stem cells in COPD (emphysema)-associated bacterial exacerbations, as well as in various infectious lung diseases including pneumonia caused by Klebsiella pneumoniae, Streptococcus pneumoniae (Pneumococcal pneumonia), and superbugs [methicillin resistant Staphylococcus aureus (MRSA), and carbapenem resistant Klebsiella pneumoniae] using pre-clinical mouse models.',
+      institution: 'Louisiana State University',
+      role: 'Co-Investigator',
+      image: Rangasamy,
+      link: 'https://www.linkedin.com/in/tirumalai-rangasamy-667b773/',
+    },
+
+    {
+      name: 'Vladimir Chouljenko',
+      institution: 'Louisiana State University',
+      role: 'Co-Investigator',
+      image: Vladimir,
+      link: 'http://facultypages.vetmed.lsu.edu/faculty/vchoul1',
+    },
+  ],
   projectInvestigators: [
     {
       name: 'Sonika Patial',
@@ -255,7 +304,10 @@ export const people = {
       role: 'Project Investigator',
       link: 'https://bit.ly/2pV5Nxl',
       mentors: [
-        { name: 'Rhonda Cardin', link: 'http://facultypages.vetmed.lsu.edu/faculty/rcardin' },
+        {
+          name: 'Rhonda Cardin',
+          link: 'http://facultypages.vetmed.lsu.edu/faculty/rcardin',
+        },
         { name: 'Deepak Kaushal', link: 'https://bit.ly/345In7z' },
       ],
     },

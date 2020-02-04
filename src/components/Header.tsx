@@ -1,15 +1,21 @@
-import React from 'react';
-import { AppBar, Grid, Toolbar, makeStyles, Link } from '@material-ui/core';
+import React, { useState, useEffect } from 'react';
+import {
+  AppBar,
+  Grid,
+  Toolbar,
+  makeStyles,
+  Typography,
+} from '@material-ui/core';
 import logoFull from '../assets/misc/logo_full.png';
 import { navigate } from '@reach/router';
 
-import { theme } from '../theme/theme';
+import { theme, themeExtended } from '../theme/theme';
 
 const useStyles = makeStyles({
   image: {
     objectFit: 'contain',
-	maxWidth: '100%',
-	maxHeight: '6vh',
+    maxWidth: '80%',
+    maxHeight: '60%',
     cursor: 'pointer',
   },
   appBar: {
@@ -24,6 +30,15 @@ const useStyles = makeStyles({
     alignContent: 'center',
     justifyContent: 'space-between',
   },
+  linkCont: {
+    '&:hover': {
+      backgroundColor: themeExtended.palette.primary.hover,
+    },
+    padding: 5,
+  },
+  linkActive: {
+    backgroundColor: themeExtended.palette.primary.hover,
+  },
   link: {
     cursor: 'pointer',
     fontSize: '165%',
@@ -32,6 +47,25 @@ const useStyles = makeStyles({
 
 const Header = () => {
   const classes = useStyles({});
+  const [active, setActive] = useState('');
+
+  useEffect(() => {
+    const linksCont = document.getElementById('linkCont');
+    if (linksCont) {
+      const children = linksCont && linksCont.children;
+      console.log(children);
+      for (var i = 0; i < children.length; i++) {
+        children[i].classList.remove('linkActive');
+      }
+    }
+    const link = document.getElementById(active);
+    link && link.classList.add('linkActive');
+  }, [active]);
+
+  const handleActive = id => {
+    setActive(id);
+  };
+
   return (
     <AppBar position="sticky" className={classes.appBar}>
       <Toolbar>
@@ -45,6 +79,7 @@ const Header = () => {
             />
           </Grid>
           <Grid
+            id="linkCont"
             className={classes.linksCont}
             container
             item
@@ -52,46 +87,58 @@ const Header = () => {
             sm={8}
             md={6}
           >
-            <Grid item>
-              <Link
+            <Grid item className={classes.linkCont} id="aboutLink">
+              <Typography
                 variant="body1"
                 className={classes.link}
-                onClick={e => navigate('/about')}
+                onClick={e => {
+                  navigate('/about');
+                  handleActive('aboutLink');
+                }}
                 color="primary"
               >
                 About
-              </Link>
+              </Typography>
             </Grid>
 
-            <Grid item>
-              <Link
+            <Grid item className={classes.linkCont} id="peopleLink">
+              <Typography
                 variant="body1"
                 className={classes.link}
-                onClick={e => navigate('/people')}
+                onClick={e => {
+                  navigate('/people');
+                  handleActive('peopleLink');
+                }}
                 color="primary"
               >
                 People
-              </Link>
+              </Typography>
             </Grid>
-            <Grid item>
-              <Link
+            <Grid item className={classes.linkCont} id="resourcesLink">
+              <Typography
                 variant="body1"
                 className={classes.link}
-                onClick={e => navigate('/resources')}
+                onClick={e => {
+                  navigate('/resources');
+                  handleActive('resourcesLink');
+                }}
                 color="primary"
               >
                 Resources
-              </Link>
+              </Typography>
             </Grid>
-            <Grid item>
-              <Link
+            <Grid item className={classes.linkCont} id="eventsLink">
+              <Typography
                 variant="body1"
                 className={classes.link}
-                onClick={e => navigate('/events')}
+                onClick={e => {
+                  navigate('/events');
+                  handleActive('eventsLink');
+                }}
                 color="primary"
               >
                 Events
-              </Link>
+              </Typography>
             </Grid>
           </Grid>
         </Grid>
