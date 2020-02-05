@@ -1,6 +1,5 @@
 import React, { useState, Fragment } from 'react';
 import { Grid } from '@material-ui/core';
-import { theme } from '../../theme/theme';
 import Person from './Person';
 import SmartMenu from '../ui/SmartMenu';
 

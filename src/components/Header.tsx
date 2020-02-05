@@ -5,6 +5,7 @@ import {
   Toolbar,
   makeStyles,
   Typography,
+  Link
 } from '@material-ui/core';
 import logoFull from '../assets/misc/logo_full.png';
 import { navigate } from '@reach/router';
@@ -88,7 +89,7 @@ const Header = () => {
             md={6}
           >
             <Grid item className={classes.linkCont} id="aboutLink">
-              <Typography
+              <Link
                 variant="body1"
                 className={classes.link}
                 onClick={e => {
@@ -98,11 +99,11 @@ const Header = () => {
                 color="primary"
               >
                 About
-              </Typography>
+              </Link>
             </Grid>
 
             <Grid item className={classes.linkCont} id="peopleLink">
-              <Typography
+              <Link
                 variant="body1"
                 className={classes.link}
                 onClick={e => {
@@ -112,7 +113,7 @@ const Header = () => {
                 color="primary"
               >
                 People
-              </Typography>
+              </Link>
             </Grid>
             <Grid item className={classes.linkCont} id="resourcesLink">
               <Typography
