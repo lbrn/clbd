@@ -5,7 +5,7 @@ import Person from './Person';
 import SmartMenu from '../ui/SmartMenu';
 
 const People = ({ path, data }) => {
-  const [active, setActive] = useState('projectInvestigators');
+  const [active, setActive] = useState('leadership');
 
   // gets keys for all groups in the people data structure
   const mainPeopleList = data && Object.keys(data);
