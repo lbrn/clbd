@@ -13,7 +13,8 @@ const useStyles = makeStyles({
 
 const ContentPreview = () => {
   const classes = useStyles({});
-  const featuredNews = [seminars[0], articles[0]];
+  const featuredSeminar = seminars.filter(seminar => seminar.featured)[0];
+  const featuredNews = [featuredSeminar, articles[0]];
 
   const createFeaturedItems = items => {
     return items.map((item, index) => (

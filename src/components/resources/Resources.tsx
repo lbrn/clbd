@@ -28,6 +28,7 @@ const Resources = props => {
         navigate('/resources/nih');
       },
       name: 'NIH Acknowledgement',
+      displayName: 'NIH Acknowledgement',
     },
     {
       clickHandler: () => {
@@ -35,6 +36,7 @@ const Resources = props => {
         navigate('/resources/disclaimer');
       },
       name: 'Disclaimer',
+      displayName: 'Disclaimer',
     },
     {
       clickHandler: () => {
@@ -42,6 +44,7 @@ const Resources = props => {
         navigate('/resources/useful-links');
       },
       name: 'Useful Links',
+      displayName: 'Useful Links',
     },
     {
       clickHandler: () => {
@@ -49,6 +52,7 @@ const Resources = props => {
         navigate('/resources/articles');
       },
       name: 'Articles',
+      displayName: 'Articles',
     },
     {
       clickHandler: () => {
@@ -56,6 +60,7 @@ const Resources = props => {
         navigate('/resources/pulmonary-core');
       },
       name: 'Pulmonary Immunopathology Core',
+      displayName: 'Pulmonary Immunopathology Core',
     },
     {
       clickHandler: () => {
@@ -63,6 +68,7 @@ const Resources = props => {
         navigate('/resources/molecular-core');
       },
       name: 'Molecular Biology Core ',
+      displayName: 'Molecular Biology Core ',
     },
   ];
 

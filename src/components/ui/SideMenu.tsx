@@ -7,14 +7,9 @@ import {
   Grid,
 } from '@material-ui/core';
 import { darken } from '@material-ui/core/styles';
-
-interface link {
-  name: string;
-  clickHandler: () => Promise<void> | void;
-}
-
+import menuLink from '../../models/menuLink';
 interface sideMenuProps {
-  links: link[];
+  links: menuLink[];
   active: string;
 }
 
@@ -29,13 +24,13 @@ const useStyles = makeStyles({
 const SideMenu = ({ links, active }: sideMenuProps) => {
   const classes = useStyles({});
 
-  const humanize = name => {
-    return sentenceCase(name.replace(/([A-Z])/g, ' $1').trim());
-  };
+  // const humanize = name => {
+  //   return sentenceCase(name.replace(/([A-Z])/g, ' $1').trim());
+  // };
 
-  const sentenceCase = word => {
-    return word.charAt(0).toUpperCase() + word.substring(1);
-  };
+  // const sentenceCase = word => {
+  //   return word.charAt(0).toUpperCase() + word.substring(1);
+  // };
 
   const createLinks = links => {
     return links.map(link => (
@@ -48,7 +43,7 @@ const SideMenu = ({ links, active }: sideMenuProps) => {
         <ListItemText
           key={link.name}
           onClick={e => link.clickHandler()}
-          primary={humanize(link.name)}
+          primary={link.displayName}
         />
       </ListItem>
     ));

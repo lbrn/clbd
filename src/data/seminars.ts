@@ -4,10 +4,10 @@ import altSciencyImage from '../assets/seminars/jellies.jpg';
 import li from '../assets/seminars/li.png';
 import { seminar } from '../models/seminar';
 import {
-  laurieFlyer,
-  liwuFlyer,
-  mizgerdFlyer,
-  workshopFlyer,
+  laurieFlyerThumb,
+  liwuFlyerThumb,
+  mizgerdFlyerThumb,
+  workshopFlyerThumb,
   workshopPdf,
   mizgerdPdf,
   liwuPdf,
@@ -29,19 +29,20 @@ export const seminars: seminar[] = [
       'Stephanie Byrum, Ricky Edmonson, Samuel Mackintosh, Alan Tackett',
     speakerUniversities: 'University of Arkansas for Medical Sciences',
     location: 'Louisiana State University (PBS Conference room 3511)',
-    image: workshopFlyer,
+    image: workshopFlyerThumb,
     link: `/event/${0}`,
   },
   {
     title: 'Pneumonia Biology - Lungs Learn from Experience',
     eventType: 'Presentation',
     date: moment('2020-03-20'),
+    featured: true,
     time: '12 pm',
     speakers: 'Joseph Mizgerd, Sc.D.',
     speakerUniversities: 'Boston University',
     pdfLink: mizgerdPdf,
     location: 'LSU Vet Med Room 1212C',
-    image: mizgerdFlyer,
+    image: mizgerdFlyerThumb,
   },
   {
     title: 'Leukocyte-Endothelial Cell Interactions...',
@@ -52,7 +53,7 @@ export const seminars: seminar[] = [
     speakerUniversities: 'Temple University',
     pdfLink: lauriePdf,
     location: 'LSU Vet Med Room 1212C',
-    image: laurieFlyer,
+    image: laurieFlyerThumb,
   },
   {
     title: 'Innate Immune Memory Dynamics...',
@@ -63,6 +64,6 @@ export const seminars: seminar[] = [
     speakers: 'Professor Liwu Li, Ph.D',
     speakerUniversities: 'Virginia Tech',
     location: 'LSU Vet Med Room 1212B',
-    image: liwuFlyer,
+    image: liwuFlyerThumb,
   },
 ];

@@ -4,15 +4,16 @@ export interface seminar {
   image: string;
   title: string;
   cost?: string;
-  featured?: bool;
+  featured?: boolean;
   about?: string;
   lodging?: string;
   location?: string;
   speakers?: string;
   speakerUniversities?: string;
-  time?: string;
+  time?: any;
   registrationLink?: string;
   registrationDueDate?: any;
   pdfLink?: string;
   link?: string;
+  videoLink?: string;
 }

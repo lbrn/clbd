@@ -34,6 +34,7 @@ const People = ({ path, data }) => {
   const peopleMenuLinks = mainPeopleList.map(name => ({
     name,
     clickHandler: () => setActive(name),
+    displayName: name
   }));
 
   return (

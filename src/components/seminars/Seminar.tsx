@@ -5,6 +5,7 @@ import {
   Container,
   makeStyles,
   Button,
+  Link,
 } from '@material-ui/core';
 
 import { theme } from '../../theme/theme';
@@ -69,12 +70,18 @@ const Seminar = props => {
               </Typography>
               <Typography variant="body1">
                 Speakers for this event: {seminar.speakers && seminar.speakers}
-              </Typography><Typography variant="body1">
+              </Typography>
+              <Typography variant="body1">
                 {seminar.speakerUniversities && seminar.speakerUniversities}
               </Typography>
               <Typography variant="body1">
                 Cost: {seminar.cost ? seminar.cost : 'free'}
-              </Typography>{' '}
+              </Typography>
+              {seminar.link && (
+                <Typography variant="body1">
+                  Video: <Link href={seminar.link}></Link>
+                </Typography>
+              )}
             </Grid>
           </Grid>
         )}
