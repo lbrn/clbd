@@ -3,6 +3,7 @@ export interface seminar {
   eventType: string;
   image: string;
   title: string;
+  id: string;
   cost?: string;
   featured?: boolean;
   about?: string;

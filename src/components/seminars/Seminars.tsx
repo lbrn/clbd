@@ -62,10 +62,10 @@ const Seminars = ({ path }) => {
 
   const createCards = seminars => {
     console.log(seminars);
-    return seminars.map((seminar, index) => (
-      <Grid key={`${seminar.name}${index}`} item xs={12} sm={6}>
+    return seminars.map(seminar => (
+      <Grid key={seminar.id} item xs={12} sm={6}>
         <Card
-          onClick={e => navigate(`/event/${index}`)}
+          onClick={e => navigate(`/event/${seminar.id}`)}
           className={classes.card}
         >
           <CardMedia
