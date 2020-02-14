@@ -97,7 +97,7 @@ const Seminars = ({ path }) => {
       </Grid>
       <Grid spacing={3} container item>
         <Grid item xs={12}>
-          <Typography variant="h6">Past Seminars</Typography>
+          <Typography variant="h6">Past Events</Typography>
         </Grid>
         {activeSeminars && createCards(pastSeminars)}
       </Grid>

@@ -5,7 +5,7 @@ import {
   Toolbar,
   makeStyles,
   Typography,
-  Link
+  Link,
 } from '@material-ui/core';
 import logoFull from '../assets/misc/logo_full.png';
 import { navigate } from '@reach/router';
@@ -43,6 +43,7 @@ const useStyles = makeStyles({
   link: {
     cursor: 'pointer',
     fontSize: '165%',
+    textDecoration: 'none',
   },
 });
 
@@ -54,7 +55,6 @@ const Header = () => {
     const linksCont = document.getElementById('linkCont');
     if (linksCont) {
       const children = linksCont && linksCont.children;
-      console.log(children);
       for (var i = 0; i < children.length; i++) {
         children[i].classList.remove('linkActive');
       }
@@ -89,7 +89,7 @@ const Header = () => {
             md={6}
           >
             <Grid item className={classes.linkCont} id="aboutLink">
-              <Link
+              <Typography
                 variant="body1"
                 className={classes.link}
                 onClick={e => {
@@ -99,11 +99,11 @@ const Header = () => {
                 color="primary"
               >
                 About
-              </Link>
+              </Typography>
             </Grid>
 
             <Grid item className={classes.linkCont} id="peopleLink">
-              <Link
+              <Typography
                 variant="body1"
                 className={classes.link}
                 onClick={e => {
@@ -113,7 +113,7 @@ const Header = () => {
                 color="primary"
               >
                 People
-              </Link>
+              </Typography>
             </Grid>
             <Grid item className={classes.linkCont} id="resourcesLink">
               <Typography

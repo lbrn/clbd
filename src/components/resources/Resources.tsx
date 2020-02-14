@@ -79,13 +79,13 @@ const Resources = props => {
           <Typography variant="h4">CLBD resources</Typography>
         </Grid> */}
         <Grid item xs={12} sm={4}>
-          {/* <SmartMenu
+          <SmartMenu
             active={active}
             links={links}
             setActive={setActive}
             title="resources"
-          /> */}
-          <SideMenu active={active} links={links} />
+          />
+          {/* <SideMenu active={active} links={links} /> */}
         </Grid>
         <Grid container item xs={12} sm={8}>
           <Router>

@@ -13,8 +13,9 @@ const useStyles = makeStyles({
 
 const ContentPreview = () => {
   const classes = useStyles({});
+  const currentSeminars = seminars.filter(seminar => seminar.date.isAfter());
   const featuredSeminar =
-    seminars.filter(seminar => seminar.featured)[0] || seminars[0];
+    seminars.filter(seminar => seminar.featured)[0] || currentSeminars[0];
   const featuredNews = [featuredSeminar, articles[0]];
 
   const createFeaturedItems = items => {
