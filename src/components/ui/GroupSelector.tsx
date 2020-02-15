@@ -6,6 +6,14 @@ import {
   MenuItem,
   makeStyles,
 } from '@material-ui/core';
+import menuLink from '../../models/menuLink';
+
+interface groupSelectorProps {
+  value: string;
+  title: string;
+  setValue: any;
+  menuItems: menuLink[];
+}
 
 const useStyles = makeStyles({
   selector: {
@@ -14,7 +22,12 @@ const useStyles = makeStyles({
   },
 });
 
-const GroupSelector = ({ value, setValue, title, menuItems }) => {
+const GroupSelector = ({
+  value,
+  setValue,
+  title,
+  menuItems,
+}: groupSelectorProps) => {
   const sentenceCase = word => {
     return word.charAt(0).toUpperCase() + word.substring(1);
   };
@@ -22,16 +35,24 @@ const GroupSelector = ({ value, setValue, title, menuItems }) => {
   const classes = useStyles();
 
   const handleChange = e => {
-    setValue(e.target.value);
+    const target = menuItems.find(item => item.name=== e.target.value);
+    target && target.clickHandler()
+    console.log(target)
+    // console.log(e.target.value)
+    // if (target) {
+    //   console.log(target)
+    // console.log(e.target.value)
+      setValue(e.target.value);
+    // }
   };
 
-  const createMenuItems = (menuItems: string[]) => {
-    const humanize = name => {
-      return sentenceCase(name.replace(/([A-Z])/g, ' $1').trim());
-    };
+  const createMenuItems = (menuItems: menuLink[]) => {
+    // const humanize = name => {
+    //   return sentenceCase(name.replace(/([A-Z])/g, ' $1').trim());
+    // };
     return menuItems.map(item => (
-      <MenuItem key={item} value={item}>
-        {humanize(item)}
+      <MenuItem key={item.name} value={item.name}>
+        {item.displayName}
       </MenuItem>
     ));
   };

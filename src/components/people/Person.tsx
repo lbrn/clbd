@@ -21,7 +21,6 @@ interface personProps {
 const Person = ({
   name,
   mentors,
-  // group,
   link,
   title,
   role,
@@ -29,13 +28,10 @@ const Person = ({
   institution,
   abstract,
 }: personProps) => {
-  // const [isExpanded, setIsExpanded] = useState(false);
-  const [mentorsExpanded, setMentorsExpanded] = useState(false);
 
   const useStyles = makeStyles({
     person: {
       margin: theme.spacing(3),
-      //   marginTop: theme.spacing(3),
       '&:hover': {
         backgroundColor: themeExtended.palette.primary.hover,
       },
@@ -128,16 +124,8 @@ const Person = ({
         {/* target ensures a new tab.  nooopener is for security */}
         {link && institution && <Typography>{institution}</Typography>} <br />
         {/* {isExpanded && abstract && <Typography>{abstract}</Typography>} */}
-        {/* {mentors && (
-          <Fragment>
-            <Link onClick={e => setMentorsExpanded(!mentorsExpanded)}>
-              {mentorsExpanded ? 'hide mentors' : 'view mentors'}
-            </Link>{' '}
-            <br />
-          </Fragment>
-        )} */}
-        {mentorsExpanded && mentors && (
-          <Typography>{mentors.join(', ')}</Typography>
+        {mentors && (
+          <Typography>{mentors.map(mentor => mentor.name).join(', ')}</Typography>
         )}
         {abstract && (
           <Link

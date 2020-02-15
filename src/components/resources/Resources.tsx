@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 });
 
 const Resources = props => {
-  const [active, setActive] = useState('nih');
+  const [active, setActive] = useState('');
   const classes = useStyles({});
   const links = [
     {
@@ -27,7 +27,7 @@ const Resources = props => {
         setActive('nih');
         navigate('/resources/nih');
       },
-      name: 'NIH Acknowledgement',
+      name: 'nih',
       displayName: 'NIH Acknowledgement',
     },
     {
@@ -35,7 +35,7 @@ const Resources = props => {
         setActive('disclaimer');
         navigate('/resources/disclaimer');
       },
-      name: 'Disclaimer',
+      name: 'disclaimer',
       displayName: 'Disclaimer',
     },
     {
@@ -43,7 +43,7 @@ const Resources = props => {
         setActive('useful-links');
         navigate('/resources/useful-links');
       },
-      name: 'Useful Links',
+      name: 'useful-links',
       displayName: 'Useful Links',
     },
     {
@@ -51,7 +51,7 @@ const Resources = props => {
         setActive('articles');
         navigate('/resources/articles');
       },
-      name: 'Articles',
+      name: 'articles',
       displayName: 'Articles',
     },
     {
@@ -59,7 +59,7 @@ const Resources = props => {
         setActive('pulmonary-core');
         navigate('/resources/pulmonary-core');
       },
-      name: 'Pulmonary Immunopathology Core',
+      name: 'pulmonary-core',
       displayName: 'Pulmonary Immunopathology Core',
     },
     {
@@ -67,7 +67,7 @@ const Resources = props => {
         setActive('molecular-core');
         navigate('/resources/molecular-core');
       },
-      name: 'Molecular Biology Core ',
+      name: 'molecular-core',
       displayName: 'Molecular Biology Core ',
     },
   ];
@@ -75,9 +75,6 @@ const Resources = props => {
   return (
     <Container className={classes.cont}>
       <Grid spacing={3} container>
-        {/* <Grid item xs={12}>
-          <Typography variant="h4">CLBD resources</Typography>
-        </Grid> */}
         <Grid item xs={12} sm={4}>
           <SmartMenu
             active={active}

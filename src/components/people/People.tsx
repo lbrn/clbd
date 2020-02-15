@@ -9,8 +9,6 @@ const People = ({ path, data }) => {
   // gets keys for all groups in the people data structure
   const mainPeopleList = data && Object.keys(data);
 
-  
-
   // makes a list of each mentee's name
   // const menteesList = data && data.mentees.map(mentee => mentee.name)
 
@@ -32,11 +30,11 @@ const People = ({ path, data }) => {
     }
   };
 
-  const peopleMenuLinks = mainPeopleList.map((name) => ({
+  const peopleMenuLinks = mainPeopleList.map(name => ({
     name: name,
     clickHandler: () => setActive(name),
-    displayName: data[name].displayName
-  }))
+    displayName: data[name].displayName,
+  }));
 
   return (
     <Fragment>

@@ -22,7 +22,7 @@ const SmartMenu = ({ active, setActive, links, title }: smartMenuProps) => {
           title={title}
           value={active}
           setValue={setActive}
-          menuItems={names}
+          menuItems={links}
         />
       )}
       {!isMobile && <SideMenu active={active} links={links} />}
