@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles, Typography, Link, Grid, Avatar } from '@material-ui/core';
 import { navigate } from '@reach/router';
 
 import { theme, themeExtended } from '../../theme/theme';
-import { mentor } from '../../models/mentor';
+import mentor from '../../models/mentor';
 
 interface personProps {
   name: string;
@@ -26,7 +26,6 @@ const Person = ({
   institution,
   abstract,
 }: personProps) => {
-
   const useStyles = makeStyles({
     person: {
       margin: theme.spacing(3),
@@ -123,7 +122,9 @@ const Person = ({
         {link && institution && <Typography>{institution}</Typography>} <br />
         {/* {isExpanded && abstract && <Typography>{abstract}</Typography>} */}
         {mentors && (
-          <Typography>{mentors.map(mentor => mentor.name).join(', ')}</Typography>
+          <Typography>
+            {mentors.map(mentor => mentor.name).join(', ')}
+          </Typography>
         )}
         {abstract && (
           <Link

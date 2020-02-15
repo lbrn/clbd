@@ -26,6 +26,7 @@ import {
   Yoshimmura,
   Vladimir,
 } from '../assets/people/index';
+import person from '../models/person';
 
 // mentees: [
 // 	{
@@ -86,7 +87,7 @@ import {
 // 			},
 // 			{
 // 				name: 'James McLachlan',
-// 				link: null
+// 				link: ''
 // 			}
 // 		]
 // 	},
@@ -114,7 +115,16 @@ import {
 // 	},
 // ],
 
-export const people = {
+interface peopleGroup {
+  displayName: string;
+  members: person[];
+}
+
+interface people {
+  [key: string]: peopleGroup;
+}
+
+export const people: people = {
   leadership: {
     displayName: 'Leadership',
     members: [
@@ -140,7 +150,7 @@ export const people = {
         institution: 'Louisiana State University',
         title: 'Coordinator',
         role: 'Pathobiological Sciences',
-        link: null,
+        link: '',
       },
       {
         name: 'Alexis White',
@@ -417,11 +427,11 @@ export const people = {
     // },
     // {
     //   name: 'Jacqueline Stephens',
-    //   link: null,
+    //   link: '',
     // },
     // {
     //   name: 'James McLachlan',
-    //   link: null,
+    //   link: '',
     // },
     // {
     //   name: 'Tammy Dugas',

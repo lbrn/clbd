@@ -1,4 +1,4 @@
-export interface mentor {
-	name: string;
-	link: string;
+export default interface mentor {
+  name: string;
+  link: string;
 }
