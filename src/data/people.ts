@@ -133,6 +133,7 @@ export const people: people = {
       {
         name: 'Samithamby Jeyaseelan',
         institution: 'Louisiana State University',
+        degree: 'DVM, PhD',
         image: Jeyaseelan,
         title:
           'William L. Jenkins Professor in the Department of Pathobiological Sciences',
@@ -142,6 +143,7 @@ export const people: people = {
       {
         name: 'Rhonda Cardin',
         institution: 'Louisiana State University',
+        degree: 'PhD',
         image: Cardin,
         title: 'Associate dean for research and advanced studies',
         role: 'Co-investigator',
@@ -150,6 +152,7 @@ export const people: people = {
       {
         name: 'Whitney Fontenot',
         institution: 'Louisiana State University',
+        degree: 'BS',
         title: 'Coordinator',
         role: 'Pathobiological Sciences',
         link: '',
@@ -158,6 +161,7 @@ export const people: people = {
       {
         name: 'Alexis White',
         image: White,
+        degree: 'BA',
         link: 'https://lbrn.lsu.edu/people.html',
         role: 'Account Specialist',
       },
@@ -170,12 +174,14 @@ export const people: people = {
         name: 'Charles Irvin',
         image: Irvin,
         role: 'External Advisory Committee',
+        degree: 'PhD',
         institution: 'University of Vermont.',
         link: 'https://bit.ly/2NgIOVQ',
       },
       {
         name: 'Bruce Stanton',
         image: Stanton,
+        degree: 'PhD',
         role: 'External Advisory Committee',
         institution: 'Dartmouth College.',
         link: 'https://bit.ly/2pRtnuU',
@@ -183,6 +189,7 @@ export const people: people = {
       {
         name: 'Michael Fessler',
         image: Fessler,
+        degree: 'MD',
         role: 'External Advisory Committee',
         institution: 'National Institute of Environmental Health Sciences.',
         link: 'https://bit.ly/32M5pzM',
@@ -190,6 +197,7 @@ export const people: people = {
       {
         name: 'Juliane Bubeckwardenburg',
         image: Bubeckwardenburg,
+        degree: 'MD, PhD',
         role: 'External Advisory Committee',
         institution: 'Washington University in St.Louis.',
         link: 'https://bit.ly/32KDq3x',
@@ -197,6 +205,7 @@ export const people: people = {
       {
         name: 'Nicole Baumgarth',
         image: Baumgarth,
+        degree: 'DVM, PhD',
         role: 'External Advisory Committee',
         institution: 'University of California, Davis.',
         link: 'https://bit.ly/32McZdM',
@@ -209,42 +218,48 @@ export const people: people = {
       {
         name: 'Joel Baines',
         institution: 'Louisiana State University',
-        role: 'Internal Advisory Committee',
+        degree: 'VMD, PhD',
+        role: 'Kenneth F. Burns, Chair Dean, School of Veterinary Medicine',
         image: Baines,
         link: 'https://bit.ly/2Wa5b3f',
       },
       {
         name: 'Deepak Kaushal',
+        degree: 'PhD',
         institution: 'Texas Biomedical Research Institute',
-        role: 'Internal Advisory Committee',
+        role: 'Professor and Director',
         image: Kaushal,
         link: 'https://bit.ly/2W9mLnZ',
       },
       {
         name: 'Konstantin Kousoulas',
         institution: 'Louisiana State University',
-        role: 'Internal Advisory Committee',
+        degree: 'PhD',
+        role: 'Professor and Head, Pathobiological Sciences',
         image: Kousoulas,
         link: 'https://bit.ly/2PhLrt6',
       },
       {
         name: 'Stephania Cormier',
+        degree: 'PhD',
         institution: 'Louisiana State University',
-        role: 'Internal Advisory Committee',
+        role: 'Professor and Associate Vice President for Research',
         image: Cormier,
         link: 'https://bit.ly/2PrEN3B',
       },
       {
         name: 'Jay Kolls',
-        institution: 'Tulane',
-        role: 'Internal Advisory Committee',
+        degree: 'MD',
+        institution: 'Tulane University',
+        role: 'Professor of Medicare and Pediatrics, John W Deming Endowed Chair',
         image: Kolls,
         link: 'https://bit.ly/2pLRUBQ',
       },
       {
         name: 'Kevin Reed',
-        role: 'Internal Advisory Committee',
-        institution: 'Mary Bird Perkins Cancer Center',
+        degree: 'MD',
+        role: 'Associate Professor of Medicine, Associate Dean of Academic Affairs in Baton Rouge',
+        institution: 'LSU Health Sciences Center, Baton Rouge',
         link: 'https://marybird.org/doctor/reed/',
         image: Reed,
       },
@@ -255,19 +270,25 @@ export const people: people = {
     members: [
       {
         name: 'Tammy Dugas',
+        degree: 'PhD',
         institution: 'Louisiana State University',
+        role: 'Core-Lead',
         image: Dugas,
         link: 'https://bit.ly/33YO5Ic',
       },
       {
         name: 'Ingeborg Langohr',
+        degree: 'DVM, PhD',
+        role: 'Co-investigator',
         institution: 'Louisiana State University',
         image: Langohr,
         link: 'http://facultypages.vetmed.lsu.edu/faculty/ilangohr',
       },
       {
         name: 'Rebecca Christofferson',
+        degree: 'PhD',
         institution: 'Louisiana State University',
+        role: 'Co-investigator',
         image: Christofferson,
         link: 'http://facultypages.vetmed.lsu.edu/faculty/rcarri1',
       },
@@ -278,13 +299,15 @@ export const people: people = {
     members: [
       {
         name: 'Konstantin Kousoulas',
+        degree: 'PhD',
         institution: 'Louisiana State University',
-        role: 'Project Lead',
+        role: 'Core Lead',
         image: Kousoulas,
         link: 'https://bit.ly/2PhLrt6',
       },
       {
         name: 'Tirumalai Rangasamy',
+        degree: 'PhD',
         abstract:
           'Dr. Rangasamy is an Assistant Professor (Research) in the Department of Pathobiological and Center for Lung Biology and Disease at Louisiana State University, Baton Rouge. Dr. Rangasamy received his BSc, MSc, and PhD degrees from the University of Madras (India). He did his postdoctoral trainings at the Indian Institute of Science (Bangalore, India), Pierre et Marie Curie University (Paris, France), and Johns Hopkins University (Baltimore), and then worked as an Assistant Research Professor at the University of Rochester Medical Center, prior to his appointment at LSU in 2015. The overall goal of Dr. Rangasamy’s  research program is to identify the genetic mechanisms of susceptibility to oxidative stress related lung diseases such as cigarette smoke (CS)–mediated chronic obstructive pulmonary disease (COPD), allergic asthma, bacterial pneumonia and septic shock. Our long term objectives are 1) to identify the host factors that determine the susceptibility to CS-induced COPD, allergic airway inflammation,  bacterial pneumonia, and acute lung injury and septic shock, using genetic, genomic, and proteomic methods which are especially valuable in the study of complex disease conditions, 2) to identify and characterize specific molecular pathways that are associated with COPD and asthma, 3) to investigate the role of the major anti-oxidative transcription factor Nrf2 in dendritic cell activation, T cell differentiation, and in stem cell differentiation, and 4) to develop small molecule/stem cell based therapeutic interventions in oxidative stress related lung diseases. Dr. Rangasamy has extensive expertise in mouse models of inflammatory lung diseases including CS-induced pulmonary emphysema, allergic asthma, bacterial pneumonia and endotoxin/cecal ligation and puncture mediated acute lung injury and septic shock; computer assisted lung morphometric measurements, measurement of lung elastance and resistance in asthmatic mice, isolation and characterization of mesenchymal stem cells from the lung and bone marrows, generation of myeloid dendritic cells/macrophages/neutrophils from bone marrows, differentiation of Th1/Th2/FOX P3 regulatory T cells, bacterial culture, extracellular and intracellular (opsonophagocytosis) bacterial killing assays, gene expression arrays (Affymetrix), expression (in E. coli) and purification (using FPLC) of recombinant proteins, development of contraceptive vaccine (mice rats and rabbits), epitope mapping, flow cyotometry, as well as in various immunological and molecular techniques. Dr. Rangasamy is currently working with Prof. Samithamby Jeyaseelan (Director, Center For Lung Biology and Disease). Dr. Rangasamy is investigating the therapeutic potential of prospectively purified lung mesenchymal stem cells in COPD (emphysema)-associated bacterial exacerbations, as well as in various infectious lung diseases including pneumonia caused by Klebsiella pneumoniae, Streptococcus pneumoniae (Pneumococcal pneumonia), and superbugs [methicillin resistant Staphylococcus aureus (MRSA), and carbapenem resistant Klebsiella pneumoniae] using pre-clinical mouse models.',
         institution: 'Louisiana State University',
@@ -295,6 +318,7 @@ export const people: people = {
 
       {
         name: 'Vladimir Chouljenko',
+        degree: 'PhD',
         institution: 'Louisiana State University',
         role: 'Co-Investigator',
         image: Vladimir,
