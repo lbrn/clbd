@@ -46,7 +46,7 @@ const PersonDetails = props => {
     const length = mentors.length;
 
     const mentorElements =  mentors.map((mentor, index) => (
-      <Link href={mentor.link}>{`${mentor.name}${
+      <Link key={mentor.name} href={mentor.link}>{`${mentor.name}${
         index < length - 1 ? ', ' : '.'
       }`}</Link>
     ));
