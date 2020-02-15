@@ -24,24 +24,16 @@ const useStyles = makeStyles({
 const SideMenu = ({ links, active }: sideMenuProps) => {
   const classes = useStyles({});
 
-  // const humanize = name => {
-  //   return sentenceCase(name.replace(/([A-Z])/g, ' $1').trim());
-  // };
-
-  // const sentenceCase = word => {
-  //   return word.charAt(0).toUpperCase() + word.substring(1);
-  // };
-
   const createLinks = links => {
     return links.map(link => (
       <ListItem
         button
-        key={link.name}
-        id={link.name}
-        className={active === link.name ? classes.active : ''}
+        key={link.code}
+        id={link.code}
+        className={active === link.code ? classes.active : ''}
       >
         <ListItemText
-          key={link.name}
+          key={link.code}
           onClick={e => link.clickHandler()}
           primary={link.displayName}
         />

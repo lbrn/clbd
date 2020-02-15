@@ -37,19 +37,10 @@ const GroupSelector = ({
   const handleChange = e => {
     const target = menuItems.find(item => item.code=== e.target.value);
     target && target.clickHandler()
-    console.log(target)
-    // console.log(e.target.value)
-    // if (target) {
-    //   console.log(target)
-    // console.log(e.target.value)
       setValue(e.target.value);
-    // }
   };
 
   const createMenuItems = (menuItems: menuLink[]) => {
-    // const humanize = code => {
-    //   return sentenceCase(code.replace(/([A-Z])/g, ' $1').trim());
-    // };
     return menuItems.map(item => (
       <MenuItem key={item.code} value={item.code}>
         {item.displayName}
@@ -62,9 +53,6 @@ const GroupSelector = ({
         {sentenceCase(title)}
       </InputLabel>
       <Select
-        // open={open}
-        // onClose={handleClose}
-        // onOpen={handleOpen}
         value={value}
         onChange={handleChange}
         inputProps={{

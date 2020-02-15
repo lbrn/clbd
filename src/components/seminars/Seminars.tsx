@@ -49,7 +49,6 @@ const Seminars = ({ path }) => {
   const [pastSeminars, setPastSeminars] = useState();
 
   useEffect(() => {
-    console.log(seminars[0].time);
     const activeSeminars = seminars.filter(seminar =>
       seminar.date.isAfter(moment()),
     );
@@ -61,7 +60,6 @@ const Seminars = ({ path }) => {
   }, []);
 
   const createCards = seminars => {
-    console.log(seminars);
     return seminars.map(seminar => (
       <Grid key={seminar.id} item xs={12} sm={6}>
         <Card

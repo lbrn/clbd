@@ -11,8 +11,6 @@ const PersonDetails = props => {
   const { img, mentors, role, name, title, link, institution, abstract } =
     props.location && props.location.state;
 
-  console.log(props);
-
   const useStyles = makeStyles({
     person: {
       marginTop: theme.spacing(3),
@@ -48,7 +46,6 @@ const PersonDetails = props => {
   });
 
   const classes = useStyles();
-  console.log(props.location);
   const createMentors = mentors => {
     const length = mentors.length;
 

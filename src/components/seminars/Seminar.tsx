@@ -36,7 +36,6 @@ const Seminar = props => {
     // index comes from url
     setSeminar(seminars[props.seminarIndex]);
   }, []);
-  console.log(seminar && seminar.image);
 
   return (
     <Container className={classes.cont}>

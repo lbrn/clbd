@@ -8,8 +8,6 @@ import { mentor } from '../../models/mentor';
 interface personProps {
   name: string;
   link: string | null;
-  // setMentee: any;
-  // group?: string;
   abstract?: string;
   institution?: string;
   title?: string;
