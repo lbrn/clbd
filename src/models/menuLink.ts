@@ -1,5 +1,5 @@
 export default interface menuLink {
-  name: string;
+  code: string;
   clickHandler: () => Promise<void> | void;
   displayName: string;
 }

@@ -9,8 +9,8 @@ const People = ({ path, data }) => {
   // gets keys for all groups in the people data structure
   const mainPeopleList = data && Object.keys(data);
 
-  // makes a list of each mentee's name
-  // const menteesList = data && data.mentees.map(mentee => mentee.name)
+  // makes a list of each mentee's code
+  // const menteesList = data && data.mentees.map(mentee => mentee.code)
 
   const createPeople = peopleData => {
     if (data) {
@@ -30,10 +30,10 @@ const People = ({ path, data }) => {
     }
   };
 
-  const peopleMenuLinks = mainPeopleList.map(name => ({
-    name: name,
-    clickHandler: () => setActive(name),
-    displayName: data[name].displayName,
+  const peopleMenuLinks = mainPeopleList.map(code => ({
+    code: code,
+    clickHandler: () => setActive(code),
+    displayName: data[code].displayName,
   }));
 
   return (
@@ -46,7 +46,7 @@ const People = ({ path, data }) => {
               links={peopleMenuLinks}
               setActive={setActive}
               active={active}
-              // nameList={mainPeopleList}
+              // codeList={mainPeopleList}
             />
           )}
         </Grid>

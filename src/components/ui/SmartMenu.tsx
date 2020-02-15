@@ -14,7 +14,6 @@ interface smartMenuProps {
 
 const SmartMenu = ({ active, setActive, links, title }: smartMenuProps) => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const names = links.map(link => link.name);
   return (
     <Fragment>
       {isMobile && (

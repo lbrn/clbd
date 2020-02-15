@@ -35,7 +35,7 @@ const GroupSelector = ({
   const classes = useStyles();
 
   const handleChange = e => {
-    const target = menuItems.find(item => item.name=== e.target.value);
+    const target = menuItems.find(item => item.code=== e.target.value);
     target && target.clickHandler()
     console.log(target)
     // console.log(e.target.value)
@@ -47,11 +47,11 @@ const GroupSelector = ({
   };
 
   const createMenuItems = (menuItems: menuLink[]) => {
-    // const humanize = name => {
-    //   return sentenceCase(name.replace(/([A-Z])/g, ' $1').trim());
+    // const humanize = code => {
+    //   return sentenceCase(code.replace(/([A-Z])/g, ' $1').trim());
     // };
     return menuItems.map(item => (
-      <MenuItem key={item.name} value={item.name}>
+      <MenuItem key={item.code} value={item.code}>
         {item.displayName}
       </MenuItem>
     ));
@@ -68,7 +68,7 @@ const GroupSelector = ({
         value={value}
         onChange={handleChange}
         inputProps={{
-          name: 'peopleGroup',
+          code: 'peopleGroup',
           id: 'demo-controlled-open-select',
         }}
       >

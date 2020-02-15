@@ -27,7 +27,7 @@ const Resources = props => {
         setActive('nih');
         navigate('/resources/nih');
       },
-      name: 'nih',
+      code: 'nih',
       displayName: 'NIH Acknowledgement',
     },
     {
@@ -35,7 +35,7 @@ const Resources = props => {
         setActive('disclaimer');
         navigate('/resources/disclaimer');
       },
-      name: 'disclaimer',
+      code: 'disclaimer',
       displayName: 'Disclaimer',
     },
     {
@@ -43,7 +43,7 @@ const Resources = props => {
         setActive('useful-links');
         navigate('/resources/useful-links');
       },
-      name: 'useful-links',
+      code: 'useful-links',
       displayName: 'Useful Links',
     },
     {
@@ -51,7 +51,7 @@ const Resources = props => {
         setActive('articles');
         navigate('/resources/articles');
       },
-      name: 'articles',
+      code: 'articles',
       displayName: 'Articles',
     },
     {
@@ -59,7 +59,7 @@ const Resources = props => {
         setActive('pulmonary-core');
         navigate('/resources/pulmonary-core');
       },
-      name: 'pulmonary-core',
+      code: 'pulmonary-core',
       displayName: 'Pulmonary Immunopathology Core',
     },
     {
@@ -67,7 +67,7 @@ const Resources = props => {
         setActive('molecular-core');
         navigate('/resources/molecular-core');
       },
-      name: 'molecular-core',
+      code: 'molecular-core',
       displayName: 'Molecular Biology Core ',
     },
   ];
