@@ -21,6 +21,7 @@ const People = ({ path, data }) => {
           title={person.title}
           mentors={person.mentors}
           role={person.role}
+          degree={person.degree}
           link={person.link}
           img={person.image}
           abstract={person.abstract}

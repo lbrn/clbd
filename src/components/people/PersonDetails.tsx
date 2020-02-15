@@ -2,13 +2,9 @@ import React from 'react';
 import { Typography, Avatar, Grid, makeStyles, Link } from '@material-ui/core';
 import { theme } from '../../theme/theme';
 
-interface personProps {
-  path?: string;
-  state?: any;
-}
 const PersonDetails = props => {
   // these props are passed via react router
-  const { img, mentors, role, name, title, link, institution, abstract } =
+  const { img, mentors, role, name, title, link, institution, abstract, degree } =
     props.location && props.location.state;
 
   const useStyles = makeStyles({
@@ -73,7 +69,7 @@ const PersonDetails = props => {
           {!img && <Avatar className={classes.avatar}>{name.charAt(0)}</Avatar>}
         </Grid>
         <Grid item xs={8}>
-          {name && <Typography>{name}</Typography>}
+  {name && <Typography>{name}, {degree}</Typography>}
           {role && <Typography>{role}</Typography>}
           {title && <Typography>{title}</Typography>}
           {/* target ensures a new tab.  nooopener is for security */}

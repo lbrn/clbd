@@ -6,6 +6,7 @@ export default interface person {
   abstract?: string;
   institution?: string;
   role?: string;
+  img?: string;
   image?: string;
   link?: string;
   mentors?: mentor[];

@@ -251,14 +251,16 @@ export const people: people = {
         name: 'Jay Kolls',
         degree: 'MD',
         institution: 'Tulane University',
-        role: 'Professor of Medicare and Pediatrics, John W Deming Endowed Chair',
+        role:
+          'Professor of Medicare and Pediatrics, John W Deming Endowed Chair',
         image: Kolls,
         link: 'https://bit.ly/2pLRUBQ',
       },
       {
         name: 'Kevin Reed',
         degree: 'MD',
-        role: 'Associate Professor of Medicine, Associate Dean of Academic Affairs in Baton Rouge',
+        role:
+          'Associate Professor of Medicine, Associate Dean of Academic Affairs in Baton Rouge',
         institution: 'LSU Health Sciences Center, Baton Rouge',
         link: 'https://marybird.org/doctor/reed/',
         image: Reed,
@@ -272,7 +274,7 @@ export const people: people = {
         name: 'Tammy Dugas',
         degree: 'PhD',
         institution: 'Louisiana State University',
-        role: 'Core-Lead',
+        role: 'Core Lead',
         image: Dugas,
         link: 'https://bit.ly/33YO5Ic',
       },

@@ -3,18 +3,7 @@ import { makeStyles, Typography, Link, Grid, Avatar } from '@material-ui/core';
 import { navigate } from '@reach/router';
 
 import { theme, themeExtended } from '../../theme/theme';
-import mentor from '../../models/mentor';
-
-interface personProps {
-  name: string;
-  link: string | null;
-  abstract?: string;
-  institution?: string;
-  title?: string;
-  role?: string;
-  img?: string;
-  mentors?: mentor[];
-}
+import person from '../../models/person';
 
 const Person = ({
   name,
@@ -22,10 +11,11 @@ const Person = ({
   link,
   title,
   role,
+  degree,
   img,
   institution,
   abstract,
-}: personProps) => {
+}: person) => {
   const useStyles = makeStyles({
     person: {
       margin: theme.spacing(3),
@@ -65,7 +55,6 @@ const Person = ({
   });
 
   const classes = useStyles();
-
   return (
     <Grid
       spacing={3}
@@ -82,6 +71,7 @@ const Person = ({
             mentors,
             link,
             title,
+            degree,
             role,
             img,
             institution,
@@ -103,6 +93,7 @@ const Person = ({
                   title,
                   role,
                   img,
+                  degree,
                   institution,
                   abstract,
                 },
@@ -115,7 +106,11 @@ const Person = ({
         )}
       </Grid>
       <Grid item xs={8}>
-        {name && <Typography>{name}</Typography>}
+        {name && (
+          <Typography>
+            { name }, {degree}
+          </Typography>
+        )}
         {role && <Typography>{role}</Typography>}
         {title && <Typography>{title}</Typography>}
         {/* target ensures a new tab.  nooopener is for security */}
