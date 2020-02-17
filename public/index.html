@@ -24,12 +24,33 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <!-- MATERIAL UI -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  
 
+    <!-- MATERIAL UI -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Google analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-158668692-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      
+      ga('send', 'pageview');
+      </script>
+      <script async src="https://www.google-analytics.com/analytics.js"></script>
+      <script async src="../node_modules/autotrack/autotrack.js"></script>
     <title>CLBD</title>
   </head>
   <body>
