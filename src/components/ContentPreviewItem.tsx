@@ -62,7 +62,6 @@ const ContentPreviewItem = ({
           {(featured.link || featured.code !== 'ARTICLE') && (
             <Typography
               align="center"
-              // {/* // onClick={e => navigate(`/event/${id}`)} */}
             >
               <Link
                 onClick={() =>
