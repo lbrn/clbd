@@ -4,6 +4,7 @@ export interface seminar {
   image: string;
   title: string;
   id: string;
+  code: string;
   cost?: string;
   featured?: boolean;
   about?: string;

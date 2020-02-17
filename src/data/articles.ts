@@ -5,17 +5,20 @@ interface article {
   title: string;
   image: string;
   link: string;
+  code: string;
 }
 
 // the first article in this array is automatically featured
 
 export const articles: article[] = [
   {
+    code: 'ARTICLE',
     title: 'LSU assistant professor receives $2.7 million',
     image: Saini,
     link: 'https://www.lsu.edu/vetmed/vet_news/saini_ones_award.php',
   },
   {
+    code: 'ARTICLE',
     title: 'Economic Development Win',
     image: grantPhoto,
     link:

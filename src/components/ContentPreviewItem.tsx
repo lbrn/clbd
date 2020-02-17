@@ -23,9 +23,14 @@ const useStyles = makeStyles({
 interface contentPreviewItemProps {
   featured: any;
   id: number;
+  code: string;
 }
 
-const ContentPreviewItem = ({ featured, id }: contentPreviewItemProps) => {
+const ContentPreviewItem = ({
+  featured,
+  id,
+  code,
+}: contentPreviewItemProps) => {
   const classes = useStyles();
 
   return (
@@ -34,42 +39,45 @@ const ContentPreviewItem = ({ featured, id }: contentPreviewItemProps) => {
         <img
           src={featured.image}
           className={classes.img}
-          alt={`image for ${featured.title}`}
+          alt={`${featured.title}`}
         />
       </Grid>
       <Grid container item xs={8}>
-        {featured.title && (
-          <Grid item xs={12}>
+        <Grid item xs={12}>
+          {featured.title && (
             <Typography align="center" variant="h5" className={classes.title}>
               {featured.title}
             </Typography>
-          </Grid>
-        )}
-        {featured.location && (
-          <Grid item xs={12}>
+          )}
+          {featured.location && (
             <Typography align="center" variant="body1">
               {featured.location && featured.location}
             </Typography>
-          </Grid>
-        )}
-        {featured.date && (
-          <Grid item xs={12}>
+          )}
+          {featured.date && (
             <Typography align="center" variant="body1">
               {featured.date.format('MM/DD/YY')}
             </Typography>
-          </Grid>
-        )}
-        {featured.link && (
-          <Grid item xs={12}>
-            {/* on click = navigate => featured */}
+          )}
+          {(featured.link || featured.code !== 'ARTICLE') && (
             <Typography
               align="center"
               // {/* // onClick={e => navigate(`/event/${id}`)} */}
             >
-              <Link onClick={() => navigate(featured.link)}>view details</Link>
+              <Link
+                onClick={() =>
+                  navigate(
+                    code === 'ARTICLE'
+                      ? featured.link
+                      : `event/${featured.id}`,
+                  )
+                }
+              >
+                view details
+              </Link>
             </Typography>
-          </Grid>
-        )}
+          )}
+        </Grid>
       </Grid>
     </Grid>
   );

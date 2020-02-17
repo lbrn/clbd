@@ -30,7 +30,7 @@ const ContentPreview = () => {
         className={classes.previewCont}
         key={index}
       >
-        <ContentPreviewItem featured={item} id={index} />
+        <ContentPreviewItem code={item.code} featured={item} id={index} />
       </Grid>
     ));
   };

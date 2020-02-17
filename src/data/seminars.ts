@@ -20,6 +20,7 @@ export const seminars: seminar[] = [
   {
     title: 'Proteomics Workshop',
     id: '0',
+    code: 'SEMINAR',
     eventType: 'Workshop',
     date: moment('2020-01-24'),
     time: '10 am - 12 pm',
@@ -36,6 +37,7 @@ export const seminars: seminar[] = [
   {
     title: 'Pneumonia Biology - Lungs Learn from Experience',
     id: '1',
+    code: 'SEMINAR',
     eventType: 'Presentation',
     date: moment('2020-03-20'),
     time: '12 pm',
@@ -48,6 +50,7 @@ export const seminars: seminar[] = [
   {
     title: 'Leukocyte-Endothelial Cell Interactions...',
     id: '2',
+    code: 'SEMINAR',
     eventType: 'Presentation',
     date: moment('2020-02-28'),
     time: '12 pm',
@@ -60,6 +63,7 @@ export const seminars: seminar[] = [
   {
     title: 'Innate Immune Memory Dynamics...',
     id: '3',
+    code: 'SEMINAR',
     eventType: 'Presentation',
     date: moment('2020-02-14'),
     featured: true,
