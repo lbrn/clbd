@@ -49,6 +49,7 @@ export const seminars: seminar[] = [
   },
   {
     title: 'Leukocyte-Endothelial Cell Interactions...',
+    featured: true,
     id: '2',
     code: 'SEMINAR',
     eventType: 'Presentation',
@@ -66,7 +67,6 @@ export const seminars: seminar[] = [
     code: 'SEMINAR',
     eventType: 'Presentation',
     date: moment('2020-02-14'),
-    featured: true,
     time: '12 pm',
     pdfLink: liwuPdf,
     speakers: 'Professor Liwu Li, Ph.D',

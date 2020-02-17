@@ -49,12 +49,12 @@ const Seminars = ({ path }) => {
   const [pastSeminars, setPastSeminars] = useState();
 
   useEffect(() => {
-    const activeSeminars = seminars.filter(seminar =>
-      seminar.date.isAfter(moment()),
-    );
-    const pastSeminars = seminars.filter(seminar =>
-      seminar.date.isBefore(moment()),
-    );
+    const activeSeminars = seminars
+      .filter(seminar => seminar.date.isAfter(moment()))
+      .sort((a, b) => a.date.format('YYYYMMDD') - b.date.format('YYYYMMDD'));
+    const pastSeminars = seminars
+      .filter(seminar => seminar.date.isBefore(moment()))
+      .sort((a, b) => a.date.format('YYYYMMDD') - b.date.format('YYYYMMDD'));
     setActiveSeminars(activeSeminars);
     setPastSeminars(pastSeminars);
   }, []);
