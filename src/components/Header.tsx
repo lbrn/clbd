@@ -50,7 +50,6 @@ const useStyles = makeStyles({
 
 const Header = () => {
   const history: any = useContext(HistoryContext);
-  console.log(history);
   const classes = useStyles({});
   const [active, setActive] = useState('');
 

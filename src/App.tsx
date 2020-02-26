@@ -36,7 +36,7 @@ const App: React.FC = () => {
     // in use effect hook so it only fires once
     history.current.listen((location, action) => {
       ReactGA.pageview(location.pathname);
-      console.log(location);
+      console.log(location.pathname);
     });
   }, []);
 
