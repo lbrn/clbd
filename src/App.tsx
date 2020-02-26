@@ -30,10 +30,10 @@ const App: React.FC = () => {
     ReactGA.initialize('UA-158668692-1');
   }, []);
 
-  const unlisten = history.listen(window => {
-    ReactGA.set({ page: history.location });
-    ReactGA.pageview(history.location);
-    console.log('page=>', history.location);
+  const unlisten = history.listen((location, action) => {
+    ReactGA.set({ page: location.pathname });
+    ReactGA.pageview(location.pathname);
+    console.log('page=>', location.pathname);
   });
 
   history.push('/');
