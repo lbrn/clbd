@@ -19,7 +19,6 @@ import {
   Noel,
   Ogundele,
   Patial,
-  Penn,
   Rangasamy,
   Reed,
   Saini,

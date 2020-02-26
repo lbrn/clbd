@@ -11,12 +11,10 @@ import PeopleCont from '../people/PeopleCont';
 import PersonDetails from '../people/PersonDetails';
 import People from '../people/People';
 import Disclaimer from '../resources/resources/Disclaimer';
-import Core from '../resources/resources/Core';
 import UsefulLinks from '../resources/resources/UsefulLinks';
 import Articles from '../resources/resources/Articles';
 import MolecularCore from '../resources/resources/MolecularCore';
 import PulmonaryCore from '../resources/resources/PulmonaryCore';
-import HistoryContext from '../contexts/HistoryContext';
 
 const RouterWrapper = () => {
   return (

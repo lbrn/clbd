@@ -5,7 +5,6 @@ import {
   Toolbar,
   makeStyles,
   Typography,
-  Link,
 } from '@material-ui/core';
 import logoFull from '../assets/misc/logo_full.png';
 import { navigate } from '@reach/router';

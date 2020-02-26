@@ -1,7 +1,5 @@
 import moment from 'moment';
-import sciencyImage from '../assets/seminars/cell.jpg';
-import altSciencyImage from '../assets/seminars/jellies.jpg';
-import li from '../assets/seminars/li.png';
+
 import { seminar } from '../models/seminar';
 import {
   laurieFlyerThumb,

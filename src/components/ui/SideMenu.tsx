@@ -8,7 +8,6 @@ import {
 } from '@material-ui/core';
 import { darken } from '@material-ui/core/styles';
 import menuLink from '../../models/menuLink';
-import HistoryContext from '../contexts/HistoryContext';
 interface sideMenuProps {
   links: menuLink[];
   active: string;

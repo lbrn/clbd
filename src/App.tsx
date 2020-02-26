@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState, useRef } from 'react';
+import React, { Fragment, useEffect, useRef } from 'react';
 import { CssBaseline, makeStyles } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import ReactGA from 'react-ga';
@@ -8,7 +8,6 @@ import { theme } from './theme/theme';
 import Header from './components/Header';
 import RouterWrapper from './components/router/RouterWrapper';
 import Footer from './components/Footer';
-import { createHistory, LocationProvider } from '@reach/router';
 
 import HistoryContext from './components/contexts/HistoryContext';
 

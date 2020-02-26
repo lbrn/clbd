@@ -8,8 +8,6 @@ import { navigate, Router } from '@reach/router';
 import Disclaimer from './resources/Disclaimer';
 import UsefulLinks from './resources/UsefulLinks';
 import Articles from './resources/Articles';
-// import Core from './resources/Core';
-import SideMenu from '../ui/SideMenu';
 import MolecularCore from './resources/MolecularCore';
 import PulmonaryCore from './resources/PulmonaryCore';
 import SmartMenu from '../ui/SmartMenu';
