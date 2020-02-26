@@ -7,6 +7,7 @@ import { theme } from './theme/theme';
 import Header from './components/Header';
 import RouterWrapper from './components/router/RouterWrapper';
 import Footer from './components/Footer';
+import { createBrowserHistory } from 'history';
 import { createHistory, LocationProvider } from '@reach/router';
 
 require('dotenv').config();
@@ -21,25 +22,21 @@ const useStyles = makeStyles({
   },
 });
 
-let history = createHistory(window);
+let history = createBrowserHistory();
 
 const App: React.FC = () => {
-  const [currentURL, setCurrentURL] = useState('');
 
   useEffect(() => {
-    history = createHistory(window);
-    setCurrentURL(history.location.pathname)
     ReactGA.initialize('UA-158668692-1');
   }, []);
-  useEffect(() => {
-    console.log(currentURL)
-  }, [history])
 
   const unlisten = history.listen(window => {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-    console.log('page=>', window.location.pathname);
+    ReactGA.set({ page: history.location });
+    ReactGA.pageview(history.location);
+    console.log('page=>', history.location);
   });
+
+  history.push('/');
 
   const classes = useStyles();
 
