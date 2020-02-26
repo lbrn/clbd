@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {
   AppBar,
   Grid,
@@ -11,6 +11,7 @@ import logoFull from '../assets/misc/logo_full.png';
 import { navigate } from '@reach/router';
 
 import { theme, themeExtended } from '../theme/theme';
+import HistoryContext from '../components/contexts/HistoryContext';
 
 const useStyles = makeStyles({
   image: {
@@ -48,6 +49,8 @@ const useStyles = makeStyles({
 });
 
 const Header = () => {
+  const history: any = useContext(HistoryContext);
+  console.log(history);
   const classes = useStyles({});
   const [active, setActive] = useState('');
 
@@ -94,6 +97,7 @@ const Header = () => {
                 className={classes.link}
                 onClick={e => {
                   navigate('/about');
+                  history.push('/about');
                   handleActive('aboutLink');
                 }}
                 color="primary"
@@ -108,6 +112,7 @@ const Header = () => {
                 className={classes.link}
                 onClick={e => {
                   navigate('/people');
+                  history.push('/people')
                   handleActive('peopleLink');
                 }}
                 color="primary"
@@ -121,6 +126,7 @@ const Header = () => {
                 className={classes.link}
                 onClick={e => {
                   navigate('/resources');
+                  history.push('/resources')
                   handleActive('resourcesLink');
                 }}
                 color="primary"
@@ -134,6 +140,7 @@ const Header = () => {
                 className={classes.link}
                 onClick={e => {
                   navigate('/events');
+                  history.push('/events')
                   handleActive('eventsLink');
                 }}
                 color="primary"

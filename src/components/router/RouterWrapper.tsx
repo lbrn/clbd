@@ -16,6 +16,7 @@ import UsefulLinks from '../resources/resources/UsefulLinks';
 import Articles from '../resources/resources/Articles';
 import MolecularCore from '../resources/resources/MolecularCore';
 import PulmonaryCore from '../resources/resources/PulmonaryCore';
+import HistoryContext from '../contexts/HistoryContext';
 
 const RouterWrapper = () => {
   return (
