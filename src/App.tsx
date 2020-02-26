@@ -25,7 +25,7 @@ const useStyles = makeStyles({
 });
 
 const App: React.FC = () => {
-  // ReactGA.initialize('UA-158668692-1');
+  ReactGA.initialize('UA-158668692-1');
 
   const history = createHistory(window);
 
