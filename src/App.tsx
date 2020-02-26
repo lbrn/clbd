@@ -43,7 +43,7 @@ const App: React.FC = () => {
           <div className={classes.contentWrap}>
             <CssBaseline />
             <Header />
-            {/* <LocationProvider history={history}> */}
+            <LocationProvider history={history}/>
               <RouterWrapper />
             {/* </LocationProvider> */}
           </div>
