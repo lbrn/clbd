@@ -12,15 +12,6 @@ import { createHistory, LocationProvider } from '@reach/router';
 // to get TS to shut up about the window object
 // const windowObj: any = window;
 
-ReactGA.initialize('UA-158668692-1');
-
-const history = createHistory(window);
-
-history.listen( window => {
-  ReactGA.pageview(window.location.pathname+ window.location.search);
-  console.log('page=>',window.location.pathname);
-});
-
 require('dotenv').config();
 
 const useStyles = makeStyles({
@@ -34,21 +25,30 @@ const useStyles = makeStyles({
 });
 
 const App: React.FC = () => {
+  // ReactGA.initialize('UA-158668692-1');
+
+  const history = createHistory(window);
+
+  history.listen( window => {
+    ReactGA.pageview(window.location.pathname+ window.location.search);
+    console.log('page=>',window.location.pathname);
+  });
+
   const classes = useStyles();
 
   return (
     <Fragment>
       <ThemeProvider theme={theme}>
-        <LocationProvider history={history}>
-          <div className={classes.appWrapper}>
-            <div className={classes.contentWrap}>
-              <CssBaseline />
-              <Header />
+        <div className={classes.appWrapper}>
+          <div className={classes.contentWrap}>
+            <CssBaseline />
+            <Header />
+            {/* <LocationProvider history={history}> */}
               <RouterWrapper />
-            </div>
-            <Footer />
+            {/* </LocationProvider> */}
           </div>
-        </LocationProvider>
+          <Footer />
+        </div>
       </ThemeProvider>
     </Fragment>
   );
