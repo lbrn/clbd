@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Grid, Container, makeStyles } from '@material-ui/core';
+
 import { theme } from '../../theme/theme';
+import HistoryContext from '../../components/contexts/HistoryContext';
 import NihAcknowledgement from './resources/NihAcknowledgement';
 import { navigate, Router } from '@reach/router';
 import Disclaimer from './resources/Disclaimer';
@@ -19,6 +21,7 @@ const useStyles = makeStyles({
 });
 
 const Resources = props => {
+  const history: any = useContext(HistoryContext);
   const [active, setActive] = useState('');
   const classes = useStyles({});
   const links = [
@@ -26,6 +29,7 @@ const Resources = props => {
       clickHandler: () => {
         setActive('nih');
         navigate('/resources/nih');
+        history.push('/resources/nih');
       },
       code: 'nih',
       displayName: 'NIH Acknowledgement',
@@ -34,6 +38,7 @@ const Resources = props => {
       clickHandler: () => {
         setActive('disclaimer');
         navigate('/resources/disclaimer');
+        history.push('/resources/disclaimer');
       },
       code: 'disclaimer',
       displayName: 'Disclaimer',
@@ -42,6 +47,7 @@ const Resources = props => {
       clickHandler: () => {
         setActive('useful-links');
         navigate('/resources/useful-links');
+        history.push('resources/useful-links');
       },
       code: 'useful-links',
       displayName: 'Useful Links',
@@ -50,6 +56,7 @@ const Resources = props => {
       clickHandler: () => {
         setActive('articles');
         navigate('/resources/articles');
+        history.push('resources/articles');
       },
       code: 'articles',
       displayName: 'Articles',
@@ -58,6 +65,7 @@ const Resources = props => {
       clickHandler: () => {
         setActive('pulmonary-core');
         navigate('/resources/pulmonary-core');
+        history.push('/resources/pulmonary-core');
       },
       code: 'pulmonary-core',
       displayName: 'Pulmonary Immunopathology Core',
@@ -66,6 +74,7 @@ const Resources = props => {
       clickHandler: () => {
         setActive('molecular-core');
         navigate('/resources/molecular-core');
+        history.push('/resources/molecular-core');
       },
       code: 'molecular-core',
       displayName: 'Molecular Biology Core ',
