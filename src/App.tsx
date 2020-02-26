@@ -31,7 +31,11 @@ const App: React.FC = () => {
   const history = useRef(createBrowserHistory());
 
   useEffect(() => {
-    ReactGA.initialize('UA-158668692-1');
+    ReactGA.initialize('UA-158668692-1', {
+      debug: true,
+      titleCase: false,
+    });
+    ReactGA.pageview('/');
 
     // in use effect hook so it only fires once
     history.current.listen((location, action) => {
