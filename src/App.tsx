@@ -25,13 +25,13 @@ const useStyles = makeStyles({
 });
 const history = createHistory(window);
 
-
 const App: React.FC = () => {
   ReactGA.initialize('UA-158668692-1');
 
-  history.listen( window => {
-    ReactGA.pageview(window.location.pathname+ window.location.search);
-    console.log('page=>',window.location.pathname);
+  history.listen(window => {
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
+    console.log('page=>', window.location.pathname);
   });
 
   const classes = useStyles();
@@ -43,8 +43,8 @@ const App: React.FC = () => {
           <div className={classes.contentWrap}>
             <CssBaseline />
             <Header />
-            <LocationProvider history={history}/>
-              <RouterWrapper />
+            <LocationProvider history={history} />
+            <RouterWrapper />
             {/* </LocationProvider> */}
           </div>
           <Footer />
