@@ -23,11 +23,11 @@ const useStyles = makeStyles({
     paddingBottom: '4.5rem',
   },
 });
+const history = createHistory(window);
+
 
 const App: React.FC = () => {
   ReactGA.initialize('UA-158668692-1');
-
-  const history = createHistory(window);
 
   history.listen( window => {
     ReactGA.pageview(window.location.pathname+ window.location.search);
