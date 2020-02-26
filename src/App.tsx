@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { CssBaseline, makeStyles } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import ReactGA from 'react-ga';
@@ -8,9 +8,6 @@ import Header from './components/Header';
 import RouterWrapper from './components/router/RouterWrapper';
 import Footer from './components/Footer';
 import { createHistory, LocationProvider } from '@reach/router';
-
-// to get TS to shut up about the window object
-// const windowObj: any = window;
 
 require('dotenv').config();
 
@@ -23,12 +20,22 @@ const useStyles = makeStyles({
     paddingBottom: '4.5rem',
   },
 });
-const history = createHistory(window);
+
+let history = createHistory(window);
 
 const App: React.FC = () => {
-  ReactGA.initialize('UA-158668692-1');
+  const [currentURL, setCurrentURL] = useState('');
 
-  history.listen(window => {
+  useEffect(() => {
+    history = createHistory(window);
+    setCurrentURL(history.location.pathname)
+    ReactGA.initialize('UA-158668692-1');
+  }, []);
+  useEffect(() => {
+    console.log(currentURL)
+  }, [history])
+
+  const unlisten = history.listen(window => {
     ReactGA.set({ page: window.location.pathname });
     ReactGA.pageview(window.location.pathname);
     console.log('page=>', window.location.pathname);

@@ -10,6 +10,7 @@ import {
 } from '@material-ui/core';
 import { navigate } from '@reach/router';
 import moment from 'moment';
+import history from 'history';
 
 import { seminars } from '../../data/seminars';
 import { theme, themeExtended } from '../../theme/theme';
@@ -63,7 +64,8 @@ const Seminars = ({ path }) => {
     return seminars.map(seminar => (
       <Grid key={seminar.id} item xs={12} sm={6}>
         <Card
-          onClick={e => navigate(`/event/${seminar.id}`)}
+          // onClick={e => navigate(`/event/${seminar.id}`)}
+          onClick={e => history.push(`/event/${seminar.id}`)}
           className={classes.card}
         >
           <CardMedia
