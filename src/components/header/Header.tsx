@@ -4,7 +4,6 @@ import {
   Grid,
   Toolbar,
   makeStyles,
-  Typography,
   Button,
 } from '@material-ui/core';
 import logoFull from '../../assets/misc/logo_full.png';

@@ -12,7 +12,6 @@ const useStyles = makeStyles({
 });
 
 const ContentPreview = () => {
-  const classes = useStyles({});
   const currentSeminars = seminars.filter(seminar => seminar.date.isAfter());
   const featuredSeminar =
     seminars.filter(seminar => seminar.featured)[0] || currentSeminars[0];
@@ -20,18 +19,7 @@ const ContentPreview = () => {
 
   const createFeaturedItems = items => {
     return items.map((item, index) => (
-      <Grid
-        container
-        item
-        xs={12}
-        md={6}
-        justify="center"
-        alignItems="center"
-        className={classes.previewCont}
-        key={index}
-      >
         <ContentPreviewItem code={item.code} featured={item} id={index} />
-      </Grid>
     ));
   };
   return <Fragment>{createFeaturedItems(featuredNews)}</Fragment>;

@@ -6,14 +6,22 @@ import { navigate } from '@reach/router';
 
 const useStyles = makeStyles({
   preview: {
-    width: '80%',
-    height: 200,
     backgroundColor: 'rgba(255, 255, 255, .6)',
   },
-  img: {
-    objectFit: 'cover',
+  imgCont: {
+    // position: 'relative',
     width: '100%',
-    height: '100%',
+    maxHeight: 300,
+    // height: 0,
+    // paddingTop: '20%',
+  },
+  img: {
+    objectFit: 'contain',
+    width: '100%',
+    maxHeight: 300,
+    // height: '100%'
+    // height: 0,
+    paddingTop: '20%',
   },
   title: {
     paddingTop: theme.spacing(3),
@@ -34,16 +42,15 @@ const ContentPreviewItem = ({
   const classes = useStyles();
 
   return (
-    <Grid container item xs={8} className={classes.preview}>
-      <Grid container item xs={4}>
+    <Grid container item xs={12} sm={6} className={classes.preview} >
+      <Grid container item xs={4} className={classes.imgCont}>
         <img
           src={featured.image}
           className={classes.img}
           alt={`${featured.title}`}
         />
       </Grid>
-      <Grid container item xs={8}>
-        <Grid item xs={12}>
+      <Grid item xs={8}>
           {featured.title && (
             <Typography align="center" variant="h5" className={classes.title}>
               {featured.title}
@@ -60,15 +67,11 @@ const ContentPreviewItem = ({
             </Typography>
           )}
           {(featured.link || featured.code !== 'ARTICLE') && (
-            <Typography
-              align="center"
-            >
+            <Typography align="center">
               <Link
                 onClick={() =>
                   navigate(
-                    code === 'ARTICLE'
-                      ? featured.link
-                      : `event/${featured.id}`,
+                    code === 'ARTICLE' ? featured.link : `event/${featured.id}`,
                   )
                 }
               >
@@ -76,7 +79,6 @@ const ContentPreviewItem = ({
               </Link>
             </Typography>
           )}
-        </Grid>
       </Grid>
     </Grid>
   );
