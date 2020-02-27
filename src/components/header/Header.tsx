@@ -5,12 +5,16 @@ import {
   Toolbar,
   makeStyles,
   Typography,
+  Button,
 } from '@material-ui/core';
-import logoFull from '../assets/misc/logo_full.png';
+import logoFull from '../../assets/misc/logo_full.png';
 import { navigate } from '@reach/router';
 
-import { theme, themeExtended } from '../theme/theme';
-import HistoryContext from '../components/contexts/HistoryContext';
+import { theme, themeExtended } from '../../theme/theme';
+import HistoryContext from '../contexts/HistoryContext';
+import HeaderMenuItem from './HeaderMenu';
+import { createLinks as createResourcesLinks } from '../resources/resources/ResourcesLinks';
+import { createLinks as createPeopleLinks } from '../people/PeopleLinks';
 
 const useStyles = makeStyles({
   image: {
@@ -52,6 +56,9 @@ const Header = () => {
   const classes = useStyles({});
   const [active, setActive] = useState('');
 
+  const resourcesLinks = createResourcesLinks(history);
+  const peopleLinks = createPeopleLinks(history);
+
   useEffect(() => {
     const linksCont = document.getElementById('linkCont');
     if (linksCont) {
@@ -89,63 +96,28 @@ const Header = () => {
             sm={8}
             md={6}
           >
-            <Grid item className={classes.linkCont} id="aboutLink">
-              <Typography
-                variant="body1"
-                className={classes.link}
-                onClick={e => {
-                  navigate('/about');
-                  history.push('/about');
-                  handleActive('aboutLink');
-                }}
-                color="primary"
-              >
-                About
-              </Typography>
-            </Grid>
-
-            <Grid item className={classes.linkCont} id="peopleLink">
-              <Typography
-                variant="body1"
-                className={classes.link}
-                onClick={e => {
-                  navigate('/people');
-                  history.push('/people')
-                  handleActive('peopleLink');
-                }}
-                color="primary"
-              >
-                People
-              </Typography>
-            </Grid>
-            <Grid item className={classes.linkCont} id="resourcesLink">
-              <Typography
-                variant="body1"
-                className={classes.link}
-                onClick={e => {
-                  navigate('/resources');
-                  history.push('/resources')
-                  handleActive('resourcesLink');
-                }}
-                color="primary"
-              >
-                Resources
-              </Typography>
-            </Grid>
-            <Grid item className={classes.linkCont} id="eventsLink">
-              <Typography
-                variant="body1"
-                className={classes.link}
-                onClick={e => {
-                  navigate('/events');
-                  history.push('/events')
-                  handleActive('eventsLink');
-                }}
-                color="primary"
-              >
-                Events
-              </Typography>
-            </Grid>
+            <Button
+              onClick={() => {
+                history.push('/events');
+                navigate('/events');
+              }}
+              id={`menu-button events`}
+              color="primary"
+            >
+              events
+            </Button>
+            <Button
+              onClick={() => {
+                history.push('/about');
+                navigate('/about');
+              }}
+              color="primary"
+              id={`menu-button about`}
+            >
+              about
+            </Button>
+            <HeaderMenuItem menuName="resources" menuLinks={resourcesLinks} />
+            <HeaderMenuItem menuName="people" menuLinks={peopleLinks} />
           </Grid>
         </Grid>
       </Toolbar>

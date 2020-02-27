@@ -22,10 +22,11 @@ const Resources = props => {
   const history: any = useContext(HistoryContext);
   const [active, setActive] = useState('');
   const classes = useStyles({});
+
   const links = [
     {
       clickHandler: () => {
-        setActive('nih');
+        // setActive('nih');
         navigate('/resources/nih');
         history.push('/resources/nih');
       },
@@ -34,7 +35,7 @@ const Resources = props => {
     },
     {
       clickHandler: () => {
-        setActive('disclaimer');
+        // setActive('disclaimer');
         navigate('/resources/disclaimer');
         history.push('/resources/disclaimer');
       },
@@ -43,7 +44,7 @@ const Resources = props => {
     },
     {
       clickHandler: () => {
-        setActive('useful-links');
+        // setActive('useful-links');
         navigate('/resources/useful-links');
         history.push('resources/useful-links');
       },
@@ -52,7 +53,7 @@ const Resources = props => {
     },
     {
       clickHandler: () => {
-        setActive('articles');
+        // setActive('articles');
         navigate('/resources/articles');
         history.push('resources/articles');
       },
@@ -61,7 +62,7 @@ const Resources = props => {
     },
     {
       clickHandler: () => {
-        setActive('pulmonary-core');
+        // setActive('pulmonary-core');
         navigate('/resources/pulmonary-core');
         history.push('/resources/pulmonary-core');
       },
@@ -70,7 +71,7 @@ const Resources = props => {
     },
     {
       clickHandler: () => {
-        setActive('molecular-core');
+        // setActive('molecular-core');
         navigate('/resources/molecular-core');
         history.push('/resources/molecular-core');
       },

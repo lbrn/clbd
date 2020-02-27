@@ -5,7 +5,7 @@ import ReactGA from 'react-ga';
 import { createBrowserHistory } from 'history';
 
 import { theme } from './theme/theme';
-import Header from './components/Header';
+import Header from './components/header/Header';
 import RouterWrapper from './components/router/RouterWrapper';
 import Footer from './components/Footer';
 

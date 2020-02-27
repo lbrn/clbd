@@ -3,8 +3,14 @@ import { Grid } from '@material-ui/core';
 import Person from './Person';
 import SmartMenu from '../ui/SmartMenu';
 
-const People = ({ path, data }) => {
-  const [active, setActive] = useState('leadership');
+interface peopleProps {
+  path: string;
+  data: any;
+  location?: any;
+}
+
+const People = ({ path, data, location }: peopleProps) => {
+  const [active, setActive] = useState((location && location.state.code) || 'leadership');
 
   // gets keys for all groups in the people data structure
   const mainPeopleList = data && Object.keys(data);
@@ -47,7 +53,6 @@ const People = ({ path, data }) => {
               links={peopleMenuLinks}
               setActive={setActive}
               active={active}
-              // codeList={mainPeopleList}
             />
           )}
         </Grid>

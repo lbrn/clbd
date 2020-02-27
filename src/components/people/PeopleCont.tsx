@@ -10,7 +10,7 @@ import { theme } from '../../theme/theme';
 const useStyles = makeStyles({
   router: {
     width: '100%',
-    marginTop: theme.spacing(3)
+    marginTop: theme.spacing(3),
   },
 });
 
