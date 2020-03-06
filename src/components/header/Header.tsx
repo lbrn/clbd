@@ -1,11 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import {
-  AppBar,
-  Grid,
-  Toolbar,
-  makeStyles,
-  Button,
-} from '@material-ui/core';
+import { AppBar, Grid, Toolbar, makeStyles, Button } from '@material-ui/core';
 import logoFull from '../../assets/misc/logo_full.png';
 import { navigate } from '@reach/router';
 
@@ -97,16 +91,6 @@ const Header = () => {
           >
             <Button
               onClick={() => {
-                history.push('/events');
-                navigate('/events');
-              }}
-              id={`menu-button events`}
-              color="primary"
-            >
-              events
-            </Button>
-            <Button
-              onClick={() => {
                 history.push('/about');
                 navigate('/about');
               }}
@@ -115,8 +99,18 @@ const Header = () => {
             >
               about
             </Button>
-            <HeaderMenuItem menuName="resources" menuLinks={resourcesLinks} />
             <HeaderMenuItem menuName="people" menuLinks={peopleLinks} />
+            <HeaderMenuItem menuName="resources" menuLinks={resourcesLinks} />
+            <Button
+              onClick={() => {
+                history.push('/events');
+                navigate('/events');
+              }}
+              id={`menu-button events`}
+              color="primary"
+            >
+              events
+            </Button>
           </Grid>
         </Grid>
       </Toolbar>
