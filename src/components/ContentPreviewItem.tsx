@@ -2,12 +2,9 @@ import React from 'react';
 import { makeStyles, Typography, Grid, Link } from '@material-ui/core';
 import { theme } from '../theme/theme';
 import { navigate } from '@reach/router';
-// import { seminars } from "../models/seminars";
+import { themeExtended } from '../theme/theme';
 
 const useStyles = makeStyles({
-  preview: {
-    backgroundColor: 'rgba(255, 255, 255, .6)',
-  },
   imgCont: {
     // position: 'relative',
     width: '100%',
@@ -26,6 +23,9 @@ const useStyles = makeStyles({
   title: {
     paddingTop: theme.spacing(3),
   },
+  cont: {
+    backgroundColor: themeExtended.palette.primary.hover,
+  },
 });
 
 interface contentPreviewItemProps {
@@ -42,7 +42,7 @@ const ContentPreviewItem = ({
   const classes = useStyles();
 
   return (
-    <Grid container item xs={12} sm={6} className={classes.preview} >
+    <Grid container item xs={12} sm={6} className={classes.cont}>
       <Grid container item xs={4} className={classes.imgCont}>
         <img
           src={featured.image}
@@ -51,34 +51,34 @@ const ContentPreviewItem = ({
         />
       </Grid>
       <Grid item xs={8}>
-          {featured.title && (
-            <Typography align="center" variant="h5" className={classes.title}>
-              {featured.title}
-            </Typography>
-          )}
-          {featured.location && (
-            <Typography align="center" variant="body1">
-              {featured.location && featured.location}
-            </Typography>
-          )}
-          {featured.date && (
-            <Typography align="center" variant="body1">
-              {featured.date.format('MM/DD/YY')}
-            </Typography>
-          )}
-          {(featured.link || featured.code !== 'ARTICLE') && (
-            <Typography align="center">
-              <Link
-                onClick={() =>
-                  navigate(
-                    code === 'ARTICLE' ? featured.link : `event/${featured.id}`,
-                  )
-                }
-              >
-                view details
-              </Link>
-            </Typography>
-          )}
+        {featured.title && (
+          <Typography align="center" variant="h5" className={classes.title}>
+            {featured.title}
+          </Typography>
+        )}
+        {featured.location && (
+          <Typography align="center" variant="body1">
+            {featured.location && featured.location}
+          </Typography>
+        )}
+        {featured.date && (
+          <Typography align="center" variant="body1">
+            {featured.date.format('MM/DD/YY')}
+          </Typography>
+        )}
+        {(featured.link || featured.code !== 'ARTICLE') && (
+          <Typography align="center">
+            <Link
+              onClick={() =>
+                navigate(
+                  code === 'ARTICLE' ? featured.link : `event/${featured.id}`,
+                )
+              }
+            >
+              view details
+            </Link>
+          </Typography>
+        )}
       </Grid>
     </Grid>
   );

@@ -19,7 +19,11 @@ const ContentPreview = () => {
 
   const createFeaturedItems = items => {
     return items.map((item, index) => (
-        <ContentPreviewItem code={item.code} featured={item} id={index} />
+      <ContentPreviewItem
+        code={item.code}
+        featured={item}
+        id={index}
+      />
     ));
   };
   return <Fragment>{createFeaturedItems(featuredNews)}</Fragment>;

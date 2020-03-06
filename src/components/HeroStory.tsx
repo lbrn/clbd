@@ -25,7 +25,7 @@ const useStyles = makeStyles({
 const HeroStory = (props) => {
 	const classes = useStyles();
 	return (
-		<Container className={classes.outerCont}>
+		<div className={classes.outerCont}>
 			<Grid xs={12} container item spacing={3}>
 				<Grid item xs={12} sm={6}>
 					<div className={classes.img} />
@@ -49,7 +49,7 @@ const HeroStory = (props) => {
 				</Link>
 				</Grid>
 			</Grid>
-		</Container>
+		</div>
 	)
 }
 
