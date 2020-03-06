@@ -36,6 +36,7 @@ export const seminars: seminar[] = [
     title: 'Pneumonia Biology - Lungs Learn from Experience',
     id: '1',
     code: 'SEMINAR',
+    featured: true,
     eventType: 'Presentation',
     date: moment('2020-03-20'),
     time: '12 pm',
@@ -47,7 +48,6 @@ export const seminars: seminar[] = [
   },
   {
     title: 'Leukocyte-Endothelial Cell Interactions...',
-    featured: true,
     id: '2',
     code: 'SEMINAR',
     eventType: 'Presentation',
