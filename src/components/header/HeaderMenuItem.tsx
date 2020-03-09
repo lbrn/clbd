@@ -27,6 +27,7 @@ const HeaderMenuItem = ({ menuName, menuLinks }: HeaderMenuItemProps) => {
   return (
     <Fragment>
       <Button
+        size="large"
         color="primary"
         id={`menu-button ${menuName}`}
         aria-controls="simple-menu"

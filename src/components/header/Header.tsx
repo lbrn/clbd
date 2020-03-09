@@ -5,7 +5,7 @@ import { navigate } from '@reach/router';
 
 import { theme, themeExtended } from '../../theme/theme';
 import HistoryContext from '../contexts/HistoryContext';
-import HeaderMenuItem from './HeaderMenu';
+import HeaderMenuItem from './HeaderMenuItem';
 import { createLinks as createResourcesLinks } from '../resources/resources/ResourcesLinks';
 import { createLinks as createPeopleLinks } from '../people/PeopleLinks';
 
@@ -90,6 +90,7 @@ const Header = () => {
             md={6}
           >
             <Button
+              size="large"
               onClick={() => {
                 history.push('/about');
                 navigate('/about');
@@ -102,6 +103,7 @@ const Header = () => {
             <HeaderMenuItem menuName="people" menuLinks={peopleLinks} />
             <HeaderMenuItem menuName="resources" menuLinks={resourcesLinks} />
             <Button
+              size="large"
               onClick={() => {
                 history.push('/events');
                 navigate('/events');

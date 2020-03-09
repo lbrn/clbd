@@ -20,7 +20,6 @@ const RouterWrapper = () => {
   return (
     <Fragment>
       <Router>
-        {/* <HeroStory path="/"/> */}
         <Hero path="/" />
         <About path="about" />
         <PeopleCont path="people">
