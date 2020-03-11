@@ -21,7 +21,7 @@ const useStyles = makeStyles({
     paddingTop: theme.spacing(3),
   },
   cont: {
-    backgroundColor: themeExtended.palette.primary.hover,
+    // backgroundColor: themeExtended.palette.primary.hover,
   },
   textCont: {
     padding: 10,
