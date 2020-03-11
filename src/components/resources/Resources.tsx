@@ -4,13 +4,14 @@ import { Grid, Container, makeStyles } from '@material-ui/core';
 import { theme } from '../../theme/theme';
 import HistoryContext from '../../components/contexts/HistoryContext';
 import NihAcknowledgement from './resources/NihAcknowledgement';
-import { navigate, Router } from '@reach/router';
+import { Router } from '@reach/router';
 import Disclaimer from './resources/Disclaimer';
 import UsefulLinks from './resources/UsefulLinks';
 import Articles from './resources/Articles';
 import MolecularCore from './resources/MolecularCore';
 import PulmonaryCore from './resources/PulmonaryCore';
 import SmartMenu from '../ui/SmartMenu';
+import { createLinks } from './ResourcesLinks';
 
 const useStyles = makeStyles({
   cont: {
@@ -23,62 +24,7 @@ const Resources = props => {
   const [active, setActive] = useState('');
   const classes = useStyles({});
 
-  const links = [
-    {
-      clickHandler: () => {
-        // setActive('nih');
-        navigate('/resources/nih');
-        history.push('/resources/nih');
-      },
-      code: 'nih',
-      displayName: 'NIH Acknowledgement',
-    },
-    {
-      clickHandler: () => {
-        // setActive('disclaimer');
-        navigate('/resources/disclaimer');
-        history.push('/resources/disclaimer');
-      },
-      code: 'disclaimer',
-      displayName: 'Disclaimer',
-    },
-    {
-      clickHandler: () => {
-        // setActive('useful-links');
-        navigate('/resources/useful-links');
-        history.push('resources/useful-links');
-      },
-      code: 'useful-links',
-      displayName: 'Useful Links',
-    },
-    {
-      clickHandler: () => {
-        // setActive('articles');
-        navigate('/resources/articles');
-        history.push('resources/articles');
-      },
-      code: 'articles',
-      displayName: 'Articles',
-    },
-    {
-      clickHandler: () => {
-        // setActive('pulmonary-core');
-        navigate('/resources/pulmonary-core');
-        history.push('/resources/pulmonary-core');
-      },
-      code: 'pulmonary-core',
-      displayName: 'Pulmonary Immunopathology Core',
-    },
-    {
-      clickHandler: () => {
-        // setActive('molecular-core');
-        navigate('/resources/molecular-core');
-        history.push('/resources/molecular-core');
-      },
-      code: 'molecular-core',
-      displayName: 'Molecular Biology Core ',
-    },
-  ];
+  const links = createLinks(history);
 
   return (
     <Container className={classes.cont}>
@@ -90,7 +36,6 @@ const Resources = props => {
             setActive={setActive}
             title="resources"
           />
-          {/* <SideMenu active={active} links={links} /> */}
         </Grid>
         <Grid container item xs={12} sm={8}>
           <Router>

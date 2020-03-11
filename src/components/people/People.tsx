@@ -1,7 +1,6 @@
 import React, { useState, Fragment, useEffect } from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import Person from './Person';
-import SmartMenu from '../ui/SmartMenu';
 
 interface peopleProps {
   path: string;
@@ -18,12 +17,6 @@ const People = ({ path, data, location }: peopleProps) => {
     setActive(location && location.state.code);
   }, [location]);
   console.log(location.state);
-
-  // gets keys for all groups in the people data structure
-  const mainPeopleList = data && Object.keys(data);
-
-  // makes a list of each mentee's code
-  // const menteesList = data && data.mentees.map(mentee => mentee.code)
 
   const createPeople = peopleData => {
     if (data) {
@@ -44,12 +37,6 @@ const People = ({ path, data, location }: peopleProps) => {
     }
   };
 
-  // const peopleMenuLinks = mainPeopleList.map(code => ({
-  //   code: code,
-  //   clickHandler: () => setActive(code),
-  //   displayName: data[code].displayName,
-  // }));
-
   return (
     <Fragment>
       <Grid container justify="center" item xs={12}>
@@ -57,14 +44,6 @@ const People = ({ path, data, location }: peopleProps) => {
           <Typography variant="h5" align="center">
             {location && location.state.displayName}
           </Typography>
-          {/* {data && (
-            <SmartMenu
-              title="group"
-              links={peopleMenuLinks}
-              setActive={setActive}
-              active={active}
-            />
-          )} */}
         </Grid>
         {data && createPeople(data)}
       </Grid>
