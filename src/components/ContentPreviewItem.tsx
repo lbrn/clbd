@@ -6,18 +6,15 @@ import { themeExtended } from '../theme/theme';
 
 const useStyles = makeStyles({
   imgCont: {
-    // position: 'relative',
     width: '100%',
     maxHeight: 300,
-    // height: 0,
-    // paddingTop: '20%',
+    alignItems: 'center',
+    justifyItems: 'center',
   },
   img: {
-    objectFit: 'contain',
     width: '100%',
     maxHeight: 300,
-    // height: '100%'
-    // height: 0,
+
     paddingTop: '20%',
   },
   title: {
@@ -25,6 +22,9 @@ const useStyles = makeStyles({
   },
   cont: {
     backgroundColor: themeExtended.palette.primary.hover,
+  },
+  textCont: {
+    padding: 10,
   },
 });
 
@@ -50,7 +50,7 @@ const ContentPreviewItem = ({
           alt={`${featured.title}`}
         />
       </Grid>
-      <Grid item xs={8}>
+      <Grid item xs={8} className={classes.textCont}>
         {featured.title && (
           <Typography align="center" variant="h5" className={classes.title}>
             {featured.title}
