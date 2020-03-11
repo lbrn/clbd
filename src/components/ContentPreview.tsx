@@ -20,6 +20,7 @@ const ContentPreview = () => {
   const createFeaturedItems = items => {
     return items.map((item, index) => (
       <ContentPreviewItem
+        key={index}
         code={item.code}
         featured={item}
         id={index}
