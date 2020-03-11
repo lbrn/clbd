@@ -23,7 +23,7 @@ const RouterWrapper = () => {
         <Hero path="/" />
         <About path="about" />
         <PeopleCont path="people">
-          <People path="/" data="" />
+          <People path="/:group" data="" />
           <PersonDetails path="individual/:name" data="" />
         </PeopleCont>
         <Seminars path="events" />

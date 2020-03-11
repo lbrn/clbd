@@ -64,9 +64,9 @@ const Header = () => {
     link && link.classList.add('linkActive');
   }, [active]);
 
-  const handleActive = id => {
-    setActive(id);
-  };
+  // const handleActive = id => {
+  //   setActive(id);
+  // };
 
   return (
     <AppBar position="sticky" className={classes.appBar}>

@@ -31,7 +31,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     ReactGA.initialize('UA-158668692-1', {
-      debug: true,
+      debug: false,
       titleCase: false,
     });
     ReactGA.pageview('/');
@@ -39,7 +39,6 @@ const App: React.FC = () => {
     // in use effect hook so it only fires once
     history.current.listen((location, action) => {
       ReactGA.pageview(location.pathname);
-      console.log(location.pathname);
     });
   }, []);
 

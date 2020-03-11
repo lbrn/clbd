@@ -118,6 +118,7 @@ import person from '../models/person';
 
 interface peopleGroup {
   displayName: string;
+  code: string;
   members: person[];
 }
 
@@ -127,6 +128,7 @@ interface people {
 
 export const people: people = {
   leadership: {
+    code: 'leadership',
     displayName: 'Leadership',
     members: [
       {
@@ -167,6 +169,7 @@ export const people: people = {
     ],
   },
   externalAdvisoryCommittee: {
+    code: 'externalAdvisoryCommittee',
     displayName: 'External Advisory Committee',
     members: [
       {
@@ -212,6 +215,7 @@ export const people: people = {
     ],
   },
   internalAdvisoryCommittee: {
+    code: 'internalAdvisoryCommittee',
     displayName: 'Internal Advisory Committee',
     members: [
       {
@@ -267,6 +271,7 @@ export const people: people = {
     ],
   },
   pulmonaryImmunopathologyCore: {
+    code: 'pulmonaryImmunopathologyCore',
     displayName: 'Pulmonary Immunopathology Core',
     members: [
       {
@@ -296,6 +301,7 @@ export const people: people = {
     ],
   },
   molecularBiologyCore: {
+    code: 'molecularBiologyCore',
     displayName: 'Molecular Biology Core',
     members: [
       {
@@ -328,6 +334,7 @@ export const people: people = {
     ],
   },
   projectInvestigators: {
+    code: 'projectInvestigators',
     displayName: 'Project Investigators',
     members: [
       {
@@ -399,6 +406,7 @@ export const people: people = {
     ],
   },
   pilotInvestigators: {
+    code: 'pilotInvestigators',
     displayName: 'Pilot Investigators',
     members: [
       {

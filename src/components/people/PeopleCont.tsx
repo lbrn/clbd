@@ -28,7 +28,7 @@ const PeopleCont = props => {
         <Grid container item xs={12}>
           {data && (
             <Router className={classes.router}>
-              <People path="/" data={data} />
+              <People path="/:group" data={data} />
               <PersonDetails path="individual/:name" data={data} />
             </Router>
           )}
