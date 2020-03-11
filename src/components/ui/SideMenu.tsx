@@ -10,7 +10,7 @@ import { darken } from '@material-ui/core/styles';
 import menuLink from '../../models/menuLink';
 interface sideMenuProps {
   links: menuLink[];
-  active: string;
+  // active: string;
 }
 
 const useStyles = makeStyles({
@@ -18,10 +18,10 @@ const useStyles = makeStyles({
     width: '100%',
     backgroundColor: `rgba(19, 127, 222, .2)`,
   },
-  active: { backgroundColor: darken(`rgba(19, 127, 222, .25)`, 0.1) },
+  // active: { backgroundColor: darken(`rgba(19, 127, 222, .25)`, 0.1) },
 });
 
-const SideMenu = ({ links, active }: sideMenuProps) => {
+const SideMenu = ({ links }: sideMenuProps) => {
   const classes = useStyles({});
 
   const createLinks = links => {
@@ -30,11 +30,13 @@ const SideMenu = ({ links, active }: sideMenuProps) => {
         button
         key={link.code}
         id={link.code}
-        className={active === link.code ? classes.active : ''}
+        // className={active === link.code ? classes.active : ''}
       >
         <ListItemText
           key={link.code}
-          onClick={e => link.clickHandler()}
+          onClick={e => {
+            link.clickHandler();
+          }}
           primary={link.displayName}
         />
       </ListItem>

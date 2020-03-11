@@ -24,7 +24,7 @@ const SmartMenu = ({ active, setActive, links, title }: smartMenuProps) => {
           menuItems={links}
         />
       )}
-      {!isMobile && <SideMenu active={active} links={links} />}
+      {!isMobile && <SideMenu links={links} />}
     </Fragment>
   );
 };

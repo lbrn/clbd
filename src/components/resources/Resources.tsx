@@ -1,10 +1,10 @@
 import React, { useState, useContext } from 'react';
 import { Grid, Container, makeStyles } from '@material-ui/core';
+import { Router } from '@reach/router';
 
 import { theme } from '../../theme/theme';
 import HistoryContext from '../../components/contexts/HistoryContext';
 import NihAcknowledgement from './resources/NihAcknowledgement';
-import { Router } from '@reach/router';
 import Disclaimer from './resources/Disclaimer';
 import UsefulLinks from './resources/UsefulLinks';
 import Articles from './resources/Articles';
@@ -29,7 +29,7 @@ const Resources = props => {
   return (
     <Container className={classes.cont}>
       <Grid spacing={3} container>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={4} md={3}>
           <SmartMenu
             active={active}
             links={links}
@@ -37,7 +37,7 @@ const Resources = props => {
             title="resources"
           />
         </Grid>
-        <Grid container item xs={12} sm={8}>
+        <Grid container item xs={12} sm={8} md={9}>
           <Router>
             <NihAcknowledgement path="nih" />
             <Disclaimer path="disclaimer" />
