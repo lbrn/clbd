@@ -81,7 +81,10 @@ const HeaderMenuItem = ({ menuName, menuLinks }: HeaderMenuItemProps) => {
         >
           <Paper>
             <ClickAwayListener onClickAway={handleClose}>
-              <MenuList id="menu-list-grow" onMouseLeave={handleClose}>
+              <MenuList
+                id="menu-list-grow"
+                onMouseLeave={() => setTimeout(handleClose, 250)}
+              >
                 {createMenuItems(menuLinks)}
               </MenuList>
             </ClickAwayListener>
