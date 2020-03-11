@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { makeStyles, Grid, Container } from '@material-ui/core';
-// import beakerImage from '../assets/misc/beakers.jpg';
 import ContentPreview from './ContentPreview';
 import HeroStory from './HeroStory';
 import { themeExtended } from '../theme/theme';

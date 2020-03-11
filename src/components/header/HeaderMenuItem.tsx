@@ -33,13 +33,13 @@ const HeaderMenuItem = ({ menuName, menuLinks }: HeaderMenuItemProps) => {
 
   const classes = useStyles();
 
-  const handleClick = e => {
-    setIsOpen(!isOpen);
+  const handleOpen = e => {
+    setIsOpen(true);
     setAnchorEl(e.currentTarget);
   };
 
   const handleClose = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(false);
     setAnchorEl(null);
   };
 
@@ -49,7 +49,6 @@ const HeaderMenuItem = ({ menuName, menuLinks }: HeaderMenuItemProps) => {
         className={classes.menuItem}
         key={link.code}
         onClick={() => {
-          console.log(link.clickHandler);
           link.clickHandler();
           handleClose();
         }}
@@ -67,7 +66,8 @@ const HeaderMenuItem = ({ menuName, menuLinks }: HeaderMenuItemProps) => {
         id={`menu-button ${menuName}`}
         aria-controls="simple-menu"
         aria-haspopup="true"
-        onClick={handleClick}
+        onClick={handleOpen}
+        onMouseEnter={handleOpen}
       >
         {menuName}
       </Button>
@@ -81,7 +81,7 @@ const HeaderMenuItem = ({ menuName, menuLinks }: HeaderMenuItemProps) => {
         >
           <Paper>
             <ClickAwayListener onClickAway={handleClose}>
-              <MenuList id="menu-list-grow">
+              <MenuList id="menu-list-grow" onMouseLeave={handleClose}>
                 {createMenuItems(menuLinks)}
               </MenuList>
             </ClickAwayListener>
