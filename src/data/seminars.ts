@@ -33,7 +33,7 @@ export const seminars: seminar[] = [
     link: `/event/${0}`,
   },
   {
-    title: 'Pneumonia Biology - Lungs Learn from Experience',
+    title: 'CANCELLED - Pneumonia Biology - Lungs Learn from Experience',
     id: '1',
     code: 'SEMINAR',
     featured: true,
