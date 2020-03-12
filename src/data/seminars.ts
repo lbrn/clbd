@@ -33,7 +33,7 @@ export const seminars: seminar[] = [
     link: `/event/${0}`,
   },
   {
-    title: 'CANCELLED - Pneumonia Biology - Lungs Learn from Experience',
+    title: 'Cancelled - Pneumonia Biology - Lungs Learn from Experience',
     id: '1',
     code: 'SEMINAR',
     featured: true,
@@ -43,7 +43,7 @@ export const seminars: seminar[] = [
     speakers: 'Joseph Mizgerd, Sc.D.',
     speakerUniversities: 'Boston University',
     pdfLink: mizgerdPdf,
-    location: 'LSU Vet Med Room 1212C',
+    location: 'Cancelled',
     image: mizgerdFlyerThumb,
   },
   {
