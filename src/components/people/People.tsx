@@ -14,7 +14,7 @@ const People = ({ path, data, location }: peopleProps) => {
   );
 
   useEffect(() => {
-    setActive(location && location.state.code);
+    setActive((location && location.state.code) || 'leadership');
   }, [location]);
   console.log(location.state);
 
@@ -22,6 +22,7 @@ const People = ({ path, data, location }: peopleProps) => {
     if (data) {
       return peopleData[active].members.map(person => (
         <Person
+          isActive={person.isActive}
           key={person.name}
           name={person.name}
           title={person.title}
@@ -42,7 +43,7 @@ const People = ({ path, data, location }: peopleProps) => {
       <Grid container justify="center" item xs={12}>
         <Grid item xs={12}>
           <Typography variant="h5" align="center">
-            {location && location.state.displayName}
+            {(location && location.state.displayName) || 'Leadership'}
           </Typography>
         </Grid>
         {data && createPeople(data)}

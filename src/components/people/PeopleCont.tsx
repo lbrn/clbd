@@ -29,6 +29,7 @@ const PeopleCont = props => {
           {data && (
             <Router className={classes.router}>
               <People path="/:group" data={data} />
+              <People path="/" data={data} />
               <PersonDetails path="individual/:name" data={data} />
             </Router>
           )}

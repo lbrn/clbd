@@ -100,8 +100,16 @@ const Header = () => {
             >
               about
             </Button>
-            <HeaderMenuItem menuName="people" menuLinks={peopleLinks} />
-            <HeaderMenuItem menuName="resources" menuLinks={resourcesLinks} />
+            <HeaderMenuItem
+              code="people"
+              menuName="people"
+              menuLinks={peopleLinks}
+            />
+            <HeaderMenuItem
+              code="resources"
+              menuName="resources"
+              menuLinks={resourcesLinks}
+            />
             <Button
               size="large"
               onClick={() => {

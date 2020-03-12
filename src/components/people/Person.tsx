@@ -15,6 +15,7 @@ const Person = ({
   img,
   institution,
   abstract,
+  isActive,
 }: person) => {
   const useStyles = makeStyles({
     person: {
@@ -75,6 +76,7 @@ const Person = ({
             role,
             img,
             institution,
+            isActive,
             abstract,
           },
         })
@@ -96,6 +98,7 @@ const Person = ({
                   degree,
                   institution,
                   abstract,
+                  isActive,
                 },
               })
             }
@@ -108,7 +111,7 @@ const Person = ({
       <Grid item xs={8}>
         {name && (
           <Typography>
-            { name }, {degree}
+            {name}, {degree}
           </Typography>
         )}
         {role && <Typography>{role}</Typography>}
@@ -134,6 +137,7 @@ const Person = ({
                   img,
                   institution,
                   abstract,
+                  isActive,
                 },
               })
             }

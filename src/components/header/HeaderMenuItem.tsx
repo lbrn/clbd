@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState, useContext } from 'react';
 import {
   MenuList,
   Popper,
@@ -8,6 +8,9 @@ import {
   Paper,
   makeStyles,
 } from '@material-ui/core';
+import { navigate } from '@reach/router';
+
+import historyContext from '../contexts/HistoryContext';
 import menuLink from '../../models/menuLink';
 import { themeExtended } from '../../theme/theme';
 
@@ -24,12 +27,14 @@ const useStyles = makeStyles({
 });
 interface HeaderMenuItemProps {
   menuName: string;
+  code: string;
   menuLinks: menuLink[];
 }
 
-const HeaderMenuItem = ({ menuName, menuLinks }: HeaderMenuItemProps) => {
+const HeaderMenuItem = ({ menuName, menuLinks, code }: HeaderMenuItemProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
+  const history: any = useContext(historyContext);
 
   const classes = useStyles();
 
@@ -66,7 +71,10 @@ const HeaderMenuItem = ({ menuName, menuLinks }: HeaderMenuItemProps) => {
         id={`menu-button ${menuName}`}
         aria-controls="simple-menu"
         aria-haspopup="true"
-        onClick={handleOpen}
+        onClick={() => {
+          history.push(`/${code}`);
+          navigate(`/${code}`);
+        }}
         onMouseEnter={handleOpen}
       >
         {menuName}
