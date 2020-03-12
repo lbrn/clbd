@@ -45,19 +45,23 @@ const People = ({ path, data, location }: peopleProps) => {
 
   return (
     <Fragment>
-      <Grid container justify="center" item xs={12}>
-        {/* <Grid item xs={12}>
+      <Grid container spacing={3}>
+        <Grid justify="center" item xs={4} md={3}>
+          <SmartMenu
+            active={active}
+            setActive={setActive}
+            links={links}
+            title="group"
+          />
+        </Grid>
+        <Grid container justify="center" item xs={8} md={9}>
+          {/* <Grid item xs={12}>
           <Typography variant="h5" align="center">
             {(location && location.state.displayName) || 'Leadership'}
           </Typography>
         </Grid> */}
-        <SmartMenu
-          active={active}
-          setActive={setActive}
-          links={links}
-          title="group"
-        />
-        {data && createPeople(data)}
+          {data && createPeople(data)}
+        </Grid>
       </Grid>
     </Fragment>
   );
