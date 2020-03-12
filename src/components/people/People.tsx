@@ -1,6 +1,9 @@
-import React, { useState, Fragment, useEffect } from 'react';
+import React, { useState, Fragment, useEffect, useContext } from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import Person from './Person';
+import { createLinks } from '../people/PeopleLinks';
+import SmartMenu from '../ui/SmartMenu';
+import HistoryContext from '../contexts/HistoryContext';
 
 interface peopleProps {
   path: string;
@@ -9,9 +12,11 @@ interface peopleProps {
 }
 
 const People = ({ path, data, location }: peopleProps) => {
+  const history: any = useContext(HistoryContext);
   const [active, setActive] = useState(
     (location && location.state.code) || 'leadership',
   );
+  const links = createLinks(history);
 
   useEffect(() => {
     setActive((location && location.state.code) || 'leadership');
@@ -41,11 +46,17 @@ const People = ({ path, data, location }: peopleProps) => {
   return (
     <Fragment>
       <Grid container justify="center" item xs={12}>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Typography variant="h5" align="center">
             {(location && location.state.displayName) || 'Leadership'}
           </Typography>
-        </Grid>
+        </Grid> */}
+        <SmartMenu
+          active={active}
+          setActive={setActive}
+          links={links}
+          title="group"
+        />
         {data && createPeople(data)}
       </Grid>
     </Fragment>
