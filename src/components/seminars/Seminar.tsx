@@ -31,7 +31,7 @@ const useStyles = makeStyles({
 
 const Seminar = props => {
   const classes = useStyles();
-  const [seminar, setSeminar] = useState();
+  const [seminar, setSeminar]= useState();
   useEffect(() => {
     // index comes from url
     setSeminar(seminars[props.seminarIndex]);
@@ -87,7 +87,11 @@ const Seminar = props => {
         {seminar && seminar.image && (
           <Grid container item xs={12} sm={4}>
             <a href={seminar.pdfLink}>
-              <img alt="event flyer" src={seminar.image} className={classes.pdf}></img>
+              <img
+                alt="event flyer"
+                src={seminar.image}
+                className={classes.pdf}
+              ></img>
             </a>
           </Grid>
         )}

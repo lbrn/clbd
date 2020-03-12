@@ -67,18 +67,23 @@ const Seminars = ({ path }) => {
           className={classes.card}
         >
           <CardMedia
+            alt={`event flyer for ${seminar.title}`}
             component="img"
             image={seminar.image}
             className={classes.cardImage}
           />
           <CardContent>
-            <Typography variant="h5">{seminar.name && seminar.name}</Typography>
-            <Typography variant="body1">
-              {seminar.title && seminar.title}
-            </Typography>
-            <Typography variant="body2">
-              {seminar.date && seminar.date.format('MM/DD/YY')}
-            </Typography>
+            {seminar.name && (
+              <Typography variant="h5">{seminar.name}</Typography>
+            )}
+            {seminar.title && (
+              <Typography variant="body1">{seminar.title}</Typography>
+            )}
+            {seminar.date && (
+              <Typography variant="body2">
+                {seminar.date.format('MM/DD/YY')}
+              </Typography>
+            )}
           </CardContent>
         </Card>
       </Grid>
