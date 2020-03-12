@@ -39,7 +39,10 @@ const useStyles = makeStyles({
     '&:hover $cardImage': {
       filter: 'grayscale(40%)',
     },
-    height: 400,
+    height: 450,
+  },
+  cardContent: {
+    minHeight: 120,
   },
 });
 
@@ -66,18 +69,12 @@ const Seminars = ({ path }) => {
           onClick={e => navigate(`/event/${seminar.id}`)}
           className={classes.card}
         >
-          <CardMedia
-            alt={`event flyer for ${seminar.title}`}
-            component="img"
-            image={seminar.image}
-            className={classes.cardImage}
-          />
-          <CardContent>
+          <CardContent className={classes.cardContent}>
             {seminar.name && (
               <Typography variant="h5">{seminar.name}</Typography>
             )}
             {seminar.title && (
-              <Typography variant="body1">{seminar.title}</Typography>
+              <Typography variant="h6">{seminar.title}</Typography>
             )}
             {seminar.date && (
               <Typography variant="body2">
@@ -85,6 +82,12 @@ const Seminars = ({ path }) => {
               </Typography>
             )}
           </CardContent>
+          <CardMedia
+            alt={`event flyer for ${seminar.title}`}
+            component="img"
+            image={seminar.image}
+            className={classes.cardImage}
+          />
         </Card>
       </Grid>
     ));
