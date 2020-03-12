@@ -59,7 +59,7 @@ const HeaderMenuItem = ({ menuName, menuLinks }: HeaderMenuItemProps) => {
   };
 
   return (
-    <Fragment>
+    <div onMouseLeave={() => setTimeout(handleClose, 250)}>
       <Button
         size="large"
         color="primary"
@@ -81,17 +81,14 @@ const HeaderMenuItem = ({ menuName, menuLinks }: HeaderMenuItemProps) => {
         >
           <Paper>
             <ClickAwayListener onClickAway={handleClose}>
-              <MenuList
-                id="menu-list-grow"
-                onMouseLeave={() => setTimeout(handleClose, 250)}
-              >
+              <MenuList id="menu-list-grow">
                 {createMenuItems(menuLinks)}
               </MenuList>
             </ClickAwayListener>
           </Paper>
         </Popper>
       )}
-    </Fragment>
+    </div>
   );
 };
 export default HeaderMenuItem;
