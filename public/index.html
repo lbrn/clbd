@@ -5,10 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Center for lung biology and disease"
-    />
+    <meta name="description" content="Center for lung biology and disease" />
     <link rel="apple-touch-icon" href="logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -38,7 +35,41 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-  
+    <!-- CONSIDER REPLACING LATER WITH CUSTOM COMPONENT -->
+    <!-- Begin Consent Overlay -->
+    <link
+      href="https://www.lsu.edu/_resources/css/consent.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.lsu.edu/_resources/js/consent.js"
+    ></script>
+    <script type="text/javascript">
+      // <![CDATA[
+      window.addEventListener('load', function() {
+        window.cookieconsent.initialise({
+          palette: {
+            popup: {
+              background: '#D0E2F5',
+              text: '#333333',
+            },
+            button: {
+              background: '#efefef',
+              text: `rgba(19, 127, 222)`,
+            },
+          },
+          content: {
+            link: 'LSU Privacy Statement.',
+            href: 'https://www.lsu.edu/privacy/',
+          },
+        });
+      });
+      // ]]>
+    </script>
+    <!-- End Consent Overlay -->
+
     <title>CLBD</title>
   </head>
   <body>
