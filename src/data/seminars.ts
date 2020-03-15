@@ -10,30 +10,12 @@ import {
   mizgerdPdf,
   liwuPdf,
   lauriePdf,
-  coronavirusThumb
+  coronavirusThumb,
 } from '../assets/pdfs/index';
 
 // the first seminar is automatically featured
 
 export const seminars: seminar[] = [
-  {
-    title: 'All currents events are cancelled.  Future events TBD.',
-    id: '4',
-    code: 'SEMINAR',
-    eventType: 'Workshop',
-    date: moment('2020-05-24'),
-    featured: true,
-    // time: '10 am - 12 pm',
-    // registrationLink: 'https://redcap.lbrn.lsu.edu/surveys/?s=3EKCN8L4NH',
-    // registrationDueDate: moment('2020-01-19'),
-    // pdfLink: workshopPdf,
-    // speakers:
-    //   'Stephanie Byrum, Ricky Edmonson, Samuel Mackintosh, Alan Tackett',
-    // speakerUniversities: 'University of Arkansas for Medical Sciences',
-    // location: 'Louisiana State University (PBS Conference room 3511)',
-    image: coronavirusThumb,
-    // link: `/event/${4}`,
-  },
   {
     title: 'Proteomics Workshop',
     id: '0',
@@ -89,5 +71,23 @@ export const seminars: seminar[] = [
     speakerUniversities: 'Virginia Tech',
     location: 'LSU Vet Med Room 1212B',
     image: liwuFlyerThumb,
+  },
+  {
+    title: 'All currents events are cancelled.  Future events TBD.',
+    id: '4',
+    code: 'SEMINAR',
+    eventType: 'Workshop',
+    date: moment('2020-05-24'),
+    featured: true,
+    // time: '10 am - 12 pm',
+    // registrationLink: 'https://redcap.lbrn.lsu.edu/surveys/?s=3EKCN8L4NH',
+    // registrationDueDate: moment('2020-01-19'),
+    // pdfLink: workshopPdf,
+    // speakers:
+    //   'Stephanie Byrum, Ricky Edmonson, Samuel Mackintosh, Alan Tackett',
+    // speakerUniversities: 'University of Arkansas for Medical Sciences',
+    // location: 'Louisiana State University (PBS Conference room 3511)',
+    image: coronavirusThumb,
+    // link: `/event/${4}`,
   },
 ];
