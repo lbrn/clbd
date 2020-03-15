@@ -28,17 +28,22 @@ const Footer = () => {
   return (
     <Container className={classes.outerCont}>
       <Grid container spacing={3} className={classes.innerCont}>
-        <Grid container item xs={6} sm={4}>
+        <Grid container item xs={6} sm={6}>
           <Grid item xs>
-            <Link href="http://lsu.edu/accessibility">
+            <Link href="https://lsu.edu/accessibility">
               Accessibility statement
             </Link>
           </Grid>
           <Grid item xs>
-            <Link href="http://lsu.edu/feedback">Provide Feedback</Link>
+            <Link href="https://www.lsu.edu/privacy/index.php">
+              Privacy Statement
+            </Link>
+          </Grid>
+          <Grid item xs>
+            <Link href="https://lsu.edu/feedback">Provide Feedback</Link>
           </Grid>
         </Grid>
-        <Grid item xs={6} sm={8}>
+        <Grid item xs={6} sm={6}>
           <Typography className="smallFooter" variant="body2">
             Acknowledgements: The Center for Lung Biology and Disease is
             supported by the National Institute of General Medical Sciences of
