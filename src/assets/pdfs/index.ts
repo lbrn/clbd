@@ -6,3 +6,4 @@ export const laurieFlyerThumb = require('./LaurieK.jpg');
 export const liwuFlyerThumb = require('./liwuLi.jpg');
 export const workshopFlyerThumb = require('./workshop.jpg');
 export const workshopPdf = require('./workshop.pdf');
+export const coronavirusThumb = require('./coronavirus.png');

@@ -10,11 +10,30 @@ import {
   mizgerdPdf,
   liwuPdf,
   lauriePdf,
+  coronavirusThumb
 } from '../assets/pdfs/index';
 
 // the first seminar is automatically featured
 
 export const seminars: seminar[] = [
+  {
+    title: 'All currents events are cancelled.  Future events TBD.',
+    id: '4',
+    code: 'SEMINAR',
+    eventType: 'Workshop',
+    date: moment('2020-05-24'),
+    featured: true,
+    // time: '10 am - 12 pm',
+    // registrationLink: 'https://redcap.lbrn.lsu.edu/surveys/?s=3EKCN8L4NH',
+    // registrationDueDate: moment('2020-01-19'),
+    // pdfLink: workshopPdf,
+    // speakers:
+    //   'Stephanie Byrum, Ricky Edmonson, Samuel Mackintosh, Alan Tackett',
+    // speakerUniversities: 'University of Arkansas for Medical Sciences',
+    // location: 'Louisiana State University (PBS Conference room 3511)',
+    image: coronavirusThumb,
+    // link: `/event/${4}`,
+  },
   {
     title: 'Proteomics Workshop',
     id: '0',
@@ -36,7 +55,6 @@ export const seminars: seminar[] = [
     title: 'Cancelled - Pneumonia Biology - Lungs Learn from Experience',
     id: '1',
     code: 'SEMINAR',
-    featured: true,
     eventType: 'Presentation',
     date: moment('2020-03-20'),
     time: '12 pm',
