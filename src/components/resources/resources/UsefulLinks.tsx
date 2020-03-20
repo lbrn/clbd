@@ -53,7 +53,7 @@ export const UsefulLinks = props => {
             )
           }
         >
-          <Link>Adobe Package</Link>
+          <Link>NIH: Resources for Using Adobe Forms</Link>
         </Typography>
       </Grid>
     </Fragment>
