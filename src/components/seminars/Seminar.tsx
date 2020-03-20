@@ -46,7 +46,7 @@ const Seminar = props => {
               <Typography variant="h4">{seminar.title}</Typography>
               {seminar.date && (
                 <Typography variant="h5">
-                  seminar.date.format('MM/DD/YY')
+                  {seminar.date.format('MM/DD/YY')}
                 </Typography>
               )}
               <Typography variant="body1">
