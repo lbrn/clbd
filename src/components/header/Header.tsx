@@ -3,7 +3,7 @@ import { AppBar, Grid, Toolbar, makeStyles, Button } from '@material-ui/core';
 import logoFull from '../../assets/misc/logo_full.png';
 import { navigate } from '@reach/router';
 
-import { theme, themeExtended } from '../../theme/theme';
+import { theme } from '../../theme/theme';
 import HistoryContext from '../contexts/HistoryContext';
 import HeaderMenuItem from './HeaderMenuItem';
 import { createLinks as createResourcesLinks } from '../resources/resources/ResourcesLinks';
@@ -28,45 +28,46 @@ const useStyles = makeStyles({
     alignContent: 'center',
     justifyContent: 'space-between',
   },
-  linkCont: {
-    '&:hover': {
-      backgroundColor: themeExtended.palette.primary.hover,
-    },
-    padding: 5,
-  },
-  linkActive: {
-    backgroundColor: themeExtended.palette.primary.hover,
-  },
   link: {
     cursor: 'pointer',
     fontSize: '165%',
     textDecoration: 'none',
+  },
+  // linkActive: {
+  //   backgroundColor: 'red',
+  // },
+  btn: {
+    color: theme.palette.primary.dark,
+    fontSize: '120%',
+    '&:hover': {
+      backgroundColor: theme.palette.primary.light,
+    },
   },
 });
 
 const Header = () => {
   const history: any = useContext(HistoryContext);
   const classes = useStyles({});
-  const [active, setActive] = useState('');
+  // const [active, setActive] = useState('');
 
   const resourcesLinks = createResourcesLinks(history);
   const peopleLinks = createPeopleLinks(history);
 
-  useEffect(() => {
-    const linksCont = document.getElementById('linkCont');
-    if (linksCont) {
-      const children = linksCont && linksCont.children;
-      for (var i = 0; i < children.length; i++) {
-        children[i].classList.remove('linkActive');
-      }
-    }
-    const link = document.getElementById(active);
-    link && link.classList.add('linkActive');
-  }, [active]);
+  // useEffect(() => {
+  //   const linksCont = document.getElementById('linkCont');
+  //   if (linksCont) {
+  //     const children = linksCont && linksCont.children;
+  //     for (var i = 0; i < children.length; i++) {
+  //       children[i].classList.remove('linkActive');
+  //     }
+  //   }
+  //   const link = document.getElementById(active);
+  //   link && link.classList.add('linkActive');
+  // }, [active]);
 
-  // const handleActive = id => {
-  //   setActive(id);
-  // };
+  // // const handleActive = id => {
+  // //   setActive(id);
+  // // };
 
   return (
     <AppBar position="sticky" className={classes.appBar}>
@@ -92,11 +93,12 @@ const Header = () => {
             <Button
               size="large"
               onClick={() => {
+                // setActive('menu-button-about');
                 history.push('/about');
                 navigate('/about');
               }}
-              color="primary"
-              id={`menu-button about`}
+              id="menu-button-about"
+              className={classes.btn}
             >
               about
             </Button>
@@ -113,11 +115,12 @@ const Header = () => {
             <Button
               size="large"
               onClick={() => {
+                // setActive('menu-button-events');
                 history.push('/events');
                 navigate('/events');
               }}
-              id={`menu-button events`}
-              color="primary"
+              id={`menu-button-events`}
+              className={classes.btn}
             >
               events
             </Button>

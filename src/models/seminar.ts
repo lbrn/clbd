@@ -1,10 +1,10 @@
 export interface seminar {
-  date: any;
   eventType: string;
   image: string;
   title: string;
   id: string;
   code: string;
+  date?: any;
   cost?: string;
   featured?: boolean;
   about?: string;

@@ -1,5 +1,9 @@
 import { createMuiTheme } from '@material-ui/core';
-import { fade } from '@material-ui/core/styles/colorManipulator';
+import {
+  fade,
+  darken,
+  lighten,
+} from '@material-ui/core/styles/colorManipulator';
 
 export const theme = createMuiTheme({
   palette: {
@@ -8,6 +12,8 @@ export const theme = createMuiTheme({
     },
     primary: {
       main: `rgba(19, 127, 222)`,
+      dark: darken(`rgba(19, 127, 222)`, 0.2),
+      light: lighten(`rgba(19, 127, 222)`, 0.7),
     },
   },
   typography: {
@@ -23,7 +29,7 @@ export const theme = createMuiTheme({
 export const themeExtended = {
   palette: {
     primary: {
-      hover: fade('rgba(19, 127, 222)', 0.2),
+      hover: fade('rgba(19, 127, 222)', 0.1),
     },
   },
 };

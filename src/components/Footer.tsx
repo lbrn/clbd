@@ -20,6 +20,9 @@ const useStyles = makeStyles({
     bottom: 0,
     width: '100%',
   },
+  link: {
+    color: theme.palette.primary.dark,
+  },
 });
 
 const Footer = () => {
@@ -30,17 +33,22 @@ const Footer = () => {
       <Grid container spacing={3} className={classes.innerCont}>
         <Grid container item xs={6} sm={6}>
           <Grid item xs>
-            <Link href="https://lsu.edu/accessibility">
+            <Link href="https://lsu.edu/accessibility" className={classes.link}>
               Accessibility statement
             </Link>
           </Grid>
           <Grid item xs>
-            <Link href="https://www.lsu.edu/privacy/index.php">
+            <Link
+              href="https://www.lsu.edu/privacy/index.php"
+              className={classes.link}
+            >
               Privacy Statement
             </Link>
           </Grid>
           <Grid item xs>
-            <Link href="https://lsu.edu/feedback">Provide Feedback</Link>
+            <Link href="https://lsu.edu/feedback" className={classes.link}>
+              Provide Feedback
+            </Link>
           </Grid>
         </Grid>
         <Grid item xs={6} sm={6}>

@@ -12,7 +12,7 @@ const useStyles = makeStyles({
 });
 
 const ContentPreview = () => {
-  const currentSeminars = seminars.filter(seminar => seminar.date.isAfter());
+  const currentSeminars = seminars.filter(seminar => seminar.date && seminar.date.isAfter());
   const featuredSeminar =
     seminars.filter(seminar => seminar.featured)[0] || currentSeminars[0];
   const featuredNews = [featuredSeminar, articles[0]];

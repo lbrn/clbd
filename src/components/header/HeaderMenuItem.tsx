@@ -12,7 +12,7 @@ import { navigate } from '@reach/router';
 
 import historyContext from '../contexts/HistoryContext';
 import menuLink from '../../models/menuLink';
-import { themeExtended } from '../../theme/theme';
+import { theme } from '../../theme/theme';
 
 const useStyles = makeStyles({
   menu: {
@@ -21,7 +21,15 @@ const useStyles = makeStyles({
   },
   menuItem: {
     '&:hover': {
-      backgroundColor: themeExtended.palette.primary.hover,
+      backgroundColor: theme.palette.primary.light,
+    },
+  },
+  btn: {
+    fontSize: '120%',
+
+    color: theme.palette.primary.dark,
+    '&:hover': {
+      backgroundColor: theme.palette.primary.light,
     },
   },
 });
@@ -76,6 +84,7 @@ const HeaderMenuItem = ({ menuName, menuLinks, code }: HeaderMenuItemProps) => {
           navigate(`/${code}`);
         }}
         onMouseEnter={handleOpen}
+        className={classes.btn}
       >
         {menuName}
       </Button>
