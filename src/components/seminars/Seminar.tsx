@@ -31,7 +31,7 @@ const useStyles = makeStyles({
 
 const Seminar = props => {
   const classes = useStyles();
-  const [seminar, setSeminar]= useState();
+  const [seminar, setSeminar] = useState();
   useEffect(() => {
     // index comes from url
     setSeminar(seminars[props.seminarIndex]);
@@ -44,9 +44,11 @@ const Seminar = props => {
           <Grid container item xs={12} sm={8}>
             <Grid item xs={12}>
               <Typography variant="h4">{seminar.title}</Typography>
-              <Typography variant="h5">
-                {seminar.date.format('MM/DD/YY')}
-              </Typography>
+              {seminar.date && (
+                <Typography variant="h5">
+                  seminar.date.format('MM/DD/YY')
+                </Typography>
+              )}
               <Typography variant="body1">
                 {seminar.time && seminar.time}
               </Typography>
