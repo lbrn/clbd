@@ -153,16 +153,6 @@ export const people: people = {
         link: 'http://facultypages.vetmed.lsu.edu/faculty/rcardin',
       },
       {
-        name: 'Whitney Fontenot',
-        isActive: true,
-        institution: 'Louisiana State University',
-        degree: 'BS',
-        title: 'Coordinator',
-        role: 'Pathobiological Sciences',
-        link: '',
-        image: Fontenot,
-      },
-      {
         name: 'Alexis White',
         isActive: true,
         image: White,
