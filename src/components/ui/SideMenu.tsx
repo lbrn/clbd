@@ -38,13 +38,10 @@ const SideMenu = ({ links }: sideMenuProps) => {
         button
         key={link.code}
         id={link.code}
-        // className={active === link.code ? classes.active : ''}
       >
         <ListItemText
           key={link.code}
-          onClick={e => {
-            link.clickHandler();
-          }}
+          onClick={link.clickHandler}
           primary={link.displayName}
         />
       </ListItem>
