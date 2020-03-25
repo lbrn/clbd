@@ -77,8 +77,10 @@ export const seminars: seminar[] = [
     id: '4',
     code: 'SEMINAR',
     eventType: 'Workshop',
+
     // date: moment('2020-05-24'),
     featured: true,
+    hasMap: false,
     // time: '10 am - 12 pm',
     // registrationLink: 'https://redcap.lbrn.lsu.edu/surveys/?s=3EKCN8L4NH',
     // registrationDueDate: moment('2020-01-19'),

@@ -31,7 +31,7 @@ const useStyles = makeStyles({
 
 const Seminar = props => {
   const classes = useStyles();
-  const [seminar, setSeminar] = useState();
+  const [seminar, setSeminar] = useState<any>();
   useEffect(() => {
     // index comes from url
     setSeminar(seminars[props.seminarIndex]);
@@ -69,20 +69,27 @@ const Seminar = props => {
               <Typography variant="body1">
                 {seminar.location && seminar.location}
               </Typography>
-              <Typography variant="body1">
-                Speakers for this event: {seminar.speakers && seminar.speakers}
-              </Typography>
+              {seminar.speakers && (
+                <Typography variant="body1">
+                  Speakers for this event: {seminar.speakers}
+                </Typography>
+              )}
               <Typography variant="body1">
                 {seminar.speakerUniversities && seminar.speakerUniversities}
               </Typography>
-              <Typography variant="body1">
-                Cost: {seminar.cost ? seminar.cost : 'free'}
-              </Typography>
+              {seminar.cost && (
+                <Typography variant="body1">
+                  Cost: {seminar.cost ? seminar.cost : 'free'}
+                </Typography>
+              )}
               {seminar.link && (
                 <Typography variant="body1">
                   Video: <Link href={seminar.link}></Link>
                 </Typography>
               )}
+              {/* {seminar.description && (
+                <Typography variant="body1">{seminar.description()}</Typography>
+              )} */}
             </Grid>
           </Grid>
         )}
@@ -98,13 +105,15 @@ const Seminar = props => {
           </Grid>
         )}
       </Grid>
-      <Grid item xs={12}>
-        <iframe
-          title="event map"
-          className={classes.map}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13763.17090881741!2d-91.2020158014031!3d30.413622109420405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8626a73e9f2335b1%3A0x3180fa3441356916!2sLSU%20School%20of%20Veterinary%20Medicine!5e0!3m2!1sen!2sus!4v1579642103972!5m2!1sen!2sus"
-        ></iframe>
-      </Grid>
+      {seminar && seminar.hasMap !== false && (
+        <Grid item xs={12}>
+          <iframe
+            title="event map"
+            className={classes.map}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13763.17090881741!2d-91.2020158014031!3d30.413622109420405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8626a73e9f2335b1%3A0x3180fa3441356916!2sLSU%20School%20of%20Veterinary%20Medicine!5e0!3m2!1sen!2sus!4v1579642103972!5m2!1sen!2sus"
+          ></iframe>
+        </Grid>
+      )}
     </Container>
   );
 };

@@ -5,11 +5,13 @@ export interface seminar {
   id: string;
   code: string;
   date?: any;
+  hasMap?: boolean;
   cost?: string;
   featured?: boolean;
   about?: string;
   lodging?: string;
   location?: string;
+  description?: any;
   speakers?: string;
   speakerUniversities?: string;
   time?: any;
