@@ -8,6 +8,7 @@ import {
 } from '@material-ui/core';
 import { darken } from '@material-ui/core/styles';
 import menuLink from '../../models/menuLink';
+import { themeExtended, theme } from '../../theme/theme';
 interface sideMenuProps {
   links: menuLink[];
   // active: string;
@@ -16,7 +17,13 @@ interface sideMenuProps {
 const useStyles = makeStyles({
   list: {
     width: '100%',
-    backgroundColor: `rgba(19, 127, 222, .2)`,
+  },
+  listItem: {
+    backgroundColor: theme.palette.primary.light,
+
+    '&:hover': {
+      backgroundColor: themeExtended.palette.primary.hover,
+    },
   },
   // active: { backgroundColor: darken(`rgba(19, 127, 222, .25)`, 0.1) },
 });
@@ -27,6 +34,7 @@ const SideMenu = ({ links }: sideMenuProps) => {
   const createLinks = links => {
     return links.map(link => (
       <ListItem
+        className={classes.listItem}
         button
         key={link.code}
         id={link.code}
