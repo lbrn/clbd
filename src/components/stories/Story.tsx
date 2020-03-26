@@ -1,14 +1,8 @@
-import React from 'react';
-import {
-  Grid,
-  Typography,
-  makeStyles,
-  Link,
-  Container,
-} from '@material-ui/core';
-
-import heroImg from '../assets/misc/home.jpg';
-import { theme } from '../theme/theme';
+import React, { Fragment } from 'react';
+import { Grid, Typography, Link } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import article from '../../models/article';
+import { theme } from '../../theme/theme';
 
 const useStyles = makeStyles({
   imgCont: {
@@ -20,9 +14,9 @@ const useStyles = makeStyles({
     height: '25vh',
   },
   img: {
-    backgroundImage: `url(${heroImg})`,
-    backgroundSize: 'contain',
-    backgroundRepeat: 'no-repeat',
+    // backgroundImage: `url(${heroImg})`,
+    objectFit: 'contain',
+    // backgroundRepeat: 'no-repeat',
     width: '100%',
     height: '100%',
   },
@@ -32,18 +26,19 @@ const useStyles = makeStyles({
     marginLeft: 10,
   },
 });
-
-const HeroStory = props => {
-  const classes = useStyles();
+interface storyProps {
+  article: article;
+}
+const Story = ({ article }: storyProps) => {
+  const classes = useStyles({});
   return (
     <Grid xs={12} container item spacing={3} alignItems="center">
-      <Grid item xs={12} sm={6} className={classes.imgCont}>
-        <div className={classes.img} />
+      <Grid item xs={12} sm={6}>
+        <img className={classes.img} src={article.image}/>
       </Grid>
       <Grid item xs={12} sm={6}>
         <Typography variant="h6">
-          Economic Development Win: LSU Garners $11.5M Grant from NIH to
-          Establish Louisiana Pulmonary Research Center
+          {article.title}
         </Typography>
       </Grid>
       <Grid item xs={12}>
@@ -60,7 +55,7 @@ const HeroStory = props => {
       <Grid item xs={12}>
         <Link
           variant="body1"
-          href="https://www.lsu.edu/mediacenter/news/2019/02/04svm_jeyaseelan_nihcenter.php"
+          href={article.link}
         >
           ...view more
         </Link>
@@ -69,4 +64,4 @@ const HeroStory = props => {
   );
 };
 
-export default HeroStory;
+export default Story;

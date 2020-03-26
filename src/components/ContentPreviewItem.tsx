@@ -53,7 +53,8 @@ const ContentPreviewItem = ({
       <Grid item xs={8} className={classes.textCont}>
         {featured.title && (
           <Typography align="center" variant="h5" className={classes.title}>
-            {featured.title}
+            {/* gets first part of title for preview */}
+            {featured.title.split(':')[0]}
           </Typography>
         )}
         {featured.location && (
