@@ -46,7 +46,7 @@ const People = ({ path, data, location }: peopleProps) => {
   return (
     <Fragment>
       <Grid container spacing={3}>
-        <Grid justify="center" item xs={4} md={3}>
+        <Grid item xs={4} md={3}>
           <SmartMenu
             active={active}
             setActive={setActive}

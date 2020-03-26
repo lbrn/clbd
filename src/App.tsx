@@ -16,12 +16,14 @@ require('dotenv').config();
 
 const useStyles = makeStyles({
   appWrapper: {
-    position: 'relative',
     minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
   },
   contentWrap: {
-    height: '100vh',
-    paddingBottom: '4.5rem',
+    // minHeight: 'calc(100vh - 120px)',
+    flex: '1 0 auto',
+    // paddingBottom: '4.5rem',
   },
 });
 
@@ -49,12 +51,12 @@ const App: React.FC = () => {
       <ThemeProvider theme={theme}>
         <HistoryContext.Provider value={history.current}>
           <div className={classes.appWrapper}>
+            <Header />
             <div className={classes.contentWrap}>
               <CssBaseline />
-              <Header />
               <RouterWrapper />
-              <Footer />
             </div>
+            <Footer />
           </div>
         </HistoryContext.Provider>
       </ThemeProvider>
