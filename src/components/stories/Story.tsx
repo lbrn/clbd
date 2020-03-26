@@ -19,6 +19,7 @@ const useStyles = makeStyles({
     // backgroundRepeat: 'no-repeat',
     width: '100%',
     height: '100%',
+    maxHeight: 200,
   },
   outerCont: {
     marginTop: theme.spacing(3),
@@ -34,29 +35,16 @@ const Story = ({ article }: storyProps) => {
   return (
     <Grid xs={12} container item spacing={3} alignItems="center">
       <Grid item xs={12} sm={6}>
-        <img className={classes.img} src={article.image}/>
+        <img className={classes.img} src={article.image} />
       </Grid>
       <Grid item xs={12} sm={6}>
-        <Typography variant="h6">
-          {article.title}
-        </Typography>
+        <Typography variant="h6">{article.title}</Typography>
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="body1">
-          Baton Rouge- The LSU School of Veterinary Medicine, or LSU SVM, has
-          been awarded more than $11.5 million in funding over five years from
-          the National Institutes of Health, or NIH, to launch the Center for
-          Lung Biology and Disease, or CLBD. Samithamby Jeyaseelan, the William
-          L. Jenkins Professor in the Department of Pathobiological Sciences,
-          will serve as principal investigator, and Rhonda Cardin, associate
-          dean for research and advanced studies, will serve as co-investigator.
-        </Typography>
+        <Typography variant="body1">{article.contentPreview}</Typography>
       </Grid>
       <Grid item xs={12}>
-        <Link
-          variant="body1"
-          href={article.link}
-        >
+        <Link variant="body1" href={article.link}>
           ...view more
         </Link>
       </Grid>
