@@ -9,7 +9,7 @@ const Stories = () => {
     setStories(articles);
   }, []);
   const makeStories = () => {
-    return stories.map(article => <Story article={article} />);
+    return stories.map((article, i) => <Story key={i} article={article} />);
   };
   return <Fragment>{makeStories()}</Fragment>;
 };

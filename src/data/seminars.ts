@@ -75,7 +75,7 @@ export const seminars: seminar[] = [
   {
     title: 'All current events are cancelled. COVID-19 information here',
     id: '4',
-    code: 'SEMINAR',
+    code: 'ANNOUNCEMENT',
     eventType: 'Workshop',
 
     // date: moment('2020-05-24'),

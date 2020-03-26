@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles, Typography, Grid, Link } from '@material-ui/core';
 import { theme } from '../theme/theme';
 import { navigate } from '@reach/router';
-import { themeExtended } from '../theme/theme';
+import CovidAnnouncement from './seminars/CovidAnnouncement';
 
 const useStyles = makeStyles({
   imgCont: {
@@ -40,7 +40,6 @@ const ContentPreviewItem = ({
   code,
 }: contentPreviewItemProps) => {
   const classes = useStyles();
-
   return (
     <Grid container item xs={12} sm={6} className={classes.cont}>
       <Grid container item xs={4} className={classes.imgCont}>
@@ -73,6 +72,7 @@ const ContentPreviewItem = ({
               onClick={() =>
                 navigate(
                   code === 'ARTICLE' ? featured.link : `event/${featured.id}`,
+                  { state: { code: featured.code } },
                 )
               }
             >

@@ -66,7 +66,13 @@ const Seminars = ({ path }) => {
     return seminars.map(seminar => (
       <Grid key={seminar.id} item xs={12} sm={6}>
         <Card
-          onClick={e => navigate(`/event/${seminar.id}`)}
+          onClick={e =>
+            navigate(`/event/${seminar.id}`, {
+              state: {
+                code: 'SEMINAR',
+              },
+            })
+          }
           className={classes.card}
         >
           <CardContent className={classes.cardContent}>
