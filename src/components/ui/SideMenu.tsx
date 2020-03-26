@@ -21,11 +21,10 @@ const useStyles = makeStyles({
   listItem: {
     backgroundColor: theme.palette.primary.light,
 
-    '&:hover': {
+    '&:hover, &:focus': {
       backgroundColor: themeExtended.palette.primary.hover,
     },
   },
-  // active: { backgroundColor: darken(`rgba(19, 127, 222, .25)`, 0.1) },
 });
 
 const SideMenu = ({ links }: sideMenuProps) => {

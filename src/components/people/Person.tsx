@@ -20,7 +20,8 @@ const Person = ({
   const useStyles = makeStyles({
     person: {
       margin: theme.spacing(3),
-      '&:hover': {
+      '&:hover, &:focus': {
+        cursor: 'pointer',
         backgroundColor: themeExtended.palette.primary.hover,
       },
     },
@@ -48,11 +49,11 @@ const Person = ({
       backgroundColor: theme.palette.primary.main,
     },
 
-    link: {
-      justifySelf: 'center',
-      color: theme.palette.primary.main,
-      textDecoration: 'none',
-    },
+    // link: {
+    //   justifySelf: 'center',
+    //   color: theme.palette.primary.dark,
+    //   textDecoration: 'none',
+    // },
   });
 
   const classes = useStyles();
@@ -65,6 +66,7 @@ const Person = ({
       xs={12}
       sm={5}
       className={classes.person}
+      tabIndex={1}
       onClick={e =>
         navigate(`/people/individual/${name}`, {
           state: {
@@ -142,7 +144,7 @@ const Person = ({
               })
             }
           ></Link>
-        )}{' '}
+        )}
         <br />
       </Grid>
     </Grid>

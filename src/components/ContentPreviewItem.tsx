@@ -34,11 +34,7 @@ interface contentPreviewItemProps {
   code: string;
 }
 
-const ContentPreviewItem = ({
-  featured,
-  id,
-  code,
-}: contentPreviewItemProps) => {
+const ContentPreviewItem = ({ featured, code }: contentPreviewItemProps) => {
   const classes = useStyles();
   return (
     <Grid container item xs={12} sm={6} className={classes.cont}>
@@ -69,12 +65,13 @@ const ContentPreviewItem = ({
         {(featured.link || featured.code !== 'ARTICLE') && (
           <Typography align="center">
             <Link
-              onClick={() =>
+              onClick={e => {
+
                 navigate(
                   code === 'ARTICLE' ? featured.link : `event/${featured.id}`,
                   { state: { code: featured.code } },
-                )
-              }
+                );
+              }}
             >
               view details
             </Link>

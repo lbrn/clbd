@@ -29,7 +29,7 @@ export const theme = createMuiTheme({
 export const themeExtended = {
   palette: {
     primary: {
-      hover: fade('rgba(19, 127, 222)', 0.1),
+      hover: fade('rgba(19, 127, 222)', 0.2),
     },
   },
 };

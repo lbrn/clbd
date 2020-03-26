@@ -79,8 +79,9 @@ const CovidAnnouncement = ({ announcement }) => {
                 officials, college and university directives, and make sure
                 you're in touch with your immediate supervisors, etc. to keep
                 track of updates and what you should be doing at this time.
-                <br />- CLBD Administration
+                <br />
               </Typography>
+              <Typography variant="body1">- CLBD Administration</Typography>
             </Grid>
           </Grid>
         )}
