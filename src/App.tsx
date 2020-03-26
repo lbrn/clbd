@@ -20,6 +20,7 @@ const useStyles = makeStyles({
     minHeight: '100vh',
   },
   contentWrap: {
+    height: '100vh',
     paddingBottom: '4.5rem',
   },
 });
@@ -52,8 +53,8 @@ const App: React.FC = () => {
               <CssBaseline />
               <Header />
               <RouterWrapper />
+              <Footer />
             </div>
-            <Footer />
           </div>
         </HistoryContext.Provider>
       </ThemeProvider>

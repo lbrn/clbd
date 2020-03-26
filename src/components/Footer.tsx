@@ -15,8 +15,8 @@ const useStyles = makeStyles({
     paddingTop: theme.spacing(3),
   },
   outerCont: {
-    height: '2.5rem',
-    position: 'absolute',
+    height: 120,
+    position: 'sticky',
     bottom: 0,
     width: '100%',
   },
