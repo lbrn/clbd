@@ -41,39 +41,45 @@ const CovidAnnouncement = ({ announcement }) => {
                 For Coronavirus (COVID-19) information please check your local
                 administrative websites accordingly. You can also check on
                 information here: <br />
-                <Link href="https://www.nih.gov/health-information/coronavirus">
-                  NIH Coronavirus (COVID-19) Information
-                  {/* - subscribe for updates */}
-                </Link>
               </Typography>
 
               <Typography variant="body1">
-                <Link href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">
-                  CDC Coronavirus (COVID-19) Information
-                </Link>
-                <br />
-                <Link href="http://ldh.la.gov/coronavirus/">
-                  Louisiana Department of Health Coronavirus (COVID-19)
-                  Information:
-                </Link>
-                <br />
-                *Note: updated twice daily with latest case information*
-                <br />
-                <Link href="https://www.lsu.edu/coronavirus/index.php">
-                  LSU Coronavirus Updates and Information
-                </Link>
-                <br />
-                <Link href="https://lsu.edu/vetmed/disaster_preparedness/coronavirus_updates.php">
-                  LSU School of Veterinary Medicine Coronavirus Updates
-                </Link>
+                <ul>
+                  <li>
+                    <Link href="https://www.nih.gov/health-information/coronavirus">
+                      NIH Coronavirus (COVID-19) Information
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">
+                      CDC Coronavirus (COVID-19) Information
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="http://ldh.la.gov/coronavirus/">
+                      Louisiana Department of Health Coronavirus (COVID-19)
+                      Information
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://www.lsu.edu/coronavirus/index.php">
+                      LSU Coronavirus Updates and Information
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://lsu.edu/vetmed/disaster_preparedness/coronavirus_updates.php">
+                      LSU School of Veterinary Medicine Coronavirus Updates
+                    </Link>
+                  </li>
+                </ul>
               </Typography>
               <Typography variant="body1">
                 Please take precautions to avoid spreading the virus to the high
                 risk population. Continue to listen to your local and state
                 officials, college and university directives, and make sure
                 you're in touch with your immediate supervisors, etc. to keep
-                track of updates and what you should be doing at this time. CLBD
-                Administration
+                track of updates and what you should be doing at this time.
+                <br />- CLBD Administration
               </Typography>
             </Grid>
           </Grid>

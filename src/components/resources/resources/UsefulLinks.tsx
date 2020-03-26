@@ -37,7 +37,7 @@ export const UsefulLinks = props => {
             )
           }
         >
-          <Link>IRB - Institutional Review Board.</Link>
+          <Link>IRB - Institutional Review Board</Link>
         </Typography>
         <Typography
           onClick={e =>

@@ -33,12 +33,17 @@ const Footer = () => {
       <Grid container spacing={3} className={classes.innerCont}>
         <Grid container item xs={6} sm={6}>
           <Grid item xs>
-            <Link href="https://lsu.edu/accessibility" className={classes.link}>
+            <Link
+              target="_blank"
+              href="https://lsu.edu/accessibility"
+              className={classes.link}
+            >
               Accessibility statement
             </Link>
           </Grid>
           <Grid item xs>
             <Link
+              target="_blank"
               href="https://www.lsu.edu/privacy/index.php"
               className={classes.link}
             >
@@ -46,7 +51,11 @@ const Footer = () => {
             </Link>
           </Grid>
           <Grid item xs>
-            <Link href="https://lsu.edu/feedback" className={classes.link}>
+            <Link
+              target="_blank"
+              href="https://lsu.edu/feedback"
+              className={classes.link}
+            >
               Provide Feedback
             </Link>
           </Grid>
