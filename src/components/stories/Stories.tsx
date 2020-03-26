@@ -9,7 +9,9 @@ const Stories = () => {
     setStories(articles);
   }, []);
   const makeStories = () => {
-    return stories.map((article, i) => <Story key={i} article={article} />);
+    return stories
+      .filter(story => !story.isFeatured)
+      .map((article, i) => <Story key={i} article={article} />);
   };
   return <Fragment>{makeStories()}</Fragment>;
 };

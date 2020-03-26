@@ -4,4 +4,5 @@ export default interface article {
   contentPreview: string;
   link: string;
   code: string;
+  isFeatured?: boolean;
 }

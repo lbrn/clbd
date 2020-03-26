@@ -11,8 +11,8 @@ export const articles: article[] = [
       'LSU SVM assistant professor receives $2.7 million: Outstanding New Environmental Scientist (ONES) Award to investigate molecular mechanisms of ozone-induced lung diseases',
     contentPreview: `Yogesh Saini, DVM, PhD, assistant professor in the Department of Comparative Biomedical Sciences at the LSU School of Veterinary Medicine, has recently received an Outstanding New Environmental Scientist (ONES) award from the National Institute of Environmental Health Sciences (NIEHS) to conduct innovative research on ozone-induced lung diseases. Saini was awarded an approximately $2.7 million grant for his work to investigate how inhaled ozone disrupts normal physiology of our lungs...`,
     image: Saini,
-    link:
-      'https://www.lsu.edu/vetmed/vet_news/saini_ones_award.php',
+    link: 'https://www.lsu.edu/vetmed/vet_news/saini_ones_award.php',
+    isFeatured: true,
   },
   {
     code: 'ARTICLE',
