@@ -24,7 +24,6 @@ const useStyles = makeStyles({
 });
 
 const About = ({ path }) => {
-
   const classes = useStyles({});
   return (
     <Container className={classes.title}>
@@ -85,6 +84,9 @@ const About = ({ path }) => {
             provide novel insights into the pathogenesis of devastating lung
             diseases that guide future improved strategies for treating and
             preventing these and other lung diseases in the human population.
+          </Typography>
+          <Typography className={classes.bodyText} variant="body1">
+            <strong>Samithamby "Jey" Jeyaseelan, DVM, PhD</strong>
           </Typography>
         </Grid>
       </Grid>

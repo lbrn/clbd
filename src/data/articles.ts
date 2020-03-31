@@ -1,4 +1,5 @@
 import grantPhoto from '../assets/articles/home.jpg';
+import huangPhoto from '../assets/articles/huangPhoto.png';
 import { Saini } from '../assets/people';
 import article from '../models/article';
 
@@ -13,6 +14,13 @@ export const articles: article[] = [
     image: Saini,
     link: 'https://www.lsu.edu/vetmed/vet_news/saini_ones_award.php',
     isFeatured: true,
+  },
+  {
+    code: 'ARTICLE',
+    title: `Dr. Weishan Huang receives NIH award`,
+    contentPreview: `Weishan Huang, PhD, Assistant Professor in PBS, recently received $375,096 for her R56 (Bridge) award from the NIH/NIAID entitled "Heterogeneity and molecular signatures of therapeutic T cells in allergic airway inflammation."`,
+    image: huangPhoto,
+    link: 'https://twitter.com/LSUVetMed/status/1226948778269167616',
   },
   {
     code: 'ARTICLE',
