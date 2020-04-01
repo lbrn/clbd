@@ -13,11 +13,11 @@ export const articles: article[] = [
     contentPreview: `Yogesh Saini, DVM, PhD, assistant professor in the Department of Comparative Biomedical Sciences at the LSU School of Veterinary Medicine, has recently received an Outstanding New Environmental Scientist (ONES) award from the National Institute of Environmental Health Sciences (NIEHS) to conduct innovative research on ozone-induced lung diseases. Saini was awarded an approximately $2.7 million grant for his work to investigate how inhaled ozone disrupts normal physiology of our lungs...`,
     image: Saini,
     link: 'https://www.lsu.edu/vetmed/vet_news/saini_ones_award.php',
-    isFeatured: true,
   },
   {
     code: 'ARTICLE',
-    title: `Dr. Weishan Huang receives NIH award`,
+    isFeatured: true,
+    title: `Dr. Weishan Huang receives $375,096 NIH award`,
     contentPreview: `Weishan Huang, PhD, Assistant Professor in PBS, recently received $375,096 for her R56 (Bridge) award from the NIH/NIAID entitled "Heterogeneity and molecular signatures of therapeutic T cells in allergic airway inflammation."`,
     image: huangPhoto,
     link: 'https://twitter.com/LSUVetMed/status/1226948778269167616',

@@ -85,6 +85,7 @@ const About = ({ path }) => {
             diseases that guide future improved strategies for treating and
             preventing these and other lung diseases in the human population.
           </Typography>
+          <br />
           <Typography className={classes.bodyText} variant="body1">
             <strong>Samithamby "Jey" Jeyaseelan, DVM, PhD</strong>
           </Typography>
