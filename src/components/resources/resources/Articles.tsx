@@ -27,6 +27,14 @@ export const Articles = props => {
         >
           <Link>Economic Development Win</Link>
         </Typography>
+        <Typography
+          onClick={e =>
+            navigate('https://twitter.com/LSUVetMed/status/1226948778269167616')
+          }
+          variant="body1"
+        >
+          <Link>Dr. Weishan Huang receives $375,096 NIH award</Link>
+        </Typography>
       </Grid>
     </Fragment>
   );
