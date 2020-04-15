@@ -17,7 +17,7 @@ export const Articles = props => {
           }
           variant="body1"
         >
-          <Link>850K award won by Dr. Alexandra Noel.</Link>
+          <Link>850K award won by Assistant Professor Alexandra Noël.</Link>
         </Typography>
         <Typography
           onClick={e =>
