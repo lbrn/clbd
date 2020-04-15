@@ -1,6 +1,6 @@
 import grantPhoto from '../assets/articles/home.jpg';
 import huangPhoto from '../assets/articles/huangPhoto.png';
-import { Saini } from '../assets/people';
+import { Saini, Noel } from '../assets/people';
 import article from '../models/article';
 
 // the first article in this array is automatically featured
@@ -9,8 +9,16 @@ export const articles: article[] = [
   {
     code: 'ARTICLE',
     isFeatured: true,
-    title: `Dr. Weishan Huang receives $375,096 NIH award`,
+    title: `LSU Assistant Professor Dr. Alexandra Noel receives a K01 award worth $850 K from the NIH/FDA`,
     contentPreview: `Weishan Huang, PhD, Assistant Professor in PBS, recently received $375,096 for her R56 (Bridge) award from the NIH/NIAID entitled "Heterogeneity and molecular signatures of therapeutic T cells in allergic airway inflammation."`,
+    image: Noel,
+    link:
+      'https://www.lsu.edu/research/recent_grant_successes/2020/0401-alexandranoel.php',
+  },
+  {
+    code: 'ARTICLE',
+    title: `Dr. Weishan Huang receives $375,096 NIH award`,
+    contentPreview: `In a nation still struggling to understand the health effects of vaping - especially in young people - an LSU researcher is broadening her approach."`,
     image: huangPhoto,
     link: 'https://twitter.com/LSUVetMed/status/1226948778269167616',
   },

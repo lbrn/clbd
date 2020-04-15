@@ -12,6 +12,16 @@ export const Articles = props => {
         <Typography
           onClick={e =>
             navigate(
+              'https://www.lsu.edu/research/recent_grant_successes/2020/0401-alexandranoel.php',
+            )
+          }
+          variant="body1"
+        >
+          <Link>850K award won by Dr. Alexandra Noel.</Link>
+        </Typography>
+        <Typography
+          onClick={e =>
+            navigate(
               'https://www.lsu.edu/mediacenter/news/2019/02/04svm_jeyaseelan_nihcenter.php',
             )
           }
