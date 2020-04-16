@@ -29,7 +29,7 @@ const MolecularCore = props => {
           &bull; RNAi vectors and CRISPR/Cas9 for gene silencing and knockout.
         </Typography>
         <Typography>
-          &bull;Overexpression vectors for transgene expression.
+          &bull; Overexpression vectors for transgene expression.
         </Typography>
         <Typography>&bull; Site-directed mutagenesis.</Typography>
         <Typography>&bull; Gene and pathway reporter assays.</Typography>
