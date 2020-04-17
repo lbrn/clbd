@@ -1,4 +1,3 @@
-
 export const Baines = require('./Baines.jpg');
 export const Baumgarth = require('./Baumgarth.jpg');
 export const Bubeckwardenburg = require('./Bubeckwardenburg.jpg');
@@ -16,6 +15,7 @@ export const Kaushal = require('./Kaushal.jpg');
 export const Kolls = require('./Kolls.jpg');
 export const Kousoulas = require('./Kousoulas.jpg');
 export const Langohr = require('./Langohr.jpg');
+export const Le = require('./Le.jpg');
 export const Noel = require('./Noel.jpg');
 export const Ogundele = require('./Ogundele.jpg');
 export const Patial = require('./Patial.jpg');
