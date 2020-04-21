@@ -4,8 +4,17 @@ import { theme } from '../../theme/theme';
 
 const PersonDetails = props => {
   // these props are passed via react router
-  const { img, mentors, role, name, title, link, institution, abstract, degree } =
-    props.location && props.location.state;
+  const {
+    img,
+    mentors,
+    role,
+    name,
+    title,
+    link,
+    institution,
+    abstract,
+    degree,
+  } = props.location && props.location.state;
 
   const useStyles = makeStyles({
     person: {
@@ -23,7 +32,7 @@ const PersonDetails = props => {
       // centers img on top center
       backgroundPositionX: 'center',
       backgroundPositionY: 'top',
-      backgroundSize: 'contain',
+      backgroundSize: 'cover',
       borderRadius: '50%',
       backgroundImage: `url(${img})`,
     },
@@ -45,7 +54,7 @@ const PersonDetails = props => {
   const createMentors = mentors => {
     const length = mentors.length;
 
-    const mentorElements =  mentors.map((mentor, index) => (
+    const mentorElements = mentors.map((mentor, index) => (
       <Link key={mentor.name} href={mentor.link}>{`${mentor.name}${
         index < length - 1 ? ', ' : '.'
       }`}</Link>
@@ -69,18 +78,22 @@ const PersonDetails = props => {
           {!img && <Avatar className={classes.avatar}>{name.charAt(0)}</Avatar>}
         </Grid>
         <Grid item xs={8}>
-  {name && <Typography>{name}, {degree}</Typography>}
+          {name && (
+            <Typography>
+              {name}, {degree}
+            </Typography>
+          )}
           {role && <Typography>{role}</Typography>}
           {title && <Typography>{title}</Typography>}
           {/* target ensures a new tab.  nooopener is for security */}
-          {link && institution && (
+          {link && (
             <Link
               target="_blank"
               rel="noopener"
               href={link}
               className={classes.link}
             >
-              {institution}
+              {institution || 'Email'}
             </Link>
           )}
         </Grid>

@@ -25,7 +25,6 @@ const Person = ({
         backgroundColor: themeExtended.palette.primary.hover,
       },
     },
-
     personImgCont: {
       display: 'flex',
       height: 'auto',
@@ -38,7 +37,7 @@ const Person = ({
       // centers img on top center
       backgroundPositionX: 'center',
       backgroundPositionY: 'top',
-      backgroundSize: 'contain',
+      backgroundSize: 'cover',
       borderRadius: '50%',
       backgroundImage: `url(${img})`,
     },
@@ -48,12 +47,6 @@ const Person = ({
       paddingTop: '45%',
       backgroundColor: theme.palette.primary.main,
     },
-
-    // link: {
-    //   justifySelf: 'center',
-    //   color: theme.palette.primary.dark,
-    //   textDecoration: 'none',
-    // },
   });
 
   const classes = useStyles();
@@ -121,11 +114,11 @@ const Person = ({
         {/* target ensures a new tab.  nooopener is for security */}
         {link && institution && <Typography>{institution}</Typography>} <br />
         {/* {isExpanded && abstract && <Typography>{abstract}</Typography>} */}
-        {mentors && (
+        {/* {mentors && (
           <Typography>
             {mentors.map(mentor => mentor.name).join(', ')}
           </Typography>
-        )}
+        )} */}
         {abstract && (
           <Link
             onClick={e =>

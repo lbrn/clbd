@@ -156,7 +156,6 @@ export const people: people = {
       {
         name: 'John Le',
         isActive: true,
-        institution: 'Louisiana State University',
         title: 'Coordinator',
         role: 'Pathobiological Sciences',
         link: 'mailto:jle24@lsu.edu',
