@@ -156,7 +156,7 @@ export const people: people = {
       {
         name: 'John Le',
         isActive: true,
-        title: 'Coordinator',
+        title: 'Interim Coordinator',
         role: 'Pathobiological Sciences',
         link: 'mailto:jle24@lsu.edu',
         image: Le,
