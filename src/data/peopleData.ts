@@ -29,8 +29,13 @@ import {
 } from '../assets/people/index';
 import person from '../models/person';
 
-export const peopleData = {
+interface peopleData {
+  [name: string]: person;
+}
+
+export const peopleData: peopleData = {
   Jeyaseelan: {
+    code: 'Jeyaseelan',
     id: 0,
     name: 'Samithamby Jeyaseelan',
     isActive: true,
@@ -43,6 +48,7 @@ export const peopleData = {
     link: 'https://bit.ly/31Giidr ',
   },
   Cardin: {
+    code: 'Cardin',
     id: 1,
     name: 'Rhonda Cardin',
     isActive: true,
@@ -54,6 +60,7 @@ export const peopleData = {
     link: 'http://facultypages.vetmed.lsu.edu/faculty/rcardin',
   },
   Le: {
+    code: 'Le',
     id: 2,
     name: 'John Le',
     isActive: true,
@@ -63,6 +70,7 @@ export const peopleData = {
     image: Le,
   },
   White: {
+    code: 'White',
     id: 3,
     name: 'Alexis White',
     isActive: true,
@@ -72,6 +80,7 @@ export const peopleData = {
     role: 'Account Specialist',
   },
   Irvin: {
+    code: 'Irvin',
     id: 4,
     name: 'Charles Irvin',
     isActive: true,
@@ -82,6 +91,7 @@ export const peopleData = {
     link: 'https://bit.ly/2NgIOVQ',
   },
   Stanton: {
+    code: 'Stanton',
     id: 5,
     name: 'Bruce Stanton',
     isActive: true,
@@ -92,6 +102,7 @@ export const peopleData = {
     link: 'https://bit.ly/2pRtnuU',
   },
   Fessler: {
+    code: 'Fessler',
     id: 6,
     name: 'Michael Fessler',
     isActive: true,
@@ -102,6 +113,7 @@ export const peopleData = {
     link: 'https://bit.ly/32M5pzM',
   },
   Bubeckwardenburg: {
+    code: 'Bubeckwardenburg',
     id: 7,
     name: 'Juliane Bubeckwardenburg',
     isActive: true,
@@ -112,6 +124,7 @@ export const peopleData = {
     link: 'https://bit.ly/32KDq3x',
   },
   Baumgarth: {
+    code: 'Baumgarth',
     id: 8,
     name: 'Nicole Baumgarth',
     isActive: true,
@@ -122,6 +135,7 @@ export const peopleData = {
     link: 'https://bit.ly/32McZdM',
   },
   Baines: {
+    code: 'Baines',
     id: 9,
     name: 'Joel Baines',
     isActive: true,
@@ -132,6 +146,7 @@ export const peopleData = {
     link: 'https://bit.ly/2Wa5b3f',
   },
   Kaushal: {
+    code: 'Kaushal',
     id: 10,
     name: 'Deepak Kaushal',
     isActive: true,
@@ -142,6 +157,7 @@ export const peopleData = {
     link: 'https://bit.ly/2W9mLnZ',
   },
   Kousoulas: {
+    code: 'Kousoulas',
     id: 11,
     name: 'Konstantin Kousoulas',
     isActive: true,
@@ -152,6 +168,7 @@ export const peopleData = {
     link: 'https://bit.ly/2PhLrt6',
   },
   Cormier: {
+    code: 'Cormier',
     id: 12,
     name: 'Stephania Cormier',
     isActive: true,
@@ -162,6 +179,7 @@ export const peopleData = {
     link: 'https://bit.ly/2PrEN3B',
   },
   Kolls: {
+    code: 'Kolls',
     id: 13,
     name: 'Jay Kolls',
     isActive: true,
@@ -172,6 +190,7 @@ export const peopleData = {
     link: 'https://bit.ly/2pLRUBQ',
   },
   Reed: {
+    code: 'Reed',
     id: 14,
     name: 'Kevin Reed',
     isActive: true,
@@ -183,6 +202,7 @@ export const peopleData = {
     image: Reed,
   },
   Dugas: {
+    code: 'Dugas',
     id: 15,
     name: 'Tammy Dugas',
     isActive: true,
@@ -193,6 +213,7 @@ export const peopleData = {
     link: 'https://bit.ly/33YO5Ic',
   },
   Langhor: {
+    code: 'Langhor',
     id: 16,
     name: 'Ingeborg Langohr',
     isActive: true,
@@ -203,6 +224,7 @@ export const peopleData = {
     link: 'http://facultypages.vetmed.lsu.edu/faculty/ilangohr',
   },
   Christofferson: {
+    code: 'Christofferson',
     id: 17,
     name: 'Rebecca Christofferson',
     isActive: true,
@@ -213,6 +235,7 @@ export const peopleData = {
     link: 'http://facultypages.vetmed.lsu.edu/faculty/rcarri1',
   },
   Rangasamy: {
+    code: 'Rangasamy',
     id: 19,
     name: 'Tirumalai Rangasamy',
     isActive: true,
@@ -225,6 +248,7 @@ export const peopleData = {
     link: 'https://www.linkedin.com/in/tirumalai-rangasamy-667b773/',
   },
   Chouljenko: {
+    code: 'Chouljenko',
     id: 20,
     name: 'Vladimir Chouljenko',
     isActive: true,
@@ -235,6 +259,7 @@ export const peopleData = {
     link: 'http://facultypages.vetmed.lsu.edu/faculty/vchoul1',
   },
   Patial: {
+    code: 'Patial',
     id: 21,
     name: 'Sonika Patial',
     isActive: true,
@@ -258,6 +283,7 @@ export const peopleData = {
     ],
   },
   Saini: {
+    code: 'Saini',
     id: 22,
     name: 'Yogesh Saini',
     isActive: true,
@@ -276,6 +302,7 @@ export const peopleData = {
     ],
   },
   Huang: {
+    code: 'Huang',
     id: 23,
     name: 'Weishan Huang',
     isActive: true,
@@ -291,6 +318,7 @@ export const peopleData = {
     ],
   },
   Noel: {
+    code: 'Noel',
     id: 24,
     name: 'Alexandra Noel',
     isActive: true,
@@ -309,6 +337,7 @@ export const peopleData = {
     ],
   },
   Yoshimmura: {
+    code: 'Yoshimmura',
     id: 25,
     name: 'Masami Yoshimmura',
     isActive: true,
@@ -317,7 +346,8 @@ export const peopleData = {
     image: Yoshimmura,
     link: 'https://bit.ly/362gvmr',
   },
-  'GuerreroPlata': {
+  GuerreroPlata: {
+    code: 'GuerreroPlata',
     id: 26,
     name: 'Antonieta Guerrero-Plata',
     isActive: true,
@@ -329,6 +359,7 @@ export const peopleData = {
     link: 'https://bit.ly/31K0pL1',
   },
   Ogundele: {
+    code: 'Ogundele',
     id: 27,
     name: 'Olalekan Ogundele',
     isActive: true,

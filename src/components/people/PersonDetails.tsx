@@ -1,20 +1,12 @@
 import React from 'react';
 import { Typography, Avatar, Grid, makeStyles, Link } from '@material-ui/core';
 import { theme } from '../../theme/theme';
+import person from '../../models/person';
 
-const PersonDetails = props => {
-  //   these props are passed via react router
-  const {
-    img,
-    mentors,
-    role,
-    name,
-    title,
-    link,
-    institution,
-    abstract,
-    degree,
-  } = props.location && props.location.state && props.location.state.img;
+interface personDetails {
+  person: person;
+}
+const PersonDetails = ({ person }: personDetails) => {
 
   const useStyles = makeStyles({
     person: {
@@ -34,7 +26,7 @@ const PersonDetails = props => {
       backgroundPositionY: 'top',
       backgroundSize: 'cover',
       borderRadius: '50%',
-      backgroundImage: `url(${img})`,
+      backgroundImage: `url(${person.img})`,
     },
     avatar: {
       width: '90%',
@@ -73,48 +65,58 @@ const PersonDetails = props => {
       className={classes.person}
     >
       <Grid container item spacing={3} alignItems="center">
-        <Grid item xs={4} className={classes.personImgCont}>
-          {img && <div className={classes.personImg}></div>}
-          {!img && <Avatar className={classes.avatar}>{name.charAt(0)}</Avatar>}
-        </Grid>
-        <Grid item xs={8}>
-          {name && (
-            <Typography>
-              {name}, {degree}
-            </Typography>
-          )}
-          {role && <Typography>{role}</Typography>}
-          {title && <Typography>{title}</Typography>}
-          {/* target ensures a new tab.  nooopener is for security */}
-          {link && (
-            <Link
-              target="_blank"
-              rel="noopener"
-              href={link}
-              className={classes.link}
-            >
-              {institution || 'Email'}
-            </Link>
-          )}
-        </Grid>
-        <Grid item xs={8}>
-          {mentors && (
-            <Typography>
-              <strong>Mentors: </strong>
-              {createMentors(mentors)}
-            </Typography>
-          )}
-        </Grid>
+        {person && (
+          <Grid item xs={4} className={classes.personImgCont}>
+            {person.img && <div className={classes.personImg}></div>}
+            {!person.img && (
+              <Avatar className={classes.avatar}>{person.name.charAt(0)}</Avatar>
+            )}
+          </Grid>
+        )}
+        {person && (
+          <Grid item xs={8}>
+            {person.name && (
+              <Typography>
+                {person.name}, {person.degree}
+              </Typography>
+            )}
+            {person.role && <Typography>{person.role}</Typography>}
+            {person.title && <Typography>{person.title}</Typography>}
+            {/* target ensures a new tab.  nooopener is for security */}
+            {person.link && (
+              <Link
+                target="_blank"
+                rel="noopener"
+                href={person.link}
+                className={classes.link}
+              >
+                {person.institution || 'Email'}
+              </Link>
+            )}
+          </Grid>
+        )}
+        {person && (
+          <Grid item xs={8}>
+            {person.mentors && (
+              <Typography>
+                <strong>Mentors: </strong>
+                {createMentors(person.mentors)}
+              </Typography>
+            )}
+          </Grid>
+        )}
       </Grid>
       <Grid container item spacing={3}>
-        <Grid item xs={12}>
-          {abstract && (
-            <Typography>
-              <strong>Abstract: </strong>
-              {abstract}
-            </Typography>
-          )}
-        </Grid>
+        {person && (
+          <Grid item xs={12}>
+            {person.abstract && (
+              <Typography>
+                <strong>Abstract: </strong>
+                {person.abstract}
+              </Typography>
+            )}
+          </Grid>
+        )}
       </Grid>
     </Grid>
   );

@@ -8,7 +8,7 @@ import Seminar from '../seminars/Seminar';
 import Resources from '../resources/Resources';
 import NihAcknowledgement from '../resources/resources/NihAcknowledgement';
 import PeopleCont from '../people/PeopleCont';
-import PersonDetails from '../people/PersonDetails';
+import PersonDetailsModel from '../people/PersonDetailsModel';
 import People from '../people/People';
 import Disclaimer from '../resources/resources/Disclaimer';
 import UsefulLinks from '../resources/resources/UsefulLinks';
@@ -24,7 +24,7 @@ const RouterWrapper = () => {
         <About path="about" />
         <PeopleCont path="people">
           <People path="/:group" data="" />
-          <PersonDetails path="individual/:name" data="" />
+          <PersonDetailsModel path="individual/:code" />
         </PeopleCont>
         <Seminars path="events" />
         <Seminar path="event/:seminarIndex" />

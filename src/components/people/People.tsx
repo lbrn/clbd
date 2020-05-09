@@ -33,10 +33,12 @@ const People = ({ path, data, location }: peopleProps) => {
           name={person.name}
           title={person.title}
           mentors={person.mentors}
-          role={person.role}
+		  role={person.role}
+		  id={person.id}
           degree={person.degree}
           link={person.link}
-          img={person.image}
+		  img={person.image}
+		  code={person.code}
           abstract={person.abstract}
           institution={person.institution}
         />

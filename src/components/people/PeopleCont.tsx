@@ -3,8 +3,9 @@ import { Grid, Container, makeStyles } from '@material-ui/core';
 import { Router } from '@reach/router';
 
 import { people } from '../../data/people';
+import { peopleData } from '../../data/peopleData';
 import People from './People';
-import PersonDetails from './PersonDetails';
+import PersonDetailsModel from './PersonDetailsModel';
 import { theme } from '../../theme/theme';
 
 const useStyles = makeStyles({
@@ -17,10 +18,11 @@ const useStyles = makeStyles({
 const PeopleCont = props => {
   const classes = useStyles();
   const [data, setData] = useState();
+  const [peopleData, setPeopleData] = useState();
 
   useEffect(() => {
     setData(people);
-  }, []);
+  }, [setData, people]);
 
   return (
     <Container>
@@ -30,7 +32,7 @@ const PeopleCont = props => {
             <Router className={classes.router}>
               <People path="/:group" data={data} />
               <People path="/" data={data} />
-              <PersonDetails path="individual/:name" data={data} />
+              <PersonDetailsModel path="individual/:code"/>
             </Router>
           )}
         </Grid>

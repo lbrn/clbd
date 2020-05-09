@@ -13,6 +13,7 @@ const Person = ({
   role,
   degree,
   img,
+  code,
   institution,
   abstract,
   isActive,
@@ -61,18 +62,19 @@ const Person = ({
       className={classes.person}
       tabIndex={1}
       onClick={e =>
-        navigate(`/people/individual/${name}`, {
+        navigate(`/people/individual/${code}`, {
           state: {
-            name,
-            mentors,
-            link,
-            title,
-            degree,
-            role,
+			code,
+			degree,
+            abstract,
             img,
             institution,
             isActive,
-            abstract,
+            link,
+            mentors,
+            name,
+            role,
+            title,
           },
         })
       }
@@ -82,18 +84,19 @@ const Person = ({
         {!img && (
           <Avatar
             onClick={e =>
-              navigate(`/people/individual/${name}`, {
+              navigate(`/people/individual/${code}`, {
                 state: {
-                  name,
-                  mentors,
-                  link,
-                  title,
-                  role,
-                  img,
-                  degree,
-                  institution,
+				  code,
+				  title,
                   abstract,
+                  degree,
+                  img,
+                  institution,
                   isActive,
+                  link,
+                  mentors,
+                  name,
+                  role,
                 },
               })
             }
@@ -113,23 +116,18 @@ const Person = ({
         {title && <Typography>{title}</Typography>}
         {/* target ensures a new tab.  nooopener is for security */}
         {link && institution && <Typography>{institution}</Typography>} <br />
-        {/* {isExpanded && abstract && <Typography>{abstract}</Typography>} */}
-        {/* {mentors && (
-          <Typography>
-            {mentors.map(mentor => mentor.name).join(', ')}
-          </Typography>
-        )} */}
         {abstract && (
           <Link
             onClick={e =>
-              navigate(`/people/individual/${name}`, {
+              navigate(`/people/individual/${code}`, {
                 state: {
                   name,
                   mentors,
                   link,
                   title,
                   role,
-                  img,
+				  img,
+				  code,
                   institution,
                   abstract,
                   isActive,

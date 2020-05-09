@@ -1,9 +1,10 @@
 import mentor from '../models/mentor';
 
 export default interface person {
-  name: string;
+  name: string; // full name
   isActive: boolean;
-  id?: number;
+  id: number;
+  code: string; //last name
   title?: string;
   abstract?: string;
   institution?: string;

@@ -56,7 +56,6 @@ const {
   Reed,
   Saini,
   Stanton,
-  //   Vladimir,
   White,
   Yoshimmura,
 } = peopleData;
