@@ -317,7 +317,7 @@ export const peopleData = {
     image: Yoshimmura,
     link: 'https://bit.ly/362gvmr',
   },
-  'Guerrero-Plata': {
+  'GuerreroPlata': {
     id: 26,
     name: 'Antonieta Guerrero-Plata',
     isActive: true,
