@@ -4,17 +4,18 @@ import { theme } from '../../theme/theme';
 
 const PersonDetails = props => {
   // these props are passed via react router
-  const {
-    img,
-    mentors,
-    role,
-    name,
-    title,
-    link,
-    institution,
-    abstract,
-    degree,
-  } = props.location && props.location.state;
+//   const {
+//     img,
+//     mentors,
+//     role,
+//     name,
+//     title,
+//     link,
+//     institution,
+//     abstract,
+//     degree,
+//   } = props.location && props.location.state && props.location.state.img;
+
 
   const useStyles = makeStyles({
     person: {

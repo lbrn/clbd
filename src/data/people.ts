@@ -1,3 +1,33 @@
+// import {
+//   Baines,
+//   Baumgarth,
+//   Bubeckwardenburg,
+//   Cardin,
+//   Christofferson,
+//   Cormier,
+//   Dugas,
+//   Fessler,
+//   GuerreroPlata,
+//   Huang,
+//   Irvin,
+//   Jeyaseelan,
+//   Kaushal,
+//   Kolls,
+//   Kousoulas,
+//   Langohr,
+//   Le,
+//   Noel,
+//   Ogundele,
+//   Patial,
+//   Rangasamy,
+//   Reed,
+//   Saini,
+//   Stanton,
+//   Vladimir,
+//   White,
+//   Yoshimmura,
+// } from '../assets/people/index';
+
 import {
   Baines,
   Baumgarth,
@@ -7,7 +37,6 @@ import {
   Cormier,
   Dugas,
   Fessler,
-  Fontenot,
   GuerreroPlata,
   Huang,
   Irvin,
@@ -27,7 +56,7 @@ import {
   Vladimir,
   White,
   Yoshimmura,
-} from '../assets/people/index';
+} from './peopleData';
 import person from '../models/person';
 
 interface peopleGroup {
