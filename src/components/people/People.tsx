@@ -1,5 +1,5 @@
 import React, { useState, Fragment, useEffect, useContext } from 'react';
-import { Grid, Typography } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import Person from './Person';
 import { createLinks } from '../people/PeopleLinks';
 import SmartMenu from '../ui/SmartMenu';
@@ -14,12 +14,13 @@ interface peopleProps {
 const People = ({ path, data, location }: peopleProps) => {
   const history: any = useContext(HistoryContext);
   const [active, setActive] = useState(
-    (location && location.state.code) || 'leadership',
+    (location && location.state && location.state.code) || 'leadership',
   );
   const links = createLinks(history);
 
   useEffect(() => {
-    setActive((location && location.state.code) || 'leadership');
+	  console.log(location)
+    setActive((location && location.state && location.state.code) || 'leadership');
   }, [location]);
   console.log(location.state);
 
