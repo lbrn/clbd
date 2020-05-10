@@ -7,7 +7,6 @@ interface personDetails {
   person: person;
 }
 const PersonDetails = ({ person }: personDetails) => {
-
   const useStyles = makeStyles({
     person: {
       marginTop: theme.spacing(3),
@@ -26,7 +25,7 @@ const PersonDetails = ({ person }: personDetails) => {
       backgroundPositionY: 'top',
       backgroundSize: 'cover',
       borderRadius: '50%',
-      backgroundImage: `url(${person.img})`,
+      backgroundImage: `url(${person.image})`,
     },
     avatar: {
       width: '90%',
@@ -67,9 +66,11 @@ const PersonDetails = ({ person }: personDetails) => {
       <Grid container item spacing={3} alignItems="center">
         {person && (
           <Grid item xs={4} className={classes.personImgCont}>
-            {person.img && <div className={classes.personImg}></div>}
-            {!person.img && (
-              <Avatar className={classes.avatar}>{person.name.charAt(0)}</Avatar>
+            {person.image && <div className={classes.personImg}></div>}
+            {!person.image && (
+              <Avatar className={classes.avatar}>
+                {person.name.charAt(0)}
+              </Avatar>
             )}
           </Grid>
         )}

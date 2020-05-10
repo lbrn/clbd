@@ -7,10 +7,7 @@ const PersonDetailsModel = props => {
   const [data, setData] = useState();
   console.log(props);
   const code = props.code;
-  //   const { code } = props && props.location && props.location['state'];
-
-  //   console.log(code);
-
+  
   useEffect(() => {
     setData(peopleData);
   }, []);
