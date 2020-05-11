@@ -6,7 +6,7 @@ import { navigate } from '@reach/router';
 import { theme } from '../../theme/theme';
 import HistoryContext from '../contexts/HistoryContext';
 import HeaderMenuItem from './HeaderMenuItem';
-import { createLinks as createResourcesLinks } from '../resources/resources/ResourcesLinks';
+import { createLinks as createResourcesLinks } from '../resources/ResourcesLinks';
 import { createLinks as createPeopleLinks } from '../people/PeopleLinks';
 
 const useStyles = makeStyles({

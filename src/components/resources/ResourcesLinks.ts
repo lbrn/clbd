@@ -24,7 +24,7 @@ export function createLinks(history) {
       clickHandler: () => {
         // setActive('useful-links');
         navigate('/resources/useful-links');
-        history.push('resources/useful-links');
+        history.push('/resources/useful-links');
       },
       code: 'useful-links',
       displayName: 'Useful Links',
@@ -33,7 +33,7 @@ export function createLinks(history) {
       clickHandler: () => {
         // setActive('articles');
         navigate('/resources/articles');
-        history.push('resources/articles');
+        history.push('/resources/articles');
       },
       code: 'articles',
       displayName: 'Articles',
