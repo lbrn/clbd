@@ -3,10 +3,10 @@ import { Typography, Avatar, Grid, makeStyles, Link } from '@material-ui/core';
 import { theme } from '../../theme/theme';
 import person from '../../types/person';
 
-interface personDetails {
+interface PersonDetails {
   person: person;
 }
-const PersonDetails = ({ person }: personDetails) => {
+const PersonDetails = ({ person }: PersonDetails) => {
   const useStyles = makeStyles({
     person: {
       marginTop: theme.spacing(3),

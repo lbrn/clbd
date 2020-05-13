@@ -31,14 +31,12 @@ const useStyles = makeStyles({
   },
 });
 
-const Seminar = ({seminar}) => {
+interface Seminar {
+	seminar: seminar;
+}
+
+const Seminar = ({seminar}: Seminar) => {
   const classes = useStyles();
-//   const [seminar, setSeminar] = useState<undefined | seminar>();
-//   console.log(props.location.state);
-//   useEffect(() => {
-//     // index comes from url
-//     setSeminar(seminars[props.seminarIndex]);
-//   }, [props.seminarIndex]);
 
   if (seminar.code === 'ANNOUNCEMENT') {
     return <CovidAnnouncement announcement={seminar} />;
