@@ -1,7 +1,7 @@
 import React, { useState, Fragment, useEffect } from 'react';
 import Story from './Story';
 import { articles } from '../../data/articles';
-import article from '../../models/article';
+import article from '../../types/article';
 
 const Stories = () => {
   const [stories, setStories] = useState<article[]>([]);

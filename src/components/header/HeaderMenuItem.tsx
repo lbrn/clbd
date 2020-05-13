@@ -11,7 +11,7 @@ import {
 import { navigate } from '@reach/router';
 
 import historyContext from '../contexts/HistoryContext';
-import menuLink from '../../models/menuLink';
+import menuLink from '../../types/menuLink';
 import { theme } from '../../theme/theme';
 
 const useStyles = makeStyles({

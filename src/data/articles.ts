@@ -1,7 +1,7 @@
 import grantPhoto from '../assets/articles/home.jpg';
 import huangPhoto from '../assets/articles/huangPhoto.png';
 import { Saini, Noel } from '../assets/people';
-import article from '../models/article';
+import article from '../types/article';
 
 // the first article in this array is automatically featured
 

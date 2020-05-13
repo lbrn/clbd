@@ -3,7 +3,7 @@ import { makeStyles, Typography, Link, Grid, Avatar } from '@material-ui/core';
 import { navigate } from '@reach/router';
 
 import { theme, themeExtended } from '../../theme/theme';
-import person from '../../models/person';
+import person from '../../types/person';
 
 const Person = ({
   name,

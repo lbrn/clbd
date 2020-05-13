@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Grid, Typography, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import article from '../../models/article';
+import article from '../../types/article';
 import { theme } from '../../theme/theme';
 
 const useStyles = makeStyles({

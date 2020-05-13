@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-import { seminar } from '../models/seminar';
+import { seminar } from '../types/seminar';
 import {
   laurieFlyerThumb,
   liwuFlyerThumb,

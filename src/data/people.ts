@@ -28,7 +28,7 @@
 //   Yoshimmura,
 // } from '../assets/people/index';
 import { peopleData } from './peopleData';
-import person from '../models/person';
+import person from '../types/person';
 
 const {
   Baines,

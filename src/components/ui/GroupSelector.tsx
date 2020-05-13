@@ -6,7 +6,7 @@ import {
   MenuItem,
   makeStyles,
 } from '@material-ui/core';
-import menuLink from '../../models/menuLink';
+import menuLink from '../../types/menuLink';
 
 interface groupSelectorProps {
   value: string;

@@ -4,7 +4,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { theme } from '../../theme/theme';
 import GroupSelector from './GroupSelector';
 import SideMenu from './SideMenu';
-import menuLink from '../../models/menuLink'
+import menuLink from '../../types/menuLink'
 interface smartMenuProps {
   active: string;
   title: string;

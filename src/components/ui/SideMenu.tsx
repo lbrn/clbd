@@ -7,7 +7,7 @@ import {
   Grid,
 } from '@material-ui/core';
 import { darken } from '@material-ui/core/styles';
-import menuLink from '../../models/menuLink';
+import menuLink from '../../types/menuLink';
 import { themeExtended, theme } from '../../theme/theme';
 interface sideMenuProps {
   links: menuLink[];

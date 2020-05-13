@@ -11,7 +11,7 @@ import {
 import { theme } from '../../theme/theme';
 import { seminars } from '../../data/seminars';
 import CovidAnnouncement from './CovidAnnouncement';
-import { seminar } from '../../models/seminar';
+import { seminar } from '../../types/seminar';
 
 const useStyles = makeStyles({
   cont: {

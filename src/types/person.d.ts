@@ -1,4 +1,4 @@
-import mentor from '../models/mentor';
+import mentor from './mentor';
 
 export default interface person {
   name: string; // full name

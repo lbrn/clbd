@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Avatar, Grid, makeStyles, Link } from '@material-ui/core';
 import { theme } from '../../theme/theme';
-import person from '../../models/person';
+import person from '../../types/person';
 
 interface personDetails {
   person: person;

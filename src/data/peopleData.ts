@@ -27,7 +27,7 @@ import {
   White,
   Yoshimmura,
 } from '../assets/people/index';
-import person from '../models/person';
+import person from '../types/person';
 
 interface peopleData {
   [name: string]: person;

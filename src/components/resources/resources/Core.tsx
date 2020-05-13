@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Grid, Typography, Link } from '@material-ui/core';
 
-import linkType from '../../../models/link';
+import linkType from '../../../types/link';
 
 const Core = props => {
   function titleCase(str: string) {
