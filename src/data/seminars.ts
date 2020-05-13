@@ -18,7 +18,7 @@ import {
 export const seminars: seminar[] = [
   {
     title: 'Proteomics Workshop',
-    id: '0',
+    id: 'proteomics-2020-01-24',
     code: 'SEMINAR',
     eventType: 'Workshop',
     date: moment('2020-01-24'),
@@ -35,7 +35,7 @@ export const seminars: seminar[] = [
   },
   {
     title: 'Cancelled - Pneumonia Biology - Lungs Learn from Experience',
-    id: '1',
+    id: 'pneumonia-2020-03-20',
     code: 'SEMINAR',
     eventType: 'Presentation',
     date: moment('2020-03-20'),
@@ -48,7 +48,7 @@ export const seminars: seminar[] = [
   },
   {
     title: 'Leukocyte-Endothelial Cell Interactions...',
-    id: '2',
+    id: 'leukocyte-2020-02-28',
     code: 'SEMINAR',
     eventType: 'Presentation',
     date: moment('2020-02-28'),
@@ -61,7 +61,7 @@ export const seminars: seminar[] = [
   },
   {
     title: 'Innate Immune Memory Dynamics...',
-    id: '3',
+    id: 'innate-2020-02-14',
     code: 'SEMINAR',
     eventType: 'Presentation',
     date: moment('2020-02-14'),
@@ -74,22 +74,11 @@ export const seminars: seminar[] = [
   },
   {
     title: 'All current events are cancelled. COVID-19 information:',
-    id: '4',
+    id: 'covid-',
     code: 'ANNOUNCEMENT',
     eventType: 'Workshop',
-
-    // date: moment('2020-05-24'),
     featured: true,
     hasMap: false,
-    // time: '10 am - 12 pm',
-    // registrationLink: 'https://redcap.lbrn.lsu.edu/surveys/?s=3EKCN8L4NH',
-    // registrationDueDate: moment('2020-01-19'),
-    // pdfLink: workshopPdf,
-    // speakers:
-    //   'Stephanie Byrum, Ricky Edmonson, Samuel Mackintosh, Alan Tackett',
-    // speakerUniversities: 'University of Arkansas for Medical Sciences',
-    // location: 'Louisiana State University (PBS Conference room 3511)',
     image: coronavirusThumb,
-    // link: `/event/${4}`,
   },
 ];

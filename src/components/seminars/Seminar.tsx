@@ -11,6 +11,7 @@ import {
 import { theme } from '../../theme/theme';
 import { seminars } from '../../data/seminars';
 import CovidAnnouncement from './CovidAnnouncement';
+import { seminar } from '../../models/seminar';
 
 const useStyles = makeStyles({
   cont: {
@@ -30,16 +31,16 @@ const useStyles = makeStyles({
   },
 });
 
-const Seminar = props => {
+const Seminar = ({seminar}) => {
   const classes = useStyles();
-  const [seminar, setSeminar] = useState<any>();
-  console.log(props.location.state);
-  useEffect(() => {
-    // index comes from url
-    setSeminar(seminars[props.seminarIndex]);
-  }, [props.seminarIndex]);
+//   const [seminar, setSeminar] = useState<undefined | seminar>();
+//   console.log(props.location.state);
+//   useEffect(() => {
+//     // index comes from url
+//     setSeminar(seminars[props.seminarIndex]);
+//   }, [props.seminarIndex]);
 
-  if (props.location.state.code === 'ANNOUNCEMENT') {
+  if (seminar.code === 'ANNOUNCEMENT') {
     return <CovidAnnouncement announcement={seminar} />;
   } else
     return (

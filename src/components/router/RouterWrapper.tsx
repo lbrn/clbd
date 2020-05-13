@@ -4,7 +4,7 @@ import { Router } from '@reach/router';
 import Hero from '../Hero';
 import About from '../about/About';
 import Seminars from '../seminars/Seminars';
-import Seminar from '../seminars/Seminar';
+import SeminarModel from '../seminars/SeminarModel';
 import Resources from '../resources/Resources';
 import NihAcknowledgement from '../resources/resources/NihAcknowledgement';
 import PeopleCont from '../people/PeopleCont';
@@ -27,7 +27,7 @@ const RouterWrapper = () => {
           <PersonDetailsModel path="individual/:code" />
         </PeopleCont>
         <Seminars path="events" />
-        <Seminar path="event/:seminarIndex" />
+        <SeminarModel path="event/:id" />
         <Resources path="resources">
           <NihAcknowledgement path="nih" />
           <Disclaimer path="disclaimer" />
