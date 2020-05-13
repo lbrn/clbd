@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   Typography,
   Grid,
@@ -9,7 +9,6 @@ import {
 } from '@material-ui/core';
 
 import { theme } from '../../theme/theme';
-import { seminars } from '../../data/seminars';
 import CovidAnnouncement from './CovidAnnouncement';
 import { seminar } from '../../types/seminar';
 
@@ -19,7 +18,6 @@ const useStyles = makeStyles({
   },
   pdf: {
     width: '100%',
-    // height: 200,
   },
   map: {
     marginTop: '5vh',
