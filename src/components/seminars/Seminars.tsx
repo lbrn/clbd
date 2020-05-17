@@ -12,6 +12,7 @@ import { navigate } from '@reach/router';
 import moment from 'moment';
 
 import { seminars } from '../../data/seminars';
+import {seminar} from '../../types/seminar';
 import { theme, themeExtended } from '../../theme/theme';
 
 const useStyles = makeStyles({
@@ -48,8 +49,8 @@ const useStyles = makeStyles({
 
 const Seminars = ({ path }) => {
   const classes = useStyles({});
-  const [activeSeminars, setActiveSeminars] = useState();
-  const [pastSeminars, setPastSeminars] = useState();
+  const [activeSeminars, setActiveSeminars] = useState<undefined | seminar[]>();
+  const [pastSeminars, setPastSeminars] = useState<undefined | seminar[]>();
 
   useEffect(() => {
     const activeSeminars = seminars
