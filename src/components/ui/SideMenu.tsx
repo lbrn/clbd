@@ -36,11 +36,11 @@ const SideMenu = ({ links }: sideMenuProps) => {
         className={classes.listItem}
         button
         key={link.code}
-        id={link.code}
+		id={link.code}
+		onClick={link.clickHandler}
       >
         <ListItemText
           key={link.code}
-          onClick={link.clickHandler}
           primary={link.displayName}
         />
       </ListItem>
