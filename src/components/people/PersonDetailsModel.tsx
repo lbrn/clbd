@@ -3,7 +3,7 @@ import { peopleData } from '../../data/peopleData';
 import PersonDetails from './PersonDetails';
 
 const PersonDetailsModel = props => {
-  const [person, setPerson] = useState();
+  const [person, setPerson]= useState();
   const [data, setData] = useState();
   console.log(props);
   const code = props.code;
