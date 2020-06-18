@@ -21,7 +21,8 @@ const useStyles = makeStyles({
   },
   menuItem: {
     '&:hover': {
-      backgroundColor: theme.palette.primary.main,
+	  backgroundColor: theme.palette.primary.main,
+	  color: theme.palette.common.white
     },
   },
   btn: {
