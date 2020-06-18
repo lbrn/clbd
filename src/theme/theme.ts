@@ -11,10 +11,15 @@ export const theme = createMuiTheme({
       white: `rgba(255, 255, 255, 1)`,
     },
     primary: {
-      main: `rgba(19, 127, 222)`,
-      dark: darken(`rgba(19, 127, 222)`, 0.2),
-      light: lighten(`rgba(19, 127, 222)`, 0.7),
-    },
+      main: `rgba(30, 30, 40)`,
+      dark: darken(`rgba(30, 30, 40)`, 0.2),
+      light: lighten(`rgba(30, 30, 40)`, 0.7),
+	},
+	// primary: {
+    //   main: `rgba(19, 127, 222)`,
+    //   dark: darken(`rgba(19, 127, 222)`, 0.2),
+    //   light: lighten(`rgba(19, 127, 222)`, 0.7),
+    // },
   },
   typography: {
     body1: {
@@ -29,7 +34,7 @@ export const theme = createMuiTheme({
 export const themeExtended = {
   palette: {
     primary: {
-      hover: fade('rgba(19, 127, 222)', 0.2),
+      hover: fade('rgba(30, 30, 40)', 0.2),
     },
   },
 };

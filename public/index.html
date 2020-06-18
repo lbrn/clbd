@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/blm_favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Center for lung biology and disease" />
@@ -48,25 +48,19 @@
     ></script>
     <script type="text/javascript">
       // <![CDATA[
-      window.addEventListener('load', function() {
-        window.cookieconsent.initialise({
-          palette: {
-            popup: {
-              background: '#D0E2F5',
-              text: '#333333',
-            },
-            button: {
-              background: '#efefef',
-              text: `rgba(19, 127, 222)`,
-            },
-          },
-          content: {
-            link: 'LSU Privacy Statement.',
-            href: 'https://www.lsu.edu/privacy/',
-          },
-        });
-      });
-      // ]]>
+		window.addEventListener('load', function() {
+			window.cookieconsent.initialise({
+				palette: {
+					popup: {
+					background: 'rgba(30, 30, 40, .9)',
+					text: '#efefef',
+					},
+					button: {
+					background: 'rgb(100, 100, 100)'
+					}
+				}
+			})
+		})
     </script>
     <!-- End Consent Overlay -->
 

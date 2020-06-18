@@ -21,15 +21,16 @@ const useStyles = makeStyles({
   },
   menuItem: {
     '&:hover': {
-      backgroundColor: theme.palette.primary.light,
+      backgroundColor: theme.palette.primary.main,
     },
   },
   btn: {
     fontSize: '120%',
 
-    color: theme.palette.primary.dark,
+    color: theme.palette.common.white,
     '&:hover': {
-      backgroundColor: theme.palette.primary.light,
+	  backgroundColor: theme.palette.common.white,
+	  color: theme.palette.primary.main
     },
   },
 });

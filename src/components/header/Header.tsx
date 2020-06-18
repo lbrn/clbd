@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { AppBar, Grid, Toolbar, makeStyles, Button } from '@material-ui/core';
-import logoFull from '../../assets/misc/logo_full.png';
+import logoFull from '../../assets/misc/BLM_logo_full.png';
 import { navigate } from '@reach/router';
 
 import { theme } from '../../theme/theme';
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     cursor: 'pointer',
   },
   appBar: {
-    backgroundColor: theme.palette.common.white,
+	backgroundColor: theme.palette.primary.main,
     width: `100%`,
     paddingTop: '2vh',
     paddingBottom: '2vh',
@@ -29,6 +29,7 @@ const useStyles = makeStyles({
     justifyContent: 'space-between',
   },
   link: {
+	color: theme.palette.common.white,
     cursor: 'pointer',
     fontSize: '165%',
     textDecoration: 'none',
@@ -37,7 +38,7 @@ const useStyles = makeStyles({
   //   backgroundColor: 'red',
   // },
   btn: {
-    color: theme.palette.primary.dark,
+    color: theme.palette.common.white,
     fontSize: '120%',
     '&:hover': {
       backgroundColor: theme.palette.primary.light,
@@ -98,7 +99,7 @@ const Header = () => {
                 navigate('/about');
               }}
               id="menu-button-about"
-              className={classes.btn}
+			  className={classes.btn}
             >
               about
             </Button>
