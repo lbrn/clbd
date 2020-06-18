@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { AppBar, Grid, Toolbar, makeStyles, Button } from '@material-ui/core';
-import logoFull from '../../assets/misc/blm_logo_full.png';
+import logoFull from '../../assets/misc/dark-logo.png';
 import { navigate } from '@reach/router';
 
 import { theme } from '../../theme/theme';
