@@ -12,7 +12,7 @@ import { createLinks as createPeopleLinks } from '../people/PeopleLinks';
 const useStyles = makeStyles({
   image: {
     objectFit: 'contain',
-    maxWidth: '80%',
+	maxWidth: 200,
     maxHeight: '60%',
     cursor: 'pointer',
   },
