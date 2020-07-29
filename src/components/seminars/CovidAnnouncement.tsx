@@ -31,7 +31,7 @@ const CovidAnnouncement = ({ announcement }) => {
   const classes = useStyles();
 
   return (
-    <Container className={classes.cont}>
+    <Container className={classes.cont} maxWidth={false}>
       <Grid container spacing={3}>
         {announcement && (
           <Grid container item xs={12} sm={8}>
