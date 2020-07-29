@@ -12,7 +12,7 @@ import { createLinks as createPeopleLinks } from '../people/PeopleLinks';
 const useStyles = makeStyles({
   image: {
     objectFit: 'contain',
-    maxWidth: '80%',
+	maxWidth: 250,
     maxHeight: '60%',
     cursor: 'pointer',
   },
@@ -48,26 +48,9 @@ const useStyles = makeStyles({
 const Header = () => {
   const history: any = useContext(HistoryContext);
   const classes = useStyles({});
-  // const [active, setActive] = useState('');
 
   const resourcesLinks = createResourcesLinks(history);
   const peopleLinks = createPeopleLinks(history);
-
-  // useEffect(() => {
-  //   const linksCont = document.getElementById('linkCont');
-  //   if (linksCont) {
-  //     const children = linksCont && linksCont.children;
-  //     for (var i = 0; i < children.length; i++) {
-  //       children[i].classList.remove('linkActive');
-  //     }
-  //   }
-  //   const link = document.getElementById(active);
-  //   link && link.classList.add('linkActive');
-  // }, [active]);
-
-  // // const handleActive = id => {
-  // //   setActive(id);
-  // // };
 
   return (
     <AppBar position="sticky" className={classes.appBar}>

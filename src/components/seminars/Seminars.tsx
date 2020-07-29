@@ -12,6 +12,7 @@ import { navigate } from '@reach/router';
 import moment from 'moment';
 
 import { seminars } from '../../data/seminars';
+import {seminar} from '../../types/seminar';
 import { theme, themeExtended } from '../../theme/theme';
 
 const useStyles = makeStyles({
@@ -48,16 +49,16 @@ const useStyles = makeStyles({
 
 const Seminars = ({ path }) => {
   const classes = useStyles({});
-  const [activeSeminars, setActiveSeminars] = useState();
-  const [pastSeminars, setPastSeminars] = useState();
+  const [activeSeminars, setActiveSeminars] = useState<undefined | seminar[]>();
+  const [pastSeminars, setPastSeminars] = useState<undefined | seminar[]>();
 
   useEffect(() => {
     const activeSeminars = seminars
       .filter(seminar => seminar.date && seminar.date.isAfter(moment()))
-      .sort((a, b) => a.date.format('YYYYMMDD') - b.date.format('YYYYMMDD'));
+      .sort((a, b) => b.date.format('YYYYMMDD') - a.date.format('YYYYMMDD'));
     const pastSeminars = seminars
       .filter(seminar => seminar.date && seminar.date.isBefore(moment()))
-      .sort((a, b) => a.date.format('YYYYMMDD') - b.date.format('YYYYMMDD'));
+      .sort((a, b) => b.date.format('YYYYMMDD') - a.date.format('YYYYMMDD'));
     setActiveSeminars(activeSeminars);
     setPastSeminars(pastSeminars);
   }, []);
@@ -100,7 +101,7 @@ const Seminars = ({ path }) => {
   };
 
   return (
-    <Container className={classes.cont}>
+    <Container className={classes.cont} maxWidth={false}>
       <Grid spacing={3} container item>
         <Grid item xs={12}>
           <Typography variant="h6">Current Seminars</Typography>

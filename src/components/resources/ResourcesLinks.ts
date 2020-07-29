@@ -4,7 +4,6 @@ export function createLinks(history) {
   return [
     {
       clickHandler: () => {
-        // setActive('nih');
         navigate('/resources/nih');
         history.push('/resources/nih');
       },
@@ -13,7 +12,6 @@ export function createLinks(history) {
     },
     {
       clickHandler: () => {
-        // setActive('disclaimer');
         navigate('/resources/disclaimer');
         history.push('/resources/disclaimer');
       },
@@ -22,7 +20,6 @@ export function createLinks(history) {
     },
     {
       clickHandler: () => {
-        // setActive('useful-links');
         navigate('/resources/useful-links');
         history.push('/resources/useful-links');
       },
@@ -31,7 +28,6 @@ export function createLinks(history) {
     },
     {
       clickHandler: () => {
-        // setActive('articles');
         navigate('/resources/articles');
         history.push('/resources/articles');
       },
@@ -40,7 +36,6 @@ export function createLinks(history) {
     },
     {
       clickHandler: () => {
-        // setActive('pulmonary-core');
         navigate('/resources/pulmonary-core');
         history.push('/resources/pulmonary-core');
       },
@@ -49,7 +44,6 @@ export function createLinks(history) {
     },
     {
       clickHandler: () => {
-        // setActive('molecular-core');
         navigate('/resources/molecular-core');
         history.push('/resources/molecular-core');
       },

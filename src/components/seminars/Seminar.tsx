@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   Typography,
   Grid,
@@ -9,7 +9,6 @@ import {
 } from '@material-ui/core';
 
 import { theme } from '../../theme/theme';
-import { seminars } from '../../data/seminars';
 import CovidAnnouncement from './CovidAnnouncement';
 import { seminar } from '../../types/seminar';
 
@@ -19,7 +18,6 @@ const useStyles = makeStyles({
   },
   pdf: {
     width: '100%',
-    // height: 200,
   },
   map: {
     marginTop: '5vh',
@@ -31,20 +29,18 @@ const useStyles = makeStyles({
   },
 });
 
-const Seminar = ({seminar}) => {
+interface Seminar {
+	seminar: seminar;
+}
+
+const Seminar = ({seminar}: Seminar) => {
   const classes = useStyles();
-//   const [seminar, setSeminar] = useState<undefined | seminar>();
-//   console.log(props.location.state);
-//   useEffect(() => {
-//     // index comes from url
-//     setSeminar(seminars[props.seminarIndex]);
-//   }, [props.seminarIndex]);
 
   if (seminar.code === 'ANNOUNCEMENT') {
     return <CovidAnnouncement announcement={seminar} />;
   } else
     return (
-      <Container className={classes.cont}>
+      <Container className={classes.cont} maxWidth={false}>
         <Grid container spacing={3}>
           {seminar && (
             <Grid container item xs={12} sm={8}>
