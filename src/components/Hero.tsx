@@ -20,14 +20,14 @@ const Hero = ({ path }) => {
   const classes = useStyles({});
   return (
     <Fragment>
-      <Container className={classes.topSection} maxWidth={false}>
+      <Container className={classes.topSection}>
         <Grid container spacing={3}>
           <Grid className={classes.featured} container spacing={3} item xs={12}>
             <ContentPreview />
           </Grid>
         </Grid>
       </Container>
-      <Container maxWidth={false}>
+      <Container>
         <Grid container spacing={3} item xs={12}>
           {/* <HeroStory /> */}
           <Stories />

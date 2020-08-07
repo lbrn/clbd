@@ -3,6 +3,7 @@ import { Grid, Container, makeStyles } from '@material-ui/core';
 import { Router } from '@reach/router';
 
 import { people } from '../../data/people';
+import { peopleData } from '../../data/peopleData';
 import People from './People';
 import PersonDetailsModel from './PersonDetailsModel';
 import { theme } from '../../theme/theme';
@@ -16,14 +17,15 @@ const useStyles = makeStyles({
 
 const PeopleCont = props => {
   const classes = useStyles();
-  const [data, setData] = useState({});
+  const [data, setData] = useState();
+  const [peopleData, setPeopleData] = useState();
 
   useEffect(() => {
     setData(people);
-  }, []);
+  }, [setData, people]);
 
   return (
-    <Container maxWidth={false}>
+    <Container>
       <Grid item id="peopleCont" xs={12} container spacing={3} justify="center">
         <Grid container item xs={12}>
           {data && (

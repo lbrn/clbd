@@ -27,7 +27,7 @@ const Resources = props => {
   const links = createLinks(history);
 
   return (
-    <Container className={classes.cont} maxWidth={false}>
+    <Container className={classes.cont}>
       <Grid spacing={3} container>
         <Grid item xs={12} sm={4} md={3}>
           <SmartMenu

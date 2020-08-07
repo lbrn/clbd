@@ -101,7 +101,7 @@ const Seminars = ({ path }) => {
   };
 
   return (
-    <Container className={classes.cont} maxWidth={false}>
+    <Container className={classes.cont}>
       <Grid spacing={3} container item>
         <Grid item xs={12}>
           <Typography variant="h6">Current Seminars</Typography>
