@@ -24,8 +24,8 @@
 
 ### Maintenance:
 
-All data is in the /src/data directory
-Custom types are in the /types director
+All data is in the /src/data directory\n
+Custom types are in the /types directory\n
 
 To update any section, update the info in the data folder
 - people groups: /data/people.ts
