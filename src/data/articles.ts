@@ -1,21 +1,14 @@
 import grantPhoto from '../assets/articles/home.jpg';
 import huangPhoto from '../assets/articles/huangPhoto.png';
-import sarrArticlePhoto from "../assets/articles/sarrArticle.png";
 import { Saini, Noel } from '../assets/people';
 import article from '../types/article';
+
+// the first article in this array is automatically featured
 
 export const articles: article[] = [
   {
     code: 'ARTICLE',
     isFeatured: true,
-    title: `LSU SVM Center for Lung Biology and Disease investigates lung and lung-related heart diseases during the COVID-19 pandemic`,
-    contentPreview: `Last year, the LSU School of Veterinary Medicine (LSU SVM) launched the Center for Lung Biology and Disease (CLBD) with more than $11.5 million in funding over five years.`,
-    image: sarrArticlePhoto,
-    link:
-      'https://www.lsu.edu/vetmed/vet_news/lung_biology_and_covid.php',
-  },
-  {
-    code: 'ARTICLE',
     title: `LSU Assistant Professor Dr. Alexandra Noel receives a K01 award worth $850 K from the NIH/FDA`,
     contentPreview: `In a nation still struggling to understand the health effects of vaping - especially in young people - an LSU researcher is broadening her approach."`,
     image: Noel,
