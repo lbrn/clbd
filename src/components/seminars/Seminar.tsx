@@ -40,7 +40,7 @@ const Seminar = ({seminar}: Seminar) => {
     return <CovidAnnouncement announcement={seminar} />;
   } else
     return (
-      <Container className={classes.cont}>
+      <Container className={classes.cont} maxWidth={false}>
         <Grid container spacing={3}>
           {seminar && (
             <Grid container item xs={12} sm={8}>
