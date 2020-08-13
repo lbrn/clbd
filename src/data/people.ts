@@ -58,6 +58,7 @@ const {
   Stanton,
   White,
   Yoshimmura,
+  Jeansonne,
 } = peopleData;
 
 interface peopleGroup {
@@ -89,7 +90,7 @@ export const people: people = {
   pulmonaryImmunopathologyCore: {
     code: 'pulmonaryImmunopathologyCore',
     displayName: 'Pulmonary Immunopathology Core',
-    members: [Dugas, Langhor, Christofferson],
+    members: [Dugas, Jeansonne, Langhor, Christofferson],
   },
   molecularBiologyCore: {
     code: 'molecularBiologyCore',

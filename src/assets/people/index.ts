@@ -27,3 +27,4 @@ export const Stanton = require('./Stanton.jpg');
 export const Vladimir = require('./Vladimir.jpg');
 export const White = require('./White.jpg');
 export const Yoshimmura = require('./Yoshimmura.jpg');
+export const Jeansonne = require('./Jeansonne.jpg');

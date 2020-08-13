@@ -24,6 +24,7 @@ The PIP Core conducts workshops and seminars throughout the year to update recen
           <strong>Core</strong>
         </Typography>
         <Typography>&bull; <a href="/people/individual/Dugas">Tammy Dugas, PhD, Project Lead</a></Typography>
+        <Typography>&bull; <a href="/people/individual/Jeansonne">Duane Jeansonne, PhD, Core coordinator.</a></Typography>
         <Typography>
           &bull; <a href="/people/individual/Langhor">Ingeborg Langohr, DVM, PhD, DACVP, Co-Investigator</a>
         </Typography>
