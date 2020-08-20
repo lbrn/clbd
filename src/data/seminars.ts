@@ -29,7 +29,7 @@ export const seminars: seminar[] = [
     registrationDueDate: moment('2020-09-15'),
     pdfLink: conferencePdf,
     speakers:
-      'Steven M. Varga, Joseph P. Mizgerd, Samuel Mackintosh, Alan Tackett',
+      'Steven M. Varga, Joseph P. Mizgerd',
     speakerUniversities: 'University of Iowa School of Medicine, Boston University School of Medicine',
     location: 'Louisiana State University (Virtual)',
     image: conferenceFlyerThumb,
