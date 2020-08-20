@@ -86,7 +86,7 @@ const Seminar = ({seminar}: Seminar) => {
                 )}
                 {seminar.link && (
                   <Typography variant="body1">
-                    Video: <Link href={seminar.link}></Link>
+                    {/* Video: <Link href={seminar.link}></Link> */}
                   </Typography>
                 )}
                 {/* {seminar.description && (
