@@ -12,7 +12,9 @@ import {
   lauriePdf,
   coronavirusThumb,
   conferencePdf,
-  conferenceFlyerThumb
+  conferenceFlyerThumb,
+  agendaPdf,
+  agendaFlyerThumb
 } from '../assets/pdfs/index';
 
 // the first seminar is automatically featured
@@ -28,6 +30,8 @@ export const seminars: seminar[] = [
     registrationLink: 'https://redcap.lbrn.lsu.edu/surveys/?s=37EKHP849F',
     registrationDueDate: moment('2020-09-15'),
     pdfLink: conferencePdf,
+    agendaLink: agendaPdf,
+    agendaImage: agendaFlyerThumb,
     speakers:
       'Steven M. Varga, Joseph P. Mizgerd',
     speakerUniversities: 'University of Iowa School of Medicine, Boston University School of Medicine',

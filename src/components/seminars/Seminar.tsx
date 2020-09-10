@@ -89,6 +89,11 @@ const Seminar = ({seminar}: Seminar) => {
                     {/* Video: <Link href={seminar.link}></Link> */}
                   </Typography>
                 )}
+                {seminar.agendaLink && (
+                  <Typography variant="body1">
+                    Agenda: <Link href={seminar.agendaLink}>2020 Lung Conference Agenda</Link>
+                  </Typography>
+                )}
                 {/* {seminar.description && (
                 <Typography variant="body1">{seminar.description()}</Typography>
               )} */}
