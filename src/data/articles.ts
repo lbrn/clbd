@@ -2,7 +2,7 @@ import grantPhoto from '../assets/articles/home.jpg';
 import huangPhoto from '../assets/articles/huangPhoto.png';
 import sarrArticlePhoto from "../assets/articles/sarrArticle.png";
 import { Saini, Noel } from '../assets/people';
-import conferencePhoto from "../assets/articles/2020conferenceFlyer.png";
+import conferencePhoto from "../assets/articles/2020conferenceFlyerv2.png";
 import article from '../types/article';
 
 export const articles: article[] = [
