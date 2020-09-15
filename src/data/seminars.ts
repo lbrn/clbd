@@ -11,11 +11,34 @@ import {
   liwuPdf,
   lauriePdf,
   coronavirusThumb,
+  conferencePdf,
+  conferenceFlyerThumb,
+  agendaPdf,
+  agendaFlyerThumb
 } from '../assets/pdfs/index';
 
 // the first seminar is automatically featured
 
 export const seminars: seminar[] = [
+  {
+    title: 'Louisiana Lung Conference',
+    id: 'lungconference-2020-09-15',
+    code: 'SEMINAR',
+    eventType: 'Workshop',
+    date: moment('2020-09-15'),
+    time: '8:45 am - 3:15 pm',
+    registrationLink: 'https://redcap.lbrn.lsu.edu/surveys/?s=37EKHP849F',
+    registrationDueDate: moment('2020-09-15'),
+    pdfLink: conferencePdf,
+    agendaLink: agendaPdf,
+    agendaImage: agendaFlyerThumb,
+    speakers:
+      'Steven M. Varga, Joseph P. Mizgerd',
+    speakerUniversities: 'University of Iowa School of Medicine, Boston University School of Medicine',
+    location: 'Louisiana State University (Virtual)',
+    image: conferenceFlyerThumb,
+    link: `/event/${0}`,
+  },  
   {
     title: 'Proteomics Workshop',
     id: 'proteomics-2020-01-24',

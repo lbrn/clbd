@@ -26,6 +26,7 @@ import {
   Vladimir,
   White,
   Yoshimmura,
+  Jeansonne,
 } from '../assets/people/index';
 import person from '../types/person';
 
@@ -370,4 +371,17 @@ export const peopleData: peopleData = {
     image: Ogundele,
     link: 'https://bit.ly/2pdpKzv',
   },
+    Jeansonne: {
+  	code: 'Jeansonne',
+  	id: 28,
+  	name: 'Duane Jeansonne',
+  	isActive: true,
+  	institution: 'Louisiana State University',
+  	degree: 'PhD',
+    image: Jeansonne,
+    title:
+      'Assistant Professor- Research in the Department of Pathobiological Sciences',
+    role: 'PIP Core coordinator',
+    link: 'mailto:djeansonne1@lsu.edu'
+   },
 };

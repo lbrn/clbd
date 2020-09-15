@@ -6,19 +6,33 @@ const PulmonaryCore = props => {
     <Fragment>
       <Grid item xs={12}>
         <Typography variant="h5">Pulmonary Immunopathology Core </Typography>
+        <br />
+        <Typography>The Pulmonary Immunopathology (PIP) Core is housed at the School of Veterinary Medicine which is a core facility providing a broad range of pulmonary immunology and technical expertise to researchers in the state of Louisiana. The core characterizes inflammatory responses in the lung and extrapulmonary organs before, during and after infectious and non-infectious inflammation. Furthermore, the core provides support for statistical analysis.
+        </Typography>
+        <br />
+        <Typography>
+        The core provides hands-on training to investigators and their lab members. If you would like to talk about your training needs or obtain more information about services provided by the PIP Core, please contact the Project Lead or Co-Investigators. 
+        </Typography>
+        <br />
+        <Typography>
+The PIP Core conducts workshops and seminars throughout the year to update recent advances in technology improvement. Please visit events page for the details. 
+		</Typography>
+		<br />
       </Grid>
       <Grid item xs={12}>
         <Typography variant="subtitle1">
           <strong>Core</strong>
         </Typography>
-        <Typography>&bull; Tammy Dugas, PhD, Project Lead</Typography>
+        <Typography>&bull; <a href="/people/individual/Dugas">Tammy Dugas, PhD, Project Lead</a></Typography>
+        <Typography>&bull; <a href="/people/individual/Jeansonne">Duane Jeansonne, PhD, Core coordinator.</a></Typography>
         <Typography>
-          &bull; Ingeborg Langohr, DVM, PhD, DACVP, Co-Investigator
+          &bull; <a href="/people/individual/Langhor">Ingeborg Langohr, DVM, PhD, DACVP, Co-Investigator</a>
         </Typography>
         <Typography>
-          &bull; Rebecca Christofferson, PhD, Co-Investigator
+          &bull; <a href="/people/individual/Christofferson">Rebecca Christofferson, PhD, Co-Investigator</a>
         </Typography>
       </Grid>
+      <br />
       <Grid item xs={12}>
         <Typography variant="subtitle1">
           <strong>Core Services</strong>

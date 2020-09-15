@@ -86,8 +86,30 @@ const About = ({ path }) => {
             preventing these and other lung diseases in the human population.
           </Typography>
           <br />
+          <Typography className={classes.bodyText} variant="body1">Please feel free to contact the center if you have any questions or want to learn more. <a href="mailto:clbd@lsu.edu?subject=CLBD%20Question">CLBD Contact</a>
+          </Typography>
+          <br />
+          <Typography className={classes.bodyText} variant="body1">
+          Thank you,
+          </Typography>
+           <br />
           <Typography className={classes.bodyText} variant="body1">
             <strong>Samithamby "Jey" Jeyaseelan, DVM, PhD</strong>
+             </Typography>
+            <Typography className={classes.bodyText} variant="body1">
+            Dr. William L. Jenkins Endowed Professor in Veterinary Medicine
+            </Typography>
+            <Typography className={classes.bodyText} variant="body1">
+            Director, Center for Lung Biology and Disease (CLBD)
+             </Typography>
+            <Typography className={classes.bodyText} variant="body1">
+            Professor of Immunology, Inflammation and Infectious Diseases, Department of Pathobiological Sciences
+            </Typography>
+            <Typography className={classes.bodyText} variant="body1">
+            School of Veterinary Medicine
+             </Typography>
+            <Typography className={classes.bodyText} variant="body1">
+            Louisiana State University
           </Typography>
         </Grid>
       </Grid>

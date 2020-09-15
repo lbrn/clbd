@@ -2,12 +2,21 @@ import grantPhoto from '../assets/articles/home.jpg';
 import huangPhoto from '../assets/articles/huangPhoto.png';
 import sarrArticlePhoto from "../assets/articles/sarrArticle.png";
 import { Saini, Noel } from '../assets/people';
+import conferencePhoto from "../assets/articles/2020conferenceFlyerv2.png";
 import article from '../types/article';
 
 export const articles: article[] = [
   {
     code: 'ARTICLE',
     isFeatured: true,
+    title: `2020 Louisiana Lung Conference, Sponsored by Center for Lung Biology & Disease`,
+    contentPreview: `This year's Louisiana Lung Conference will be held virtually. Keynote speakers are Dr. Steven M. Varga, Professor of Immunology and Associate Dean for Academic Affairs and at the University of Iowa School of Medicine and Dr. Joseph P. Mizgerd, Professor of Medicine and Microbiology & Director, Pulmonary Center at the Boston University School of Medicine. A virtual poster session followed by a panel sessions on Understanding the Grant Review Process will follow.`,
+    image: conferencePhoto,
+    link:
+      '/event/lungconference-2020-09-15',
+  },
+  {
+    code: 'ARTICLE',
     title: `LSU SVM Center for Lung Biology and Disease investigates lung and lung-related heart diseases during the COVID-19 pandemic`,
     contentPreview: `Last year, the LSU School of Veterinary Medicine (LSU SVM) launched the Center for Lung Biology and Disease (CLBD) with more than $11.5 million in funding over five years.`,
     image: sarrArticlePhoto,

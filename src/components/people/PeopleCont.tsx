@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 
 const PeopleCont = props => {
   const classes = useStyles();
-  const [data, setData] = useState({});
+  const [data, setData] = useState();
 
   useEffect(() => {
     setData(people);
