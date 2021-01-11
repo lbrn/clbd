@@ -11,3 +11,5 @@ export const conferenceFlyerThumb = require('./2020conferencev2.jpg');
 export const conferencePdf = require('./2020conferencev2.pdf');
 export const agendaPdf = require('./COBRE Symposium 2020.Public.pdf');
 export const agendaFlyerThumb = require('./COBRE Symposium 2020.Public.png');
+export const IncucytePdf = require('./Incucyte Training.pdf');
+export const IncucyteFlyerThumb = require('./Incucyte Training.png');
