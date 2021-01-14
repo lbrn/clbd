@@ -4,11 +4,20 @@ import sarrArticlePhoto from "../assets/articles/sarrArticle.png";
 import { Saini, Noel } from '../assets/people';
 import conferencePhoto from "../assets/articles/2020conferenceFlyerv2.png";
 import article from '../types/article';
+import incucytephoto from '../assets/pdfs/Incucyte Training.png';
 
 export const articles: article[] = [
   {
     code: 'ARTICLE',
     isFeatured: true,
+    title: `2021 Incucyte S3 New User Training`,
+    contentPreview: `Incucyte S3 New User Training Sponsored by Center for Lung Biology & Disease.`,
+    image: incucytephoto,
+    link:
+      '/event/incucytetraining-2021-01-11',
+  },
+  {
+    code: 'ARTICLE',
     title: `2020 Louisiana Lung Conference, Sponsored by Center for Lung Biology & Disease`,
     contentPreview: `This year's Louisiana Lung Conference will be held virtually. Keynote speakers are Dr. Steven M. Varga, Professor of Immunology and Associate Dean for Academic Affairs and at the University of Iowa School of Medicine and Dr. Joseph P. Mizgerd, Professor of Medicine and Microbiology & Director, Pulmonary Center at the Boston University School of Medicine. A virtual poster session followed by a panel sessions on Understanding the Grant Review Process will follow.`,
     image: conferencePhoto,

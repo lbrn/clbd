@@ -14,12 +14,31 @@ import {
   conferencePdf,
   conferenceFlyerThumb,
   agendaPdf,
-  agendaFlyerThumb
+  agendaFlyerThumb,
+  IncucytePdf,
+  IncucyteFlyerThumb
 } from '../assets/pdfs/index';
 
 // the first seminar is automatically featured
 
 export const seminars: seminar[] = [
+  {
+    title: 'Incucyte S3 New User Training',
+    id: 'incucytetraining-2021-01-11',
+    code: 'SEMINAR',
+    eventType: 'Training',
+    date: moment('2021-01-11'),
+    time: '12:30 pm - 4:30 pm',
+    registrationDueDate: moment('2021-01-11'),
+    pdfLink: IncucytePdf,
+    speakers:
+      'Mark Metcalf',
+    speakerUniversities: 'Area Manager of Field Applications Scientists (South/Southeast) at Sartorius BioAnalytics',
+    description: 'Sponsored by Center for Lung Biology & Disease. For more information contact For more information contact: Duane Jeansonne, email: djeansonne1@lsu.edu.',
+    location: 'Louisiana State University (Virtual)',
+    image: IncucyteFlyerThumb,
+    link: `https://www.essenbioscience.com/en/`,
+  }, 
   {
     title: 'Louisiana Lung Conference',
     id: 'lungconference-2020-09-15',
@@ -96,7 +115,7 @@ export const seminars: seminar[] = [
     image: liwuFlyerThumb,
   },
   {
-    title: 'All current events are cancelled. COVID-19 information:',
+    title: 'All current in-person events are cancelled. COVID-19 information:',
     id: 'covid-',
     code: 'ANNOUNCEMENT',
     eventType: 'Workshop',

@@ -1,5 +1,6 @@
 // import {
 //   Baines,
+//   Balasuriya,
 //   Baumgarth,
 //   Bubeckwardenburg,
 //   Cardin,
@@ -59,6 +60,7 @@ const {
   White,
   Yoshimmura,
   Jeansonne,
+  Balasuriya,
 } = peopleData;
 
 interface peopleGroup {
@@ -80,12 +82,12 @@ export const people: people = {
   externalAdvisoryCommittee: {
     code: 'externalAdvisoryCommittee',
     displayName: 'External Advisory Committee',
-    members: [Irvin, Stanton, Fessler, Bubeckwardenburg, Baumgarth],
+    members: [Irvin, Stanton, Fessler, Baumgarth],
   },
   internalAdvisoryCommittee: {
     code: 'internalAdvisoryCommittee',
     displayName: 'Internal Advisory Committee',
-    members: [Baines, Kaushal, Kousoulas, Cormier, Kolls, Reed],
+    members: [Baines, Balasuriya, Dugas, Kousoulas, Cormier],
   },
   pulmonaryImmunopathologyCore: {
     code: 'pulmonaryImmunopathologyCore',

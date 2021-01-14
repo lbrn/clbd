@@ -1,5 +1,6 @@
 import {
   Baines,
+  Balasuriya,
   Baumgarth,
   Bubeckwardenburg,
   Cardin,
@@ -117,7 +118,7 @@ export const peopleData: peopleData = {
     code: 'Bubeckwardenburg',
     id: 7,
     name: 'Juliane Bubeckwardenburg',
-    isActive: true,
+    isActive: false,
     image: Bubeckwardenburg,
     degree: 'MD, PhD',
     role: 'External Advisory Committee',
@@ -150,7 +151,7 @@ export const peopleData: peopleData = {
     code: 'Kaushal',
     id: 10,
     name: 'Deepak Kaushal',
-    isActive: true,
+    isActive: false,
     degree: 'PhD',
     institution: 'Texas Biomedical Research Institute',
     role: 'Professor and Director',
@@ -183,7 +184,7 @@ export const peopleData: peopleData = {
     code: 'Kolls',
     id: 13,
     name: 'Jay Kolls',
-    isActive: true,
+    isActive: false,
     degree: 'MD',
     institution: 'Tulane University',
     role: 'Professor of Medicare and Pediatrics, John W Deming Endowed Chair',
@@ -194,7 +195,7 @@ export const peopleData: peopleData = {
     code: 'Reed',
     id: 14,
     name: 'Kevin Reed',
-    isActive: true,
+    isActive: false,
     degree: 'MD',
     role:
       'Associate Professor of Medicine, Associate Dean of Academic Affairs in Baton Rouge',
@@ -209,6 +210,8 @@ export const peopleData: peopleData = {
     isActive: true,
     degree: 'PhD',
     institution: 'Louisiana State University',
+    title:
+      'Department Chairperson - Interim Department Head Comparative Biomedical Sciences (CBS)',
     role: 'Core Lead',
     image: Dugas,
     link: 'https://bit.ly/33YO5Ic',
@@ -383,5 +386,17 @@ export const peopleData: peopleData = {
       'Assistant Professor- Research in the Department of Pathobiological Sciences',
     role: 'PIP Core coordinator',
     link: 'mailto:djeansonne1@lsu.edu'
+   },
+   Balasuriya: {
+    code: 'Balasuriya',
+    id: 29,
+    name: 'Udeni Balasuriya',
+    isActive: true,
+    institution: 'Louisiana State University',
+    degree: 'PhD',
+    role:
+      'Director and Professor of Virology at the Louisiana Animal Disease Diagnostic Laboratory (LADDL)',
+    image: Balasuriya,
+    link: 'http://facultypages.vetmed.lsu.edu/faculty/balasuriya1'
    },
 };

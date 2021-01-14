@@ -1,4 +1,5 @@
 export const Baines = require('./Baines.jpg');
+export const Balasuriya = require('./Balasuriya.jpg');
 export const Baumgarth = require('./Baumgarth.jpg');
 export const Bubeckwardenburg = require('./Bubeckwardenburg.jpg');
 export const Cardin = require('./Cardin.jpg');
