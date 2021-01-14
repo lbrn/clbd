@@ -37,7 +37,7 @@ export const seminars: seminar[] = [
     description: 'Sponsored by Center for Lung Biology & Disease. For more information contact For more information contact: Duane Jeansonne, email: djeansonne1@lsu.edu.',
     location: 'Louisiana State University (Virtual)',
     image: IncucyteFlyerThumb,
-    link: `/event/${0}`,
+    link: `https://www.essenbioscience.com/en/`,
   }, 
   {
     title: 'Louisiana Lung Conference',
