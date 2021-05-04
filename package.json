@@ -13,6 +13,7 @@
     "@types/reach__router": "^1.2.6",
     "@types/react": "16.9.9",
     "@types/react-dom": "16.9.2",
+    "app-polyfill": "^1.2.2",
     "babel-helper-builder-react-jsx": "^6.26.0",
     "elliptic": "^6.5.4",
     "history": "^4.10.1",
