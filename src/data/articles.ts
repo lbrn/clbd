@@ -5,11 +5,20 @@ import { Saini, Noel } from '../assets/people';
 import conferencePhoto from "../assets/articles/2020conferenceFlyerv2.png";
 import article from '../types/article';
 import incucytephoto from '../assets/pdfs/Incucyte Training.png';
+import echophoto from '../assets/articles/Revolve-Specs-Image-new.jpg';
 
 export const articles: article[] = [
   {
     code: 'ARTICLE',
     isFeatured: true,
+    title: `The CLBD has an ECHO Revolve microscope for fluorescent and light microscopy analysis.`,
+    contentPreview: `The CLBD has an ECHO Revolve microscope for fluorescent and light microscopy analysis.`,
+    image: echophoto,
+    link:
+      'https://discover-echo.com/revolve?utm_source=google&utm_medium=search&utm_campaign=11736234910&utm_term=fluorescence%20microscopy&utm_content=483044460665&gclid=Cj0KCQjw2NyFBhDoARIsAMtHtZ5pygswYMivbT_eqdOM9Cyvsempt9YXQic8E_s9XV_T9K8kvXdtAGMaAqNHEALw_wcB',
+  },
+  {
+    code: 'ARTICLE',
     title: `2021 Incucyte S3 New User Training`,
     contentPreview: `Incucyte S3 New User Training Sponsored by Center for Lung Biology & Disease.`,
     image: incucytephoto,
