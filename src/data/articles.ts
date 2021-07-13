@@ -6,11 +6,20 @@ import conferencePhoto from "../assets/articles/2020conferenceFlyerv2.png";
 import article from '../types/article';
 import incucytephoto from '../assets/pdfs/Incucyte Training.png';
 import echophoto from '../assets/articles/Revolve-Specs-Image-new.jpg';
+import { SeahorseFlyerThumb } from '../assets/pdfs';
 
 export const articles: article[] = [
   {
     code: 'ARTICLE',
     isFeatured: true,
+    title: `Seahorse Zoom Webinar.`,
+    contentPreview: `Please join us for a seminar where we will learn about the Seahorse XFe96 and how the assays run on this instrument can make a powerful impact on disease research. The webinar will be held July 7th from 2:00-3:00pm.`,
+    image: SeahorseFlyerThumb,
+    link:
+      'event/seahorsewebinar-2021-07-07',
+  },
+  {
+    code: 'ARTICLE',
     title: `The CLBD has an ECHO Revolve microscope for fluorescent and light microscopy analysis.`,
     contentPreview: `The CLBD has an ECHO Revolve microscope for fluorescent and light microscopy analysis.`,
     image: echophoto,

@@ -16,12 +16,28 @@ import {
   agendaPdf,
   agendaFlyerThumb,
   IncucytePdf,
-  IncucyteFlyerThumb
+  IncucyteFlyerThumb,
+  SeahorsePdf,
+  SeahorseFlyerThumb
 } from '../assets/pdfs/index';
 
 // the first seminar is automatically featured
 
 export const seminars: seminar[] = [
+  {
+    title: 'Seahorse Zoom Webinar',
+    id: 'seahorsewebinar-2021-07-07',
+    code: 'SEMINAR',
+    eventType: 'Training',
+    date: moment('2021-07-07'),
+    time: '2:00 pm - 3:00 pm',
+    registrationDueDate: moment('2021-07-07'),
+    pdfLink: SeahorsePdf,
+    description: 'Agilent Seahorse XF Technology measures the rates of cellular oxygen consumption and acidification of the medium surrounding cells in a microplate. This allows for analysis of changes in mitochondrial and glycolytic function as well as ATP production rates from these two sources. Metabolism drives cellular fate, phenotype, and function and the Seahorse has led the way in showing these connections for well over a decade.',
+    location: 'Louisiana State University (Virtual)',
+    image: SeahorseFlyerThumb,
+    link: ` https://agilent.webex.com/join/jay.dunn`,
+  },
   {
     title: 'Incucyte S3 New User Training',
     id: 'incucytetraining-2021-01-11',
