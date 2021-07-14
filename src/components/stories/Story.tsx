@@ -39,14 +39,14 @@ const Story = ({ article }: storyProps) => {
       </Grid>
       <Grid item xs={12} sm={6}>
         <Typography variant="h6">{article.title}</Typography>
-      </Grid>
-      <Grid item xs={12}>
         <Typography variant="body1">{article.contentPreview}</Typography>
+        <Link variant="body1" href={article.link}>
+        ...view more
+        </Link>
       </Grid>
       <Grid item xs={12}>
-        <Link variant="body1" href={article.link}>
-          ...view more
-        </Link>
+      </Grid>
+      <Grid item xs={12}>
       </Grid>
     </Grid>
   );
