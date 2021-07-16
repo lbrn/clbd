@@ -50,5 +50,13 @@ export function createLinks(history) {
       code: 'molecular-core',
       displayName: 'Molecular Biology Core ',
     },
+    {
+      clickHandler: () => {
+        navigate('/resources/media');
+        history.push('/resources/media');
+      },
+      code: 'media',
+      displayName: 'Media',
+    },
   ];
 }

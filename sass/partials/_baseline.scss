@@ -1,0 +1,7 @@
+$t: 0.4s;
+::selection {
+  background: hsl(208, 84%, 75%); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: hsl(208, 84%, 75%); /* Gecko Browsers */
+}

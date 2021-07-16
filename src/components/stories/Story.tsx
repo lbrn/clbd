@@ -44,10 +44,6 @@ const Story = ({ article }: storyProps) => {
         ...view more
         </Link>
       </Grid>
-      <Grid item xs={12}>
-      </Grid>
-      <Grid item xs={12}>
-      </Grid>
     </Grid>
   );
 };
