@@ -8,6 +8,8 @@ import { posts } from '../../../data/mediaData';
 export const Media = props => {
   //here you define the "props", that'll be insert into the page
   //you lay out the content of repeated elements, templates basically
+  const elements = ['zero','one', 'two', 'three','four','five','six'];
+  let sliced = elements.slice(0,4);
   const listItems = numbers.map((number) =>
   <li key={number.toString()}>
   {number}
@@ -31,8 +33,11 @@ export const Media = props => {
       <div className="posts threerow">
       {content}
       </div>
-
-
+      <ul>
+        {sliced.map((value, index) => {
+          return <li key={index}>{value}</li>
+        })}
+      </ul>
       </Fragment>
 
   );

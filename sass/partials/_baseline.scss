@@ -1,4 +1,13 @@
 $t: 0.4s;
+
+$primary: rgba(19, 127, 222);
+$primary-dark: darken($primary, 0.2);
+$primary-light: #B8D8F5;
+// main: `rgba(19, 127, 222)`,
+// dark: darken(`rgba(19, 127, 222)`, 0.2),
+// light: lighten(`rgba(19, 127, 222)`, 0.7),
+
+$font: "Roboto", "Helvetica", "Arial", sans-serif;
 ::selection {
   background: hsl(208, 84%, 75%); /* WebKit/Blink Browsers */
 }
