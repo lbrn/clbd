@@ -131,7 +131,7 @@ export const seminars: seminar[] = [
     image: liwuFlyerThumb,
   },
   {
-    title: 'All current in-person events are cancelled. COVID-19 information:',
+    title: 'COVID-19 information:',
     id: 'covid-',
     code: 'ANNOUNCEMENT',
     eventType: 'Workshop',
