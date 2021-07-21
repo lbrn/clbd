@@ -425,10 +425,7 @@ export const peopleData: peopleData = {
       institution: 'Louisiana State University',
       image: require('../assets/people/chenchen.jpg'),
       role: 'Pilot Investigator',
-      link: '#',
-      mentors: [
-        { name: 'Placeholder', link: '#' },
-      ],
+      link: 'https://lsu.edu/science/biosci/faculty_and_staff/chenchen.php',
     },
     Carossino: {
        code: 'Carossino',
@@ -440,9 +437,6 @@ export const peopleData: peopleData = {
        institution: 'Louisiana State University',
        image: require('../assets/people/mcarossino.jpg'),
        role: 'Pilot Investigator',
-       link: '#',
-       mentors: [
-         { name: 'Placeholder', link: '#' },
-       ],
+       link: 'http://facultypages.vetmed.lsu.edu/faculty/mcarossino1',
      },
 };
