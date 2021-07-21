@@ -94,9 +94,9 @@ const Seminar = ({seminar}: Seminar) => {
                     Agenda: <Link href={seminar.agendaLink}>2020 Lung Conference Agenda</Link>
                   </Typography>
                 )}
-                {/* {seminar.description && (
-                <Typography variant="body1">{seminar.description()}</Typography>
-              )} */}
+                {seminar.description && (
+                <Typography variant="body1">{seminar.description}</Typography>
+                )}
               </Grid>
             </Grid>
           )}
