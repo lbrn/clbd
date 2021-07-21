@@ -29,3 +29,4 @@ export const Vladimir = require('./Vladimir.jpg');
 export const White = require('./White.jpg');
 export const Yoshimmura = require('./Yoshimmura.jpg');
 export const Jeansonne = require('./Jeansonne.jpg');
+export const Fu = require('./Fu.jpg');

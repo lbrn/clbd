@@ -28,6 +28,7 @@ import {
   White,
   Yoshimmura,
   Jeansonne,
+  Fu,
 } from '../assets/people/index';
 import person from '../types/person';
 
@@ -330,7 +331,7 @@ export const peopleData: peopleData = {
       'Dr. Alexandra Noël is an Assistant Professor in the Department of Comparative Biomedical Sciences, School of Veterinary Medicine, at Louisiana State University. Dr. Noël obtained her BSc. in Biomedical Sciences, her MSc. in Occupational and Environmental Health, and her PhD in Public Health with a specialization in Toxicology and Risk Assessment, all from the University of Montreal (QC, Canada). She is an inhalation toxicologist with over ten years of experience in inhalation and lung biology. Her research focuses on the pulmonary effects induced by inhaled nanomaterials (< 100 nm) and tobacco products. She also conducts developmental toxicology studies on pulmonary effects of in utero and adult exposures to nanoparticles, cigarette second-hand smoke, electronic-cigarette and JUUL aerosols, as well as ultrafine combustion-derived particles. The overarching objectives and goals of her research program are to improve public health by providing in vitro and in vivo scientific evidence related to the health effects induced by environmental exposures. More specifically, her research seeks to investigate the fundamental mechanism at the epigenetic, molecular and cellular levels that underlie the developmental origins of health and disease, with respect to respiratory effects caused by distinct emerging inhaled environmental pollutants. Dr. Noël’s lab is currently funded, among others, by the National Institutes of Health and the Louisiana Board of Regents. In addition, Dr. Noël’s was the chair of the 2017 Gordon Research Seminar (GRS) on Lung Development Injury & Repair; she currently serves on the American Thoracic Society (ATS) Membership Committee (2018-2020); and she is the 2019-2020 Vice-President (Elect) of the Society of Toxicology (SOT) South-Central Chapter. ',
     institution: 'Louisiana State University',
     image: Noel,
-    role: 'Project Investigator',
+    role: 'Pilot Investigator',
     link: 'https://bit.ly/2pP5Jzh',
     mentors: [
       { name: 'Tammy Dugas', link: 'https://bit.ly/33YO5Ic' },
@@ -398,5 +399,50 @@ export const peopleData: peopleData = {
       'Director and Professor of Virology at the Louisiana Animal Disease Diagnostic Laboratory (LADDL)',
     image: Balasuriya,
     link: 'http://facultypages.vetmed.lsu.edu/faculty/balasuriya1'
+  },
+  Fu: {
+     code: 'Fu',
+     id: 30,
+     name: 'Xing Fu',
+     isActive: true,
+     abstract:
+       'Placeholder',
+     institution: 'Louisiana State University',
+     image: Fu,
+     role: 'Project Investigator',
+     link: 'https://www.lsuagcenter.com/profiles/XFu1',
+     mentors: [
+       { name: 'Placeholder', link: '#' },
+     ],
    },
+   Chen: {
+      code: 'Chen',
+      id: 31,
+      name: 'Chen Chen',
+      isActive: true,
+      abstract:
+        'Placeholder',
+      institution: 'Louisiana State University',
+      image: require('../assets/people/chenchen.jpg'),
+      role: 'Pilot Investigator',
+      link: '#',
+      mentors: [
+        { name: 'Placeholder', link: '#' },
+      ],
+    },
+    Carossino: {
+       code: 'Carossino',
+       id: 32,
+       name: 'Mariano Carossino',
+       isActive: true,
+       abstract:
+         'Placeholder',
+       institution: 'Louisiana State University',
+       image: require('../assets/people/mcarossino.jpg'),
+       role: 'Pilot Investigator',
+       link: '#',
+       mentors: [
+         { name: 'Placeholder', link: '#' },
+       ],
+     },
 };
