@@ -20,6 +20,15 @@ export const articles: article[] = [
   },
   {
     code: 'ARTICLE',
+    title:
+      'CLBD project investigators receive prestigious Research Excellence and Distinguished Scholar Awards',
+    contentPreview: `Placeholder.`,
+    image:  require('../assets/articles/placeholder_noborder.png'),
+    link:
+      'https://reporter.nih.gov/search/3eVRPXLG3USXXnhTMmk5ZQ/project-details/10078618',
+  },
+  {
+    code: 'ARTICLE',
     title: `The CLBD has an ECHO Revolve microscope for fluorescent and light microscopy analysis.`,
     contentPreview: `The CLBD has an ECHO Revolve microscope for fluorescent and light microscopy analysis.`,
     image: echophoto,
@@ -88,4 +97,5 @@ export const articles: article[] = [
     link:
       'https://www.lsu.edu/mediacenter/news/2019/02/04svm_jeyaseelan_nihcenter.php',
   },
+
 ];

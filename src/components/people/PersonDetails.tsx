@@ -98,12 +98,7 @@ const PersonDetails = ({ person }: PersonDetails) => {
         )}
         {person && (
           <Grid item xs={8}>
-            {person.mentors && (
-              <Typography>
-                <strong>Mentors: </strong>
-                {createMentors(person.mentors)}
-              </Typography>
-            )}
+          
           </Grid>
         )}
       </Grid>
