@@ -405,8 +405,6 @@ export const peopleData: peopleData = {
      id: 30,
      name: 'Xing Fu',
      isActive: true,
-     abstract:
-       'Placeholder',
      institution: 'Louisiana State University',
      image: Fu,
      role: 'Project Investigator',
@@ -420,8 +418,6 @@ export const peopleData: peopleData = {
       id: 31,
       name: 'Chen Chen',
       isActive: true,
-      abstract:
-        'Placeholder',
       institution: 'Louisiana State University',
       image: require('../assets/people/chenchen.jpg'),
       role: 'Pilot Investigator',
@@ -432,8 +428,6 @@ export const peopleData: peopleData = {
        id: 32,
        name: 'Mariano Carossino',
        isActive: true,
-       abstract:
-         'Placeholder',
        institution: 'Louisiana State University',
        image: require('../assets/people/mcarossino.jpg'),
        role: 'Pilot Investigator',

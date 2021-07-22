@@ -22,7 +22,7 @@ export const articles: article[] = [
     code: 'ARTICLE',
     title:
       'CLBD project investigators receive prestigious Research Excellence and Distinguished Scholar Awards',
-    contentPreview: `Placeholder.`,
+    contentPreview: `CLBD project investigators receive prestigious Research Excellence and Distinguished Scholar Awards`,
     image:  require('../assets/articles/placeholder_noborder.png'),
     link:
       'https://reporter.nih.gov/search/3eVRPXLG3USXXnhTMmk5ZQ/project-details/10078618',
