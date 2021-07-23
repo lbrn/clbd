@@ -45,6 +45,14 @@ export const Articles = props => {
         >
           <Link>Dr. Weishan Huang receives $375,096 NIH award</Link>
         </Typography>
+        <Typography
+          onClick={e =>
+            navigate('https://reporter.nih.gov/search/3eVRPXLG3USXXnhTMmk5ZQ/project-details/10078618')
+          }
+          variant="body1"
+        >
+          <Link>Publications resulting from the Grant</Link>
+        </Typography>
       </Grid>
     </Fragment>
   );
