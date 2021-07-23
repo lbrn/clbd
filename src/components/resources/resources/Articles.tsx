@@ -47,7 +47,7 @@ export const Articles = props => {
         </Typography>
         <Typography
           onClick={e =>
-            navigate('https://reporter.nih.gov/search/3eVRPXLG3USXXnhTMmk5ZQ/project-details/10078618')
+            navigate('https://reporter.nih.gov/search/3eVRPXLG3USXXnhTMmk5ZQ/project-details/10078618#publications')
           }
           variant="body1"
         >
