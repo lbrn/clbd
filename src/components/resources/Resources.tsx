@@ -6,6 +6,7 @@ import { theme } from '../../theme/theme';
 import HistoryContext from '../../components/contexts/HistoryContext';
 import NihAcknowledgement from './resources/NihAcknowledgement';
 import Disclaimer from './resources/Disclaimer';
+import Media from './resources/Media';
 import UsefulLinks from './resources/UsefulLinks';
 import Articles from './resources/Articles';
 import MolecularCore from './resources/MolecularCore';
@@ -37,11 +38,12 @@ const Resources = props => {
             title="resources"
           />
         </Grid>
-        <Grid container item xs={12} sm={8} md={9}>
+        <Grid container item xs={12} sm={8} md={9} className="dog">
           <Router>
             <NihAcknowledgement path="nih" />
             <Disclaimer path="disclaimer" />
             <UsefulLinks path="useful-links" />
+            <Media path="media" />
             <Articles path="articles" />
             <PulmonaryCore path="pulmonary-core" />
             <MolecularCore path="molecular-core" />

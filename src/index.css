@@ -1,6 +1,113 @@
-::selection {
-  background: hsl(208, 84%, 75%); /* WebKit/Blink Browsers */
-}
 ::-moz-selection {
-  background: hsl(208, 84%, 75%); /* Gecko Browsers */
+  background: #8ac3f5;
+  /* WebKit/Blink Browsers */
+}
+
+::selection {
+  background: #8ac3f5;
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #8ac3f5;
+  /* Gecko Browsers */
+}
+
+div.button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+div.button a {
+  padding: 8px 11px;
+  color: #137fde;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  font-weight: 500;
+  line-height: 1.75;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+div.button a:hover {
+  background-color: #B8D8F5;
+  text-decoration: none;
+}
+
+.posts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.posts.threerow .post {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 -webkit-calc(33% - 20px);
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 calc(33% - 20px);
+          flex: 0 1 calc(33% - 20px);
+}
+.posts .post {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 255, 0.1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+.posts .post:hover {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+.posts .post h3, .posts .post p {
+  text-decoration: none;
+  color: black;
+}
+.posts .post a {
+  color: transparent;
+}
+.posts .post img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 250px;
+}
+
+.dog > div {
+  width: 100%;
 }

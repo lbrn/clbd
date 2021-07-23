@@ -12,6 +12,15 @@ export const articles: article[] = [
   {
     code: 'ARTICLE',
     isFeatured: true,
+    title:
+      'CLBD project investigators receive prestigious Research Excellence and Distinguished Scholar Awards',
+    contentPreview: `CLBD project investigators receive prestigious Research Excellence and Distinguished Scholar Awards`,
+    image:  require('../assets/articles/placeholder_noborder.png'),
+    link:
+      'https://www.lsu.edu/vetmed/vet_news/teaching_awards_2021.php',
+  },
+  {
+    code: 'ARTICLE',
     title: `Seahorse Zoom Webinar.`,
     contentPreview: `Please join us for a seminar where we will learn about the Seahorse XFe96 and how the assays run on this instrument can make a powerful impact on disease research. The webinar will be held July 7th from 2:00-3:00pm.`,
     image: SeahorseFlyerThumb,
@@ -88,4 +97,5 @@ export const articles: article[] = [
     link:
       'https://www.lsu.edu/mediacenter/news/2019/02/04svm_jeyaseelan_nihcenter.php',
   },
+
 ];

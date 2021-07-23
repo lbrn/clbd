@@ -1,0 +1,24 @@
+div.button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  a {
+    padding: 8px 11px;
+    color: $primary;
+    margin-left: auto;
+    margin-right: auto;
+    transition: $t;
+    border-radius: 4px;
+    font-weight: 500;
+    line-height: 1.75;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: $font;
+    &:hover {
+      background-color: $primary-light;
+      text-decoration: none;
+    }
+  }
+}

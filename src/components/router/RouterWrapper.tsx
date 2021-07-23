@@ -13,6 +13,7 @@ import People from '../people/People';
 import Disclaimer from '../resources/resources/Disclaimer';
 import UsefulLinks from '../resources/resources/UsefulLinks';
 import Articles from '../resources/resources/Articles';
+import Stories_Page_Const from '../stories/Stories_Page';
 import MolecularCore from '../resources/resources/MolecularCore';
 import PulmonaryCore from '../resources/resources/PulmonaryCore';
 
@@ -27,6 +28,7 @@ const RouterWrapper = () => {
           <PersonDetailsModel path="individual/:code" />
         </PeopleCont>
         <Seminars path="events" />
+        <Stories_Page_Const path="stories" />
         <SeminarModel path="event/:id" />
         <Resources path="resources">
           <NihAcknowledgement path="nih" />

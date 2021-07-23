@@ -1,0 +1,41 @@
+.posts {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  &.threerow {
+    .post {
+      flex: 0 1 calc(33% - 20px);
+    }
+  }
+  .post {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(blue, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: $t;
+    &:hover {
+      background-color: rgba(blue, 0.3);
+    }
+    h3, p {
+      text-decoration: none;
+      color: black;
+    }
+    a {
+      color: transparent;
+    }
+    img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 250px;
+    }
+  }
+}
+.dog {
+  > div {
+    width: 100%;
+
+  }
+}

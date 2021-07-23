@@ -3,7 +3,7 @@ import { makeStyles, Grid, Container } from '@material-ui/core';
 import ContentPreview from './ContentPreview';
 import HeroStory from './HeroStory';
 import { themeExtended } from '../theme/theme';
-import Stories from './stories/Stories';
+import {Stories} from './stories/Stories';
 
 const useStyles = makeStyles({
   featured: {

@@ -61,6 +61,9 @@ const {
   Yoshimmura,
   Jeansonne,
   Balasuriya,
+  Fu,
+  Chen,
+  Carossino,
 } = peopleData;
 
 interface peopleGroup {
@@ -102,11 +105,11 @@ export const people: people = {
   projectInvestigators: {
     code: 'projectInvestigators',
     displayName: 'Project Investigators',
-    members: [Patial, Saini, Huang, Noel],
+    members: [Patial, Saini, Huang, Fu],
   },
   pilotInvestigators: {
     code: 'pilotInvestigators',
     displayName: 'Pilot Investigators',
-    members: [Yoshimmura, GuerreroPlata, Ogundele, Rangasamy],
+    members: [Rangasamy, Noel, Chen, Carossino],
   },
 };
