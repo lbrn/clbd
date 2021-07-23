@@ -266,7 +266,7 @@ export const peopleData: peopleData = {
   Patial: {
     code: 'Patial',
     id: 21,
-    name: 'Sonika Patial, DVM, PhD, Dipl SCVM',
+    name: 'Sonika Patial, DVM, PhD, Dipl ACVP',
     isActive: true,
     abstract:
       'Dr. Patial is an Assistant Professor in the Department of Comparative Biomedical Sciences at Louisiana State University, Baton Rouge. The focus of her current research is to investigate the role of tristetraprolin (TTP) family of RNA binding protein mediated post-transcriptional regulation of gene expression in health and disease. Post-transcriptional control is crucial in regulating the magnitude and duration of inflammatory responses. More specifically, Dr. Patial is investigating how post-transcriptional regulation of inflammatory gene expression modulates the pathogenesis of lung and liver disease. The long term goal of this research is to identify diagnostic biomarkers and novel therapeutic targets for lung and liver diseases. Dr. Patial received her DVM from the College of Veterinary Sciences, Palampur (India) and MVSc in Animal Biotechnology from Indian Veterinary Research Institute, Izatnagar (India). She received her PhD from Michigan State University in 2010 following which she completed a postdoctoral training (2011-2016) in the laboratory of Dr. Perry Blackshear at The National Institute of Environmental Health Sciences, North Carolina. Dr. Patial is also a Diplomate of the American College of Veterinary Pathologists (ACVP).',
@@ -405,6 +405,9 @@ export const peopleData: peopleData = {
      id: 30,
      name: 'Xing Fu, PhD',
      isActive: true,
+     abstract:
+     "Dr. Fu is an Assistant Professor in the School of Animal Sciences at Louisiana State University, Baton Rouge. Dr. Fu obtained his BS in Biotechnology from Henan Normal University (China) in 2007. He received his MS in Biology from Arkansas State University in 2010 and his PhD in Animal Sciences from Washington State University under the supervision of Dr. Min Du in 2015. He was then trained in Dr. Jeffery Molkentin’s laboratory at Cincinnati Children’s as a postdoctoral fellow for 2 years before joining Louisiana State University in 2017. Dr. Fu’s laboratory currently focuses on fibrotic diseases in the heart and lung. Ongoing research is aimed to understand the contribution of fibroblasts to tissue fibrosis and the molecular mechanisms regulating post-injury fibroblast activation and differentiation. The ultimate goal is to identify novel treatment strategies that mitigate fibrotic diseases through manipulating fibroblast activity.",
+
      institution: 'Louisiana State University',
      image: Fu,
      role: 'Project Investigator',
