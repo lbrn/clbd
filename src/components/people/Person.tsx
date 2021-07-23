@@ -109,7 +109,8 @@ const Person = ({
       <Grid item xs={8}>
         {name && (
           <Typography>
-            {name}, {degree}
+            {name}
+            {degree && <span>, {degree}</span>}
           </Typography>
         )}
         {role && <Typography>{role}</Typography>}
