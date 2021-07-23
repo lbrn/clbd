@@ -111,3 +111,11 @@ div.button a:hover {
 .dog > div {
   width: 100%;
 }
+
+.links a {
+  color: #137fde;
+  text-decoration: none;
+}
+.links a:hover {
+  text-decoration: underline;
+}

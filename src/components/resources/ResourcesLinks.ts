@@ -1,5 +1,5 @@
 import { navigate } from '@reach/router';
-//hide or show links in here 
+//hide or show links in here
 export function createLinks(history) {
   return [
     {
@@ -33,6 +33,14 @@ export function createLinks(history) {
       },
       code: 'articles',
       displayName: 'Articles',
+    },
+    {
+      clickHandler: () => {
+        navigate('/resources/publications');
+        history.push('/resources/publications');
+      },
+      code: 'publications',
+      displayName: 'Publications',
     },
     {
       clickHandler: () => {

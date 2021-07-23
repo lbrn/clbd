@@ -9,6 +9,7 @@ import Disclaimer from './resources/Disclaimer';
 import Media from './resources/Media';
 import UsefulLinks from './resources/UsefulLinks';
 import Articles from './resources/Articles';
+import Publications from './resources/Publications';
 import MolecularCore from './resources/MolecularCore';
 import PulmonaryCore from './resources/PulmonaryCore';
 import SmartMenu from '../ui/SmartMenu';
@@ -45,6 +46,7 @@ const Resources = props => {
             <UsefulLinks path="useful-links" />
             <Media path="media" />
             <Articles path="articles" />
+            <Publications path="publications" />
             <PulmonaryCore path="pulmonary-core" />
             <MolecularCore path="molecular-core" />
           </Router>
