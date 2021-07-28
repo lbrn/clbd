@@ -438,4 +438,14 @@ export const peopleData: peopleData = {
        role: 'Pilot Investigator',
        link: 'http://facultypages.vetmed.lsu.edu/faculty/mcarossino1',
      },
+     Wen: {
+        code: 'Wen',
+        id: 32,
+        name: 'Xue Wen',
+        isActive: true,
+        institution: 'Louisiana State University',
+        image: require('../assets/people/mWen.jpg'),
+        role: 'Pilot Investigator',
+        link: 'http://facultypages.vetmed.lsu.edu/faculty/mWen1',
+      },
 };
