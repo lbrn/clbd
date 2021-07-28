@@ -447,7 +447,7 @@ export const peopleData: peopleData = {
         isActive: true,
         institution: 'Louisiana State University',
         image: require('../assets/people/xWen.jpg'),
-        role: 'Pilot Investigator',
+        role: 'Co-Investigator',
         link: 'http://facultypages.vetmed.lsu.edu/faculty/mWen1',
       },
 };

@@ -96,7 +96,7 @@ export const people: people = {
   pulmonaryImmunopathologyCore: {
     code: 'pulmonaryImmunopathologyCore',
     displayName: 'Pulmonary Immunopathology Core',
-    members: [Dugas, Jeansonne, Langhor, Christofferson],
+    members: [Dugas, Jeansonne, Langhor, Wen,],
   },
   molecularBiologyCore: {
     code: 'molecularBiologyCore',
@@ -111,6 +111,6 @@ export const people: people = {
   pilotInvestigators: {
     code: 'pilotInvestigators',
     displayName: 'Pilot Investigators',
-    members: [Rangasamy, Noel, Chen, Wen, Carossino,],
+    members: [Rangasamy, Noel, Chen, Carossino,],
   },
 };
