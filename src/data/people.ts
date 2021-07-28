@@ -63,6 +63,7 @@ const {
   Balasuriya,
   Fu,
   Chen,
+  Wen,
   Carossino,
 } = peopleData;
 
@@ -110,6 +111,6 @@ export const people: people = {
   pilotInvestigators: {
     code: 'pilotInvestigators',
     displayName: 'Pilot Investigators',
-    members: [Rangasamy, Noel, Chen, Carossino],
+    members: [Rangasamy, Noel, Chen, Wen, Carossino,],
   },
 };
