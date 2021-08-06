@@ -1,0 +1,15 @@
+.people {
+  .tworow {
+    color: red;
+    flex-wrap: wrap;
+    .post {
+      display: flex;
+      flex: 0 1 45%;
+      margin-left: auto;
+      margin-right: auto;
+      &.prev {
+      }
+    }
+  }
+
+}

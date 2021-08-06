@@ -346,6 +346,7 @@ export const peopleData: peopleData = {
     id: 25,
     name: 'Masami Yoshimmura',
     isActive: true,
+    year: '1995',
     institution: 'Louisiana State University',
     role: 'Pilot Investigator',
     image: Yoshimmura,

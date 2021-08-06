@@ -1,5 +1,5 @@
 import React, { useState, Fragment, useEffect, useContext } from 'react';
-import { Grid } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import Person from './Person';
 import { createLinks } from '../people/PeopleLinks';
 import SmartMenu from '../ui/SmartMenu';
@@ -45,10 +45,26 @@ const People = ({ path, data, location }: peopleProps) => {
       ));
     }
   };
+  const createPrev = peopleData => {
+    // if (data) {
+      // console.log("test");
+      // console.log(peopleData);
+      // console.log("test");
+      return peopleData[active].prev.map((post) =>
+       <div className="post prev">
+       <i>
+       {post.name}
+       {post.year}
+       </i>
+       </div>
+      );
+    // }
+  };
+
 
   return (
     <Fragment>
-      <Grid container spacing={3}>
+      <Grid  className="people" container spacing={3}>
         <Grid item xs={4} md={3}>
           <SmartMenu
             active={active}
@@ -63,7 +79,10 @@ const People = ({ path, data, location }: peopleProps) => {
             {(location && location.state.displayName) || 'Leadership'}
           </Typography>
         </Grid> */}
-          {data && createPeople(data)}
+        {data && createPeople(data)}
+        </Grid>
+        <Grid container justify="center" item xs={8} md={9} className="posts tworow">
+        {data && createPrev(data)}
         </Grid>
       </Grid>
     </Fragment>
