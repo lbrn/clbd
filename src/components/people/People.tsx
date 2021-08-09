@@ -52,9 +52,12 @@ const People = ({ path, data, location }: peopleProps) => {
       // console.log("test");
       return peopleData[active].prev.map((post) =>
        <div className="post prev">
+       <span>
+        {post.year}
+       </span>
        <i>
-       {post.name}
-       {post.year}
+        {post.name}
+        
        </i>
        </div>
       );
@@ -81,6 +84,10 @@ const People = ({ path, data, location }: peopleProps) => {
         </Grid> */}
         {data && createPeople(data)}
         </Grid>
+        <Grid item xs={4} md={3}>
+
+        </Grid>
+
         <Grid container justify="center" item xs={8} md={9} className="posts tworow">
         {data && createPrev(data)}
         </Grid>

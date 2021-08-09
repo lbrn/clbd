@@ -121,7 +121,6 @@ div.button a:hover {
 }
 
 .people .tworow {
-  color: red;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -139,4 +138,30 @@ div.button a:hover {
           flex: 0 1 45%;
   margin-left: auto;
   margin-right: auto;
+}
+.people .tworow .post.prev {
+  background-color: rgba(19, 127, 222, 0.2);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.people .tworow .post.prev i {
+  margin-right: auto;
+  margin-left: 7px;
+}
+.people .tworow .post.prev span {
+  margin-left: auto;
+  margin-right: 7px;
+}
+.people .tworow .post.prev:hover {
+  background-color: rgba(19, 127, 222, 0.2);
 }
