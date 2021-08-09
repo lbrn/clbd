@@ -266,7 +266,8 @@ export const peopleData: peopleData = {
   Patial: {
     code: 'Patial',
     id: 21,
-    name: 'Sonika Patial, DVM, PhD, Dipl ACVP',
+    name: 'Sonika Patial',
+    degree: 'DVM, PhD, Dipl ACVP',
     isActive: true,
     abstract:
       'Dr. Patial is an Assistant Professor in the Department of Comparative Biomedical Sciences at Louisiana State University, Baton Rouge. The focus of her current research is to investigate the role of tristetraprolin (TTP) family of RNA binding protein mediated post-transcriptional regulation of gene expression in health and disease. Post-transcriptional control is crucial in regulating the magnitude and duration of inflammatory responses. More specifically, Dr. Patial is investigating how post-transcriptional regulation of inflammatory gene expression modulates the pathogenesis of lung and liver disease. The long term goal of this research is to identify diagnostic biomarkers and novel therapeutic targets for lung and liver diseases. Dr. Patial received her DVM from the College of Veterinary Sciences, Palampur (India) and MVSc in Animal Biotechnology from Indian Veterinary Research Institute, Izatnagar (India). She received her PhD from Michigan State University in 2010 following which she completed a postdoctoral training (2011-2016) in the laboratory of Dr. Perry Blackshear at The National Institute of Environmental Health Sciences, North Carolina. Dr. Patial is also a Diplomate of the American College of Veterinary Pathologists (ACVP).',
@@ -290,7 +291,8 @@ export const peopleData: peopleData = {
   Saini: {
     code: 'Saini',
     id: 22,
-    name: 'Yogesh Saini, DVM PhD',
+    name: 'Yogesh Saini',
+    degree: 'DVM PhD',
     isActive: true,
     abstract:
       'Dr. Saini is an Associate Professor in the Department of Comparative Biomedical Sciences at Louisiana State University, Baton Rouge. Dr. Saini received his DVM from College of Veterinary Sciences, Palampur (India) and MVetS in Veterinary Biochemistry and Biotechnology from College of Veterinary Sciences, Pantnager (India). He completed his Senior Research Fellowship at Indian Veterinary Research Institute, Izatnagar (India). He received his dual-PhD (Genetics and Toxicology) under the supervision of Dr. John LaPres at Michigan State University in 2009. After completing his postdoctoral training (2010-2014) in the laboratory of Dr. Richard Boucher at the University of North Carolina (UNC), he was appointed as a faculty member at Marsico Lung Institute. The focus of his current research is to understand multiple aspects of lung biology and inflammatory lung diseases. The ongoing research employs murine models of pathogens- and toxicant-induced inflammation. The ultimate goal of this research is to develop diagnostic biomarker of lung diseases and therapeutic interventions to modulate inflammatory responses',
@@ -309,7 +311,8 @@ export const peopleData: peopleData = {
   Huang: {
     code: 'Huang',
     id: 23,
-    name: 'Weishan Huang, PhD',
+    name: 'Weishan Huang',
+    degree: 'PhD',
     isActive: true,
     abstract:
       'Dr. Huang is an Assistant Professor of Immunology in the Department of Pathobiological Sciences at Louisiana State University, Baton Rouge. Her research focuses on the interactions among TCR, cytokine and metabolic signaling pathways that orchestrate the T cell immune homeostasis under static, lymphopenic and inflammatory conditions. Dr. Huang’s lab is particularly interested in the development and function of T helper cells and understanding the difference and similarity of memory T cells generated through different routes. The Huang lab has a history of funding from the National Institutes of Health. Dr. Huang obtained her BS in Biology and BE in Economics from Tsinghua University, Beijing, China and her PhD in Pharmacology from Cornell University. She was an AAI Postdoctoral Fellow in Immunology and then Assistant Research Professor of Immunology at Cornell University, prior to her appointment at LSU in 2018.',
@@ -325,7 +328,8 @@ export const peopleData: peopleData = {
   Noel: {
     code: 'Noel',
     id: 24,
-    name: 'Alexandra Noel, PhD',
+    name: 'Alexandra Noel',
+    degree: 'PhD',
     isActive: true,
     abstract:
       'Dr. Alexandra Noël is an Assistant Professor in the Department of Comparative Biomedical Sciences, School of Veterinary Medicine, at Louisiana State University. Dr. Noël obtained her BSc. in Biomedical Sciences, her MSc. in Occupational and Environmental Health, and her PhD in Public Health with a specialization in Toxicology and Risk Assessment, all from the University of Montreal (QC, Canada). She is an inhalation toxicologist with over ten years of experience in inhalation and lung biology. Her research focuses on the pulmonary effects induced by inhaled nanomaterials (< 100 nm) and tobacco products. She also conducts developmental toxicology studies on pulmonary effects of in utero and adult exposures to nanoparticles, cigarette second-hand smoke, electronic-cigarette and JUUL aerosols, as well as ultrafine combustion-derived particles. The overarching objectives and goals of her research program are to improve public health by providing in vitro and in vivo scientific evidence related to the health effects induced by environmental exposures. More specifically, her research seeks to investigate the fundamental mechanism at the epigenetic, molecular and cellular levels that underlie the developmental origins of health and disease, with respect to respiratory effects caused by distinct emerging inhaled environmental pollutants. Dr. Noël’s lab is currently funded, among others, by the National Institutes of Health and the Louisiana Board of Regents. In addition, Dr. Noël’s was the chair of the 2017 Gordon Research Seminar (GRS) on Lung Development Injury & Repair; she currently serves on the American Thoracic Society (ATS) Membership Committee (2018-2020); and she is the 2019-2020 Vice-President (Elect) of the Society of Toxicology (SOT) South-Central Chapter. ',
@@ -404,7 +408,8 @@ export const peopleData: peopleData = {
   Fu: {
      code: 'Fu',
      id: 30,
-     name: 'Xing Fu, PhD',
+     name: 'Xing Fu',
+     degree: 'PhD',
      isActive: true,
      abstract:
      "Dr. Fu is an Assistant Professor in the School of Animal Sciences at Louisiana State University, Baton Rouge. Dr. Fu obtained his BS in Biotechnology from Henan Normal University (China) in 2007. He received his MS in Biology from Arkansas State University in 2010 and his PhD in Animal Sciences from Washington State University under the supervision of Dr. Min Du in 2015. He was then trained in Dr. Jeffery Molkentin’s laboratory at Cincinnati Children’s as a postdoctoral fellow for 2 years before joining Louisiana State University in 2017. Dr. Fu’s laboratory currently focuses on fibrotic diseases in the heart and lung. Ongoing research is aimed to understand the contribution of fibroblasts to tissue fibrosis and the molecular mechanisms regulating post-injury fibroblast activation and differentiation. The ultimate goal is to identify novel treatment strategies that mitigate fibrotic diseases through manipulating fibroblast activity.",
@@ -420,7 +425,8 @@ export const peopleData: peopleData = {
    Chen: {
       code: 'Chen',
       id: 31,
-      name: 'Chen Chen MD, PhD',
+      name: 'Chen Chen',
+      degree: 'MD, PhD',
       isActive: true,
       institution: 'Louisiana State University',
       image: require('../assets/people/chenchen.jpg'),
