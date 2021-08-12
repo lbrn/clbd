@@ -350,7 +350,6 @@ export const peopleData: peopleData = {
     id: 25,
     name: 'Masami Yoshimmura',
     isActive: true,
-    year: '1995',
     institution: 'Louisiana State University',
     role: 'Pilot Investigator',
     image: Yoshimmura,
@@ -360,6 +359,7 @@ export const peopleData: peopleData = {
     code: 'GuerreroPlata',
     id: 26,
     name: 'Antonieta Guerrero-Plata',
+    year: '1995',
     isActive: true,
     abstract:
       'Dr. Guerrero-Plata is an Associate Professor in Immunology in the Department of Pathobiological Sciences at Louisiana State University. She is a licensed clinical chemist from the Universidad Autonoma de Tamaulipas and received an MSc and Ph.D. degrees from the Universidad Nacional Autonoma de Mexico (UNAM), with additional graduate training at Imperial College London. Dr. Guerrero-Plata completed her postdoctoral training at UTMB before her appointments as Instructor and Assistant Professor at the same institution. She joined the department of PBS at LSU to establish her research program focused on innate immunity and respiratory viruses, including the study of the molecular mechanisms responsible for the activation and subversion of the immune response to human pneumovirus infections.',
@@ -372,6 +372,7 @@ export const peopleData: peopleData = {
     code: 'Ogundele',
     id: 27,
     name: 'Olalekan Ogundele',
+    year: '1995',
     isActive: true,
     abstract:
       'Dr. Olalekan Ogundele is an Assistant Professor in the Department of Comparative Biomedical Sciences, LSU School of Veterinary Medicine, Baton Rouge. Dr. Ogundele’s lab study neural mechanisms that underlie behavior and systemic function. His research is focused on developing novel tools for probing neural circuits in rodent experimental models in vivo. Methods used in his lab include cre-lox targeting of neuron sub-populations, optogenetic modulation, neural circuit tracing, in vivo recording from brain areas of anesthetized and awake mice. Currently, Dr. Ogundele’s lab is using these methods to elucidate firing rate homoeostasis of pre-BötC area rhythmogenic neurons in a mouse model of endotoxemia. Dr. Ogundele obtained his Bachelors and Doctorate degree from the University of Ilorin, Nigeria. He was an IBRO-ISN postdoctoral fellow with the Neural Systems Laboratory (LSU), before his appointment as Assistant Professor in 2017.',

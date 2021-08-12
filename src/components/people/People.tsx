@@ -1,6 +1,7 @@
 import React, { useState, Fragment, useEffect, useContext } from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import Person from './Person';
+import PersonPrev from './PersonPrev';
 import { createLinks } from '../people/PeopleLinks';
 import SmartMenu from '../ui/SmartMenu';
 import HistoryContext from '../contexts/HistoryContext';
@@ -46,22 +47,35 @@ const People = ({ path, data, location }: peopleProps) => {
     }
   };
   const createPrev = peopleData => {
-    // if (data) {
-      // console.log("test");
-      // console.log(peopleData);
-      // console.log("test");
-      return peopleData[active].prev.map((post) =>
-       <div className="post prev">
-       <span>
-        {post.year}
-       </span>
-       <i>
-        {post.name}
-        
-       </i>
-       </div>
-      );
-    // }
+      // return peopleData[active].prev.map((post) =>
+      //  <div className="post prev">
+      //  <span>
+      //   {post.year}
+      //  </span>
+      //  <i>
+      //   {post.name}
+      //   , {post.degree}
+      //  </i>
+      //  </div>
+      // );
+      return peopleData[active].prev.map(person => (
+        <PersonPrev
+          isActive={person.isActive}
+          key={person.name}
+          name={person.name}
+          title={person.title}
+          mentors={person.mentors}
+      role={person.role}
+      id={person.id}
+      year={person.year}
+          degree={person.degree}
+          link={person.link}
+      img={person.image}
+      code={person.code}
+          abstract={person.abstract}
+          institution={person.institution}
+        />
+      ));
   };
 
 
@@ -77,11 +91,17 @@ const People = ({ path, data, location }: peopleProps) => {
           />
         </Grid>
         <Grid container justify="center" item xs={8} md={9}>
-          {/* <Grid item xs={12}>
+
+           <Grid item xs={12}>
           <Typography variant="h5" align="center">
-            {(location && location.state.displayName) || 'Leadership'}
+            {(location && location.state.displayName)}
           </Typography>
-        </Grid> */}
+        </Grid>
+        { /*} <Grid item xs={12}>
+        <Typography variant="h5" align="center">
+          {(location && location.state.displayName) || 'Leadership'}
+        </Typography>
+      </Grid> */}
         {data && createPeople(data)}
         </Grid>
         <Grid item xs={4} md={3}>
@@ -89,6 +109,11 @@ const People = ({ path, data, location }: peopleProps) => {
         </Grid>
 
         <Grid container justify="center" item xs={8} md={9} className="posts tworow">
+        <Grid item xs={12}>
+       <Typography variant="h5" align="center">
+         Former {(location && location.state.displayName)}
+       </Typography>
+     </Grid>
         {data && createPrev(data)}
         </Grid>
       </Grid>
