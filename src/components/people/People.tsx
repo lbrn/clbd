@@ -24,6 +24,7 @@ const People = ({ path, data, location }: peopleProps) => {
     setActive((location && location.state && location.state.code) || 'leadership');
   }, [location]);
   console.log(location.state);
+  console.log('dog');
 
   const createPeople = peopleData => {
     if (data) {
@@ -46,6 +47,7 @@ const People = ({ path, data, location }: peopleProps) => {
       ));
     }
   };
+  console.log(People);
   const createPrev = peopleData => {
       // return peopleData[active].prev.map((post) =>
       //  <div className="post prev">
@@ -102,6 +104,7 @@ const People = ({ path, data, location }: peopleProps) => {
           {(location && location.state.displayName) || 'Leadership'}
         </Typography>
       </Grid> */}
+      {data.prev}
         {data && createPeople(data)}
         </Grid>
         <Grid item xs={4} md={3}>
@@ -112,6 +115,9 @@ const People = ({ path, data, location }: peopleProps) => {
         <Grid item xs={12}>
        <Typography variant="h5" align="center">
          Former {(location && location.state.displayName)}
+         {/* data.pilotInvestigators.code */}
+         {location.state.code}
+               { data.pilotInvestigators.code > 0 && <h2>          You have {data.pilotInvestigators.code} unread messages.        </h2> }
        </Typography>
      </Grid>
         {data && createPrev(data)}
