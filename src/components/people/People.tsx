@@ -14,17 +14,15 @@ interface peopleProps {
 
 const People = ({ path, data, location }: peopleProps) => {
   const history: any = useContext(HistoryContext);
+  var title = false;
   const [active, setActive] = useState(
     (location && location.state && location.state.code) || 'leadership',
   );
   const links = createLinks(history);
 
   useEffect(() => {
-	  console.log(location)
     setActive((location && location.state && location.state.code) || 'leadership');
   }, [location]);
-  console.log(location.state);
-  console.log('dog');
 
   const createPeople = peopleData => {
     if (data) {
@@ -47,7 +45,18 @@ const People = ({ path, data, location }: peopleProps) => {
       ));
     }
   };
-  console.log(People);
+  console.log (location.state.code);
+  if (location.state.code.includes('pilotInvestigators') || location.state.code.includes('projectInvestigators')) {
+    // console.log('success!');
+    title = true;
+    console.log (title);
+  } else {
+    // console.log('Failed!');
+    title = false;
+    console.log (title);
+
+  }
+
   const createPrev = peopleData => {
       // return peopleData[active].prev.map((post) =>
       //  <div className="post prev">
@@ -114,10 +123,11 @@ const People = ({ path, data, location }: peopleProps) => {
         <Grid container justify="center" item xs={8} md={9} className="posts tworow">
         <Grid item xs={12}>
        <Typography variant="h5" align="center">
-         Former {(location && location.state.displayName)}
+
+
          {/* data.pilotInvestigators.code */}
-         {location.state.code}
-               { data.pilotInvestigators.code > 0 && <h2>          You have {data.pilotInvestigators.code} unread messages.        </h2> }
+         {title && <span> Former {(location && location.state.displayName)} </span>}
+               {/* data.pilotInvestigators.code && <h2>          You have {data.pilotInvestigators.code} unread messages.        </h2> */}
        </Typography>
      </Grid>
         {data && createPrev(data)}
