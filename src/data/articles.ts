@@ -21,14 +21,6 @@ export const articles: article[] = [
   },
   {
     code: 'ARTICLE',
-    title: `Seahorse Zoom Webinar.`,
-    contentPreview: `Please join us for a seminar where we will learn about the Seahorse XFe96 and how the assays run on this instrument can make a powerful impact on disease research. The webinar will be held July 7th from 2:00-3:00pm.`,
-    image: SeahorseFlyerThumb,
-    link:
-      'event/seahorsewebinar-2021-07-07',
-  },
-  {
-    code: 'ARTICLE',
     title: `Project Investigator receives $1.878 Million R01 grant from the NIH`,
     contentPreview: `The National Institutes of Health has awarded Weishan Huang, Ph.D., assistant professor of immunology at the LSU School of Veterinary Medicine, a $1.878 million grant to research the immune response to influenza infection that affects the respiratory system.`,
     image: require('../assets/articles/t-cell.jpg'),
@@ -36,6 +28,14 @@ export const articles: article[] = [
       'https://www.lsu.edu/vetmed/vet_news/huang_nih_grant.php',
   },
   {
+    code: 'ARTICLE',
+    title: `Seahorse Zoom Webinar.`,
+    contentPreview: `Please join us for a seminar where we will learn about the Seahorse XFe96 and how the assays run on this instrument can make a powerful impact on disease research. The webinar will be held July 7th from 2:00-3:00pm.`,
+    image: SeahorseFlyerThumb,
+    link:
+      'event/seahorsewebinar-2021-07-07',
+  },
+    {
     code: 'ARTICLE',
     title: `The CLBD has an ECHO Revolve microscope for fluorescent and light microscopy analysis.`,
     contentPreview: `The CLBD has an ECHO Revolve microscope for fluorescent and light microscopy analysis.`,
