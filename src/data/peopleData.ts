@@ -250,7 +250,9 @@ export const peopleData: peopleData = {
     institution: 'Louisiana State University',
     role: 'Co-Investigator',
     image: Rangasamy,
-    link: 'https://www.linkedin.com/in/tirumalai-rangasamy-667b773/',
+    year: '2019',
+    link: 'http://facultypages.vetmed.lsu.edu/faculty/trangasamy',
+    abtitle: 'Role of LMSCs in SHS-mediated bacterial exacerbation and emphysema ',
   },
   Chouljenko: {
     code: 'Chouljenko',
@@ -330,6 +332,7 @@ export const peopleData: peopleData = {
     id: 24,
     name: 'Alexandra Noel',
     degree: 'PhD',
+    year: '2020',
     isActive: true,
     abstract:
       'Dr. Alexandra Noël is an Assistant Professor in the Department of Comparative Biomedical Sciences, School of Veterinary Medicine, at Louisiana State University. Dr. Noël obtained her BSc. in Biomedical Sciences, her MSc. in Occupational and Environmental Health, and her PhD in Public Health with a specialization in Toxicology and Risk Assessment, all from the University of Montreal (QC, Canada). She is an inhalation toxicologist with over ten years of experience in inhalation and lung biology. Her research focuses on the pulmonary effects induced by inhaled nanomaterials (< 100 nm) and tobacco products. She also conducts developmental toxicology studies on pulmonary effects of in utero and adult exposures to nanoparticles, cigarette second-hand smoke, electronic-cigarette and JUUL aerosols, as well as ultrafine combustion-derived particles. The overarching objectives and goals of her research program are to improve public health by providing in vitro and in vivo scientific evidence related to the health effects induced by environmental exposures. More specifically, her research seeks to investigate the fundamental mechanism at the epigenetic, molecular and cellular levels that underlie the developmental origins of health and disease, with respect to respiratory effects caused by distinct emerging inhaled environmental pollutants. Dr. Noël’s lab is currently funded, among others, by the National Institutes of Health and the Louisiana Board of Regents. In addition, Dr. Noël’s was the chair of the 2017 Gordon Research Seminar (GRS) on Lung Development Injury & Repair; she currently serves on the American Thoracic Society (ATS) Membership Committee (2018-2020); and she is the 2019-2020 Vice-President (Elect) of the Society of Toxicology (SOT) South-Central Chapter. ',
@@ -337,6 +340,7 @@ export const peopleData: peopleData = {
     image: Noel,
     role: 'Pilot Investigator',
     link: 'https://bit.ly/2pP5Jzh',
+    abtitle: 'Effects of nicotine salt-rich JUUL aerosols on the mouse developing lung',
     mentors: [
       { name: 'Tammy Dugas', link: 'https://bit.ly/33YO5Ic' },
       {
@@ -350,30 +354,35 @@ export const peopleData: peopleData = {
     id: 25,
     name: 'Masami Yoshimmura',
     isActive: true,
+    year: '2019',
+    abtitle: 'The role of AC7 in innate immune responses in acute lung injury induced by LPS and alcohol.',
     institution: 'Louisiana State University',
     role: 'Pilot Investigator',
     image: Yoshimmura,
-    link: 'https://bit.ly/362gvmr',
+    link: 'http://facultypages.vetmed.lsu.edu/faculty/fukugawa',
   },
   GuerreroPlata: {
     code: 'GuerreroPlata',
     id: 26,
     name: 'Antonieta Guerrero-Plata',
-    year: '1995',
+    year: '2019',
     isActive: true,
+    abtitle: 'Regulatory role of ncRNA in human metapneumovirus infection.',
     abstract:
       'Dr. Guerrero-Plata is an Associate Professor in Immunology in the Department of Pathobiological Sciences at Louisiana State University. She is a licensed clinical chemist from the Universidad Autonoma de Tamaulipas and received an MSc and Ph.D. degrees from the Universidad Nacional Autonoma de Mexico (UNAM), with additional graduate training at Imperial College London. Dr. Guerrero-Plata completed her postdoctoral training at UTMB before her appointments as Instructor and Assistant Professor at the same institution. She joined the department of PBS at LSU to establish her research program focused on innate immunity and respiratory viruses, including the study of the molecular mechanisms responsible for the activation and subversion of the immune response to human pneumovirus infections.',
     institution: 'Louisiana State University',
     role: 'Pilot Investigator',
     image: GuerreroPlata,
-    link: 'https://bit.ly/31K0pL1',
+    link: 'http://facultypages.vetmed.lsu.edu/faculty/aguerrp',
   },
   Ogundele: {
     code: 'Ogundele',
     id: 27,
     name: 'Olalekan Ogundele',
-    year: '1995',
+    year: '2019',
+    title: 'Project Leader',
     isActive: true,
+    abtitle: 'Attenuating mechanical lung damage in the progression of sepsis: A novel neural approach.',
     abstract:
       'Dr. Olalekan Ogundele is an Assistant Professor in the Department of Comparative Biomedical Sciences, LSU School of Veterinary Medicine, Baton Rouge. Dr. Ogundele’s lab study neural mechanisms that underlie behavior and systemic function. His research is focused on developing novel tools for probing neural circuits in rodent experimental models in vivo. Methods used in his lab include cre-lox targeting of neuron sub-populations, optogenetic modulation, neural circuit tracing, in vivo recording from brain areas of anesthetized and awake mice. Currently, Dr. Ogundele’s lab is using these methods to elucidate firing rate homoeostasis of pre-BötC area rhythmogenic neurons in a mouse model of endotoxemia. Dr. Ogundele obtained his Bachelors and Doctorate degree from the University of Ilorin, Nigeria. He was an IBRO-ISN postdoctoral fellow with the Neural Systems Laboratory (LSU), before his appointment as Assistant Professor in 2017.',
     institution: 'Louisiana State University',
@@ -412,6 +421,8 @@ export const peopleData: peopleData = {
      name: 'Xing Fu',
      degree: 'PhD',
      isActive: true,
+     year: '2020',
+     abtitle: 'Cardiac and pulmonary fibroblast activity induced by left ventricular pressure overload',
      abstract:
      "Dr. Fu is an Assistant Professor in the School of Animal Sciences at Louisiana State University, Baton Rouge. Dr. Fu obtained his BS in Biotechnology from Henan Normal University (China) in 2007. He received his MS in Biology from Arkansas State University in 2010 and his PhD in Animal Sciences from Washington State University under the supervision of Dr. Min Du in 2015. He was then trained in Dr. Jeffery Molkentin’s laboratory at Cincinnati Children’s as a postdoctoral fellow for 2 years before joining Louisiana State University in 2017. Dr. Fu’s laboratory currently focuses on fibrotic diseases in the heart and lung. Ongoing research is aimed to understand the contribution of fibroblasts to tissue fibrosis and the molecular mechanisms regulating post-injury fibroblast activation and differentiation. The ultimate goal is to identify novel treatment strategies that mitigate fibrotic diseases through manipulating fibroblast activity.",
 
@@ -458,4 +469,17 @@ export const peopleData: peopleData = {
         role: 'Co-Investigator',
         link: 'http://facultypages.vetmed.lsu.edu/faculty/mWen1',
       },
+      Mehra: {
+         code: 'Mehra',
+         id: 33,
+         name: 'Smitri Mehra',
+         degree: 'PhD',
+         year: '2018',
+         isActive: true,
+         institution: 'Tulane University',
+         image: require('../assets/people/xWen.jpg'),
+         role: 'Project Leader',
+         link: 'https://tnprc.tulane.edu/faculty/smriti-mehra-phd',
+         abtitle: ' Indoleamine dioxygenase suppresses pulmonary T-cell immunity to Mycobacterium tuberculosis',
+       },
 };

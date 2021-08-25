@@ -15,4 +15,5 @@ export default interface person {
   link?: string;
   mentors?: mentor[];
   degree?: string;
+  abtitle?: string;
 }
