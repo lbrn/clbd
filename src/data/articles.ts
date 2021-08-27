@@ -23,7 +23,7 @@ export const articles: article[] = [
     code: 'ARTICLE',
     title: `Project Investigator receives $1.878 Million R01 grant from the NIH`,
     contentPreview: `The National Institutes of Health has awarded Weishan Huang, Ph.D., assistant professor of immunology at the LSU School of Veterinary Medicine, a $1.878 million grant to research the immune response to influenza infection that affects the respiratory system.`,
-    image: require('../assets/articles/t-cell.jpg'),
+    image: huangPhoto,
     link:
       'https://www.lsu.edu/vetmed/vet_news/huang_nih_grant.php',
   },
