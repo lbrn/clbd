@@ -241,7 +241,7 @@ export const peopleData: peopleData = {
   },
   Rangasamy: {
     code: 'Rangasamy',
-    id: 19,
+    id: 18,
     name: 'Tirumalai Rangasamy',
     isActive: true,
     degree: 'PhD',
@@ -256,7 +256,7 @@ export const peopleData: peopleData = {
   },
   Chouljenko: {
     code: 'Chouljenko',
-    id: 20,
+    id: 19,
     name: 'Vladimir Chouljenko',
     isActive: true,
     degree: 'PhD',
@@ -267,7 +267,7 @@ export const peopleData: peopleData = {
   },
   Patial: {
     code: 'Patial',
-    id: 21,
+    id: 20,
     name: 'Sonika Patial',
     degree: 'DVM, PhD, Dipl ACVP',
     isActive: true,
@@ -292,7 +292,7 @@ export const peopleData: peopleData = {
   },
   Saini: {
     code: 'Saini',
-    id: 22,
+    id: 21,
     name: 'Yogesh Saini',
     degree: 'DVM PhD',
     isActive: true,
@@ -312,7 +312,7 @@ export const peopleData: peopleData = {
   },
   Huang: {
     code: 'Huang',
-    id: 23,
+    id: 22,
     name: 'Weishan Huang',
     degree: 'PhD',
     isActive: true,
@@ -329,7 +329,7 @@ export const peopleData: peopleData = {
   },
   Noel: {
     code: 'Noel',
-    id: 24,
+    id: 23,
     name: 'Alexandra Noel',
     degree: 'PhD',
     year: '2020',
@@ -351,7 +351,7 @@ export const peopleData: peopleData = {
   },
   Yoshimmura: {
     code: 'Yoshimmura',
-    id: 25,
+    id: 24,
     name: 'Masami Yoshimmura',
     isActive: true,
     year: '2019',
@@ -363,7 +363,7 @@ export const peopleData: peopleData = {
   },
   GuerreroPlata: {
     code: 'GuerreroPlata',
-    id: 26,
+    id: 25,
     name: 'Antonieta Guerrero-Plata',
     year: '2019',
     isActive: true,
@@ -377,7 +377,7 @@ export const peopleData: peopleData = {
   },
   Ogundele: {
     code: 'Ogundele',
-    id: 27,
+    id: 26,
     name: 'Olalekan Ogundele',
     year: '2019',
     title: 'Project Leader',
@@ -392,7 +392,7 @@ export const peopleData: peopleData = {
   },
     Jeansonne: {
   	code: 'Jeansonne',
-  	id: 28,
+  	id: 27,
   	name: 'Duane Jeansonne',
   	isActive: true,
   	institution: 'Louisiana State University',
@@ -405,7 +405,7 @@ export const peopleData: peopleData = {
    },
    Balasuriya: {
     code: 'Balasuriya',
-    id: 29,
+    id: 28,
     name: 'Udeni Balasuriya',
     isActive: true,
     institution: 'Louisiana State University',
@@ -417,7 +417,7 @@ export const peopleData: peopleData = {
   },
   Fu: {
      code: 'Fu',
-     id: 30,
+     id: 29,
      name: 'Xing Fu',
      degree: 'PhD',
      isActive: true,
@@ -436,7 +436,7 @@ export const peopleData: peopleData = {
    },
    Chen: {
       code: 'Chen',
-      id: 31,
+      id: 30,
       name: 'Chen Chen',
       degree: 'MD, PhD',
       isActive: true,
@@ -448,7 +448,7 @@ export const peopleData: peopleData = {
     },
     Carossino: {
        code: 'Carossino',
-       id: 32,
+       id: 31,
        name: 'Mariano Carossino',
        degree: 'DVM, PhD',
        isActive: true,

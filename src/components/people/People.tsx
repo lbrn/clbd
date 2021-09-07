@@ -45,17 +45,21 @@ const People = ({ path, data, location }: peopleProps) => {
       ));
     }
   };
-  console.log (location.state.code);
-  if (location.state.code.includes('pilotInvestigators') || location.state.code.includes('projectInvestigators')) {
-    // console.log('success!');
-    title = true;
-    console.log (title);
-  } else {
-    // console.log('Failed!');
-    title = false;
-    console.log (title);
+  console.log (location.state);
+  if (location.state.code) {
+    console.log("yes!");
+    if (location.state.code.includes('pilotInvestigators') || location.state.code.includes('projectInvestigators')) {
+      // console.log('success!');
+      title = true;
+      console.log (title);
+    } else {
+      // console.log('Failed!');
+      title = false;
+      console.log (title);
 
+    }
   }
+
 
   const createPrev = peopleData => {
       // return peopleData[active].prev.map((post) =>
