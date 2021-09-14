@@ -132,7 +132,7 @@ export const seminars: seminar[] = [
   },
   {
     title: '2021 LOUISIANA LUNG CONFERENCE',
-    id: 'covid-',
+    id: 'lung2021',
     code: 'SEMINAR',
     eventType: 'Training',
     featured: true,

@@ -15,7 +15,9 @@ const ContentPreview = () => {
   const currentSeminars = seminars.filter(seminar => seminar.date && seminar.date.isAfter());
   const featuredSeminar =
     seminars.filter(seminar => seminar.featured)[0] || currentSeminars[0];
-  const featuredNews = [featuredSeminar, articles[0]];
+    const featuredNews = [articles[0], articles[1]];
+    //below copy here has a seminar - can use above when there's no seminar
+  // const featuredNews = [featuredSeminar, articles[0]];
 
   const createFeaturedItems = items => {
     return items.map((item, index) => (
