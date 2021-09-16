@@ -131,7 +131,7 @@ export const seminars: seminar[] = [
     image: liwuFlyerThumb,
   },
   {
-    title: '2021 LOUISIANA LUNG CONFERENCE',
+    title: '2021 Louisiana Lung Conference',
     id: 'lung2021',
     code: 'SEMINAR',
     eventType: 'Training',

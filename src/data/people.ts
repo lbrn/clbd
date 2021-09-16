@@ -126,6 +126,6 @@ export const people: people = {
     code: 'pilotInvestigators',
     displayName: 'Pilot Investigators',
     members: [Rangasamy, Noel, Chen, Carossino,],
-    prev:[Fu, Rangasamy, Yoshimmura, GuerreroPlata, Ogundele, Mehra],
+    prev:[Fu, Rangasamy, Yoshimmura, GuerreroPlata, Ogundele,],
   },
 };
