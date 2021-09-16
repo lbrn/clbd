@@ -6,6 +6,7 @@ import About from '../about/About';
 import Seminars from '../seminars/Seminars';
 import SeminarModel from '../seminars/SeminarModel';
 import Resources from '../resources/Resources';
+import Media from '../resources/resources/Media';
 import NihAcknowledgement from '../resources/resources/NihAcknowledgement';
 import PeopleCont from '../people/PeopleCont';
 import PersonDetailsModel from '../people/PersonDetailsModel';
@@ -24,7 +25,7 @@ const RouterWrapper = () => {
         <Hero path="/" />
         <About path="about" />
         <PeopleCont path="people">
-          <People path="/:group" data="" />
+          <People path="/:group" data="/:group" />
           <PersonDetailsModel path="individual/:code" />
         </PeopleCont>
         <Seminars path="events" />
@@ -35,6 +36,7 @@ const RouterWrapper = () => {
           <Disclaimer path="disclaimer" />
           <UsefulLinks path="useful-links" />
           <Articles path="articles" />
+          <Media path="media" />
           <MolecularCore path="molecular-core" />
           <PulmonaryCore path="pulmonary-core" />
         </Resources>

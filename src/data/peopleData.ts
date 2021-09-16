@@ -477,7 +477,7 @@ export const peopleData: peopleData = {
          year: '2018',
          isActive: true,
          institution: 'Tulane University',
-         image: require('../assets/people/xWen.jpg'),
+         image: require('../assets/people/Mehra.jpg'),
          role: 'Project Leader',
          link: 'https://tnprc.tulane.edu/faculty/smriti-mehra-phd',
          abtitle: ' Indoleamine dioxygenase suppresses pulmonary T-cell immunity to Mycobacterium tuberculosis',

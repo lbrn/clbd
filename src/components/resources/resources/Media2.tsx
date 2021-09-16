@@ -18,8 +18,8 @@ export const Media = props => {
   const content = posts.map((post) =>
    <div className="post">
    <a href={post.link}>
-     <img alt={post.id} src={post.img}></img>
      <h3 id = {post.id}>{post.title}</h3>
+     <img src={post.img}></img>
      <p>{post.desc}</p>
    </a>
    </div>
@@ -28,10 +28,16 @@ export const Media = props => {
   return (
     //needs to be nested INSIDE an element, e.g. the ul, to wrap around the content
     <Fragment>
-
+      {listItems}
+      <hr/>
       <div className="posts threerow">
       {content}
       </div>
+      <ul>
+        {sliced.map((value, index) => {
+          return <li key={index}>{value}</li>
+        })}
+      </ul>
       </Fragment>
 
   );

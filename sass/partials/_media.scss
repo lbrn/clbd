@@ -9,14 +9,18 @@
   }
   .post {
     margin: 10px;
-    padding: 10px;
-    background-color: rgba(blue, 0.1);
+    padding: 15px;
+    background-color: rgba(184, 216, 245, 1);
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     transition: $t;
+    border-radius: 5px;
     &:hover {
-      background-color: rgba(blue, 0.3);
+      background-color: rgba(184, 216, 245, 0.5);
+    }
+    h3 {
+      font-size: 20px;
     }
     h3, p {
       text-decoration: none;
@@ -30,6 +34,7 @@
       max-width: 100%;
       height: auto;
       max-height: 250px;
+      border-radius: 5px;
     }
   }
 }
