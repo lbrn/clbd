@@ -65,12 +65,14 @@ const {
   Chen,
   Wen,
   Carossino,
+  Mehra,
 } = peopleData;
 
 interface peopleGroup {
   displayName: string;
   code: string;
   members: person[];
+  prev: person[];
 }
 
 interface people {
@@ -82,35 +84,48 @@ export const people: people = {
     code: 'leadership',
     displayName: 'Leadership',
     members: [Jeyaseelan, Cardin, Le, White],
+    prev: [],
+
   },
   externalAdvisoryCommittee: {
     code: 'externalAdvisoryCommittee',
     displayName: 'External Advisory Committee',
     members: [Irvin, Stanton, Fessler, Baumgarth],
+    prev: [],
+
   },
   internalAdvisoryCommittee: {
     code: 'internalAdvisoryCommittee',
     displayName: 'Internal Advisory Committee',
     members: [Baines, Balasuriya, Dugas, Kousoulas, Cormier],
+    prev: [],
+
   },
   pulmonaryImmunopathologyCore: {
     code: 'pulmonaryImmunopathologyCore',
     displayName: 'Pulmonary Immunopathology Core',
     members: [Dugas, Jeansonne, Langhor, Wen,],
+    prev: [],
+
   },
   molecularBiologyCore: {
     code: 'molecularBiologyCore',
     displayName: 'Molecular Biology Core',
     members: [Kousoulas, Rangasamy, Chouljenko],
+    prev: [],
+
   },
   projectInvestigators: {
     code: 'projectInvestigators',
     displayName: 'Project Investigators',
     members: [Patial, Saini, Huang, Fu],
+    prev: [Noel, Mehra,],
+
   },
   pilotInvestigators: {
     code: 'pilotInvestigators',
     displayName: 'Pilot Investigators',
     members: [Rangasamy, Noel, Chen, Carossino,],
+    prev:[Fu, Rangasamy, Yoshimmura, GuerreroPlata, Ogundele, Mehra],
   },
 };

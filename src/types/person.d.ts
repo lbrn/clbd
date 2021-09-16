@@ -2,6 +2,7 @@ import mentor from './mentor';
 
 export default interface person {
   name: string; // full name
+  year?: string;
   isActive: boolean;
   id: number;
   code: string; //last name
@@ -14,4 +15,5 @@ export default interface person {
   link?: string;
   mentors?: mentor[];
   degree?: string;
+  abtitle?: string;
 }

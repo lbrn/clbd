@@ -98,13 +98,19 @@ const PersonDetails = ({ person }: PersonDetails) => {
         )}
         {person && (
           <Grid item xs={8}>
-          
+
           </Grid>
         )}
       </Grid>
       <Grid container item spacing={3}>
         {person && (
           <Grid item xs={12}>
+            {person.abtitle && (
+              <Typography>
+                <strong>Abstract Title: </strong>
+                {person.abtitle}
+              </Typography>
+            )}
             {person.abstract && (
               <Typography>
                 <strong>Abstract: </strong>

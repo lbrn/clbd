@@ -20,12 +20,18 @@ export const articles: article[] = [
       'https://www.lsu.edu/vetmed/vet_news/teaching_awards_2021.php',
   },
   {
-    code: 'ARTICLE',
     title: `Project Investigator receives $1.878 Million R01 grant from the NIH`,
     contentPreview: `The National Institutes of Health has awarded Weishan Huang, Ph.D., assistant professor of immunology at the LSU School of Veterinary Medicine, a $1.878 million grant to research the immune response to influenza infection that affects the respiratory system.`,
     image: huangPhoto,
     link:
       'https://www.lsu.edu/vetmed/vet_news/huang_nih_grant.php',
+  },
+  {
+    code: 'ARTICLE',
+    title: '2021 LOUISIANA LUNG CONFERENCE',
+    contentPreview:  "This year's Louisiana Lung Conference will be held virtually. Keynote speakers are Dr. Bethany Moore, University of Michigan School of Medicine and Michael Fessler, National Institute of Environmental Health Sciences NIEHS. A essentials for funding success panel will follow with Rachel Zemans, University of Michigan School of Medicine and Chad Steele, Tulane University School of Medicine.",
+    image: require('../assets/pdfs/2021 CLBD Symposium v3 Vert_thumb.png'),
+    link: require('../assets/pdfs/2021 CLBD Symposium Schedule.pdf'),
   },
   {
     code: 'ARTICLE',

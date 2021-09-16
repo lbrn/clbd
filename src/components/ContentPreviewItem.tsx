@@ -62,6 +62,16 @@ const ContentPreviewItem = ({ featured, code }: contentPreviewItemProps) => {
             {featured.date.format('MM/DD/YY')}
           </Typography>
         )}
+        {featured.description && (
+          <Typography align="center" variant="body1">
+            {featured.description && featured.description}
+          </Typography>
+        )}
+        {featured.contentPreview && (
+          <Typography align="center" variant="body1">
+            {featured.contentPreview && featured.contentPreview}
+          </Typography>
+        )}
         {(featured.link || featured.code !== 'ARTICLE') && (
           <Typography align="center">
             <Link
