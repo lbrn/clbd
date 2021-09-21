@@ -22,7 +22,7 @@
     "moment": "^2.24.0",
     "node-notifier": "^9.0.1",
     "normalize-url": "^6.0.1",
-    "object-path": "^0.11.5",
+    "object-path": "^0.11.8",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
