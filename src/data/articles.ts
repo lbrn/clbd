@@ -22,6 +22,7 @@ export const articles: article[] = [
   {
     code: 'ARTICLE',
     title: '2021 Louisiana Lung Conference',
+    isFeatured: true,
     contentPreview:  "This year's Louisiana Lung Conference will be held virtually. Keynote speakers are Dr. Bethany Moore, University of Michigan School of Medicine and Michael Fessler, National Institute of Environmental Health Sciences NIEHS. A essentials for funding success panel will follow with Rachel Zemans, University of Michigan School of Medicine and Chad Steele, Tulane University School of Medicine.",
     image: require('../assets/pdfs/2021 CLBD Symposium v3 Vert_thumb.png'),
     link: require('../assets/pdfs/2021 CLBD Symposium Schedule.pdf'),
