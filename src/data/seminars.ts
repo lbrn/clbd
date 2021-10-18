@@ -135,7 +135,7 @@ export const seminars: seminar[] = [
     id: 'lung2021',
     code: 'SEMINAR',
     eventType: 'Training',
-    featured: true,
+    featured: false,
     hasMap: false,
     date: moment('2021-09-07'),
     time: '8:45am - 4:05 pm',
