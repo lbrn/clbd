@@ -8,8 +8,6 @@ const useStyles = makeStyles({
   imgCont: {
     width: '100%',
     maxHeight: 300,
-    alignItems: 'center',
-    justifyItems: 'center',
   },
   img: {
     width: '100%',
