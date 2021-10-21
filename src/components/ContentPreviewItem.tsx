@@ -12,8 +12,8 @@ const useStyles = makeStyles({
   img: {
     width: '100%',
     maxHeight: 300,
-
     paddingTop: '20%',
+    alignSelf: 'baseline',
   },
   title: {
     paddingTop: theme.spacing(3),
