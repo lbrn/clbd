@@ -8,6 +8,7 @@ const useStyles = makeStyles({
   previewCont: {
     display: 'flex',
     justifyContent: 'center',
+    flex: '1 1 50%',
   },
 });
 

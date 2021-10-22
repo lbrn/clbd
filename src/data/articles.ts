@@ -19,6 +19,7 @@ export const articles: article[] = [
     link:
       'https://www.lsu.edu/vetmed/vet_news/teaching_awards_2021.php',
   },
+  
   {
     code: 'ARTICLE',
     title: '2021 Louisiana Lung Conference',
