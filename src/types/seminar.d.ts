@@ -12,6 +12,8 @@ export interface seminar {
   lodging?: string;
   location?: string;
   description?: any;
+  video?: any;
+  videoname?: any;
   speakers?: string;
   speakerUniversities?: string;
   time?: any;
