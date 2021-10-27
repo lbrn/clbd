@@ -107,7 +107,7 @@ const Seminar = ({seminar}: Seminar) => {
                 <div className="post">
                 <Link href={seminar.video}>
 
-                  <img alt={seminar.videoname} src={seminar.image}></img>
+                  <img alt={seminar.videoname} src={seminar.videoimg}></img>
                   <h3 id = {seminar.id}>{seminar.videoname}</h3>
                   <p>{seminar.videodesc}</p>
 
