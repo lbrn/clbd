@@ -6,9 +6,25 @@ export const Articles = props => {
   return (
     <Fragment>
       <Grid item xs={12}>
-        <Typography variant="h5">Articles</Typography>
+      <Typography variant="h5">News Articles</Typography>
       </Grid>
       <Grid item xs={12}>
+      <Typography
+        onClick={e =>
+          navigate('https://www.lsu.edu/vetmed/vet_news/teaching_awards_2021.php')
+        }
+        variant="body1"
+      >
+        <Link>CLBD project investigators receive prestigious Research Excellence and Distinguished Scholar Awards</Link>
+      </Typography>
+      <Typography
+        onClick={e =>
+          navigate('https://www.lsu.edu/vetmed/vet_news/lung_biology_and_covid.php')
+        }
+        variant="body1"
+      >
+        <Link>LSU SVM Center for Lung Biology and Disease investigates lung and lung-related heart diseases during the COVID-19 pandemic</Link>
+      </Typography>
         <Typography
           onClick={e =>
             navigate(
