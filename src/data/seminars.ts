@@ -149,6 +149,7 @@ export const seminars: seminar[] = [
     location: 'Louisiana State University (Virtual)',
     video: 'https://www.youtube.com/watch?v=VUTSH-2VZhw',
     videoname: 'The Essentials for Funding Success',
+    videodesc: 'During the 2021 Louisiana Lung Conference: Pathogenesis of Infectious and Non-Infectious Pulmonary Diseases September 07, 2021 (Virtual), Speaker on The essentials for funding success: How to write a successful application?, Rachel Zemans, M.D., University of Michigan School of Medicine Associate Professor of Medicine, and Speaker on The essentials for funding success: What reviewers are looking for? Chad Steele, Ph.D., Tulane University School of Medicine Chair and Professor of Microbiology and Immunology',
     image: require('../assets/pdfs/2021 CLBD Symposium v3 Vert_thumb.png'),
     link: ` https://agilent.webex.com/join/jay.dunn`,
   },

@@ -5,37 +5,45 @@
   &.threerow {
     .post {
       flex: 0 1 calc(33% - 20px);
+      @media (max-width: $lg) {
+        flex: 0 1 calc(100% - 20px);
+
+      }
     }
   }
-  .post {
-    margin: 10px;
-    padding: 15px;
-    background-color: rgba(184, 216, 245, 1);
+}
+.post {
+  margin: 10px;
+  padding: 15px;
+  background-color: rgba(184, 216, 245, 1);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: $t;
+  border-radius: 5px;
+  &:hover {
+    background-color: rgba(184, 216, 245, 0.5);
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h3, p {
+    text-decoration: none;
+    color: black;
+  }
+  a {
+    color: transparent;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    transition: $t;
+  }
+  img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
     border-radius: 5px;
-    &:hover {
-      background-color: rgba(184, 216, 245, 0.5);
-    }
-    h3 {
-      font-size: 20px;
-    }
-    h3, p {
-      text-decoration: none;
-      color: black;
-    }
-    a {
-      color: transparent;
-    }
-    img {
-      width: auto;
-      max-width: 100%;
-      height: auto;
-      max-height: 250px;
-      border-radius: 5px;
-    }
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .dog {

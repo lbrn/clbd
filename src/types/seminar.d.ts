@@ -14,6 +14,7 @@ export interface seminar {
   description?: any;
   video?: any;
   videoname?: any;
+  videodesc?: any;
   speakers?: string;
   speakerUniversities?: string;
   time?: any;

@@ -29,6 +29,7 @@ const useStyles = makeStyles({
   },
   video: {
     // backgroundColor: 'red',
+
   },
 });
 
@@ -101,7 +102,21 @@ const Seminar = ({seminar}: Seminar) => {
                 <Typography variant="body1">{seminar.description}</Typography>
                 )}
                 {seminar.video && (
-                <Typography variant="body1" className={classes.video}>Video: <Link href={seminar.video}>{seminar.videoname}</Link></Typography>
+                <Typography variant="body1" className={classes.video}>
+                <div className ="posts threerow detail">
+                <div className="post">
+                <Link href={seminar.video}>
+
+                  <img alt={seminar.videoname} src={seminar.image}></img>
+                  <h3 id = {seminar.id}>{seminar.videoname}</h3>
+                  <p>{seminar.videodesc}</p>
+
+
+                  </Link>
+                </div>
+                </div>
+                </Typography>
+
                 )}
               </Grid>
             </Grid>

@@ -69,7 +69,17 @@ div.button a:hover {
       -ms-flex: 0 1 calc(33% - 20px);
           flex: 0 1 calc(33% - 20px);
 }
-.posts .post {
+@media (max-width: 991px) {
+  .posts.threerow .post {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 -webkit-calc(100% - 20px);
+       -moz-box-flex: 0;
+        -ms-flex: 0 1 calc(100% - 20px);
+            flex: 0 1 calc(100% - 20px);
+  }
+}
+
+.post {
   margin: 10px;
   padding: 15px;
   background-color: #b8d8f5;
@@ -94,20 +104,32 @@ div.button a:hover {
      -moz-border-radius: 5px;
           border-radius: 5px;
 }
-.posts .post:hover {
+.post:hover {
   background-color: rgba(184, 216, 245, 0.5);
 }
-.posts .post h3 {
+.post h3 {
   font-size: 20px;
 }
-.posts .post h3, .posts .post p {
+.post h3, .post p {
   text-decoration: none;
   color: black;
 }
-.posts .post a {
+.post a {
   color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.posts .post img {
+.post img {
   width: auto;
   max-width: 100%;
   height: auto;
@@ -115,6 +137,8 @@ div.button a:hover {
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dog > div {
