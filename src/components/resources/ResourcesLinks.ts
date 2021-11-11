@@ -32,7 +32,7 @@ export function createLinks(history) {
         history.push('/resources/articles');
       },
       code: 'articles',
-      displayName: 'Articles',
+      displayName: 'News Articles',
     },
     {
       clickHandler: () => {
