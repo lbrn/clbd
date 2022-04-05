@@ -25,6 +25,30 @@ import {
 
 export const seminars: seminar[] = [
   {
+    title: 'Epigenetics in Vascular Disease',
+    id: 'gallacher-03-03-22',
+    code: 'SEMINAR',
+    eventType: 'Training',
+    date: moment('2022-03-03'),
+    time: '12:00 pm',
+    pdfLink: require('../assets/pdfs/Gallagher.pptx'),
+    speakers: 'Katherine Gallagher, M.D., F.A.C.S.',
+    speakerUniversities: 'University of Michigan School of Medicine',
+    image: require('../assets/pdfs/Gallagher.png'),
+  },
+  {
+    title: 'Alveolar macrophages act as an early viral sponge resulting in long-lived functional enhancement',
+    id: 'varga-03-17-22',
+    code: 'SEMINAR',
+    eventType: 'Training',
+    date: moment('2022-03-17'),
+    time: '12:00 pm',
+    pdfLink: require('../assets/pdfs/Varga.pptx'),
+    speakers: 'Steven Varga, Ph.D.',
+    speakerUniversities: 'Iowa School of Medicine',
+    image: require('../assets/pdfs/Varga.png'),
+  },
+  {
     title: 'Seahorse Zoom Webinar',
     id: 'seahorsewebinar-2021-07-07',
     code: 'SEMINAR',

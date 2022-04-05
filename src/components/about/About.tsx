@@ -30,14 +30,10 @@ const About = ({ path }) => {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Typography align="center" color="primary" variant="h4">
-            Message from the Director
+            Message from the Directors
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <div className="imageCont">
-            <div className={classes.imageWrap}></div>
-            <Typography variant="body1"></Typography>
-          </div>
           <Typography className={classes.bodyText} variant="body1">
             Welcome to the Louisiana Center for Lung Biology and Disease (CLBD)
             website. The Center was established in 2019 through an 11.6 million
@@ -95,6 +91,9 @@ const About = ({ path }) => {
            <br />
           <Typography className={classes.bodyText} variant="body1">
             <strong>Samithamby "Jey" Jeyaseelan, DVM, PhD</strong>
+             </Typography>
+             <Typography className={classes.bodyText} variant="body1">
+             <strong>Tammy Dugas, PhD, Professor and Head, Comparative Biomedical Sciences, School of Veterinary Medicine, Louisiana State University.</strong>
              </Typography>
             <Typography className={classes.bodyText} variant="body1">
             Dr. William L. Jenkins Endowed Professor in Veterinary Medicine

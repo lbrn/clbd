@@ -19,7 +19,14 @@ export const articles: article[] = [
     link:
       'https://www.lsu.edu/vetmed/vet_news/teaching_awards_2021.php',
   },
-
+  {
+    code: 'ARTICLE',
+    title: 'NIH Awards $1.878 Million to Research Immune Response to Influenza',
+    // isFeatured: true,
+    contentPreview:  "The National Institutes of Health has awarded Weishan Huang, Ph.D., assistant professor of immunology at the LSU School of Veterinary Medicine, a $1.878 million grant to research the immune response to influenza infection that affects the respiratory system. The NIH supports scientific studies that turn discovery into health. ",
+    image: require('../assets/articles/t-cell.jpg'),
+    link: 'https://www.lsu.edu/vetmed/vet_news/huang_nih_grant.php',
+  },
   {
     code: 'ARTICLE',
     title: '2021 Louisiana Lung Conference',
