@@ -92,9 +92,7 @@ const About = ({ path }) => {
           <Typography className={classes.bodyText} variant="body1">
             <strong>Samithamby "Jey" Jeyaseelan, DVM, PhD</strong>
              </Typography>
-             <Typography className={classes.bodyText} variant="body1">
-             <strong>Tammy Dugas, PhD, Professor and Head, Comparative Biomedical Sciences, School of Veterinary Medicine, Louisiana State University.</strong>
-             </Typography>
+
             <Typography className={classes.bodyText} variant="body1">
             Dr. William L. Jenkins Endowed Professor in Veterinary Medicine
             </Typography>
@@ -109,6 +107,19 @@ const About = ({ path }) => {
              </Typography>
             <Typography className={classes.bodyText} variant="body1">
             Louisiana State University
+          </Typography>
+          <br />
+          <Typography className={classes.bodyText} variant="body1">
+          <strong>Tammy Dugas, PhD</strong>
+          </Typography>
+          <Typography className={classes.bodyText} variant="body1">
+          Professor and Head, Comparative Biomedical Sciences
+          </Typography>
+          <Typography className={classes.bodyText} variant="body1">
+          School of Veterinary Medicine
+          </Typography>
+          <Typography className={classes.bodyText} variant="body1">
+          Louisiana State University
           </Typography>
         </Grid>
       </Grid>
