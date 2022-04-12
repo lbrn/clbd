@@ -100,9 +100,6 @@ const About = ({ path }) => {
             Dr. William L. Jenkins Endowed Professor in Veterinary Medicine
             </Typography>
             <Typography className={classes.bodyText} variant="body1">
-            Director, Center for Lung Biology and Disease (CLBD)
-             </Typography>
-            <Typography className={classes.bodyText} variant="body1">
             Professor of Immunology, Inflammation and Infectious Diseases, Department of Pathobiological Sciences
             </Typography>
             <Typography className={classes.bodyText} variant="body1">
