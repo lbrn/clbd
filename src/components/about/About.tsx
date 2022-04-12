@@ -89,6 +89,9 @@ const About = ({ path }) => {
           Thank you,
           </Typography>
            <br />
+           <Typography className={classes.bodyText} variant="body1">
+             <strong>Co-Director/PI</strong>
+            </Typography>
           <Typography className={classes.bodyText} variant="body1">
             <strong>Samithamby "Jey" Jeyaseelan, DVM, PhD</strong>
              </Typography>
@@ -109,6 +112,9 @@ const About = ({ path }) => {
             Louisiana State University
           </Typography>
           <br />
+          <Typography className={classes.bodyText} variant="body1">
+            <strong>Co-Director/MPI</strong>
+           </Typography>
           <Typography className={classes.bodyText} variant="body1">
           <strong>Tammy Dugas, PhD</strong>
           </Typography>
