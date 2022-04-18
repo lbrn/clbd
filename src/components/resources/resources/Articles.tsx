@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
-import { Grid, Typography, Link } from '@material-ui/core';
+import { Grid, Typography, Link, Container } from '@material-ui/core';
 import { navigate } from '@reach/router';
+import {StoriesSmall} from '../../stories/Stories';
 
 export const Articles = props => {
   return (
@@ -69,7 +70,16 @@ export const Articles = props => {
         >
           <Link>Publications resulting from the Grant</Link>
         </Typography>
+        <Grid item xs={12}>
+        <div className="header">
+        <Typography align="center" color="primary" variant="h4">
+        Stories
+        </Typography>
+        </div>
+        </Grid>
+        <StoriesSmall />
       </Grid>
+      
     </Fragment>
   );
 };

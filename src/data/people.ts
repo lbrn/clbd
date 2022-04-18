@@ -80,7 +80,8 @@ const {
   Garden,
   Francis,
   Leise,
-  Vicente
+  Vicente,
+  Beavers,
 } = peopleData;
 
 interface peopleGroup {
@@ -141,6 +142,6 @@ export const people: people = {
     code: 'pilotInvestigators',
     displayName: 'Pilot Investigators',
     members: [Rangasamy, Noel, Carossino,],
-    prev:[Fu, Rangasamy, Yoshimmura, GuerreroPlata, Ogundele, Chen,],
+    prev:[Fu, Rangasamy, Yoshimmura, GuerreroPlata, Ogundele, Chen, Beavers],
   },
 };

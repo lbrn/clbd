@@ -516,7 +516,7 @@ export const peopleData: peopleData = {
             isActive: true,
             institution: 'University of Alabama at Birmingham',
             image: require('../assets/people/flund.jpg'),
-            role: 'role',
+
             link: 'https://scholars.uab.edu/display/flund',
           },
           Varga: {
@@ -528,7 +528,7 @@ export const peopleData: peopleData = {
              isActive: true,
              institution: 'University of Iowa',
              image: require('../assets/people/steven-varga-plain.jpg'),
-             role: 'role',
+
              link: 'https://medicine.uiowa.edu/microbiology/profile/steven-varga',
            },
            Jaspers: {
@@ -540,7 +540,7 @@ export const peopleData: peopleData = {
               isActive: true,
               institution: 'UNC Chapell Hill',
               image: require('../assets/people/Jaspers-ilona-738x714-1.jpg'),
-              role: 'role',
+
               link: 'https://sph.unc.edu/adv_profile/ilona-jaspers/',
             },
             Pinkerton: {
@@ -551,7 +551,7 @@ export const peopleData: peopleData = {
                isActive: true,
                institution: 'University of California, Davis',
                image: require('../assets/people/PinkertonKent14547.jpg'),
-               role: 'role',
+
                link: 'https://biology.ucdavis.edu/people/kent-pinkerton',
              },
              Garden: {
@@ -570,7 +570,7 @@ export const peopleData: peopleData = {
                  code: 'Francis',
                  id: 41,
                  name: 'Joseph Francis',
-                 degree: 'degree',
+                 degree: 'PhD',
                  year: '2022',
                  isActive: true,
                  institution: 'Louisiana State University',
@@ -582,7 +582,7 @@ export const peopleData: peopleData = {
                   code: 'Leise',
                   id: 42,
                   name: 'Britta Leise',
-                  degree: 'degree',
+                  degree: 'PhD',
                   year: '2022',
                   isActive: true,
                   institution: 'Louisiana State University',
@@ -611,7 +611,7 @@ export const peopleData: peopleData = {
                     isActive: true,
                     institution: 'Louisiana State University',
                     image: require('../assets/people/abuaita_basel.jpg'),
-                    role: 'role',
+
                     link: 'https://www.lsu.edu/vetmed/faculty/abuaita.php',
                     abtitle: 'abTitle',
                   },
@@ -624,7 +624,7 @@ export const peopleData: peopleData = {
                      isActive: true,
                      institution: 'Louisiana State University',
                      image: require('../assets/people/beavers_william.jpg'),
-                     role: 'role',
+
                      link: 'https://www.lsu.edu/vetmed/faculty/beavers.php',
                      abtitle: 'abTitle',
                    },

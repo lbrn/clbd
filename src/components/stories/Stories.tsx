@@ -1,6 +1,6 @@
 import React, { useState, Fragment, useEffect } from 'react';
 import { Grid, Typography, Link } from '@material-ui/core';
-import Story from './Story';
+import {Story, StoryLink} from './Story';
 import { articles } from '../../data/articles';
 import article from '../../types/article';
 //allows linking
@@ -57,8 +57,25 @@ const StoriesFull = () => {
 
   );
 };
+const StoriesSmall = () => {
+  const [stories, setStories] = useState<article[]>([]);
+  useEffect(() => {
+    setStories(articles);
+  }, []);
+  const makeStories = () => {
+    return stories
+      .map((article, i) => <StoryLink key={i} article={article} />);
+  };
+  return (
+    <Fragment>
+      {makeStories()}
+    </Fragment>
+
+  );
+};
 //this is an alternate to the standard export default - and requires the import to be in brackets when imported
 export  {
   Stories,
   StoriesFull,
+  StoriesSmall,
 }

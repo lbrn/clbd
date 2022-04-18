@@ -23,7 +23,7 @@ The PIP Core conducts workshops and seminars throughout the year to update recen
         <Typography variant="subtitle1">
           <strong>Core</strong>
         </Typography>
-        <Typography>&bull; <a href="/people/individual/Saini">Yogesi Saini, PhD, Project Lead</a></Typography>
+        <Typography>&bull; <a href="/people/individual/Saini">Yogeshi Saini, PhD, Project Lead</a></Typography>
         <Typography>&bull; <a href="/people/individual/Jeansonne">Duane Jeansonne, PhD, Core coordinator.</a></Typography>
         <Typography>
           &bull; <a href="/people/individual/Langhor">Ingeborg Langohr, DVM, PhD, DACVP, Co-Investigator</a>
