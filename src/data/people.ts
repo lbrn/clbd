@@ -82,6 +82,7 @@ const {
   Leise,
   Vicente,
   Beavers,
+  Abuaita,
 } = peopleData;
 
 interface peopleGroup {
@@ -134,14 +135,14 @@ export const people: people = {
   projectInvestigators: {
     code: 'projectInvestigators',
     displayName: 'Project Investigators',
-    members: [Patial, Chen],
+    members: [Patial, Chen, Abuaita, Beavers],
     prev: [Noel, Mehra, Saini, Huang, Fu],
 
   },
   pilotInvestigators: {
     code: 'pilotInvestigators',
     displayName: 'Pilot Investigators',
-    members: [Rangasamy, Noel, Carossino,],
-    prev:[Fu, Rangasamy, Yoshimmura, GuerreroPlata, Ogundele, Chen, Beavers],
+    members: [Rangasamy, Noel, Carossino],
+    prev:[Fu, Rangasamy, Yoshimmura, GuerreroPlata, Ogundele, Chen,],
   },
 };
