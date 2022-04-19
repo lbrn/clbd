@@ -30,14 +30,10 @@ const About = ({ path }) => {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Typography align="center" color="primary" variant="h4">
-            Message from the Director
+            Message from the Directors
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <div className="imageCont">
-            <div className={classes.imageWrap}></div>
-            <Typography variant="body1"></Typography>
-          </div>
           <Typography className={classes.bodyText} variant="body1">
             Welcome to the Louisiana Center for Lung Biology and Disease (CLBD)
             website. The Center was established in 2019 through an 11.6 million
@@ -93,15 +89,16 @@ const About = ({ path }) => {
           Thank you,
           </Typography>
            <br />
+           <Typography className={classes.bodyText} variant="body1">
+             <strong>Co-Director/PI</strong>
+            </Typography>
           <Typography className={classes.bodyText} variant="body1">
             <strong>Samithamby "Jey" Jeyaseelan, DVM, PhD</strong>
              </Typography>
+
             <Typography className={classes.bodyText} variant="body1">
             Dr. William L. Jenkins Endowed Professor in Veterinary Medicine
             </Typography>
-            <Typography className={classes.bodyText} variant="body1">
-            Director, Center for Lung Biology and Disease (CLBD)
-             </Typography>
             <Typography className={classes.bodyText} variant="body1">
             Professor of Immunology, Inflammation and Infectious Diseases, Department of Pathobiological Sciences
             </Typography>
@@ -110,6 +107,22 @@ const About = ({ path }) => {
              </Typography>
             <Typography className={classes.bodyText} variant="body1">
             Louisiana State University
+          </Typography>
+          <br />
+          <Typography className={classes.bodyText} variant="body1">
+            <strong>Co-Director/MPI</strong>
+           </Typography>
+          <Typography className={classes.bodyText} variant="body1">
+          <strong>Tammy Dugas, PhD</strong>
+          </Typography>
+          <Typography className={classes.bodyText} variant="body1">
+          Professor and Head, Comparative Biomedical Sciences
+          </Typography>
+          <Typography className={classes.bodyText} variant="body1">
+          School of Veterinary Medicine
+          </Typography>
+          <Typography className={classes.bodyText} variant="body1">
+          Louisiana State University
           </Typography>
         </Grid>
       </Grid>

@@ -5,7 +5,7 @@ import { navigate } from '@reach/router';
 import { theme, themeExtended } from '../../theme/theme';
 import person from '../../types/person';
 
-const Person = ({
+const PersonPi = ({
   name,
   mentors,
   link,
@@ -62,7 +62,7 @@ const Person = ({
       className={classes.person}
       tabIndex={1}
       onClick={e =>
-        navigate(`${link}`, {
+        navigate(`/people/individual/${code}`, {
           state: {
 			code,
 			degree,
@@ -84,7 +84,7 @@ const Person = ({
         {!img && (
           <Avatar
             onClick={e =>
-              navigate(`${link}`, {
+              navigate(`/people/individual/${code}`, {
                 state: {
 				  code,
 				  title,
@@ -120,7 +120,7 @@ const Person = ({
         {abstract && (
           <Link
             onClick={e =>
-              navigate(`${link}`, {
+              navigate(`/people/individual/${code}`, {
                 state: {
                   name,
                   mentors,
@@ -143,4 +143,4 @@ const Person = ({
   );
 };
 
-export default Person;
+export default PersonPi;

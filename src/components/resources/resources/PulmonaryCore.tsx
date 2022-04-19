@@ -11,11 +11,11 @@ const PulmonaryCore = props => {
         </Typography>
         <br />
         <Typography>
-        The core provides hands-on training to investigators and their lab members. If you would like to talk about your training needs or obtain more information about services provided by the PIP Core, please contact the Project Lead or Co-Investigators. 
+        The core provides hands-on training to investigators and their lab members. If you would like to talk about your training needs or obtain more information about services provided by the PIP Core, please contact the Project Lead or Co-Investigators.
         </Typography>
         <br />
         <Typography>
-The PIP Core conducts workshops and seminars throughout the year to update recent advances in technology improvement. Please visit events page for the details. 
+The PIP Core conducts workshops and seminars throughout the year to update recent advances in technology improvement. Please visit events page for the details.
 		</Typography>
 		<br />
       </Grid>
@@ -23,13 +23,13 @@ The PIP Core conducts workshops and seminars throughout the year to update recen
         <Typography variant="subtitle1">
           <strong>Core</strong>
         </Typography>
-        <Typography>&bull; <a href="/people/individual/Dugas">Tammy Dugas, PhD, Project Lead</a></Typography>
+        <Typography>&bull; <a href="/people/individual/Saini">Yogeshi Saini, PhD, Project Lead</a></Typography>
         <Typography>&bull; <a href="/people/individual/Jeansonne">Duane Jeansonne, PhD, Core coordinator.</a></Typography>
         <Typography>
           &bull; <a href="/people/individual/Langhor">Ingeborg Langohr, DVM, PhD, DACVP, Co-Investigator</a>
         </Typography>
         <Typography>
-          &bull; <a href="/people/individual/Christofferson">Rebecca Christofferson, PhD, Co-Investigator</a>
+          &bull; <a href="/people/individual/Wen">Xue Wen, PhD, Co-Investigator</a>
         </Typography>
       </Grid>
       <br />

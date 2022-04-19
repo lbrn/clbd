@@ -1,6 +1,7 @@
 import React, { useState, Fragment, useEffect, useContext } from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import Person from './Person';
+import PersonPi from './PersonPi';
 import PersonPrev from './PersonPrev';
 import { createLinks } from '../people/PeopleLinks';
 import SmartMenu from '../ui/SmartMenu';
@@ -26,30 +27,54 @@ const People = ({ path, data, location }: peopleProps) => {
 
   const createPeople = peopleData => {
     if (data) {
-      return peopleData[active].members.map(person => (
-        <Person
-          isActive={person.isActive}
-          key={person.name}
-          name={person.name}
-          title={person.title}
-          mentors={person.mentors}
-		  role={person.role}
-		  id={person.id}
-          degree={person.degree}
-          link={person.link}
-		  img={person.image}
-		  code={person.code}
-          abstract={person.abstract}
-          institution={person.institution}
-        />
-      ));
+      console.log(location.state);
+      if (location.state.code) {
+        if (location.state.code.includes('pilotInvestigators') || location.state.code.includes('projectInvestigators')) {
+          return peopleData[active].members.map(person => (
+            <PersonPi
+            isActive={person.isActive}
+            key={person.name}
+            name={person.name}
+            title={person.title}
+            mentors={person.mentors}
+            role={person.role}
+            id={person.id}
+            degree={person.degree}
+            link={person.link}
+            img={person.image}
+            code={person.code}
+            abstract={person.abstract}
+            institution={person.institution}
+            />
+          ));
+        } else {
+
+          return peopleData[active].members.map(person => (
+            <Person
+            isActive={person.isActive}
+            key={person.name}
+            name={person.name}
+            title={person.title}
+            mentors={person.mentors}
+            role={person.role}
+            id={person.id}
+            degree={person.degree}
+            link={person.link}
+            img={person.image}
+            code={person.code}
+            abstract={person.abstract}
+            institution={person.institution}
+            />
+          ));
+        }
+      }
     }
   };
   console.log (location.state);
   if (location.state.code) {
-    console.log("yes!");
     if (location.state.code.includes('pilotInvestigators') || location.state.code.includes('projectInvestigators')) {
       // console.log('success!');
+      // console.log("yes!");
       title = true;
       console.log (title);
     } else {
@@ -118,7 +143,7 @@ const People = ({ path, data, location }: peopleProps) => {
         </Typography>
       </Grid> */}
       {data.prev}
-        {data && createPeople(data)}
+      {data && createPeople(data)}
         </Grid>
         <Grid item xs={4} md={3}>
 

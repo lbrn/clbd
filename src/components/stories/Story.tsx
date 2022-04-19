@@ -26,6 +26,9 @@ const useStyles = makeStyles({
     width: '100%',
     marginLeft: 10,
   },
+  link: {
+    Color: theme.palette.primary.main,
+  },
 });
 interface storyProps {
   article: article;
@@ -47,5 +50,33 @@ const Story = ({ article }: storyProps) => {
     </Grid>
   );
 };
+const StoryLink = ({ article }: storyProps) => {
+  const classes = useStyles({});
+  return (
+    <Typography>
 
-export default Story;
+    <Link variant="body1" href={article.link}>
+    {article.title}
+    </Link>
+    </Typography>
+
+    // <Grid xs={12} container item spacing={3} alignItems="center">
+    //   <Grid item xs={12} sm={6}>
+    //     <img className={classes.img} src={article.image} />
+    //   </Grid>
+    //   <Grid item xs={12} sm={6}>
+    //     <Typography variant="h6">{article.title}</Typography>
+    //     <Typography variant="body1">{article.contentPreview}</Typography>
+    //     <Link variant="body1" href={article.link}>
+    //     ...view more
+    //     </Link>
+    //   </Grid>
+    // </Grid>
+  );
+};
+
+// export default Story;
+export {
+  Story,
+  StoryLink,
+}

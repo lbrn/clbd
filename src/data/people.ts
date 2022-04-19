@@ -30,7 +30,12 @@
 // } from '../assets/people/index';
 import { peopleData } from './peopleData';
 import person from '../types/person';
-
+// console.log('dog');
+// for (let i = 0; i < peopleData.length; i++) {
+//   const element = array[i];
+//   console.log(peopleData);
+//
+// }
 const {
   Baines,
   Baumgarth,
@@ -66,6 +71,18 @@ const {
   Wen,
   Carossino,
   Mehra,
+  Hoang,
+  Steele,
+  Lund,
+  Varga,
+  Jaspers,
+  Pinkerton,
+  Garden,
+  Francis,
+  Leise,
+  Vicente,
+  Beavers,
+  Abuaita,
 } = peopleData;
 
 interface peopleGroup {
@@ -83,28 +100,28 @@ export const people: people = {
   leadership: {
     code: 'leadership',
     displayName: 'Leadership',
-    members: [Jeyaseelan, Cardin, Le, White],
+    members: [Jeyaseelan,  White, Hoang, Dugas],
     prev: [],
 
   },
   externalAdvisoryCommittee: {
     code: 'externalAdvisoryCommittee',
     displayName: 'External Advisory Committee',
-    members: [Irvin, Stanton, Fessler, Baumgarth],
+    members: [Steele, Lund, Varga, Jaspers, Pinkerton],
     prev: [],
 
   },
   internalAdvisoryCommittee: {
     code: 'internalAdvisoryCommittee',
     displayName: 'Internal Advisory Committee',
-    members: [Baines, Balasuriya, Dugas, Kousoulas, Cormier],
+    members: [Garden, Francis, Leise, Vicente, Balasuriya, Kousoulas, Cormier],
     prev: [],
 
   },
   pulmonaryImmunopathologyCore: {
     code: 'pulmonaryImmunopathologyCore',
     displayName: 'Pulmonary Immunopathology Core',
-    members: [Dugas, Jeansonne, Langhor, Wen,],
+    members: [Saini, Jeansonne, Langhor, Wen,],
     prev: [],
 
   },
@@ -118,14 +135,14 @@ export const people: people = {
   projectInvestigators: {
     code: 'projectInvestigators',
     displayName: 'Project Investigators',
-    members: [Patial, Saini, Huang, Fu],
-    prev: [Noel, Mehra,],
+    members: [Patial, Chen, Abuaita, Beavers],
+    prev: [Noel, Mehra, Saini, Huang, Fu],
 
   },
   pilotInvestigators: {
     code: 'pilotInvestigators',
     displayName: 'Pilot Investigators',
-    members: [Rangasamy, Noel, Chen, Carossino,],
-    prev:[Fu, Rangasamy, Yoshimmura, GuerreroPlata, Ogundele,],
+    members: [Rangasamy, Noel, Carossino],
+    prev:[Fu, Rangasamy, Yoshimmura, GuerreroPlata, Ogundele, Chen,],
   },
 };
