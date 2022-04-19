@@ -13,6 +13,16 @@ export const articles: article[] = [
     code: 'ARTICLE',
     isFeatured: true,
     title:
+      'Congratulations to our COBRE investigator, Dr. Alexandra Noël for receiving the Zoetis Award for Research Excellence',
+    contentPreview: `Alexandra Noël, PhD, assistant professor in the Department of Comparative Biomedical Sciences (CBS), received the Zoetis Award for Research Excellence. Zoetis presents an honorarium and inscribed plaque to a faculty member who has excelled in veterinary medical research during the past two years.`,
+    image:  require('../assets/articles/placeholder_noborder.png'),
+    link:
+      'https://www.lsu.edu/vetmed/news/2022/research_awards.php',
+  },
+  {
+    code: 'ARTICLE',
+    // isFeatured: true,
+    title:
       'CLBD project investigators receive prestigious Research Excellence and Distinguished Scholar Awards',
     contentPreview: `CLBD project investigators receive prestigious Research Excellence and Distinguished Scholar Awards`,
     image:  require('../assets/articles/placeholder_noborder.png'),
@@ -112,6 +122,15 @@ export const articles: article[] = [
     image: grantPhoto,
     link:
       'https://www.lsu.edu/mediacenter/news/2019/02/04svm_jeyaseelan_nihcenter.php',
+  },
+  {
+    code: 'ARTICLE',
+    title:
+      'Publications resulting from the Grant',
+    contentPreview: ``,
+    image:  require('../assets/articles/placeholder_noborder.png'),
+    link:
+      'https://reporter.nih.gov/search/3eVRPXLG3USXXnhTMmk5ZQ/project-details/10078618#publications',
   },
 
 ];

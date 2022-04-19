@@ -48,7 +48,7 @@ const StoriesFull = () => {
   }, []);
   const makeStories = () => {
     return stories
-      .filter(story => !story.isFeatured)
+      // .filter(story => !story.isFeatured)
       .map((article, i) => <Story key={i} article={article} />);
   };
   return (
