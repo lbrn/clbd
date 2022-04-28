@@ -15,7 +15,7 @@ export const articles: article[] = [
     title:
       'Congratulations to our COBRE investigator, Dr. Alexandra Noël for receiving the Zoetis Award for Research Excellence',
     contentPreview: `Alexandra Noël, PhD, assistant professor in the Department of Comparative Biomedical Sciences (CBS), received the Zoetis Award for Research Excellence. Zoetis presents an honorarium and inscribed plaque to a faculty member who has excelled in veterinary medical research during the past two years.`,
-    image:  require('../assets/articles/placeholder_noborder.png'),
+    image:  require('../assets/people/Noel.jpg'),
     link:
       'https://www.lsu.edu/vetmed/news/2022/research_awards.php',
   },
@@ -25,16 +25,9 @@ export const articles: article[] = [
     title:
       'CLBD project investigators receive prestigious Research Excellence and Distinguished Scholar Awards',
     contentPreview: `CLBD project investigators receive prestigious Research Excellence and Distinguished Scholar Awards`,
-    image:  require('../assets/articles/placeholder_noborder.png'),
+    image:  require('../assets/misc/Saini-Huang.png'),
     link:
       'https://www.lsu.edu/vetmed/vet_news/teaching_awards_2021.php',
-  },
-  {
-    title: `Project Investigator receives $1.878 Million R01 grant from the NIH`,
-    contentPreview: `The National Institutes of Health has awarded Weishan Huang, Ph.D., assistant professor of immunology at the LSU School of Veterinary Medicine, a $1.878 million grant to research the immune response to influenza infection that affects the respiratory system.`,
-    image: huangPhoto,
-    link:
-      'https://www.lsu.edu/vetmed/vet_news/huang_nih_grant.php',
   },
   {
     code: 'ARTICLE',
@@ -60,7 +53,7 @@ export const articles: article[] = [
     link:
       'event/seahorsewebinar-2021-07-07',
   },
-    {
+  {
     code: 'ARTICLE',
     title: `The CLBD has an ECHO Revolve microscope for fluorescent and light microscopy analysis.`,
     contentPreview: `The CLBD has an ECHO Revolve microscope for fluorescent and light microscopy analysis.`,
