@@ -296,6 +296,7 @@ export const peopleData: peopleData = {
     id: 21,
     name: 'Yogesh Saini',
     degree: 'DVM PhD',
+    year: '2021',
     isActive: true,
     abstract:
       'Dr. Saini is an Associate Professor in the Department of Comparative Biomedical Sciences at Louisiana State University, Baton Rouge. Dr. Saini received his DVM from College of Veterinary Sciences, Palampur (India) and MVetS in Veterinary Biochemistry and Biotechnology from College of Veterinary Sciences, Pantnager (India). He completed his Senior Research Fellowship at Indian Veterinary Research Institute, Izatnagar (India). He received his dual-PhD (Genetics and Toxicology) under the supervision of Dr. John LaPres at Michigan State University in 2009. After completing his postdoctoral training (2010-2014) in the laboratory of Dr. Richard Boucher at the University of North Carolina (UNC), he was appointed as a faculty member at Marsico Lung Institute. The focus of his current research is to understand multiple aspects of lung biology and inflammatory lung diseases. The ongoing research employs murine models of pathogens- and toxicant-induced inflammation. The ultimate goal of this research is to develop diagnostic biomarker of lung diseases and therapeutic interventions to modulate inflammatory responses',
