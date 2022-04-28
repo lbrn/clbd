@@ -62,7 +62,7 @@ const Person = ({
       className={classes.person}
       tabIndex={1}
       onClick={e =>
-        navigate(`/people/individual/${code}`, {
+        navigate(`${link}`, {
           state: {
 			code,
 			degree,
@@ -84,7 +84,7 @@ const Person = ({
         {!img && (
           <Avatar
             onClick={e =>
-              navigate(`/people/individual/${code}`, {
+              navigate(`${link}`, {
                 state: {
 				  code,
 				  title,
@@ -120,7 +120,7 @@ const Person = ({
         {abstract && (
           <Link
             onClick={e =>
-              navigate(`/people/individual/${code}`, {
+              navigate(`${link}`, {
                 state: {
                   name,
                   mentors,

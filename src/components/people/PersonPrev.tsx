@@ -143,8 +143,7 @@ const PersonPrev = ({
             {degree && <span>, {degree}</span>}
           </Typography>
         )}
-        {role && <Typography>{role}</Typography>}
-        {title && <Typography>{title}</Typography>}
+        
         {/* target ensures a new tab.  nooopener is for security */}
         {link && institution && <Typography>{institution}</Typography>} <br />
         {abstract && (

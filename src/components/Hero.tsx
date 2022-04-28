@@ -9,6 +9,8 @@ const useStyles = makeStyles({
   featured: {
     marginBottom: 40,
     marginTop: 40,
+    justifyContent: 'center',
+
   },
   topSection: {
     backgroundColor: themeExtended.palette.primary.hover,

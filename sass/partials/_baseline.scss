@@ -7,6 +7,12 @@ $primary-light: #B8D8F5;
 // dark: darken(`rgba(19, 127, 222)`, 0.2),
 // light: lighten(`rgba(19, 127, 222)`, 0.7),
 
+$xs: 369px;
+$sm: 575px;
+$md: 767px;
+$lg: 991px;
+$xl: 1199px;
+
 $font: "Roboto", "Helvetica", "Arial", sans-serif;
 ::selection {
   background: hsl(208, 84%, 75%); /* WebKit/Blink Browsers */

@@ -32,7 +32,7 @@ export function createLinks(history) {
         history.push('/resources/articles');
       },
       code: 'articles',
-      displayName: 'Articles',
+      displayName: 'News Articles',
     },
     {
       clickHandler: () => {
@@ -57,6 +57,14 @@ export function createLinks(history) {
       },
       code: 'molecular-core',
       displayName: 'Molecular Biology Core ',
+    },
+    {
+      clickHandler: () => {
+        navigate('/resources/media');
+        history.push('/resources/media');
+      },
+      code: 'media',
+      displayName: 'Media',
     },
   ];
 }

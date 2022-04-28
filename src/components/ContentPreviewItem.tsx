@@ -8,23 +8,35 @@ const useStyles = makeStyles({
   imgCont: {
     width: '100%',
     maxHeight: 300,
-    alignItems: 'center',
-    justifyItems: 'center',
+    // maxWidth: '50%',
+    flexGrow: 1,
+    marginLeft: '-12px',
   },
   img: {
     width: '100%',
     maxHeight: 300,
-
-    paddingTop: '20%',
+    maxWidth: 200,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    paddingLeft: '12px',
+    paddingRight: '12px',
+    // paddingTop: '20%',
+    objectFit: 'contain',
+    alignSelf: 'baseline',
   },
   title: {
     paddingTop: theme.spacing(3),
   },
   cont: {
     // backgroundColor: themeExtended.palette.primary.hover,
+    // backgroundColor: 'red',
+    flexGrow: 1,
+    maxWidth: '100%',
   },
   textCont: {
     padding: 10,
+    // maxWidth: '50%',
+    // marginLeft: 'auto',
   },
 });
 
@@ -38,14 +50,14 @@ const ContentPreviewItem = ({ featured, code }: contentPreviewItemProps) => {
   const classes = useStyles();
   return (
     <Grid container item xs={12} sm={6} className={classes.cont}>
-      <Grid container item xs={4} className={classes.imgCont}>
+      <Grid container item xs={12} sm={4} className={classes.imgCont}>
         <img
           src={featured.image}
           className={classes.img}
           alt={`${featured.title}`}
         />
       </Grid>
-      <Grid item xs={8} className={classes.textCont}>
+      <Grid item xs={12} sm={8} className={classes.textCont}>
         {featured.title && (
           <Typography align="center" variant="h5" className={classes.title}>
             {/* gets first part of title for preview */}

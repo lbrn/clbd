@@ -27,6 +27,10 @@ const useStyles = makeStyles({
     border: 0,
     allowfullscreen: '',
   },
+  video: {
+    // backgroundColor: 'red',
+
+  },
 });
 
 interface Seminar {
@@ -96,6 +100,23 @@ const Seminar = ({seminar}: Seminar) => {
                 )}
                 {seminar.description && (
                 <Typography variant="body1">{seminar.description}</Typography>
+                )}
+                {seminar.video && (
+                <Typography variant="body1" className={classes.video}>
+                <div className ="posts threerow detail">
+                <div className="post">
+                <Link href={seminar.video}>
+
+                  <img alt={seminar.videoname} src={seminar.videoimg}></img>
+                  <h3 id = {seminar.id}>{seminar.videoname}</h3>
+                  <p>{seminar.videodesc}</p>
+
+
+                  </Link>
+                </div>
+                </div>
+                </Typography>
+
                 )}
               </Grid>
             </Grid>
