@@ -22,6 +22,7 @@ export const Ogundele = require('./Ogundele.jpg');
 export const Patial = require('./Patial.jpg');
 export const Penn = require('./Penn.jpg');
 export const Rangasamy = require('./Rangasamy.png');
+export const Rangasamy2 = require('./Rangasamy.png');
 export const Reed = require('./Reed.jpg');
 export const Saini = require('./Saini.jpg');
 export const Stanton = require('./Stanton.jpg');

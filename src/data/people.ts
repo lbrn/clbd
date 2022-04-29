@@ -59,6 +59,7 @@ const {
   Ogundele,
   Patial,
   Rangasamy,
+  Rangasamy2,
   Reed,
   Saini,
   Stanton,
@@ -128,7 +129,7 @@ export const people: people = {
   molecularBiologyCore: {
     code: 'molecularBiologyCore',
     displayName: 'Molecular Biology Core',
-    members: [Kousoulas, Rangasamy, Chouljenko],
+    members: [Kousoulas, Rangasamy2, Chouljenko],
     prev: [],
 
   },
