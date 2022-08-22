@@ -20,6 +20,7 @@ import {
   SeahorsePdf,
   SeahorseFlyerThumb
 } from '../assets/pdfs/index';
+import { LocalHospital } from '@material-ui/icons';
 
 // the first seminar is automatically featured
 
@@ -164,7 +165,7 @@ export const seminars: seminar[] = [
     featured: false,
     hasMap: false,
     date: moment('2021-09-07'),
-    time: '8:45am - 4:05 pm',
+    time: '8:45am - 4:05pm',
     registrationLink: 'https://redcap.lbrn.lsu.edu/surveys/?s=J9FEAX7CF8',
     registrationDueDate: moment('2021-09-03'),
     agendaLink: require('../assets/pdfs/2021 CLBD Symposium Schedule.pdf'),
@@ -176,6 +177,48 @@ export const seminars: seminar[] = [
     videodesc: 'During the 2021 Louisiana Lung Conference: Pathogenesis of Infectious and Non-Infectious Pulmonary Diseases September 07, 2021 (Virtual), Speaker on The essentials for funding success: How to write a successful application?, Rachel Zemans, M.D., University of Michigan School of Medicine Associate Professor of Medicine, and Speaker on The essentials for funding success: What reviewers are looking for? Chad Steele, Ph.D., Tulane University School of Medicine Chair and Professor of Microbiology and Immunology',
     videoimg: require('../assets/misc/media2.png'),
     image: require('../assets/pdfs/2021 CLBD Symposium v3 Vert_thumb.png'),
-    link: ` https://agilent.webex.com/join/jay.dunn`,
+  },
+  {
+    title: 'IncuCyte Continued Education & Support',
+    id: 'incucytetraining-2022-03-29',
+    code: 'SEMINAR',
+    eventType: 'Training',
+    date: moment('2022-03-29'),
+    time: '10:00 am - 11:00 am',
+    registrationDueDate: moment('2022-03-29'),
+    pdfLink: require('../assets/pdfs/IncuCyte Continued Education & Support 2022a.pdf'),
+    description: 'Sponsored by Center for Lung Biology & Disease. For more information contact For more information contact: Duane Jeansonne, email: djeansonne1@lsu.edu.',
+    location: 'Louisiana State University (Virtual)',
+    image: require('../assets/pdfs/IncuCyte Continued Education & Support 2022a.png'),
+  },
+  {
+    title: 'Neutrophil Death and Their Functional Heterogeneity in the Lungs',
+    id: 'ghimire-2022-08-26',
+    code: 'SEMINAR',
+    eventType: 'Presentation',
+    date: moment('2022-08-26'),
+    time: '12 pm',
+    pdfLink: require('../assets/pdfs/2022 Ghimire Flier.pdf'),
+    speakers: 'Laxman Ghirmire, Ph.D',
+    speakerUniversities: 'Research Fellow in Pathology (INT), Boston Children\'s Hospital, Harvard Medical School Teaching Hospital Transfusion Medicine',
+    location: 'LSU Vet Med Room 1212C',
+    image: require('../assets/pdfs/2022 Ghimire Flier.png'),
+  },
+  {
+    title: '2022 Louisiana Lung Conference',
+    id: 'lung2022',
+    code: 'SEMINAR',
+    eventType: 'Training',
+    featured: false,
+    hasMap: false,
+    date: moment('2022-09-02'),
+    time: '8:45am - 5:00pm',
+    registrationLink: 'https://redcap.lbrn.lsu.edu/surveys/?s=XAAKPWPLWX',
+    registrationDueDate: moment('2022-08-29'),
+    agendaLink: require('../assets/pdfs/2022 Louisiana Lung Conference Agenda.pdf'),
+    pdfLink: require('../assets/pdfs/Flier 2022 Louisiana Lung Conference final.pdf'),
+    description: "This year's Louisiana Lung Conference will be held virtually. Keynote speakers are Dr. Sylvia Knapp, Professor of Infection Biology, Department of Medicine, Medical University Vienna, Austria and Dr. Holger K. Eltzschig, John P. And Kathrine G. McGovern Distinguished University Chair, Vice President for Translational Medicine; Director, Center for Perioperative Medicine Department of Anesthesiology McGovern Medica School, The University of Texas Health Science Center at Houston. An essentials for funding success panel will follow with Dr. Steven Varga, Associate Dean for Academic Affairs and Graduate Student Development & Professor of Microbiology and Immunology University of Iowa School of Medicine and Dr. Ilona Jaspers, Deputy Director, Center for Environmental Medicine, Asthma and Lung Biology & Professor of of Pediatrics, Microbiology and Immunology and Environmental Sciences Sciences and Engineering, University of North Carolina at Chapel Hill.",
+    location: 'Louisiana State University (Virtual)',
+    image: require('../assets/pdfs/Flier 2022 Louisiana Lung Conference final.png'),
   },
 ];

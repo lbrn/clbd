@@ -11,13 +11,37 @@ import { SeahorseFlyerThumb } from '../assets/pdfs';
 export const articles: article[] = [
   {
     code: 'ARTICLE',
+    title: '2022 Louisiana Lung Conference',
     isFeatured: true,
+    contentPreview:  "This year's Louisiana Lung Conference will be held virtually. Keynote speakers are Dr. Sylvia Knapp, Professor of Infection Biology, Department of Medicine, Medical University Vienna, Austria and Dr. Holger K. Eltzschig, John P. And Kathrine G. McGovern Distinguished University Chair, Vice President for Translational Medicine; Director, Center for Perioperative Medicine Department of Anesthesiology McGovern Medica School, The University of Texas Health Science Center at Houston. An essentials for funding success panel will follow with Dr. Steven Varga, Associate Dean for Academic Affairs and Graduate Student Development & Professor of Microbiology and Immunology University of Iowa School of Medicine and Dr. Ilona Jaspers, Deputy Director, Center for Environmental Medicine, Asthma and Lung Biology & Professor of of Pediatrics, Microbiology and Immunology and Environmental Sciences Sciences and Engineering, University of North Carolina at Chapel Hill.",
+    image: require('../assets/pdfs/Flier 2022 Louisiana Lung Conference final.png'),
+    link: 'event/lung2022',
+  },
+  {
+    code: 'ARTICLE',
+    // isFeatured: true,
+    title: 'Neutrophil Death and Their Functional Heterogeneity in the Lungs',
+    contentPreview: `Laxman Ghirmire, Ph.D., Research Fellow in Pathology (INT), Boston Children\'s Hospital, Harvard Medical School Teaching Hospital Transfusion Medicine`,
+    image:  require('../assets/pdfs/2022 Ghimire Flier.png'),
+    link: '/event/ghimire-2022-08-26',
+  },
+  {
+    code: 'ARTICLE',
+    // isFeatured: true,
     title:
       'Congratulations to our COBRE investigator, Dr. Alexandra Noël for receiving the Zoetis Award for Research Excellence',
     contentPreview: `Alexandra Noël, PhD, assistant professor in the Department of Comparative Biomedical Sciences (CBS), received the Zoetis Award for Research Excellence. Zoetis presents an honorarium and inscribed plaque to a faculty member who has excelled in veterinary medical research during the past two years.`,
     image:  require('../assets/people/Noel.jpg'),
     link:
       'https://www.lsu.edu/vetmed/news/2022/research_awards.php',
+  },
+  {
+    code: 'ARTICLE',
+    title: `IncuCyte Continued Education & Support`,
+    contentPreview: `Key Applications for the Incucyte Live-Cell Analysis System.`,
+    image: require('../assets/pdfs/IncuCyte Continued Education & Support 2022a.png'),
+    link:
+      '/event/incucytetraining-2022-03-29',
   },
   {
     code: 'ARTICLE',
