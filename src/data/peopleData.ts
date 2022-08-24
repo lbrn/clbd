@@ -49,7 +49,7 @@ export const peopleData: peopleData = {
     title:
       'William L. Jenkins Professor in the Department of Pathobiological Sciences',
     role: 'Co-Director',
-    link: 'https://bit.ly/31Giidr ',
+    link: 'https://www.lsu.edu/vetmed/faculty/jeyaseelan.php',
   },
   Cardin: {
     code: 'Cardin',
@@ -61,7 +61,7 @@ export const peopleData: peopleData = {
     image: Cardin,
     title: 'Associate dean for research and advanced studies',
     role: 'Co-investigator',
-    link: 'http://facultypages.vetmed.lsu.edu/faculty/rcardin',
+    link: 'https://www.cincinnatichildrens.org/bio/c/rhonda-cardin',
   },
   Le: {
     code: 'Le',
@@ -169,7 +169,7 @@ export const peopleData: peopleData = {
     degree: 'PhD',
     role: 'Professor and Head, Pathobiological Sciences',
     image: Kousoulas,
-    link: 'https://bit.ly/2PhLrt6',
+    link: 'https://www.lsu.edu/vetmed/faculty/kousoulas.php',
   },
   Cormier: {
     code: 'Cormier',
@@ -180,7 +180,7 @@ export const peopleData: peopleData = {
     institution: 'Louisiana State University',
     role: 'Professor and Associate Vice President for Research',
     image: Cormier,
-    link: 'https://www.lsu.edu/science/biosci/faculty_and_staff/cormier.php',
+    link: 'https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/cormier.php',
   },
   Kolls: {
     code: 'Kolls',
@@ -216,7 +216,7 @@ export const peopleData: peopleData = {
       'Department Chairperson - Interim Department Head Comparative Biomedical Sciences (CBS)',
     role: 'Co-Director',
     image: Dugas,
-    link: 'https://bit.ly/33YO5Ic',
+    link: 'https://www.lsu.edu/vetmed/faculty/dugas.php',
   },
   Langhor: {
     code: 'Langhor',
@@ -238,7 +238,7 @@ export const peopleData: peopleData = {
     institution: 'Louisiana State University',
     role: 'Co-investigator',
     image: Christofferson,
-    link: 'http://facultypages.vetmed.lsu.edu/faculty/rcarri1',
+    link: 'https://www.lsu.edu/vetmed/faculty/christofferson.php',
   },
   Rangasamy: {
     code: 'Rangasamy',
@@ -252,8 +252,8 @@ export const peopleData: peopleData = {
     role: 'Pilot Investigator',
     // role: 'Co-Investigator',
     image: Rangasamy,
-    year: '2019',
-    link: 'http://facultypages.vetmed.lsu.edu/faculty/trangasamy',
+    year: '2021',
+    link: 'https://www.lsu.edu/vetmed/faculty/rangasamy.php',
     abtitle: 'Role of LMSCs in SHS-mediated bacterial exacerbation and emphysema ',
   },
   Rangasamy2: {
@@ -269,7 +269,7 @@ export const peopleData: peopleData = {
     // role: 'Pilot Investigator',
     image: Rangasamy,
     year: '2019',
-    link: 'http://facultypages.vetmed.lsu.edu/faculty/trangasamy',
+    link: 'https://www.lsu.edu/vetmed/faculty/rangasamy.php',
     abtitle: 'Role of LMSCs in SHS-mediated bacterial exacerbation and emphysema ',
   },
   Chouljenko: {
@@ -281,7 +281,7 @@ export const peopleData: peopleData = {
     institution: 'Louisiana State University',
     role: 'Co-Investigator',
     image: Vladimir,
-    link: 'http://facultypages.vetmed.lsu.edu/faculty/vchoul1',
+    link: 'https://www.lsu.edu/vetmed/faculty/chouljenko.php',
   },
   Patial: {
     code: 'Patial',
@@ -289,12 +289,13 @@ export const peopleData: peopleData = {
     name: 'Sonika Patial',
     degree: 'DVM, PhD, Dipl ACVP',
     isActive: true,
+    year: '2021',
     abstract:
       'Dr. Patial is an Assistant Professor in the Department of Comparative Biomedical Sciences at Louisiana State University, Baton Rouge. The focus of her current research is to investigate the role of tristetraprolin (TTP) family of RNA binding protein mediated post-transcriptional regulation of gene expression in health and disease. Post-transcriptional control is crucial in regulating the magnitude and duration of inflammatory responses. More specifically, Dr. Patial is investigating how post-transcriptional regulation of inflammatory gene expression modulates the pathogenesis of lung and liver disease. The long term goal of this research is to identify diagnostic biomarkers and novel therapeutic targets for lung and liver diseases. Dr. Patial received her DVM from the College of Veterinary Sciences, Palampur (India) and MVSc in Animal Biotechnology from Indian Veterinary Research Institute, Izatnagar (India). She received her PhD from Michigan State University in 2010 following which she completed a postdoctoral training (2011-2016) in the laboratory of Dr. Perry Blackshear at The National Institute of Environmental Health Sciences, North Carolina. Dr. Patial is also a Diplomate of the American College of Veterinary Pathologists (ACVP).',
     institution: 'Louisiana State University',
     image: Patial,
     role: 'Project Investigator',
-    link: 'https://bit.ly/32IFYza',
+    link: 'https://www.lsu.edu/vetmed/faculty/patial.php',
     mentors: [
       {
         name: 'Jacqueline Stephens',
@@ -320,11 +321,11 @@ export const peopleData: peopleData = {
     institution: 'Louisiana State University',
     image: Saini,
     role: 'Project Investigator',
-    link: 'https://bit.ly/2pV5Nxl',
+    link: 'https://www.lsu.edu/vetmed/faculty/saini.php',
     mentors: [
       {
         name: 'Rhonda Cardin',
-        link: 'http://facultypages.vetmed.lsu.edu/faculty/rcardin',
+        link: 'https://www.cincinnatichildrens.org/bio/c/rhonda-cardin',
       },
       { name: 'Deepak Kaushal', link: 'https://bit.ly/345In7z' },
     ],
@@ -341,7 +342,7 @@ export const peopleData: peopleData = {
     institution: 'Louisiana State University',
     image: Huang,
     role: 'Project Investigator',
-    link: 'https://bit.ly/2W8bggy',
+    link: 'https://www.lsu.edu/vetmed/faculty/huang.php',
     mentors: [
       { name: 'Stephanie Cormier', link: 'https://www.lsu.edu/science/biosci/faculty_and_staff/cormier.php' },
       { name: 'Jay Kolls', link: 'https://bit.ly/2Pf6ufB' },
@@ -359,13 +360,13 @@ export const peopleData: peopleData = {
     institution: 'Louisiana State University',
     image: Noel,
     role: 'Pilot Investigator',
-    link: 'https://bit.ly/2pP5Jzh',
+    link: 'https://www.lsu.edu/vetmed/faculty/noel.php',
     abtitle: 'Effects of nicotine salt-rich JUUL aerosols on the mouse developing lung',
     mentors: [
-      { name: 'Tammy Dugas', link: 'https://bit.ly/33YO5Ic' },
+      { name: 'Tammy Dugas', link: 'https://www.lsu.edu/vetmed/faculty/dugas.php' },
       {
         name: 'Arthur Penn',
-        link: 'http://facultypages.vetmed.lsu.edu/faculty/apenn1',
+        link: 'https://www.lsu.edu/vetmed/faculty/penn.php',
       },
     ],
   },
@@ -379,7 +380,7 @@ export const peopleData: peopleData = {
     institution: 'Louisiana State University',
     role: 'Pilot Investigator',
     image: Yoshimmura,
-    link: 'http://facultypages.vetmed.lsu.edu/faculty/fukugawa',
+    link: 'https://www.lsu.edu/vetmed/faculty/yoshimura.php',
   },
   GuerreroPlata: {
     code: 'GuerreroPlata',
@@ -393,7 +394,7 @@ export const peopleData: peopleData = {
     institution: 'Louisiana State University',
     role: 'Pilot Investigator',
     image: GuerreroPlata,
-    link: 'http://facultypages.vetmed.lsu.edu/faculty/aguerrp',
+    link: 'https://www.lsu.edu/vetmed/faculty/guerrero-plata.php',
   },
   Ogundele: {
     code: 'Ogundele',
@@ -408,7 +409,7 @@ export const peopleData: peopleData = {
     institution: 'Louisiana State University',
     role: 'Pilot Investigator',
     image: Ogundele,
-    link: 'https://bit.ly/2pdpKzv',
+    link: 'https://www.lsu.edu/vetmed/faculty/ogundele.php',
   },
   Jeansonne: {
     code: 'Jeansonne',
@@ -421,7 +422,7 @@ export const peopleData: peopleData = {
     title:
       'Assistant Professor- Research in the Department of Pathobiological Sciences',
     role: 'PIP Core coordinator',
-    link: 'mailto:djeansonne1@lsu.edu'
+    link: 'https://www.lsu.edu/vetmed/faculty/jeansonne.php'
   },
   Balasuriya: {
     code: 'Balasuriya',
@@ -433,7 +434,7 @@ export const peopleData: peopleData = {
     role:
       'Director and Professor of Virology at the Louisiana Animal Disease Diagnostic Laboratory (LADDL)',
     image: Balasuriya,
-    link: 'http://facultypages.vetmed.lsu.edu/faculty/balasuriya1'
+    link: 'https://www.lsu.edu/vetmed/faculty/balasuriya.php'
   },
   Fu: {
     code: 'Fu',
@@ -454,29 +455,44 @@ export const peopleData: peopleData = {
       { name: 'Placeholder', link: '#' },
     ],
   },
+  Chen2: {
+    code: 'Chen2',
+    id: 30,
+    name: 'Chen Chen',
+    degree: 'MD, PhD',
+    year: '2021',
+    role: 'Project Investigator',
+    isActive: true,
+    institution: 'Louisiana State University',
+    image: require('../assets/people/chenchen.jpg'),
+    abstract: "Dr. Chen Chen is an Assistant Professor in the Department of Biological Sciences at Louisiana State University.  Dr. Chen obtained her Ph.D. in the Department of Microbiology and Immunology from the Medical College of Wisconsin.   She later obtained her postdoctoral training in the Department of Microbiology at The University of Chicago and the Department of Microbiology at Medical College of Wisconsin.  Dr. Chen is a bacterial microbiologist with over ten years of experience in bacterial toxins, S. aureus pathogenesis, bacterial pathogen-host interactions, and glycobiology.  The main goal of Dr. Chen’s laboratory is to understand how S. aureus seamlessly transitions between infection and colonization.  S. aureus-associated pneumonia accounts for an estimated 50,000 staphylococcal infections per year in the United States.  Although S. aureus colonization (30% of humans) is strongly associated with higher risks for clinical infections, most colonized individuals will not experience S. aureus infections, suggesting that S. aureus maintains a dedicated balance with the host.  Neutrophils are the first host defense against S. aureus.  During pulmonary infection, the neutrophil influx is a double-edged sword: neutrophils clear the invading pathogens while overzealous neutrophils can cause tissue damage leading to pneumonia.  Dr. Chen’s current research seeks to understand the mechanisms by which S. aureus keeps lung neutrophils at rest, which is crucial to decipher how S. aureus transitions between silent colonization and infection.  Dr. Chen was awarded K12 Scholar, Translational GlycOmics Program for Career Development In Glycoscience by NIH/NHLBI (2020). Dr. Chen was the PI for the SBIR phase I grant by NIH/NHLBI to develop “Therapeutic Delivery of Adp-Ribosylarginine Hydrolase” (2015-2017). She is currently a Review Editor on the Editorial Board of Microbes and Innate Immunity (specialty section of Frontiers in Cellular and Infection Microbiology).",
+    link: 'https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/chenchen.php',
+  },
   Chen: {
     code: 'Chen',
     id: 30,
     name: 'Chen Chen',
     degree: 'MD, PhD',
+    year: '2021',
     isActive: true,
     institution: 'Louisiana State University',
     image: require('../assets/people/chenchen.jpg'),
     abstract: "Dr. Chen Chen is an Assistant Professor in the Department of Biological Sciences at Louisiana State University.  Dr. Chen obtained her Ph.D. in the Department of Microbiology and Immunology from the Medical College of Wisconsin.   She later obtained her postdoctoral training in the Department of Microbiology at The University of Chicago and the Department of Microbiology at Medical College of Wisconsin.  Dr. Chen is a bacterial microbiologist with over ten years of experience in bacterial toxins, S. aureus pathogenesis, bacterial pathogen-host interactions, and glycobiology.  The main goal of Dr. Chen’s laboratory is to understand how S. aureus seamlessly transitions between infection and colonization.  S. aureus-associated pneumonia accounts for an estimated 50,000 staphylococcal infections per year in the United States.  Although S. aureus colonization (30% of humans) is strongly associated with higher risks for clinical infections, most colonized individuals will not experience S. aureus infections, suggesting that S. aureus maintains a dedicated balance with the host.  Neutrophils are the first host defense against S. aureus.  During pulmonary infection, the neutrophil influx is a double-edged sword: neutrophils clear the invading pathogens while overzealous neutrophils can cause tissue damage leading to pneumonia.  Dr. Chen’s current research seeks to understand the mechanisms by which S. aureus keeps lung neutrophils at rest, which is crucial to decipher how S. aureus transitions between silent colonization and infection.  Dr. Chen was awarded K12 Scholar, Translational GlycOmics Program for Career Development In Glycoscience by NIH/NHLBI (2020). Dr. Chen was the PI for the SBIR phase I grant by NIH/NHLBI to develop “Therapeutic Delivery of Adp-Ribosylarginine Hydrolase” (2015-2017). She is currently a Review Editor on the Editorial Board of Microbes and Innate Immunity (specialty section of Frontiers in Cellular and Infection Microbiology).",
     role: 'Pilot Investigator',
-    link: 'https://lsu.edu/science/biosci/faculty_and_staff/chenchen.php',
+    link: 'https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/chenchen.php',
   },
   Carossino: {
     code: 'Carossino',
     id: 31,
     name: 'Mariano Carossino',
     degree: 'DVM, PhD',
+    year: '2021',
     isActive: true,
     institution: 'Louisiana State University',
     image: require('../assets/people/mcarossino.jpg'),
     abstract: "Dr. Mariano Carossino is an Assistant Professor and Anatomic Pathologist in the Department of Pathobiological Sciences and the Louisiana Animal Disease Diagnostic Laboratory (LADDL) at Louisiana State University School of Veterinary Medicine (LSU-SVM). Dr. Carossino obtained his DVM from the Escuela de Veterinaria, Universidad del Salvador in Buenos Aires, Argentina. In 2013, he was awarded a Fulbright Scholarship and joined the Department of Veterinary Science, University of Kentucky, where he obtained his Ph. D. in Cellular and Molecular Virology. He subsequently completed residency training in Veterinary Anatomic Pathology at LSU (2018-2021) prior to his appointment in the Department of Pathobiological Sciences. Dr. Carossino is currently a diplomate of the American College of Veterinary Microbiologists (ACVM) with an emphasis in Virology and has 10 years of experience as a virologist. The overarching focus of Dr. Carossino’s research is to understand the pathogenesis and immunopathology of RNA viruses combining translational animal models and modern, molecular pathology techniques to comparatively study virus-host interactions during respiratory and persistent viral infections. Dr. Carossino has been involved in the comparative evaluation of different animal models of COVID-19. He is specifically interested in the host tropism of SARS-CoV-2, its interactions with the host at the pulmonary level, and understanding at the cellular and molecular level how different comorbidities shape the outcome of COVID-19.",
     role: 'Pilot Investigator',
-    link: 'http://facultypages.vetmed.lsu.edu/faculty/mcarossino1',
+    link: 'https://www.lsu.edu/vetmed/faculty/carossino.php',
   },
   Wen: {
     code: 'Wen',
@@ -595,7 +611,7 @@ export const peopleData: peopleData = {
     institution: 'Louisiana State University',
     image: require('../assets/people/jfrancis.jpg'),
     role: 'Associate Dean for Research and Graduate Studies',
-    link: 'http://facultypages.vetmed.lsu.edu/faculty/jfrancis',
+    link: 'https://www.lsu.edu/vetmed/faculty/francis.php',
   },
   Leise: {
     code: 'Leise',
@@ -607,7 +623,7 @@ export const peopleData: peopleData = {
     institution: 'Louisiana State University',
     image: require('../assets/people/bleise.jpg'),
     role: 'Associate Dean for Faculty Affairs',
-    link: 'http://facultypages.vetmed.lsu.edu/faculty/bleise',
+    link: 'https://www.lsu.edu/vetmed/faculty/leise.php',
   },
   Vicente: {
     code: 'Vicente',
@@ -619,7 +635,7 @@ export const peopleData: peopleData = {
     institution: 'Louisiana State University',
     image: require('../assets/people/gracavicente.jpg'),
     role: 'Boyd Professor',
-    link: 'https://www.lsu.edu/research/about/staff_directory/gracavicente.php',
+    link: 'https://faculty.lsu.edu/vicente/index.php',
   },
   Abuaita: {
     code: 'Abuaita',
@@ -627,7 +643,10 @@ export const peopleData: peopleData = {
     name: 'Basel Abuita',
     degree: 'PhD',
     year: '2022',
+    abtitle: 'Regulation of Pulmonary Host Defenses by the Endoplasmic Reticulum Stress Sensor IRE1α',
+    abstract: 'Methicillin-resistant Staphylococcus aureus (MRSA) infection is the leading cause of hospital-acquired infection worldwide. It causes approximately 14 million infections annually in the United States alone. Increasing antibiotic resistance in this pathogen highlights a compelling need to identify new therapeutic targets to treat MRSA infections. We recently showed that the endoplasmic reticulum (ER) stress sensor, IRE1α, is a key component in innate immune defense against MRSA in macrophages, neutrophils, and in a murine abscess model of infection. We found that IRE1α controls macrophage and neutrophil antimicrobial functions by enhancing production of inflammatory molecules including mitochondrial reactive oxygen species (MitoROS), neutrophil extracellular traps (NETs), and IL-1β, which are essential for resolving MRSA infection in vivo. In the lung, ER stress occurs during infection, air pollutant inhalation and during the development of many pulmonary diseases like Idiopathic Pulmonary Fibrosis and Asthma. However, how IRE1α is involved in progression and resolution of lung diseases is not well understood. Because the lung is a vital organ, macrophages and neutrophils must adequately tune their responses to ensure effective antimicrobial function without excessive tissue damage that could inhibit gas exchange. Therefore, investigation of IRE1α-mediated stress responses during lung infection will lend valuable mechanistic insight into the regulation of pulmonary host defenses. The overarching goal of this proposal is to elucidate the role of IRE1α in pulmonary host defenses during MRSA infection. Our central hypothesis is that infection triggers IRE1α signaling, which enhances lung innate immune effector functions includes bactericidal activity and production of inflammatory mediators. We will accomplish the following Aims to test our hypothesis: (1) Characterize the requirement of IRE1α activation and MitoROS generation to lung macrophage inflammatory responses, and (2) Elucidate whether the IRE1α circuit aids or impedes innate immune defense against pulmonary MRSA infection. Completing this study will establish the ER stress response as an important regulatory network in lung host defense and will lay the groundwork for further studies in the intersection between cellular stress response and lung diseases.',    
     isActive: true,
+    role: 'Project Investigator',
     institution: 'Louisiana State University',
     image: require('../assets/people/abuaita_basel.jpg'),
 

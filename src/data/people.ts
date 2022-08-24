@@ -69,6 +69,7 @@ const {
   Balasuriya,
   Fu,
   Chen,
+  Chen2,
   Wen,
   Carossino,
   Mehra,
@@ -101,7 +102,7 @@ export const people: people = {
   leadership: {
     code: 'leadership',
     displayName: 'Leadership',
-    members: [Jeyaseelan,  White, Hoang, Dugas],
+    members: [Jeyaseelan, Hoang, Dugas],
     prev: [],
 
   },
@@ -122,7 +123,7 @@ export const people: people = {
   pulmonaryImmunopathologyCore: {
     code: 'pulmonaryImmunopathologyCore',
     displayName: 'Pulmonary Immunopathology Core',
-    members: [Saini, Jeansonne, Langhor, Wen,],
+    members: [Saini, Jeansonne, Wen],
     prev: [],
 
   },
@@ -136,14 +137,14 @@ export const people: people = {
   projectInvestigators: {
     code: 'projectInvestigators',
     displayName: 'Project Investigators',
-    members: [Patial, Chen, Abuaita, Beavers],
-    prev: [Noel, Mehra, Saini, Huang, Fu],
+    members: [Patial, Chen2, Abuaita],
+    prev: [Fu, Huang, Saini,  Noel, Mehra],
 
   },
   pilotInvestigators: {
     code: 'pilotInvestigators',
     displayName: 'Pilot Investigators',
-    members: [Rangasamy, Noel, Carossino],
-    prev:[Fu, Rangasamy, Yoshimmura, GuerreroPlata, Ogundele, Chen,],
+    members: [],
+    prev:[Rangasamy, Chen, Carossino, Fu, Noel, Rangasamy2, Yoshimmura, GuerreroPlata, Ogundele],
   },
 };
