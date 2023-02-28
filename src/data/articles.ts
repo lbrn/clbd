@@ -11,8 +11,28 @@ import { SeahorseFlyerThumb } from '../assets/pdfs';
 export const articles: article[] = [
   {
     code: 'ARTICLE',
-    title: '2022 Louisiana Lung Conference',
+    title: 'Department of Pathobiological Sciences LSU Vet Med seeking Ph.D. Students.',
     isFeatured: true,
+    contentPreview: 'The Department of Pathobiological Sciences at the LSU School of Veterinary Medicine is seeking outstanding Ph.D. students in all areas of departmental research strengths, which include bacterial pathogenesis, immunology (including cancer immunology), parasitology, pathology, pulmonary infections and lung function, and viral pathogenesis. Deadline January 31, 2023.',
+    image: require('../assets/pdfs/010123_PBS_GRAD_RECRUIT_KGK.png'),
+    link: 'https://lbrn.lsu.edu/downloads/010123_PBS_GRAD_RECRUIT_KGK.pdf',
+  },{
+    code: 'ARTICLE',
+    title: 'The CLBD Award Luncheon Ceremony',
+    contentPreview: 'October 24th, 2022, 11:45 am to 1:30 pm 1212C, LSU Vet School. In honor of our faculty that have successfully graduated from the Lung COBRE program.',
+    image: require('../assets/pdfs/2022 CLBD Award Luncheon v2.png'),
+    link: '/event/award-2022-10-24',
+  },
+  {
+    code: 'ARTICLE',
+    title: 'Stress Resilience at the Human Lung Surface: Homeostatic Mechanisms and Subversion by SARS-CoV-2',
+    contentPreview: 'Tirouvanziam Rabindra M., Ph.D, Department of Pediatric Infectious Diseases, Emory University',
+    image: require('../assets/pdfs/2022 Rabindra Flier.png'),
+    link: '/event/rabindra-2022-09-30',
+  },
+  {
+    code: 'ARTICLE',
+    title: '2022 Louisiana Lung Conference',
     contentPreview:  "This year's Louisiana Lung Conference will be held virtually. Keynote speakers are Dr. Sylvia Knapp, Professor of Infection Biology, Department of Medicine, Medical University Vienna, Austria and Dr. Holger K. Eltzschig, Professor of Anesthesiology, Surgery and Biochemistry, John P. and Kathrine G. McGovern Distinguished University Chair, Vice President for Translational Medicine; Director, Center for Perioperative Medicine Department of Anesthesiology McGovern Medica School, The University of Texas Health Science Center at Houston. An essential for funding success panel will follow with Dr. Steven Varga, Associate Dean for Academic Affairs and Graduate Student Development & Professor of Microbiology and Immunology University of Iowa School of Medicine, and Dr. Ilona Jaspers, Deputy Director, Center for Environmental Medicine, Asthma and Lung Biology & Professor of Pediatrics, Microbiology, and Immunology and Environmental Sciences and Engineering, The University of North Carolina at Chapel Hill. ",
     image: require('../assets/pdfs/Flier 2022 Louisiana Lung Conference.png'),
     link: 'event/lung2022',
