@@ -26,6 +26,18 @@ import { LocalHospital } from '@material-ui/icons';
 
 export const seminars: seminar[] = [
   {
+    title: 'Mucosal host-defence in COPD: Medications, microbes and mucus',
+    id: 'aran-04-21-23',
+    code: 'SEMINAR',
+    eventType: 'Presentation',
+    date: moment('2023-04-21'),
+    time: '12:00 pm',
+    pdfLink: require('../assets/pdfs/2023 Flier-Aran_CLBD.pdf'),
+    speakers: 'Aran Singanayagam; MBchB, PhD.',
+    speakerUniversities: 'Imperial College London',
+    image: require('../assets/pdfs/2023 Flier-Aran_CLBD.png'),
+  },
+  {
     title: 'Epigenetics in Vascular Disease',
     id: 'gallacher-03-03-22',
     code: 'SEMINAR',

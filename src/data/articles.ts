@@ -11,12 +11,20 @@ import { SeahorseFlyerThumb } from '../assets/pdfs';
 export const articles: article[] = [
   {
     code: 'ARTICLE',
-    title: 'Department of Pathobiological Sciences LSU Vet Med seeking Ph.D. Students.',
+    title: 'Mucosal host-defence in COPD: Medications, microbes and mucus',
     isFeatured: true,
+    contentPreview: 'Aran Singanayagam; MBchB, PhD., Department of Infectious Disease, Imperial College London',
+    image: require('../assets/pdfs/2023 Flier-Aran_CLBD.png'),
+    link: '/event/aran-04-21-23',
+  },
+  {
+    code: 'ARTICLE',
+    title: 'Department of Pathobiological Sciences LSU Vet Med seeking Ph.D. Students.',
     contentPreview: 'The Department of Pathobiological Sciences at the LSU School of Veterinary Medicine is seeking outstanding Ph.D. students in all areas of departmental research strengths, which include bacterial pathogenesis, immunology (including cancer immunology), parasitology, pathology, pulmonary infections and lung function, and viral pathogenesis. Deadline January 31, 2023.',
     image: require('../assets/pdfs/010123_PBS_GRAD_RECRUIT_KGK.png'),
     link: 'https://lbrn.lsu.edu/downloads/010123_PBS_GRAD_RECRUIT_KGK.pdf',
-  },{
+  },
+  {
     code: 'ARTICLE',
     title: 'The CLBD Award Luncheon Ceremony',
     contentPreview: 'October 24th, 2022, 11:45 am to 1:30 pm 1212C, LSU Vet School. In honor of our faculty that have successfully graduated from the Lung COBRE program.',
